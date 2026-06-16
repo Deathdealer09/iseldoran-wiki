@@ -27,9 +27,9 @@ export const SPECIES = {
       "the bearing of a natural leader. Robed in ornate black and gold imperial vestments.",
   },
   3: {
-    name: "Va'Sumir",
+    name: "Vah'Sumir",
     descriptor:
-      "Va'Sumir Maximus from Sumir Prime, massive apex warriors 3.0-3.6 m tall with a " +
+      "Vah'Sumir Maximus from Sumir Prime, massive apex warriors 3.0-3.6 m tall with a " +
       "digitigrade stance. Crested reptilian head, predatory physiology and thick bronze-grey " +
       "armored hide over dense musculature, built for domination and endurance.",
   },
