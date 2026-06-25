@@ -248,3 +248,136 @@ as remarkable for reflecting that baseline.
   may be situated under an administratively-minded prior reign without contradicting
   canon. Prior De Grosvenor house heads may be referenced sparingly (an earlier matriarch
   of the house) without elaborate invention.
+
+---
+
+# ACT THREE & FOUR ADDITIONS (Chapters 19-28, Interlude 5, Epilogue)
+
+## THE SENIOR PROTECTION FIGURE — NOW NAMED (from Chapter 19 onward)
+- **Lord Marshal Tewodros Marek**, Marshal of the Bureau of Establishments. The senior
+  official whose authority over appointments reaches across the Outer Prefectures and
+  adjoining Thrones (the "three Thrones' worth of reach"). Eleanor has known him
+  personally across the better part of forty years. He reached his position through
+  ability, not luck. NAMED TO THE READER FOR THE FIRST TIME IN CHAPTER 19; used by name
+  consistently thereafter (Ch19-24, Interlude 5, Ch25, Epilogue references). Before
+  Chapter 19 he is never named. His refusal of Eleanor's single offer in Chapter 19
+  opens the institutional crisis. He is credible, not stupid; his refusal is a
+  calculated read of what Eleanor can actually do. He is formally charged in Act Four.
+
+## NEW CHARACTERS (invented — LOCKED)
+- **Arbiter Sabel Doumbia** — the imperial oversight official who conducts the formal
+  review against Eleanor in Chapter 23 and receives the jurisdictional transfer in
+  Chapter 24. Institutional, exact, not an antagonist; runs a proceeding with its own
+  rhythm no participant can alter.
+- **Councillor Imani Tau** — (already introduced Ch13) the honest, unaware colleague.
+  Reappears in Chapter 25, now aware that something happened but not the full shape of
+  it; still sympathetic.
+
+## INSTITUTIONS / INSTRUMENTS (LOCKED)
+- **The emergency prerogative of the Throne** — the imperial emergency authority Amira
+  activates in Chapter 20. It suspends normal administrative process. It has NOT been
+  invoked in thirty-one years. Legally sound, politically the most dangerous act of her
+  reign.
+- **The Throne Court of Inquiry** — the special imperial judicial authority Amira
+  constitutes under her emergency prerogative in Chapter 24 and transfers the case to,
+  removing it from the compromised oversight/administrative channels. Lord Marshal Marek
+  becomes subject to its jurisdiction. The courtier's testimony (Interlude 5) is given
+  under this authority.
+
+## ACT THREE BEATS (LOCKED)
+- **Ch19 (What Eleanor Said):** Eleanor meets Marek at a neutral location of her
+  arranging. She brings one offer; he refuses it; the refusal triggers the institutional
+  action she was authorized to take. She leaves with one new fact (the faction has a
+  SECOND operational mechanism she did not know about, the financial one revealed in
+  Ch22) and one accepted cost (she has been named to the faction as the investigator;
+  Kaviel is now also exposed). The courier Rashid Beye reappears briefly. Eleanor writes
+  three words in a small notebook on the way out; the reader does not see them.
+- **Ch20 (Kaviel Tells Amira):** the third and most consequential Amira/De Grosvenor
+  private meeting (the briefing). Documented, evidenced. The standard judicial process is
+  compromised at the level needed to adjudicate. Amira activates the emergency
+  prerogative (unused in 31 years), writes the notation in her own hand, and tells Kaviel
+  "Deliver this yourself."
+- **Ch21 (The Faction Moves):** the faction attempts a procedural invalidation of the
+  investigation's findings before Amira's notation can be formally entered. Elegant,
+  fast, nearly works. The Lionesses block it because Kaviel anticipated it. The courtier
+  Hadi Marun authenticates the procedural challenge (his Ch13 commitment executing). Sael
+  Mokoena attempts his role and FAILS; his protection collapses (the thread Asha follows).
+  No combat. The faction's failure triggers a secondary response that is INSTITUTIONAL
+  (the formal complaint against Eleanor, Ch23), not physical.
+- **Ch22 (The Second Mechanism):** the faction's second mechanism is revealed and
+  dismantled, a parallel financial / resource-redirection system that has funded the
+  faction for seven years, running beneath the appointments fraud. Zola's complete list
+  (Ch15) contains its skeleton. The correction-pass pattern (Ch11) is its signature. The
+  Third Appointments Commission (Interlude 1) is ONE OF THREE funding channels. Day three
+  of the emergency window; full team; dismantled with surgical care so resources do not
+  flee to jurisdictions beyond the prerogative's reach. Closing: Kaviel, "Tell the
+  Empress it is complete." Researcher: "All of it?" Kaviel: "All of it."
+- **Ch23 (What It Cost Eleanor):** the faction's formal complaint against Eleanor (abuse
+  of intelligence authority, unauthorized surveillance of a senior official, procedural
+  violations). Partially true. Eleanor answers it before Arbiter Sabel Doumbia, arguing
+  that what she did was within the compact's terms and that the compact is the proper
+  frame, not the administrative procedures the faction invokes. She does not apologize;
+  she does not ask Kaviel for anything. Kaviel is present and NOT permitted to speak; her
+  stillness is the key beat. The proceeding is adjourned for formal review, unresolved.
+- **Ch24 (Amira Acts):** Amira intervenes in the oversight proceeding, using the
+  emergency prerogative (Ch20) and the complete evidentiary record (Ch22) to suspend the
+  proceeding and transfer jurisdiction to the Throne Court of Inquiry. Publicly. The most
+  politically exposed act of her reign. Eleanor present and silent (presence, not
+  absence). A senior Lioness operative (MERET) attends as formal witness. The compact
+  from Ch5 echoes here. Final image: Amira leaving, the transfer complete, Eleanor and
+  Kaviel walking behind her, the distance between the three precise and exact.
+
+## ACT FOUR BEATS (LOCKED)
+- **Interlude 5 (The Courtier's Testimony, excerpt):** Hadi Marun's formal testimony
+  under the Throne Court of Inquiry, covering recruitment, his role, network contacts,
+  and his awareness of scope. Clear, complete, no performance. Accountability, not
+  redemption. Adulfus's framing note: TWO sentences, establishing it as part of the
+  formal prosecution record. FORMAT: testimony document, not a scene.
+- **Ch25 (After the Storm):** three weeks after Amira's intervention. Marek formally
+  charged; the financial mechanism being dismantled; the court recalibrating. Amira's
+  first post-crisis court session, in the Trinitarian Throne Room (the Ch1 space, changed
+  by what it has been through). Imani Tau present, aware but not fully. Eleanor present
+  but VISIBLY LESS ACTIVE than before, the first sign the crisis took something from her;
+  Amira sees it and does not comment in session. The appointment mechanism is being
+  rebuilt under new oversight; the compact has survived. Final image echoes Ch7's lamp in
+  the corner, this time not empty.
+- **Ch26 (The Lionesses After):** the Lionesses in the following weeks. Asha rewriting
+  the assessment criteria (origin of the revised Lioness mandate referenced in the
+  Epilogue). Meret writing an incident review. Silva returning from field position. ZOLA
+  ADIMU receives a formal commendation she did not expect and is confirmed to full
+  Lioness standing (her full name used; this is the formal naming the bible reserved).
+  Kaviel's brief closing scene is warm by her standards: she passes through, checks in,
+  leaves. Final: Kaviel at the door, without turning, "Good work." Then out; Asha watches
+  the door, then back to the assessment.
+- **Ch27 (Kaviel and Eleanor):** the first and only truly private scene between them.
+  Eleanor diminished, smaller in a way Kaviel has never seen, not broken. Quiet, domestic
+  by Eleanor's standards. The scene that exists because the Interlude 2 letter never
+  arrived. Eleanor not sentimental, present; Kaviel not effusive, there. Nothing
+  resolved; the letter not referenced directly, its weight present. Setting: Eleanor's
+  private rooms (the Ch3 furniture, now occupied differently, Eleanor sitting rather than
+  standing at her desk). Final: Kaviel leaving at dusk; at the door she stops, does not
+  turn, a moment, then goes; Eleanor alone, watching the window.
+- **Ch28 (Amira Alone):** interior chapter, the night before the first post-crisis
+  appointment ceremony. Amira reviews what she did, what it cost, what she will do.
+  Settles on an answer that is not triumphant. Eleanor and Kaviel referenced through
+  memory; Amira knows the weight of Kaviel's observation of Eleanor (Ch14). Final: Amira
+  at her window over the imperial complex, lights burning in a hundred rooms, her hand on
+  the glass; then she turns. There is still tomorrow.
+- **Epilogue (The Record Complete):** Adulfus Khan closes the record at his desk (the
+  Prologue's space). Also contains Kaviel reading Eleanor's Interlude 2 letter AFTER
+  Eleanor's death, at a time not specified, in a private room with an unsealed envelope;
+  she finishes it, she sits, she does not perform her reaction. Eleanor's death is
+  referenced ONCE, in passing, through institutional notation; NOT dramatized. The record
+  closes on Amira, not on any single character. Institutional legacy formally recorded:
+  the revised Lioness mandate (origin Ch26), the new appointment oversight mechanism, the
+  renewed De Grosvenor compact. The Prologue frame, the Interlude 2 letter, and the
+  Interlude 4 compact note all close here. Final: Adulfus's closing sentence, the record's
+  formal closing notation, the date he finishes, his mark.
+
+## STYLE / CANON REMINDERS FOR ACTS THREE & FOUR
+- Same hard bans (no em/en dashes in prose, no banned vocabulary, no "Not X but Y", no
+  aphoristic endings, no three-part rhythmic lists, three-plus senses, no combat).
+- Lord Marshal Tewodros Marek is named from Chapter 19 onward, never before.
+- Eleanor stays earned, never warm, even diminished; the Kaviel/Eleanor tenderness in
+  Ch27 is earned and quiet, never sentimental melodrama.
+- The Epilogue does not dramatize Eleanor's death. One institutional notation, no more.
