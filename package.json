@@ -1,0 +1,15 @@
+{
+  "name": "iseldoran-bestiary",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Two-stage figure + annotation pipeline for The Great Bestiary of the Rim (Iseldoran Sagas).",
+  "scripts": {
+    "figures": "node generate.mjs",
+    "plates": "node annotate.mjs",
+    "all": "node generate.mjs all && node annotate.mjs all"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

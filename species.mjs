@@ -1,18 +1,32 @@
 /*
- * Species catalog + selection helpers for the figure generator (generate.mjs).
+ * Species catalog + selection helpers for the bestiary pipeline.
  *
  * Canon source: "The Great Bestiary of the Rim", compiled for the Imperial
  * Academy Xenobiological Archives (Iseldoran Universe). Keys 1-11 follow the
  * bestiary's plate numbering.
  *
- * Each entry needs:
- *   - name:       short label used in the prompt and (via pad) the filename
- *   - descriptor: distinctive anatomical / appearance detail for the prompt
+ * Each entry carries:
+ *   - name:         short label, used in the figure prompt and (via pad) filename
+ *   - classification, homeworld, metric: the data block stamped onto the plate
+ *   - metricLabel:  header for the metric line (default "Average Height")
+ *   - rulerMax:     top value (metres) of the Stage 2 scale ruler
+ *   - notes:        the "PHYSICAL NOTES" paragraph on the plate
+ *   - descriptor:   distinctive appearance detail for the Stage 1 image prompt
+ *
+ * Stage 1 (generate.mjs) uses name + descriptor. Stage 2 (annotate.mjs) uses
+ * the remaining fields to composite the annotation block, scale ruler and seal.
  */
 
 export const SPECIES = {
   1: {
     name: "Imperial Human",
+    classification: "Homo Imperialis (Optimized Strain)",
+    homeworld: "Terra (Holy World)",
+    metric: "1.88 m (6'2\")",
+    rulerMax: 2.0,
+    notes:
+      "Genetically optimized human at the peak of Imperial refinement. Athletic " +
+      "build, exceptional health, high cognitive capacity, and disciplined bearing.",
     descriptor:
       "Homo Imperialis (Optimized Strain) from Terra, the Holy World. Genetically " +
       "optimized human at the peak of Imperial refinement, roughly 1.88 m tall. " +
@@ -21,6 +35,13 @@ export const SPECIES = {
   },
   2: {
     name: "Noirak",
+    classification: "Noirak Nobilis",
+    homeworld: "Noirak Prime",
+    metric: "2.45 - 2.75 m (8'0\" - 9'0\")",
+    rulerMax: 3.0,
+    notes:
+      "Ancient and noble species. Human-presenting but subtly alien. Natural " +
+      "leaders with enhanced physiology and long lifespans.",
     descriptor:
       "Noirak Nobilis from Noirak Prime, an ancient noble species standing 2.45-2.75 m. " +
       "Human-presenting but subtly alien, with refined features, enhanced physiology and " +
@@ -28,6 +49,13 @@ export const SPECIES = {
   },
   3: {
     name: "Vah'Sumir",
+    classification: "Vah'Sumir Maximus",
+    homeworld: "Sumir Prime",
+    metric: "3.0 - 3.6 m (9'10\" - 11'10\")",
+    rulerMax: 4.0,
+    notes:
+      "Massive apex warriors. Digitigrade stance, armored hide, and predatory " +
+      "physiology built for domination and endurance.",
     descriptor:
       "Vah'Sumir Maximus from Sumir Prime, massive apex warriors 3.0-3.6 m tall with a " +
       "digitigrade stance. Crested reptilian head, predatory physiology and thick bronze-grey " +
@@ -35,6 +63,13 @@ export const SPECIES = {
   },
   4: {
     name: "Ashari'i",
+    classification: "Ashari'i Immortalis",
+    homeworld: "Ashar",
+    metric: "2.3 - 2.9 m (7'6\" - 9'6\")",
+    rulerMax: 3.0,
+    notes:
+      "Ancient immortal warrior caste. Elegant and refined features with advanced " +
+      "longevity and ceremonial traditions.",
     descriptor:
       "Ashari'i Immortalis from Ashar, an ancient immortal warrior caste 2.3-2.9 m tall. " +
       "Pale ivory skin, elegant refined features, sharp cranial ridges, and advanced longevity. " +
@@ -42,6 +77,13 @@ export const SPECIES = {
   },
   5: {
     name: "Gor'nath Brute",
+    classification: "Gor'nath Colossus",
+    homeworld: "Gor'nath",
+    metric: "3.5 - 4.2 m (11'6\" - 13'9\")",
+    rulerMax: 5.0,
+    notes:
+      "Gigantic and powerfully built. Incredible strength, dense skeletal " +
+      "structure, and armor-like skin plates.",
     descriptor:
       "Gor'nath Colossus from Gor'nath, a gigantic powerfully built species 3.5-4.2 m tall. " +
       "Incredible strength, dense skeletal structure, a spiked cranial crest and brown " +
@@ -49,6 +91,13 @@ export const SPECIES = {
   },
   6: {
     name: "Yurshak Brood",
+    classification: "Yurshak Broodling",
+    homeworld: "Yurshak Hive Worlds",
+    metric: "2.0 - 2.6 m (6'7\" - 8'6\")",
+    rulerMax: 3.0,
+    notes:
+      "Hive-evolved predators. Insectoid-reptilian morphology, multiple sensory " +
+      "organs, and natural weapons.",
     descriptor:
       "Yurshak Broodling from the Yurshak Hive Worlds, hive-evolved predators 2.0-2.6 m tall. " +
       "Insectoid-reptilian morphology with mandibles, jutting horns, multiple sensory organs, " +
@@ -56,6 +105,14 @@ export const SPECIES = {
   },
   7: {
     name: "Shal'mak Aerophage",
+    classification: "Shal'mak Dominus",
+    homeworld: "High Atmosphere Layers",
+    metricLabel: "Wingspan",
+    metric: "6.0 - 7.5 m (19'8\" - 24'7\")",
+    rulerMax: 4.0,
+    notes:
+      "Aerial apex organisms. Large wings, light but strong anatomy, and " +
+      "adaptations for high-speed aerial hunting.",
     descriptor:
       "Shal'mak Dominus, aerial apex organisms native to the high atmosphere layers, with a " +
       "6.0-7.5 m wingspan. Large membranous wings, a crested draconic head, and a light but " +
@@ -63,6 +120,13 @@ export const SPECIES = {
   },
   8: {
     name: "Oolak Luminary",
+    classification: "Oolak Sapientis",
+    homeworld: "Oolak",
+    metric: "2.2 - 2.7 m (7'3\" - 8'10\")",
+    rulerMax: 3.0,
+    notes:
+      "Bioluminescent beings. Their bodies produce natural light through organic " +
+      "structures. Ancient, wise, and highly spiritual.",
     descriptor:
       "Oolak Sapientis from Oolak, bioluminescent beings 2.2-2.7 m tall. Translucent silvery-white " +
       "bodies that produce natural light through glowing blue organic structures and luminous eyes. " +
@@ -70,6 +134,13 @@ export const SPECIES = {
   },
   9: {
     name: "Threxx War-Smith",
+    classification: "Threxx Ferrum-Artifex",
+    homeworld: "Threxx Forge Worlds",
+    metric: "2.6 - 3.2 m (8'6\" - 10'6\")",
+    rulerMax: 4.0,
+    notes:
+      "Forge-adapted engineer-warriors. Built for industry, warfare, and the " +
+      "creation of advanced technology.",
     descriptor:
       "Threxx Ferrum-Artifex from the Threxx Forge Worlds, forge-adapted engineer-warriors " +
       "2.6-3.2 m tall. Stocky grey-skinned humanoids built for industry and warfare, clad in " +
@@ -77,6 +148,13 @@ export const SPECIES = {
   },
   10: {
     name: "Razeen Flesh-Weaver",
+    classification: "Razeen Artifex",
+    homeworld: "Razeen Vaults",
+    metric: "2.1 - 2.6 m (6'11\" - 8'6\")",
+    rulerMax: 3.0,
+    notes:
+      "Bio-engineers and sculptors of flesh. Advanced sensory organs, elegant " +
+      "physiology, and masters of organic architecture.",
     descriptor:
       "Razeen Artifex from the Razeen Vaults, bio-engineers and sculptors of flesh 2.1-2.6 m tall. " +
       "Pale elegant humanoids with advanced sensory organs and branching root-like tendril growths " +
@@ -84,6 +162,13 @@ export const SPECIES = {
   },
   11: {
     name: "Haal'tek Voidwalker",
+    classification: "Haal'tek Exuvia",
+    homeworld: "Deep Void / Unknown",
+    metric: "3.0 - 3.8 m (9'10\" - 12'6\")",
+    rulerMax: 4.0,
+    notes:
+      "Void-adapted entities. Their bodies are optimized for microgravity and " +
+      "extreme isolation between stars.",
     descriptor:
       "Haal'tek Exuvia from the deep void, void-adapted entities 3.0-3.8 m tall. Elongated dark " +
       "blue-black carapaced bodies with a large smooth head and trailing tendrils, optimized for " +
