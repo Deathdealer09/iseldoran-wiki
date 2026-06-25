@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Iseldoran Sagas Wiki</title>
   <meta name="description" content="Official Master Archive and Interactive Lore Repository for The Iseldoran Sagas." />
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Self-contained: React + the compiled app are served locally (no CDN, no in-browser Babel). -->
+  <!-- Edit IseldoranSagasWiki.jsx then run `npm run build:wiki` to regenerate the .js files below. -->
+  <script src="vendor/react.production.min.js"></script>
+  <script src="vendor/react-dom.production.min.js"></script>
 </head>
 <body>
   <div id="root"></div>
-  <script type="text/babel" src="IseldoranSagasWiki.jsx"></script>
+  <script src="IseldoranSagasWiki.compiled.js"></script>
 </body>
 </html>
