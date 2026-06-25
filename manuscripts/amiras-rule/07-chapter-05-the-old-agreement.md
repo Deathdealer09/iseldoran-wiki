@@ -102,7 +102,7 @@ Amira considered the cup in her hands rather than the woman across from her. To 
 
 "You are asking me to surrender the timing of my own response," Amira said.
 
-"I am asking you to lend it to me, briefly, the way the throne lent my house the timing of its reports two hundred years ago, in this room, for reasons that have not improved with age but have not gone away either."
+"I am asking you to lend it to me, briefly, the way the throne lent my house the timing of its reports two hundred years ago, in this room, for reasons that have not improved with age and have not gone away either."
 
 "And if I will not lend it."
 

@@ -1,0 +1,27 @@
+# Interlude 2 — Personal Correspondence, Eleanor De Grosvenor to Kaviel De Grosvenor
+
+The following was recovered from a locked compartment in Eleanor De Grosvenor's private effects, sealed but bearing no dispatch mark, written in her own hand. It was never sent, and there is no record that Kaviel ever read it.
+
+---
+
+Kaviel,
+
+I have started this letter four times across as many years and burned three of the attempts. I am keeping this one because I am old enough now to know I will not write a fifth, and because the things I have left unsaid have begun to outweigh the things I have managed to say to you, which were never many.
+
+I want to tell you first what I saw when they brought you to me. You will not remember it, and I have never described it, because to describe it would have meant telling you what I decided in the same room, within the same hour. I held you for the length of time it takes to read a short report. Then I gave you to the house, to be raised by people I trusted to do it better than I would, and I went back to work that did not wait. I have told myself for thirty years that this was the correct allocation. It was correct. It was also a thing I did, with my hands, and the correctness of it has never once made it lighter to carry.
+
+You should understand that I did not give you to the work because I did not want you. I gave you to the work because I knew what I was, and I knew what I would make of a child kept close. I had already watched the house take in promising people and grind the soft parts off them. I did not want to be the hand that did that to you across a breakfast table for fifteen years. So I arranged for it to be done by strangers who were kinder than I am, and by a discipline that does not pretend to love you while it shapes you. I believed you would be more whole that way. I still believe it. I am only no longer certain the belief was about you.
+
+I have read your field assessments. All of them, going back to your probationary year, including the ones Asha marked low and the ones you appealed. You were right to appeal two of them and wrong to appeal the third, and the fact that you knew which was which before the review board did is the thing that told me what you would become. You do not work the way I work. I have spent six decades learning who owes whom, who can be moved by debt and who by vanity, where a man keeps the favor he is ashamed of. You learned instead to read a page until it confesses. I used to think the document was the smaller instrument. I was wrong about that, and the wrongness has cost the house time I cannot recover. The networks I built are aging out with me. The records will outlast every name I ever cultivated. You saw that before I admitted it.
+
+I want to say something now that I have never said inside the walls, where it would be heard as weakness and filed as such. I am afraid. The apparatus I assembled was built around the assumption that I would always be in the room. I am not always in the room any longer. There are afternoons I lose, hours I cannot account for, decisions I have to make twice because I do not trust the first version. When the test comes, and it is coming, I will not be at full strength to meet it. You will. And I put you where you stand, knowing this hour would arrive and that you would have to hold the thing I built without me holding it with you. That was not an accident of your talent. It was a choice I made when you were small, and I dressed it in words like obligation so that I would not have to call it what it was.
+
+The compact between this house and the throne is older than Amira and older than me, and you have inherited a place in it that you did not ask for and could not refuse, because I arranged your life so that refusing was never available to you. I am not going to pretend that was fair. It was not fair. It was necessary, by my reckoning, and I have learned that necessity and unfairness sit at the same table more often than anyone in my position will admit aloud. You have every right to resent the position. I would think less of you if some part of you did not.
+
+Here is what I cannot say to your face, and so I am saying it to a page I may never give you. You did not become what you are because of the name. The name opened doors. It did not write the assessments. It did not catch the things you have caught. Whatever I arranged, the work itself is yours, and no part of it was inherited. I have watched a great many people fail to be equal to what was demanded of them. You have not been one of them. That you are not warm toward me, that you keep the careful distance the work requires between us, I understand and do not hold against you. I built that distance. I would only ask, if you ever read this, that you not mistake my distance for indifference. It was the opposite, kept under discipline so long that it learned to look like nothing at all.
+
+I am going to seal this and put it where the rest of my private papers go, and I expect it will be read, if it is read, by someone going through my effects with a ledger after I am gone. If that someone is you, then know that I went over every line and meant each one, and that I corrected the punctuation twice, because even here I could not let it go untidy.
+
+Be careful with the documents. They are telling you the truth before the people do. Trust them, and trust yourself reading them, ahead of anything I taught you about loyalty.
+
+E. De Grosvenor
