@@ -142,3 +142,109 @@ as remarkable for reflecting that baseline.
 - Eleanor is earned, never warm. The Lionesses are professional, never theatrical.
 - Characters do not explain to each other what they both already know, and do not
   narrate their own emotions.
+
+---
+
+# ACT TWO ADDITIONS (Chapters 9-18, Interludes 3-4)
+
+## NEW CHARACTERS (invented — LOCKED)
+- **Zola Adimu** — the junior Lioness researcher. Introduced and NAMED in Chapter 9;
+  recurring through Act Two. Earnest, rigorous, young. Kaviel teaches her a
+  reconciliation-trace method (tracing carry-forward entries back to their claimed
+  prior-commission authority); that method cracks the full appointments list in
+  Chapter 15. She is formally commended later in the manuscript. Use her name from
+  Chapter 9 onward.
+- **Sael Mokoena** — the mid-level imperial administrator. A Deputy Registrar of the
+  Bureau of Establishments at the Outer Prefectures regional office in the city of
+  Adwa. NAMED in Chapter 10. Has inserted false appointments through the carry-forward
+  reconciliation for four years. Pleasant, competent, well-regarded. Motivation,
+  introduced obliquely: a seat or advancement he had earned and was passed over for,
+  which he then took by other means. A process, not a monster. His protection collapses
+  in Chapter 21.
+- **Tobias Ferran** — a contracted records-systems specialist from outside the Lioness
+  apparatus, brought in for the message trace in Chapter 16. An asset, procedural,
+  minimally characterized. A risk because he sits outside the chain.
+- **Senior Magister Aurelio Saad** — the source Eleanor protected for twenty-one years.
+  NAMED for the first time in Chapter 14. Senior administrative figure who has fed the
+  De Grosvenor apparatus through indirect channels; comes in directly because his
+  position has become untenable; his network dissolves the moment he leaves the meeting.
+  Operates without ceremony and does not seek thanks.
+- **Naila Osei** — the protected individual from Chapter 4. NAMED for the first time in
+  Chapter 17. A witness moved for her own safety, now able to give testimony that
+  confirms Silva's field observations and fills the gap left by the cut trace in
+  Chapter 16. Not a spy.
+- **Councillor Imani Tau** — the honest, sympathetic imperial colleague who represents
+  the alternative Hadi Marun could have chosen in Chapter 13. Entirely unaware of the
+  faction. Reappears later, still unaware. (Introduced in Chapter 13.)
+- **THE SENIOR PROTECTION FIGURE — DO NOT NAME ON THE PAGE IN ACT TWO.** Role: a very
+  senior official of the Bureau of Establishments whose authority over appointments
+  reaches across the Outer Prefectures and adjoining jurisdictions (described as three
+  Thrones' worth of administrative reach). Eleanor has known him personally for decades.
+  His identity is confirmed privately to Eleanor and Kaviel in Chapter 14 and
+  corroborated by Zola's list in Chapter 15, but his NAME is withheld from the reader
+  until Chapter 19 (Act Three). In Act Two refer to him only as "the senior protection
+  figure," "someone trusted," "the official," or by role. Do not invent his name yet.
+
+## RETURNING CHARACTERS — ACT TWO ROLES
+- **Hadi Marun** (courtier from Ch7): in Chapter 13 he commits to the faction, sealing a
+  reply to the faction contact. He is a person in a bad position making the wrong choice,
+  not a villain.
+- **The faction contact**: reaches Marun via encrypted correspondence in Chapter 13.
+  Unnamed, not theatrical.
+- **Rashid Beye** (the courier): NAMED in full for the first time in Chapter 12. Operates
+  within Sael Mokoena's network, moving false documentation between jurisdictions. Kaviel
+  arranges a controlled, non-violent encounter that leaves him one legible choice. He
+  reappears briefly in Chapter 19.
+
+## PLACES / STRUCTURE (LOCKED)
+- The **Outer Prefectures** are divided into numbered administrative jurisdictions. The
+  **Sennar Prefecture** is among them. **Jurisdiction Seven** is one of the implicated
+  jurisdictions Silva surveils in Interlude 3. The regional administrative seat is the
+  city of **Adwa**, where the Bureau of Establishments' Outer Prefectures office sits
+  (Sael Mokoena's office, Chapter 10).
+- The **Bureau of Establishments** is the imperial body governing appointments; the Third
+  Appointments Commission operates under it.
+- The **investigation room**: a working room inside the Lioness compound cleared for
+  sensitive-material handling (Chapter 9 onward); it grows from storage to full
+  operation as the team expands.
+- **Chapter 14 meeting location**: a private residence outside the imperial complex,
+  unaffiliated with either party, arranged for one off-record meeting.
+- **Secure witness facility** (Chapter 17): a windowless secure room within the Lioness
+  apparatus, reserved for protected-witness management.
+
+## MECHANISM DEEPENING (LOCKED)
+- **Second level (Ch11):** a "correction pass" was run over a section of the fraudulent
+  records after the original insertions, using authorization codes from a category of
+  official Asha cannot investigate without escalating the mandate. This signals someone
+  senior protecting the system from inside. The authorization category recurs as the
+  faction's instrument in Act Three (Ch19); the correction-pass pattern recurs in the
+  financial mechanism in Ch22.
+- **Zola's method (Ch15):** tracing carry-forward reconciliation entries back to their
+  claimed prior-commission authority and finding that the prior authority does not exist
+  or does not cover them. This yields the full list; the senior figure's authorization
+  spans three Thrones' worth of jurisdiction.
+- **Message trace (Ch16):** the warning message that reached Sael Mokoena in Chapter 10
+  routes through three intermediary relay points back toward the senior figure's office;
+  the third relay goes dead when the faction detects the trace. Silva's field notes
+  (Interlude 3) become the fallback evidence; Naila Osei's testimony (Ch17) fills the gap.
+
+## ELEANOR'S DECISION (Ch18, LOCKED)
+- Eleanor learns the full scope and the senior figure's identity, then decides to
+  approach him directly and alone, before any formal action. She asks Amira for three
+  days (the SECOND of the three Amira/Eleanor private meetings, in the same small
+  reception room as Chapter 5). She does not tell Amira why. She tells Kaviel afterward,
+  and only the when. Kaviel's reaction is recognition, not anger.
+
+## THE COMPACT (Interlude 4, LOCKED)
+- The De Grosvenor compact is the institutional agreement under which the De Grosvenor
+  house serves the Trinitarian Throne; it predates both Amira and Eleanor. Adulfus Khan's
+  historical note: the compact has spanned three imperial generations and survived three
+  prior crises, each requiring one party to extend trust the other had not formally
+  earned; Eleanor's Chapter 18 decision is the fourth such instance.
+- Keep invented imperial names minimal and consistent with established Iseldoran Sagas
+  canon. The imperial line runs from Eustace I Bartholamer Pierre von Care, through
+  Cassian I (the first God-King), Lucius Luceron II (the Soldier Emperor, reformer of
+  imperial administration), to Mettenik I Pierre von Care. The compact's formalization
+  may be situated under an administratively-minded prior reign without contradicting
+  canon. Prior De Grosvenor house heads may be referenced sparingly (an earlier matriarch
+  of the house) without elaborate invention.
