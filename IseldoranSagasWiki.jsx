@@ -163,6 +163,26 @@ const STYLES = `
   .footer-copy { font-family: var(--font-title); font-size: 0.52rem; letter-spacing: 0.12em; color: var(--ash); text-transform: uppercase; }
   @media (max-width: 900px) { .lore-layout { grid-template-columns: 1fr; } .lore-sidebar { position: static; } .stats-bar { grid-template-columns: repeat(3, 1fr); } .nav-links button { font-size: 0.52rem; padding: 0.4rem 0.5rem; } }
   @media (max-width: 600px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } .modal-meta { grid-template-columns: 1fr; } .portraits-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); } }
+  /* BESTIARY */
+  .bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.4rem; }
+  .beast-card { background: linear-gradient(160deg, var(--iron) 0%, var(--forge) 100%); border: 1px solid rgba(201,168,76,0.12); overflow: hidden; transition: all var(--transition); display: flex; flex-direction: column; }
+  .beast-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 25px rgba(201,168,76,0.08); }
+  .beast-plate { width: 100%; aspect-ratio: 2/3; background: linear-gradient(160deg, var(--iron), var(--ash)); position: relative; overflow: hidden; }
+  .beast-plate img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+  .beast-card:hover .beast-plate img { transform: scale(1.03); }
+  .beast-plate-ph { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; color: rgba(201,168,76,0.35); text-align: center; padding: 1rem; }
+  .beast-plate-ph .glyph { font-size: 2.4rem; }
+  .beast-plate-ph .ph-name { font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.08em; color: rgba(201,168,76,0.45); }
+  .beast-plate-ph .ph-note { font-family: var(--font-title); font-size: 0.5rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--smoke); }
+  .beast-num { position: absolute; top: 0.5rem; left: 0.5rem; font-family: var(--font-title); font-size: 0.5rem; letter-spacing: 0.2em; color: var(--gold-dim); background: rgba(8,7,10,0.88); padding: 0.12rem 0.45rem; z-index: 2; }
+  .beast-info { padding: 0.9rem 1rem 1.1rem; }
+  .beast-name { font-family: var(--font-display); font-size: 1rem; color: var(--gold); line-height: 1.2; margin-bottom: 0.1rem; }
+  .beast-class { font-family: var(--font-lore); font-style: italic; font-size: 0.78rem; color: var(--mist); margin-bottom: 0.7rem; }
+  .beast-meta { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.7rem; }
+  .beast-row { display: flex; gap: 0.5rem; font-size: 0.72rem; line-height: 1.3; }
+  .beast-row .k { font-family: var(--font-title); font-size: 0.5rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--smoke); min-width: 92px; padding-top: 0.15rem; }
+  .beast-row .v { font-family: var(--font-body); color: var(--bone); flex: 1; }
+  .beast-notes { font-family: var(--font-body); font-size: 0.8rem; color: var(--mist); line-height: 1.55; border-top: 1px solid rgba(201,168,76,0.1); padding-top: 0.6rem; }
 `;
 
 // ─── IMAGE PATHS ─────────────────────────────────────────────────────────────
@@ -301,6 +321,22 @@ const PORTRAITS_14 = [
   { n: "Marcellus von Care", e: "The Mud Prince" },
   { n: "Dhaka", e: "The Rebel Commander" },
   { n: "Chayun", e: "The Dock Worker" },
+];
+
+// The Great Bestiary of the Rim — Imperial Academy Xenobiological Archives.
+// Plate images (when rendered) live at assets/bestiary/NNN.png; see species.mjs.
+const BESTIARY = [
+  { n: "Imperial Human", cls: "Homo Imperialis (Optimized Strain)", home: "Terra (Holy World)", metric: "1.88 m (6'2\")", notes: "Genetically optimized human at the peak of Imperial refinement. Athletic build, exceptional health, high cognitive capacity, and disciplined bearing." },
+  { n: "Noirak", cls: "Noirak Nobilis", home: "Noirak Prime", metric: "2.45 – 2.75 m (8'0\" – 9'0\")", notes: "Ancient and noble species. Human-presenting but subtly alien. Natural leaders with enhanced physiology and long lifespans." },
+  { n: "Vah'Sumir", cls: "Vah'Sumir Maximus", home: "Sumir Prime", metric: "3.0 – 3.6 m (9'10\" – 11'10\")", notes: "Massive apex warriors. Digitigrade stance, armored hide, and predatory physiology built for domination and endurance." },
+  { n: "Ashari'i", cls: "Ashari'i Immortalis", home: "Ashar", metric: "2.3 – 2.9 m (7'6\" – 9'6\")", notes: "Ancient immortal warrior caste. Elegant and refined features with advanced longevity and ceremonial traditions." },
+  { n: "Gor'nath Brute", cls: "Gor'nath Colossus", home: "Gor'nath", metric: "3.5 – 4.2 m (11'6\" – 13'9\")", notes: "Gigantic and powerfully built. Incredible strength, dense skeletal structure, and armor-like skin plates." },
+  { n: "Yurshak Brood", cls: "Yurshak Broodling", home: "Yurshak Hive Worlds", metric: "2.0 – 2.6 m (6'7\" – 8'6\")", notes: "Hive-evolved predators. Insectoid-reptilian morphology, multiple sensory organs, and natural weapons." },
+  { n: "Shal'mak Aerophage", cls: "Shal'mak Dominus", home: "High Atmosphere Layers", label: "Wingspan", metric: "6.0 – 7.5 m (19'8\" – 24'7\")", notes: "Aerial apex organisms. Large wings, light but strong anatomy, and adaptations for high-speed aerial hunting." },
+  { n: "Oolak Luminary", cls: "Oolak Sapientis", home: "Oolak", metric: "2.2 – 2.7 m (7'3\" – 8'10\")", notes: "Bioluminescent beings. Their bodies produce natural light through organic structures. Ancient, wise, and highly spiritual." },
+  { n: "Threxx War-Smith", cls: "Threxx Ferrum-Artifex", home: "Threxx Forge Worlds", metric: "2.6 – 3.2 m (8'6\" – 10'6\")", notes: "Forge-adapted engineer-warriors. Built for industry, warfare, and the creation of advanced technology." },
+  { n: "Razeen Flesh-Weaver", cls: "Razeen Artifex", home: "Razeen Vaults", metric: "2.1 – 2.6 m (6'11\" – 8'6\")", notes: "Bio-engineers and sculptors of flesh. Advanced sensory organs, elegant physiology, and masters of organic architecture." },
+  { n: "Haal'tek Voidwalker", cls: "Haal'tek Exuvia", home: "Deep Void / Unknown", metric: "3.0 – 3.8 m (9'10\" – 12'6\")", notes: "Void-adapted entities. Their bodies are optimized for microgravity and extreme isolation between stars." },
 ];
 
 const LORE_CATS = [
@@ -570,7 +606,7 @@ function StyleInjector() {
 }
 
 function Nav({ page, go }) {
-  const pages = ["home","novels","characters","compendium","sovereigns","timeline","ixoria","covers","about"];
+  const pages = ["home","novels","characters","bestiary","compendium","sovereigns","timeline","ixoria","covers","about"];
   return (
     <nav className="nav">
       <div className="nav-brand" onClick={() => go("home")}>The Iseldoran Sagas</div>
@@ -938,7 +974,7 @@ function AboutPage() {
 }
 
 function Footer({ go }) {
-  const pages = ["home","novels","characters","compendium","sovereigns","timeline","ixoria","covers","about"];
+  const pages = ["home","novels","characters","bestiary","compendium","sovereigns","timeline","ixoria","covers","about"];
   return (
     <footer className="footer">
       <div className="footer-brand">The Iseldoran Sagas</div>
@@ -1043,6 +1079,54 @@ function SovereignsPage() {
   );
 }
 
+function BeastCard({ b, i }) {
+  const [imgOk, setImgOk] = useState(true);
+  const num = String(i + 1).padStart(3, "0");
+  return (
+    <div className="beast-card">
+      <div className="beast-plate">
+        <span className="beast-num">No. {String(i + 1).padStart(2, "0")}</span>
+        {imgOk ? (
+          <img src={`assets/bestiary/${num}.png`} alt={`${b.n} specimen plate`} onError={() => setImgOk(false)} />
+        ) : (
+          <div className="beast-plate-ph">
+            <span className="glyph">◈</span>
+            <span className="ph-name">{b.n}</span>
+            <span className="ph-note">Plate Pending</span>
+          </div>
+        )}
+      </div>
+      <div className="beast-info">
+        <div className="beast-name">{b.n}</div>
+        <div className="beast-class">{b.cls}</div>
+        <div className="beast-meta">
+          <div className="beast-row"><span className="k">Homeworld</span><span className="v">{b.home}</span></div>
+          <div className="beast-row"><span className="k">{b.label || "Average Height"}</span><span className="v">{b.metric}</span></div>
+        </div>
+        <div className="beast-notes">{b.notes}</div>
+      </div>
+    </div>
+  );
+}
+
+function BestiaryPage() {
+  return (
+    <div style={{paddingTop:"80px"}}>
+      <div className="section">
+        <div className="section-header">
+          <span className="section-eyebrow">Imperial Academy · Xenobiological Archives</span>
+          <h2 className="section-title">The Great Bestiary of the Rim</h2>
+          <div className="section-rule"><span className="section-rule-icon">◈</span></div>
+          <p className="section-desc">Catalogued specimens of the sentient and engineered species of the Iseldoran Rim — classification, homeworld, scale, and physical record.</p>
+        </div>
+        <div className="bestiary-grid">
+          {BESTIARY.map((b, i) => <BeastCard b={b} i={i} key={i} />)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [page, setPage] = useState("home");
   const go = p => { setPage(p); window.scrollTo({top:0,behavior:"smooth"}); };
@@ -1053,6 +1137,7 @@ function App() {
       {page==="home" && <HomePage go={go} />}
       {page==="novels" && <NovelsPage />}
       {page==="characters" && <CharactersPage />}
+      {page==="bestiary" && <BestiaryPage />}
       {page==="compendium" && <CompendiumPage />}
       {page==="sovereigns" && <SovereignsPage />}
       {page==="timeline" && <TimelinePage />}
