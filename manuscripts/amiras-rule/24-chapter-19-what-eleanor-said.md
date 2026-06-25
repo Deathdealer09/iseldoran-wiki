@@ -74,7 +74,7 @@ She let it stand. The thing he had given her sat in her like a stone swallowed, 
 
 "You have read me correctly," she said, "about what I can do this afternoon. You have read me incorrectly about what I will do tomorrow. You believe that because the second thing is hidden the long way, I will be forced to spend years on it, and that the throne will not move against an establishment it cannot yet prove a crime in, and that an old woman of eighty does not have the years. All of that would be true if the throne and I were bound to act through the channels you have spent thirty years learning to govern. We are not, after today. You have just told me the floor exists. I did not know it existed an hour ago. I will know its shape inside a week, because a thing that funds an apparatus for years leaves a different kind of trace than a thing that hides for a season, and I have a daughter who reads floors for a living, and you have just told her where to put her feet."
 
-Something crossed his face then, the first thing in the hour that he had not chosen to show, and it was not fear, because he was not a man who feared in rooms, but it was the recognition of a man who had said one sentence more than the structure could afford, and had said it to the one person in three Thrones who could spend it. He set the glass down.
+Something crossed his face then, the first thing in the hour that he had not chosen to show, and it was not fear, because he was not a man who feared in rooms. It was the recognition of a man who had said one sentence more than the structure could afford, and had said it to the one person in three Thrones who could spend it. He set the glass down.
 
 "You came to give me a way out," he said.
 
