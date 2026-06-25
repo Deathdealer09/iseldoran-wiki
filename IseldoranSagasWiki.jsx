@@ -163,26 +163,47 @@ const STYLES = `
   .footer-copy { font-family: var(--font-title); font-size: 0.52rem; letter-spacing: 0.12em; color: var(--ash); text-transform: uppercase; }
   @media (max-width: 900px) { .lore-layout { grid-template-columns: 1fr; } .lore-sidebar { position: static; } .stats-bar { grid-template-columns: repeat(3, 1fr); } .nav-links button { font-size: 0.52rem; padding: 0.4rem 0.5rem; } }
   @media (max-width: 600px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } .modal-meta { grid-template-columns: 1fr; } .portraits-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); } }
-  /* BESTIARY */
-  .bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.4rem; }
-  .beast-card { background: linear-gradient(160deg, var(--iron) 0%, var(--forge) 100%); border: 1px solid rgba(201,168,76,0.12); overflow: hidden; transition: all var(--transition); display: flex; flex-direction: column; }
-  .beast-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 25px rgba(201,168,76,0.08); }
-  .beast-plate { width: 100%; aspect-ratio: 8/9; background: linear-gradient(160deg, var(--iron), var(--ash)); position: relative; overflow: hidden; }
-  .beast-plate img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
-  .beast-card:hover .beast-plate img { transform: scale(1.03); }
-  .beast-plate-ph { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; color: rgba(201,168,76,0.35); text-align: center; padding: 1rem; }
-  .beast-plate-ph .glyph { font-size: 2.4rem; }
-  .beast-plate-ph .ph-name { font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.08em; color: rgba(201,168,76,0.45); }
-  .beast-plate-ph .ph-note { font-family: var(--font-title); font-size: 0.5rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--smoke); }
-  .beast-num { position: absolute; top: 0.5rem; left: 0.5rem; font-family: var(--font-title); font-size: 0.5rem; letter-spacing: 0.2em; color: var(--gold-dim); background: rgba(8,7,10,0.88); padding: 0.12rem 0.45rem; z-index: 2; }
-  .beast-info { padding: 0.9rem 1rem 1.1rem; }
-  .beast-name { font-family: var(--font-display); font-size: 1rem; color: var(--gold); line-height: 1.2; margin-bottom: 0.1rem; }
-  .beast-class { font-family: var(--font-lore); font-style: italic; font-size: 0.78rem; color: var(--mist); margin-bottom: 0.7rem; }
-  .beast-meta { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.7rem; }
-  .beast-row { display: flex; gap: 0.5rem; font-size: 0.72rem; line-height: 1.3; }
-  .beast-row .k { font-family: var(--font-title); font-size: 0.5rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--smoke); min-width: 92px; padding-top: 0.15rem; }
-  .beast-row .v { font-family: var(--font-body); color: var(--bone); flex: 1; }
-  .beast-notes { font-family: var(--font-body); font-size: 0.8rem; color: var(--mist); line-height: 1.55; border-top: 1px solid rgba(201,168,76,0.1); padding-top: 0.6rem; }
+  /* BESTIARY CODEX */
+  .codex-featured { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); gap: 2.75rem; align-items: start; margin-bottom: 3.5rem; }
+  .codex-plate { position: relative; border: 1px solid rgba(201,168,76,0.28); background: linear-gradient(160deg, var(--iron), var(--forge)); padding: 0.55rem; cursor: zoom-in; transition: all var(--transition); }
+  .codex-plate:hover { border-color: rgba(201,168,76,0.55); box-shadow: 0 25px 60px rgba(0,0,0,0.6), 0 0 32px rgba(201,168,76,0.1); }
+  .codex-plate img { width: 100%; display: block; }
+  .codex-zoom { position: absolute; bottom: 1rem; right: 1rem; font-family: var(--font-title); font-size: 0.48rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-dim); background: rgba(8,7,10,0.82); padding: 0.25rem 0.55rem; pointer-events: none; }
+  .codex-desig { font-family: var(--font-title); font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--rust-bright); margin-bottom: 0.7rem; }
+  .codex-name { font-family: var(--font-display); font-size: clamp(1.7rem, 3.2vw, 2.5rem); color: var(--gold); line-height: 1.08; text-shadow: 0 0 40px rgba(201,168,76,0.2); margin-bottom: 0.35rem; }
+  .codex-class { font-family: var(--font-lore); font-style: italic; font-size: 1.05rem; color: var(--mist); margin-bottom: 1.6rem; }
+  .codex-stats { margin-bottom: 1.6rem; border-top: 1px solid rgba(201,168,76,0.15); }
+  .codex-stat { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.7rem 0; border-bottom: 1px solid rgba(201,168,76,0.1); }
+  .codex-stat .k { font-family: var(--font-title); font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--smoke); white-space: nowrap; }
+  .codex-stat .v { font-family: var(--font-body); font-size: 0.98rem; color: var(--bone); text-align: right; }
+  .codex-notes { font-family: var(--font-body); font-size: 1.02rem; color: var(--mist); line-height: 1.75; margin-bottom: 1.8rem; }
+  .codex-nav { display: flex; gap: 0.75rem; align-items: center; }
+  .codex-navbtn { font-family: var(--font-title); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid var(--gold-dim); padding: 0.6rem 1.1rem; cursor: pointer; transition: all var(--transition); }
+  .codex-navbtn:hover { border-color: var(--gold); background: rgba(201,168,76,0.08); }
+  .codex-counter { font-family: var(--font-title); font-size: 0.62rem; letter-spacing: 0.15em; color: var(--smoke); margin-left: auto; }
+  .codex-roster { display: grid; grid-template-columns: repeat(auto-fill, minmax(86px, 1fr)); gap: 0.55rem; margin-bottom: 4rem; }
+  .roster-item { position: relative; border: 1px solid rgba(201,168,76,0.12); background: var(--forge); cursor: pointer; overflow: hidden; transition: all var(--transition); }
+  .roster-item img { width: 100%; aspect-ratio: 8/9; object-fit: cover; display: block; opacity: 0.55; filter: grayscale(0.3); transition: all var(--transition); }
+  .roster-item:hover img { opacity: 0.9; filter: none; }
+  .roster-item.active { border-color: var(--gold); box-shadow: 0 0 16px rgba(201,168,76,0.18); }
+  .roster-item.active img { opacity: 1; filter: none; }
+  .roster-num { position: absolute; bottom: 0; left: 0; right: 0; font-family: var(--font-title); font-size: 0.46rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bone); background: rgba(8,7,10,0.8); padding: 0.18rem; text-align: center; }
+  .codex-scale { border-top: 1px solid rgba(201,168,76,0.15); padding-top: 2.5rem; }
+  .scale-title { font-family: var(--font-title); font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--rust-bright); margin-bottom: 0.4rem; }
+  .scale-sub { font-family: var(--font-lore); font-style: italic; color: var(--mist); font-size: 0.95rem; margin-bottom: 2rem; }
+  .scale-chart { display: flex; align-items: flex-end; gap: 0.5rem; height: 280px; overflow-x: auto; padding-bottom: 0.5rem; }
+  .scale-bar { flex: 1; min-width: 32px; display: flex; flex-direction: column; align-items: center; height: 100%; cursor: pointer; background: none; border: none; padding: 0; }
+  .scale-track { flex: 1; width: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
+  .scale-bar .bh { font-family: var(--font-title); font-size: 0.5rem; color: var(--smoke); margin-bottom: 0.3rem; transition: color var(--transition); }
+  .scale-bar .bar { width: 100%; max-width: 48px; background: linear-gradient(180deg, var(--gold-dim), rgba(61,47,26,0.45)); border-top: 1px solid var(--gold-dim); transition: background var(--transition), box-shadow var(--transition); }
+  .scale-bar:hover .bar { background: linear-gradient(180deg, var(--gold), rgba(122,94,40,0.6)); }
+  .scale-bar.active .bar { background: linear-gradient(180deg, var(--gold-bright), var(--gold)); border-top-color: var(--gold-bright); box-shadow: 0 0 20px rgba(201,168,76,0.4); }
+  .scale-bar.active .bh { color: var(--gold-bright); }
+  .scale-bar .bl { font-family: var(--font-title); font-size: 0.46rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--smoke); margin-top: 0.5rem; text-align: center; line-height: 1.25; min-height: 2.6em; }
+  .scale-bar.active .bl, .scale-bar:hover .bl { color: var(--gold); }
+  .codex-lightbox { position: fixed; inset: 0; z-index: 2000; background: rgba(5,4,7,0.94); display: flex; align-items: center; justify-content: center; padding: 2rem; cursor: zoom-out; backdrop-filter: blur(6px); }
+  .codex-lightbox img { max-width: 100%; max-height: 92vh; border: 1px solid rgba(201,168,76,0.3); box-shadow: 0 30px 80px rgba(0,0,0,0.7); }
+  @media (max-width: 820px) { .codex-featured { grid-template-columns: 1fr; gap: 1.75rem; } .scale-chart { height: 220px; } }
 `;
 
 // ─── IMAGE PATHS ─────────────────────────────────────────────────────────────
@@ -326,17 +347,17 @@ const PORTRAITS_14 = [
 // The Great Bestiary of the Rim — Imperial Academy Xenobiological Archives.
 // Plate images (when rendered) live at assets/bestiary/NNN.png; see species.mjs.
 const BESTIARY = [
-  { n: "Imperial Human", cls: "Homo Imperialis (Optimized Strain)", home: "Terra (Holy World)", metric: "1.88 m (6'2\")", notes: "Genetically optimized human at the peak of Imperial refinement. Athletic build, exceptional health, high cognitive capacity, and disciplined bearing." },
-  { n: "Noirak", cls: "Noirak Nobilis", home: "Noirak Prime", metric: "2.45 – 2.75 m (8'0\" – 9'0\")", notes: "Ancient and noble species. Human-presenting but subtly alien. Natural leaders with enhanced physiology and long lifespans." },
-  { n: "Vah'Sumir", cls: "Vah'Sumir Maximus", home: "Sumir Prime", metric: "3.0 – 3.6 m (9'10\" – 11'10\")", notes: "Massive apex warriors. Digitigrade stance, armored hide, and predatory physiology built for domination and endurance." },
-  { n: "Ashari'i", cls: "Ashari'i Immortalis", home: "Ashar", metric: "2.3 – 2.9 m (7'6\" – 9'6\")", notes: "Ancient immortal warrior caste. Elegant and refined features with advanced longevity and ceremonial traditions." },
-  { n: "Gor'nath Brute", cls: "Gor'nath Colossus", home: "Gor'nath", metric: "3.5 – 4.2 m (11'6\" – 13'9\")", notes: "Gigantic and powerfully built. Incredible strength, dense skeletal structure, and armor-like skin plates." },
-  { n: "Yurshak Brood", cls: "Yurshak Broodling", home: "Yurshak Hive Worlds", metric: "2.0 – 2.6 m (6'7\" – 8'6\")", notes: "Hive-evolved predators. Insectoid-reptilian morphology, multiple sensory organs, and natural weapons." },
-  { n: "Shal'mak Aerophage", cls: "Shal'mak Dominus", home: "High Atmosphere Layers", label: "Wingspan", metric: "6.0 – 7.5 m (19'8\" – 24'7\")", notes: "Aerial apex organisms. Large wings, light but strong anatomy, and adaptations for high-speed aerial hunting." },
-  { n: "Oolak Luminary", cls: "Oolak Sapientis", home: "Oolak", metric: "2.2 – 2.7 m (7'3\" – 8'10\")", notes: "Bioluminescent beings. Their bodies produce natural light through organic structures. Ancient, wise, and highly spiritual." },
-  { n: "Threxx War-Smith", cls: "Threxx Ferrum-Artifex", home: "Threxx Forge Worlds", metric: "2.6 – 3.2 m (8'6\" – 10'6\")", notes: "Forge-adapted engineer-warriors. Built for industry, warfare, and the creation of advanced technology." },
-  { n: "Razeen Flesh-Weaver", cls: "Razeen Artifex", home: "Razeen Vaults", metric: "2.1 – 2.6 m (6'11\" – 8'6\")", notes: "Bio-engineers and sculptors of flesh. Advanced sensory organs, elegant physiology, and masters of organic architecture." },
-  { n: "Haal'tek Voidwalker", cls: "Haal'tek Exuvia", home: "Deep Void / Unknown", metric: "3.0 – 3.8 m (9'10\" – 12'6\")", notes: "Void-adapted entities. Their bodies are optimized for microgravity and extreme isolation between stars." },
+  { n: "Imperial Human", h: 1.88, cls: "Homo Imperialis (Optimized Strain)", home: "Terra (Holy World)", metric: "1.88 m (6'2\")", notes: "Genetically optimized human at the peak of Imperial refinement. Athletic build, exceptional health, high cognitive capacity, and disciplined bearing." },
+  { n: "Noirak", h: 2.75, cls: "Noirak Nobilis", home: "Noirak Prime", metric: "2.45 – 2.75 m (8'0\" – 9'0\")", notes: "Ancient and noble species. Human-presenting but subtly alien. Natural leaders with enhanced physiology and long lifespans." },
+  { n: "Vah'Sumir", h: 3.6, cls: "Vah'Sumir Maximus", home: "Sumir Prime", metric: "3.0 – 3.6 m (9'10\" – 11'10\")", notes: "Massive apex warriors. Digitigrade stance, armored hide, and predatory physiology built for domination and endurance." },
+  { n: "Ashari'i", h: 2.9, cls: "Ashari'i Immortalis", home: "Ashar", metric: "2.3 – 2.9 m (7'6\" – 9'6\")", notes: "Ancient immortal warrior caste. Elegant and refined features with advanced longevity and ceremonial traditions." },
+  { n: "Gor'nath Brute", h: 4.2, cls: "Gor'nath Colossus", home: "Gor'nath", metric: "3.5 – 4.2 m (11'6\" – 13'9\")", notes: "Gigantic and powerfully built. Incredible strength, dense skeletal structure, and armor-like skin plates." },
+  { n: "Yurshak Brood", h: 2.6, cls: "Yurshak Broodling", home: "Yurshak Hive Worlds", metric: "2.0 – 2.6 m (6'7\" – 8'6\")", notes: "Hive-evolved predators. Insectoid-reptilian morphology, multiple sensory organs, and natural weapons." },
+  { n: "Shal'mak Aerophage", h: 4.0, cls: "Shal'mak Dominus", home: "High Atmosphere Layers", label: "Wingspan", metric: "6.0 – 7.5 m (19'8\" – 24'7\")", notes: "Aerial apex organisms. Large wings, light but strong anatomy, and adaptations for high-speed aerial hunting." },
+  { n: "Oolak Luminary", h: 2.7, cls: "Oolak Sapientis", home: "Oolak", metric: "2.2 – 2.7 m (7'3\" – 8'10\")", notes: "Bioluminescent beings. Their bodies produce natural light through organic structures. Ancient, wise, and highly spiritual." },
+  { n: "Threxx War-Smith", h: 3.2, cls: "Threxx Ferrum-Artifex", home: "Threxx Forge Worlds", metric: "2.6 – 3.2 m (8'6\" – 10'6\")", notes: "Forge-adapted engineer-warriors. Built for industry, warfare, and the creation of advanced technology." },
+  { n: "Razeen Flesh-Weaver", h: 2.6, cls: "Razeen Artifex", home: "Razeen Vaults", metric: "2.1 – 2.6 m (6'11\" – 8'6\")", notes: "Bio-engineers and sculptors of flesh. Advanced sensory organs, elegant physiology, and masters of organic architecture." },
+  { n: "Haal'tek Voidwalker", h: 3.8, cls: "Haal'tek Exuvia", home: "Deep Void / Unknown", metric: "3.0 – 3.8 m (9'10\" – 12'6\")", notes: "Void-adapted entities. Their bodies are optimized for microgravity and extreme isolation between stars." },
 ];
 
 const LORE_CATS = [
@@ -1079,37 +1100,15 @@ function SovereignsPage() {
   );
 }
 
-function BeastCard({ b, i }) {
-  const [imgOk, setImgOk] = useState(true);
-  const num = String(i + 1).padStart(3, "0");
-  return (
-    <div className="beast-card">
-      <div className="beast-plate">
-        {imgOk ? (
-          <img src={`assets/bestiary/${num}.png`} alt={`${b.n} specimen plate`} onError={() => setImgOk(false)} />
-        ) : (
-          <div className="beast-plate-ph">
-            <span className="beast-num">No. {String(i + 1).padStart(2, "0")}</span>
-            <span className="glyph">◈</span>
-            <span className="ph-name">{b.n}</span>
-            <span className="ph-note">Plate Pending</span>
-          </div>
-        )}
-      </div>
-      <div className="beast-info">
-        <div className="beast-name">{b.n}</div>
-        <div className="beast-class">{b.cls}</div>
-        <div className="beast-meta">
-          <div className="beast-row"><span className="k">Homeworld</span><span className="v">{b.home}</span></div>
-          <div className="beast-row"><span className="k">{b.label || "Average Height"}</span><span className="v">{b.metric}</span></div>
-        </div>
-        <div className="beast-notes">{b.notes}</div>
-      </div>
-    </div>
-  );
-}
+const plateSrc = i => `assets/bestiary/${String(i + 1).padStart(3, "0")}.png`;
 
 function BestiaryPage() {
+  const [sel, setSel] = useState(0);
+  const [zoom, setZoom] = useState(false);
+  const b = BESTIARY[sel];
+  const maxH = Math.max(...BESTIARY.map(s => s.h));
+  const human = BESTIARY[0].h;
+  const go = d => setSel((sel + d + BESTIARY.length) % BESTIARY.length);
   return (
     <div style={{paddingTop:"80px"}}>
       <div className="section">
@@ -1117,12 +1116,63 @@ function BestiaryPage() {
           <span className="section-eyebrow">Imperial Academy · Xenobiological Archives</span>
           <h2 className="section-title">The Great Bestiary of the Rim</h2>
           <div className="section-rule"><span className="section-rule-icon">◈</span></div>
-          <p className="section-desc">Catalogued specimens of the sentient and engineered species of the Iseldoran Rim — classification, homeworld, scale, and physical record.</p>
+          <p className="section-desc">Catalogued specimens of the sentient and engineered species of the Iseldoran Rim. Select a specimen to review its archival plate, record, and comparative scale.</p>
         </div>
-        <div className="bestiary-grid">
-          {BESTIARY.map((b, i) => <BeastCard b={b} i={i} key={i} />)}
+
+        <div className="codex-featured">
+          <div className="codex-plate" onClick={() => setZoom(true)}>
+            <img src={plateSrc(sel)} alt={`${b.n} specimen plate`} />
+            <span className="codex-zoom">⤢ Enlarge</span>
+          </div>
+          <div className="codex-dossier">
+            <div className="codex-desig">Specimen No. {String(sel + 1).padStart(2, "0")} · Iseldoran Rim</div>
+            <h3 className="codex-name">{b.n}</h3>
+            <div className="codex-class">{b.cls}</div>
+            <div className="codex-stats">
+              <div className="codex-stat"><span className="k">Homeworld</span><span className="v">{b.home}</span></div>
+              <div className="codex-stat"><span className="k">{b.label || "Average Height"}</span><span className="v">{b.metric}</span></div>
+              <div className="codex-stat"><span className="k">Relative Scale</span><span className="v">{(b.h / human).toFixed(1)}× human</span></div>
+            </div>
+            <p className="codex-notes">{b.notes}</p>
+            <div className="codex-nav">
+              <button className="codex-navbtn" onClick={() => go(-1)}>‹ Prev</button>
+              <button className="codex-navbtn" onClick={() => go(1)}>Next ›</button>
+              <span className="codex-counter">{sel + 1} / {BESTIARY.length}</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="codex-roster">
+          {BESTIARY.map((s, i) => (
+            <div key={i} className={`roster-item ${i === sel ? "active" : ""}`} onClick={() => setSel(i)} title={s.n}>
+              <img src={plateSrc(i)} alt={s.n} loading="lazy" />
+              <span className="roster-num">{String(i + 1).padStart(2, "0")}</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="codex-scale">
+          <div className="scale-title">Comparative Scale</div>
+          <div className="scale-sub">Average standing height across the catalogued species, drawn to scale. Tap a column to inspect that specimen.</div>
+          <div className="scale-chart">
+            {BESTIARY.map((s, i) => (
+              <button key={i} className={`scale-bar ${i === sel ? "active" : ""}`} onClick={() => setSel(i)} title={`${s.n} — ${s.h} m`}>
+                <span className="scale-track">
+                  <span className="bh">{s.h.toFixed(1)}m</span>
+                  <span className="bar" style={{ height: `${Math.round((s.h / maxH) * 100)}%` }}></span>
+                </span>
+                <span className="bl">{s.n}</span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
+
+      {zoom && (
+        <div className="codex-lightbox" onClick={() => setZoom(false)}>
+          <img src={plateSrc(sel)} alt={`${b.n} specimen plate, enlarged`} />
+        </div>
+      )}
     </div>
   );
 }
