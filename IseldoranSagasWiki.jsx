@@ -167,7 +167,7 @@ const STYLES = `
   .bestiary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.4rem; }
   .beast-card { background: linear-gradient(160deg, var(--iron) 0%, var(--forge) 100%); border: 1px solid rgba(201,168,76,0.12); overflow: hidden; transition: all var(--transition); display: flex; flex-direction: column; }
   .beast-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 25px rgba(201,168,76,0.08); }
-  .beast-plate { width: 100%; aspect-ratio: 2/3; background: linear-gradient(160deg, var(--iron), var(--ash)); position: relative; overflow: hidden; }
+  .beast-plate { width: 100%; aspect-ratio: 8/9; background: linear-gradient(160deg, var(--iron), var(--ash)); position: relative; overflow: hidden; }
   .beast-plate img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
   .beast-card:hover .beast-plate img { transform: scale(1.03); }
   .beast-plate-ph { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; color: rgba(201,168,76,0.35); text-align: center; padding: 1rem; }
@@ -1085,11 +1085,11 @@ function BeastCard({ b, i }) {
   return (
     <div className="beast-card">
       <div className="beast-plate">
-        <span className="beast-num">No. {String(i + 1).padStart(2, "0")}</span>
         {imgOk ? (
           <img src={`assets/bestiary/${num}.png`} alt={`${b.n} specimen plate`} onError={() => setImgOk(false)} />
         ) : (
           <div className="beast-plate-ph">
+            <span className="beast-num">No. {String(i + 1).padStart(2, "0")}</span>
             <span className="glyph">◈</span>
             <span className="ph-name">{b.n}</span>
             <span className="ph-note">Plate Pending</span>
