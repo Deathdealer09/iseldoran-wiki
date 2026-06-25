@@ -90,4 +90,4 @@ She had come into the room that morning believing it was Sennar and its neighbor
 
 Behind her Zola was squaring the last of the day's stacks and weighting them, the dry whisper of it the only sound, the lamp throwing both their shadows long up the wall and across the map so that the three small dots sat in the moving dark of them. Kaviel stood with the stylus still in her hand and looked at the jurisdictions she had not marked, the white grid of them, and counted in her head what the finding meant was still waiting out there past it, and the count was larger than the room, larger than the mandate, larger than the thin permission she was working under and the head of the house who had given it to her and not asked to be told the daily shape.
 
-"We start from the edges," she says to no one in particular.
+"We start from the edges," she says, more to the map than to Zola.
