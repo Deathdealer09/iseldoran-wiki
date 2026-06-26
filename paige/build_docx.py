@@ -221,6 +221,10 @@ for path in chapters:
     n = int(re.match(r'ch(\d+)', path.name).group(1))
     h, _ = parse_chapter(path)
     heads[n] = h
+if 0 in heads:
+    p = doc.add_paragraph(); p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_after = Pt(6)
+    r = p.add_run(heads[0]); style_run(r); r.font.size = Pt(11)
 for mv_title, rng in MOVEMENTS:
     centered(doc, mv_title, 11.5, italic=True, space_before=10, space_after=6)
     for n in rng:
@@ -243,11 +247,13 @@ for idx, path in enumerate(chapters):
     else:
         label, title = heading, ''
     # chapter opener on a new page
-    opener = centered(doc, label, 12, caps=True, space_before=48, space_after=4)
+    if title:
+        opener = centered(doc, label, 12, caps=True, space_before=48, space_after=4)
+        centered(doc, title, 17, italic=False, space_after=24)
+    else:
+        opener = centered(doc, label, 18, caps=True, space_before=48, space_after=24)
     if idx != 0:
         opener.paragraph_format.page_break_before = True
-    if title:
-        centered(doc, title, 17, italic=False, space_after=24)
     for i, para in enumerate(paras):
         body_para(doc, para, first=(i == 0))
 

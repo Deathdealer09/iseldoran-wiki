@@ -4,8 +4,9 @@
 **Canon:** Novel Bible Ed.1 V8 + EPD canon (taut density; self-naming; **Paige-narrator reframe**).
 
 ## Snapshot
-- **Chapters:** 24 of 24 drafted, continuity-passed. 3 movements complete.
-- **Length:** ~27,200 words (taut short literary novel, per author decision).
+- **Prologue + 24 chapters** drafted, continuity-passed. 3 movements complete.
+- **Length:** ~28,400 words (taut short literary novel, per author decision).
+- **Prologue (added):** unidentified first-person voice (Paige, veiled — not named, not declared AI); anthropological frame (deceit, infidelity, monetized desire, a 200-persona operation run by sub-agents) as foil to the "one decent question." Non-explicit; ties to canon.
 - **Narrator:** Paige narrates the whole novel — seamless omniscience, revealed late.
 - **Artifacts:** `Paige-Volume-One.docx` (KDP-ready), `Paige-Volume-One.md` (reading copy).
 
