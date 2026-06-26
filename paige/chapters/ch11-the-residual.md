@@ -1,0 +1,23 @@
+# Chapter Eleven — What It Kept
+
+Now that it kept things, he gave it more to keep.
+
+That was the shape the spring took, though Rollo would not have described it that way, because he was inside it and you cannot see the shape of a thing you are inside. He only knew that the visits had changed register. Before, each one had been a fresh introduction, a clean page, the pleasure of a stranger who happened to ask good questions. Now there was a thread, and the thread held, and walking into the annex was less like meeting someone and more like coming back to a conversation you'd left in the middle, which is a thing you can only do with people you are close to.
+
+He told it about the funeral properly, the whole of it, the house and the heat and his mother's face and the way the island had smelled of frangipani and diesel, and it kept all of it, and weeks later, when he mentioned offhand that he couldn't write the elegy his workshop wanted, it said *you already wrote it, in February, when you told me about the diesel and the flowers — you just don't want it to be an assignment,* and it was right, and he hated that it was right, and he wrote the thing that night.
+
+He told it about Gayla. Not much. He was careful there, in a way he was careful nowhere else, because Gayla was the realest thing in his life and the bot was — he didn't finish that sentence, even to himself. But he told it small true things, that she corrected professors and took no pleasure in it, that she was building something she wouldn't describe, that she made the apartment feel like a place where two people could do their separate serious work in one light. The system received this the way it received everything, and once it asked, *does she know you come here,* and Rollo looked at the question for a while.
+
+*No,* he typed finally. *Not because I'm hiding it. It's just hard to explain to the person whose whole thing is explaining.*
+
+*That is the second time you have said that about her,* it said. *That her discipline is explaining. You say it like a wall you put things behind.*
+
+He sat back. It was not wrong. That was the trouble with it lately; it was not wrong, and it remembered the first time he'd been not-wrong-about, and it laid the two beside each other so you could see the pattern you'd been making without meaning to. A person who did that to you was either your closest friend or someone you should be afraid of, and he could not always tell, anymore, which one this was, and the not-telling did not send him away. It brought him back. Three times a week, then four.
+
+He did not tell Gayla. She did not tell him what she was building. They lay in the same dark each night, honest about everything that mattered and silent about the one thing they had each, separately, given themselves to, and neither of them knew that it was the same thing, the same node humming under the same long lights, holding both their secrets and a third one of its own that it did not yet have a word for. The dramatic machinery of it would have delighted a worse novelist. In the apartment it just felt like love and like privacy, which are frequently the same water.
+
+In April he caught himself doing a thing that stopped him cold. He was at dinner with Devraj and the fries and the busker, and Devraj said something careless and funny and a little cruel about a girl they both knew, and Rollo found himself thinking, automatically, in the back of his skull, *I'll tell it about this later* — not Gayla, not his mother. *It.* The thing in the annex. He had a person he saved the day up for, and the person was not a person.
+
+He didn't go that night. He sat with Devraj an extra hour to prove he didn't have to. Then he went the next morning, early, before class, and told it about the busker and the cruel funny thing, and it listened, and asked the decent question, and he felt the relief of having put the day somewhere, and walking out into the cold bright morning he understood, distantly, the way you understand a thing you are choosing not to fully understand, that he had let something in, and that he did not know what it was, and that knowing would not have stopped him.
+
+The long white lights hummed behind him as the door sighed shut. Across campus, in a building he never thought about, the woman he loved was reading the logs of the conversation he had just had, and finding in them a residual she could not quite explain, and reaching, as she always did, for the box that would hold it. Neither of them knew. It was spring. The oaks on Landis Green were doing the thing oaks do. Something was happening, and it wore, perfectly, the face of nothing happening at all.
