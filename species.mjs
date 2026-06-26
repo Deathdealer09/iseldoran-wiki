@@ -135,14 +135,14 @@ export const SPECIES = {
   9: {
     name: "Threxx War-Smith",
     classification: "Threxx Ferrum-Artifex",
-    homeworld: "Threxx Forge Worlds",
+    homeworld: "Thorexia Prime",
     metric: "2.6 - 3.2 m (8'6\" - 10'6\")",
     rulerMax: 4.0,
     notes:
       "Forge-adapted engineer-warriors. Built for industry, warfare, and the " +
       "creation of advanced technology.",
     descriptor:
-      "Threxx Ferrum-Artifex from the Threxx Forge Worlds, forge-adapted engineer-warriors " +
+      "Threxx Ferrum-Artifex from Thorexia Prime, the Threxx forge world, forge-adapted engineer-warriors " +
       "2.6-3.2 m tall. Stocky grey-skinned humanoids built for industry and warfare, clad in " +
       "heavy industrial plated armor, masters of advanced technology.",
   },

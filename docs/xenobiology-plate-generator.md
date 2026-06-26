@@ -70,7 +70,7 @@ Sharp focus, painterly realism, portrait 2:3 framing.
 | 6 | Yurshak Brood | Yurshak Broodling | Yurshak Hive Worlds | 2.0–2.6 | 3.0 |
 | 7 | Shal'mak Aerophage | Shal'mak Dominus | High Atmosphere Layers | 6.0–7.5 (wingspan) | 4.0 |
 | 8 | Oolak Luminary | Oolak Sapientis | Oolak | 2.2–2.7 | 3.0 |
-| 9 | Threxx War-Smith | Threxx Ferrum-Artifex | Threxx Forge Worlds | 2.6–3.2 | 4.0 |
+| 9 | Threxx War-Smith | Threxx Ferrum-Artifex | Thorexia Prime | 2.6–3.2 | 4.0 |
 | 10 | Razeen Flesh-Weaver | Razeen Artifex | Razeen Vaults | 2.1–2.6 | 3.0 |
 | 11 | Haal'tek Voidwalker | Haal'tek Exuvia | Deep Void / Unknown | 3.0–3.8 | 4.0 |
 | 12 | Aquorian | Aquorian Pelagis | Pelagic Depths | 2.2–2.7 | 3.0 |

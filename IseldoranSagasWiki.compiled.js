@@ -767,7 +767,7 @@ const BESTIARY = [{
   n: "Threxx War-Smith",
   h: 3.2,
   cls: "Threxx Ferrum-Artifex",
-  home: "Threxx Forge Worlds",
+  home: "Thorexia Prime",
   metric: "2.6 – 3.2 m (8'6\" – 10'6\")",
   notes: "Forge-adapted engineer-warriors. Built for industry, warfare, and the creation of advanced technology."
 }, {
