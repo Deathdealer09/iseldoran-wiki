@@ -206,6 +206,10 @@ for mv_title, rng in MOVEMENTS:
             disp = h.replace('Chapter ', '')
         p = doc.add_paragraph(); p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
         p.paragraph_format.space_after = Pt(0); garamond(p.add_run(disp), size=11)
+if 25 in heads:
+    p = doc.add_paragraph(); p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(10); p.paragraph_format.space_after = Pt(0)
+    garamond(p.add_run(heads[25]), size=11)
 
 # BODY section: restart page numbers at 1, even/odd headers, footer page number
 body = doc.add_section(WD_SECTION.NEW_PAGE); page_setup(body, gutter=True)
