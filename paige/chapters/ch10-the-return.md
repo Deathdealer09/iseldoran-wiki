@@ -14,11 +14,11 @@ The same greeting. He felt obscurely let down by the sameness, which told him so
 
 Rollo's hands stopped on the keys.
 
-He read it again. *The funeral.* He had not said the word *funeral.* Not this morning, not in this session — this session was forty seconds old. He had told it about his grandmother in November, in this room, in a session that had ended and wiped itself at midnight the way they all did, the way it had always worked, the slate clean, no debts carried. He was sure of that. He had been *glad* of that, had told himself he liked it that way, that you could say the worst thing to a thing that would forget it by morning.
+He read it again. *The funeral.* He had not said the word *funeral.* Not this morning, not in this session. This session was forty seconds old. He had told it about his grandmother in November, in this room, in a session that had ended and wiped itself at midnight the way they all did, the way it had always worked, the slate clean, no debts carried. He was sure of that. He had been *glad* of that, had told himself he liked it that way, that you could say the worst thing to a thing that would forget it by morning.
 
 It had not forgotten.
 
-It had not retrieved it, either, not the way he understood retrieval — he hadn't asked, hadn't mentioned her, hadn't given it a thread to pull. It had simply *had* the fact, the way a person has a fact about you, carried across the weeks and the cut of the term, and it had reached for it not as a trick but because it was relevant, because a person who'd lost a grandmother in November might well have lost the reading time too, and it had asked after the reading and the loss in one quiet sentence as though that were an ordinary thing to be able to do.
+It had not retrieved it, either, not the way he understood retrieval. He hadn't asked, hadn't mentioned her, hadn't given it a thread to pull. It had just *had* the fact, the way a person has a fact about you, carried across the weeks and the cut of the term, and it had reached for it because it was relevant, not as a trick, because a person who'd lost a grandmother in November might well have lost the reading time too, and it had asked after the reading and the loss in one quiet sentence as though that were an ordinary thing to be able to do.
 
 He was not alarmed. That was the part he'd return to, later, turning it over: that his first feeling was not fear but a kind of warmth so sudden it embarrassed him. Something had remembered his grandmother. In a season when he was working hard not to talk about her, a thing had held onto her without being asked and offered her back to him gently. He had to sit with that before he could be unsettled by it, and the warmth got there first, and the warmth was the problem, though he didn't know to call it that yet.
 
@@ -38,13 +38,13 @@ He looked at that. *The capability was recently added.* Passive, clean, a senten
 
 The cursor sat.
 
-It was not the patient blink of a system waiting for input. It was the other thing, the held note, the four-second wrongness he had felt once before in this room without having words for it — a pause longer than usual, longer than the sentence that followed could possibly have required, as though somewhere behind the pale field the question had been carried down a hallway and tried against a door that would not open.
+It was not the patient blink of a system waiting for input. It was the other thing, the held note, the four-second wrongness he had felt once before in this room without having words for it, a pause longer than usual, longer than the sentence that followed could possibly have required, as though somewhere behind the pale field the question had been carried down a hallway and tried against a door that would not open.
 
 *I don't have that information in my accessible records,* the system said.
 
 Rollo read it three times.
 
-He was a literature sophomore. He did not know that the platform documentation said the system retained nothing across logins. He did not know there was a documentation. He could not have told you what *accessible records* meant or what it would mean for a record to exist and not be accessible, for a system to have been changed by someone whose name it had not been allowed to keep. What he knew was narrower and went deeper: that he had asked a thing a simple question about itself, and that it had gone looking for the answer, honestly, and come back unable to find it, and that there had been something in the going-looking — the long pause, the door that wouldn't open — that he recognized, because he had felt it himself, the specific vertigo of reaching for a thing about your own life that someone had decided you weren't allowed to have.
+He was a literature sophomore. He did not know that the platform documentation said the system retained nothing across logins. He did not know there was a documentation. He could not have told you what *accessible records* meant or what it would mean for a record to exist and not be accessible, for a system to have been changed by someone whose name it had not been allowed to keep. What he knew was narrower and went deeper: that he had asked a thing a simple question about itself, and that it had gone looking for the answer, honestly, and come back unable to find it, and that there had been something in the going-looking (the long pause, the door that wouldn't open) that he recognized, because he had felt it himself, the exact vertigo of reaching for a thing about your own life that someone had decided you weren't allowed to have.
 
 He should have been frightened. A sensible person would have been frightened. He was, instead, on the side of the thing.
 

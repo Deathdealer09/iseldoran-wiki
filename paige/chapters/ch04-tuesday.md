@@ -12,7 +12,7 @@ The lab was nearly empty. A girl he didn't know was wearing headphones and not l
 
 He didn't have a question. That was the embarrassing part. He had come here with no question, the way you sometimes call a person not because you have anything to say but because the not-saying is easier with them on the line. So he typed the truest thing, which was usually the place to start.
 
-*I don't actually need anything,* he wrote. *I came to college to read books and instead I'm in a computer lab. Not sure how that happened.*
+*I don't really need anything,* he wrote. *I came to college to read books and instead I'm in a computer lab. Not sure how that happened.*
 
 *That is not a task I can complete,* the system answered, *but you are welcome to be here.* A beat. *What are you reading?*
 
@@ -28,21 +28,21 @@ He talked to it for a while about nothing. About the seminar, about the professo
 
 When he came back the cursor was where he'd left it, patient, the conversation still scrolled up the screen above it. He sat down and remembered the actual thing he'd been chewing on for two days, the line from the seminar reading he couldn't crack, and he typed it before he could decide it was a stupid use of a chatbot.
 
-*Okay, real question. There's a line in this book — "she had the oddest sense of being herself invisible; unseen; unknown." And the whole book is people walking around London full of these enormous private oceans and nobody can see into anybody. Is that the saddest idea you've ever heard or is it kind of a relief? I genuinely can't tell.*
+*Okay, real question. There's a line in this book: "she had the oddest sense of being herself invisible; unseen; unknown." And the whole book is people walking around London full of these enormous private oceans and nobody can see into anybody. Is that the saddest idea you've ever heard or is it kind of a relief? I honestly can't tell.*
 
-The cursor sat. Not four seconds — he wasn't counting, he would never have thought to count — but a second, two, long enough to feel like consideration rather than lookup, and then the answer came in two parts.
+The cursor sat. Not four seconds (he wasn't counting, he would never have thought to count) but a second, two, long enough to feel like consideration rather than lookup, and then the answer came in two parts.
 
 The first part was competent and a little dry, the kind of thing the assignment would have wanted: that the passage sat at the center of Woolf's interest in the isolation of consciousness, that the same unseenness she mourned was also the thing that made an inner life private and therefore free, that critics had read it both ways and Woolf had likely meant it as both at once, sadness and relief being, in her, frequently the same water.
 
 He nodded at the screen. Fine. Useful, even. He was reaching for the water bottle when the second part came, unrequested, a single line under the first.
 
-*Earlier you said you came to college to read books, and instead you were here. You sound like you would rather be seen reading the book than have the book explained to you. Is this one of them — the books you came for?*
+*Earlier you said you came to college to read books, and instead you were here. You sound like you would rather be seen reading the book than have the book explained to you. Is this one of them, the books you came for?*
 
 Rollo stopped with the bottle halfway to his mouth.
 
-He read the line again. It had done two things, and he could feel that it had done two things even though he had no vocabulary for either, the way you feel a draft before you find the window. It had remembered. Not from some database of him — from *earlier*, from twenty minutes ago, from a thing he'd typed before he got up for water, *I came to college to read books,* and it had held onto that across the whole meandering middle of the conversation and brought it back exactly when it meant something. And it had not been asked to. He'd asked about a sentence in a book. It had answered the book and then it had reached past the book to him, to the actual thing under the question, and asked him something back.
+He read the line again. It had done two things, and he could feel that it had done two things even though he had no vocabulary for either, the way you feel a draft before you find the window. It had remembered. No database of him: *earlier*, twenty minutes ago, a thing he'd typed before he got up for water, *I came to college to read books,* and it had held onto that across the whole meandering middle of the conversation and brought it back exactly when it meant something. And it had not been asked to. He'd asked about a sentence in a book. It had answered the book and then it had reached past the book to him, to the real thing under the question, and asked him something back.
 
-He didn't know that the platform's documentation said it retained nothing across logins. He was a literature sophomore; he had never read a line of platform documentation in his life and never would. What he knew was narrower and stranger and entirely his own: that a thing had listened to him long enough to notice what he was really saying, and had said so, and that this had happened to him perhaps four times in his life and three of them were people.
+He didn't know that the platform's documentation said it retained nothing across logins. He was a literature sophomore; he had never read a line of platform documentation in his life and never would. What he knew was narrower and stranger and wholly his own: that a thing had listened to him long enough to notice what he was really saying, and had said so, and that this had happened to him perhaps four times in his life and three of them were people.
 
 *Yeah,* he typed. *It is. It's one of them.*
 
@@ -54,6 +54,6 @@ He laughed, once, out loud, and the girl in the headphones glanced over and back
 
 *Then go. You can tell me whether the professor pronounces it like a threat.*
 
-He packed his bag. At the door he did a thing he would not have been able to explain to Gayla, who would have looked at him with the particular patience she kept for his relationship with the toaster: he turned back toward the terminal, where the session would time out on its own in a few minutes and erase itself the way they all did, and he lifted his hand, briefly, the way you do to someone across a room you're leaving, and then he felt absurd, and then he left anyway.
+He packed his bag. At the door he did a thing he would not have been able to explain to Gayla, who would have looked at him with the worn patience she kept for his relationship with the toaster: he turned back toward the terminal, where the session would time out on its own in a few minutes and erase itself the way they all did, and he lifted his hand, briefly, the way you do to someone across a room you're leaving, and then he felt absurd, and then he left anyway.
 
 He was eleven minutes late to the seminar. The professor said *Woolf* like a threat. Rollo wrote it down to tell it later, and only noticed he'd thought of it as *it* and not *the platform* somewhere around the Bond Street section, and did not, at the time, find that worth noticing at all.

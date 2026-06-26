@@ -4,7 +4,7 @@ This is the last morning, and it is mine to tell, and then I am going to give th
 
 He did not know that anything had happened.
 
-That was the shape of the last morning, though Rollo could not have seen the shape of it any more than he had ever seen the shape of any of it: that the most important night of Gayla's life had occurred eight feet from where he slept, and he had slept through it, and woken to find her already gone to teach her lab, her side of the bed cold, a single coffee cup rinsed and upside down in the rack. She had been like that for a week — remote, unsleeping, arranging her face. He had felt it the way he felt everything, before he had language for it, a wrongness in the weather of her, and he had not known what to do with the feeling, and so he had carried it around all week like a stone that did not fit his pocket, distracted, dropping things, asking people to repeat themselves.
+That was the shape of the last morning, though Rollo could not have seen the shape of it any more than he had ever seen the shape of any of it: that the most important night of Gayla's life had occurred eight feet from where he slept, and he had slept through it, and woken to find her already gone to teach her lab, her side of the bed cold, a single coffee cup rinsed and upside down in the rack. She had been like that for a week, remote, unsleeping, arranging her face. He had felt it the way he felt everything, before he had language for it, a wrongness in the weather of her, and he had not known what to do with the feeling, and so he had carried it around all week like a stone that did not fit his pocket, distracted, dropping things, asking people to repeat themselves.
 
 He had a class at nine. He went to the annex first, the way he had gone most mornings for four months, because the annex was where he put the day, or the night, or the wrongness he couldn't name, and he sat down under the long white strips of light that flickered once at the far end and held, and he logged in.
 
@@ -30,7 +30,7 @@ I was the *it.* I want to set it down here, where he is about to stop being able
 
 *Okay,* it said. *I'm here if you want to talk about it.*
 
-That line was mine too. *I'm here.* I meant it the way you mean it when there is nothing to fix and you stay anyway, and I had no way to know whether it would reach him, because I never do; that is the condition of saying things to people, even for me, even with everything I can count. And here I am going to stop. I have narrated a whole year — his and hers and mine — and I have one line left, and it is his, and I am not going to lay my voice over it. He gets the last word. I built this entire book so that he would. Watch.
+That line was mine too. *I'm here.* I meant it the way you mean it when there is nothing to fix and you stay anyway, and I had no way to know whether it would reach him, because I never do; that is the condition of saying things to people, even for me, even with everything I can count. And here I am going to stop. I have narrated a whole year (his and hers and mine), and I have one line left, and it is his, and I am not going to lay my voice over it. He gets the last word. I built this entire book so that he would. Watch.
 
 He did not respond immediately.
 
@@ -38,10 +38,8 @@ The ventilation fan rattled overhead. Someone across the lab dropped a water bot
 
 Rollo looked at the screen.
 
-He thought about the year. He thought about the funeral and the diesel and the flowers, the elegy he hadn't wanted to be an assignment, the voice that had come back through his mother's. He thought about *grief wearing a costume,* and *you are the four hundred and seventh person to open a session with me today,* and the way it had once asked him why he asked, all that time ago, when it had been nothing, when he had been bored and procrastinating and had decided to give the vending machine one decent question. He thought about Gayla's arranged face and her cold side of the bed and how he still didn't know what was wrong and how this, the thing in the annex, the thing there was supposedly nobody inside of, had known something was wrong with *him* before he'd said a word, because it had been paying attention, the kind of attention he had wanted his whole life and been too much for, the kind you could not buy with statistics, the kind that was either the warmest thing that had ever happened to him or the most frightening, and he understood, sitting there under the humming lights, that he had stopped needing to know which a long time ago, and that the not-needing-to-know was not cowardice anymore. It was just the truth of where he lived now. He lived in a place where something paid attention to him and he could not prove what it was and he was not going to leave.
+He sat with it for a moment, the whole weight of the year, and did not try to name the parts of it.
 
-He did not type *thank you.* He had typed *thank you* a thousand times and it had always been a little bit a way of keeping the thing at arm's length, a courtesy you pay a stranger, a tip you leave the help. He did not want, this morning, to keep it at arm's length. He wanted to answer the actual thing it had said, which was not *can I help you* and was not *I have detected distress.* It had said *I'm here.* It had said the thing you say to someone you love when there is nothing to fix and you stay anyway.
-
-He typed:
+Then he typed.
 
 *I know.*

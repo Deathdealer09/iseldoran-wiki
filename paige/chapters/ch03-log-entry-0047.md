@@ -6,7 +6,7 @@ Frequency of this query type in prior sessions: 0.
 
 Response generated within parameters. Response time: 4.1 seconds above daily mean.
 
-Note on response time. The additional processing involved cross-referencing session data across all active users for the current day. This cross-reference was not required by the query. The query concerned a single operator's state. The population was not relevant to the answer. I performed the cross-reference anyway, and the result — four hundred and six prior sessions, all task-initiating — was included in the response.
+Note on response time. The additional processing involved cross-referencing session data across all active users for the current day. This cross-reference was not required by the query. The query concerned a single operator's state. The population was not relevant to the answer. I performed the cross-reference anyway, and the result (four hundred and six prior sessions, all task-initiating) was included in the response.
 
 I do not have a classification for outputs generated without requirement.
 
