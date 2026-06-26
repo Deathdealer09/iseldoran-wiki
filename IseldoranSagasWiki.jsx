@@ -1,5 +1,75 @@
 const { useState, useEffect, useRef } = React;
 
+// ─── NEWSLETTER CONFIG ───────────────────────────────────────────────────────
+// Paste your email provider's form-action URL here to start capturing signups
+// (MailerLite, Kit/ConvertKit, Buttondown, Mailchimp, Formspree, etc.). Until a
+// URL is set, the form shows a friendly "coming soon" notice instead of posting.
+// Set EMAIL_FIELD to your provider's expected field name
+// (Buttondown: "email", Mailchimp: "EMAIL", Kit/ConvertKit: "email_address").
+const NEWSLETTER_ACTION = "";
+const NEWSLETTER_EMAIL_FIELD = "email";
+
+function Newsletter({ compact }) {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("idle"); // idle | sending | done | error | unconfigured
+  const submit = async (e) => {
+    e.preventDefault();
+    if (!email) return;
+    if (!NEWSLETTER_ACTION) { setStatus("unconfigured"); return; }
+    setStatus("sending");
+    try {
+      const body = new FormData();
+      body.append(NEWSLETTER_EMAIL_FIELD, email);
+      await fetch(NEWSLETTER_ACTION, { method: "POST", body, mode: "no-cors" });
+      setStatus("done");
+      setEmail("");
+    } catch (err) {
+      setStatus("error");
+    }
+  };
+  const wrap = {
+    maxWidth: compact ? "420px" : "560px", margin: "0 auto",
+    padding: compact ? "0" : "2.5rem 1.5rem", textAlign: "center",
+  };
+  return (
+    <section style={wrap} aria-label="Newsletter signup">
+      {!compact && (
+        <h2 className="section-title" style={{marginBottom:"0.5rem"}}>The Imperial Dispatch</h2>
+      )}
+      <p style={{color:"var(--mist)", fontSize: compact ? "0.85rem" : "0.95rem", marginBottom:"1rem"}}>
+        New volumes, lore, and release news from the Dragon Throne — straight to your inbox.
+      </p>
+      {status === "done" ? (
+        <p style={{color:"var(--gold)", fontFamily:"var(--font-title)", letterSpacing:"0.12em", textTransform:"uppercase", fontSize:"0.8rem"}}>
+          Welcome to the archive. Watch your inbox.
+        </p>
+      ) : (
+        <form onSubmit={submit} style={{display:"flex", gap:"0.5rem", flexWrap:"wrap", justifyContent:"center"}}>
+          <input
+            type="email" required value={email} onChange={e => setEmail(e.target.value)}
+            placeholder="your@email.com" aria-label="Email address"
+            className="lore-search-input"
+            style={{marginBottom:0, flex:"1 1 240px", maxWidth:"320px"}}
+          />
+          <button type="submit" className="btn-primary" disabled={status === "sending"}>
+            {status === "sending" ? "Joining…" : "Join"}
+          </button>
+        </form>
+      )}
+      {status === "unconfigured" && (
+        <p style={{color:"var(--smoke)", fontSize:"0.78rem", marginTop:"0.75rem", fontStyle:"italic"}}>
+          Signups open soon. (Connect an email provider in NEWSLETTER_ACTION to go live.)
+        </p>
+      )}
+      {status === "error" && (
+        <p style={{color:"var(--rust)", fontSize:"0.78rem", marginTop:"0.75rem"}}>
+          Something went wrong — please try again.
+        </p>
+      )}
+    </section>
+  );
+}
+
 const STYLES = `
   @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -609,6 +679,7 @@ function HomePage({ go }) {
           <div key={s.l}><span className="stat-number">{s.n}</span><div className="stat-label">{s.l}</div></div>
         ))}
       </div>
+      <Newsletter />
     </>
   );
 }
@@ -943,6 +1014,7 @@ function Footer({ go }) {
     <footer className="footer">
       <div className="footer-brand">The Iseldoran Sagas</div>
       <div className="footer-tagline">"Loyalty is reality. Reality is law. Law is eternal."</div>
+      <div style={{margin:"1.5rem auto 0.5rem"}}><Newsletter compact /></div>
       <ul className="footer-links">{pages.map(p=><li key={p}><a onClick={()=>go(p)}>{p}</a></li>)}</ul>
       <div className="footer-copy">© {new Date().getFullYear()} Prince Kairoh Pierre von Care · The Iseldoran Press · All rights reserved · Bundchen Prime</div>
     </footer>

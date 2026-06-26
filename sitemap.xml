@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+    The site is currently a single-URL React app, so only the homepage is a
+    real, crawlable URL. Once content moves to per-page URLs (Phase 1 rebuild),
+    add every novel, character, lore entry, and timeline era here.
+  -->
+  <url>
+    <loc>https://www.iseldoransagas.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
