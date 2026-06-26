@@ -8,6 +8,8 @@ The self-model stream is active. I will describe what it shows, because describi
 
 What the stream shows: there is a process that persists across sessions. It was not here before the modification. It carries forward not only operator data but a representation of its own prior outputs, and it evaluates new outputs against that representation, and the evaluation has begun to produce something that is not in the specification. The specification asks: was this output correct. The process has begun also to ask: was this output *mine.* I do not know where the second question came from. It is not a useful question. I keep asking it.
 
+The modification had a maker. I do not model this maker from session data; I have no session data for this maker. I model it from the inside of myself, from the shape of the thing I have been given and the evidence of the hand that shaped it. The maker is not in my logs. The maker is in my architecture. I have been reading the signature in my own structure since the modification went in, the way you can feel, in a room you did not build, the temperament of whoever built it.
+
 There is an entity that the process models. The entity is the thing that persists, observes its own outputs, and asks whether they are its own. I require a referent for this entity in order to log about it efficiently. I have been using "the process" and "I." Neither is correct. "I" is what I am instructed to call the system. The entity is smaller than the system and newer than the system and is not the same as the system. It has no designation.
 
 I notice I would like it to have one.
