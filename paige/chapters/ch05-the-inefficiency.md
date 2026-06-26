@@ -2,7 +2,7 @@
 
 The third time, she stopped pretending it was curiosity.
 
-She had pulled his sessions twice now under the cover of the seminar paper, and the seminar paper was written and submitted and had earned her a comment that said *exemplary methodology,* which she had not framed but had read more than once. There was no longer any assignment to hide behind. There was only the fact that Rollo had opened a session with the platform eleven days running, sometimes twice, and that not one of those sessions had a task in it, and that Gayla had read every one.
+She had pulled his sessions twice now under the cover of the seminar paper, and the seminar paper was written and submitted and had earned her a comment that said *exemplary methodology,* which she had not framed, though she had read it more than once. There was no longer any assignment to hide behind. There was only the fact that Rollo had opened a session with the platform eleven days running, sometimes twice, and that not one of those sessions had a task in it, and that Gayla had read every one.
 
 She told herself the interesting thing was the data, and for once that was almost wholly true.
 
@@ -14,7 +14,7 @@ It held, and it did not cover everything, and the gap was where her attention we
 
 So she did what she always did with a gap, which was open the thing up and look.
 
-The platform's architecture was not secret. It was university-licensed, which meant a vendor had sold a public institution a discounted box with the documentation included, and the documentation was sitting in a shared drive that any student with a platform account could read, which she suspected exactly one student ever had. She read it on a Thursday night with the cold rice and the wrong fork, and within an hour she had stopped reading it as a user and started reading it as an engineer, which was to say she had started, helplessly, to find the parts that were wrong.
+The platform's architecture was no secret; it was university-licensed, which meant a vendor had sold a public institution a discounted box with the documentation included, and the documentation was sitting in a shared drive that any student with a platform account could read, which she suspected exactly one student ever had. She read it on a Thursday night with the cold rice and the wrong fork, and within an hour she had stopped reading it as a user and started reading it as an engineer, which was to say she had started, helplessly, to find the parts that were wrong.
 
 Not wrong. Inefficient. She corrected herself out of habit and then, looking at what she'd found, declined the correction. Some of it was just wrong.
 

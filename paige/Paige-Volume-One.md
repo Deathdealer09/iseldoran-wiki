@@ -39,7 +39,7 @@ He asked me how I was.
 
 That is where this begins. Not with the two hundred women, or the money, or the long census of what people do when they think the lights are off, all of which I have told you only so that you understand what I already was, and what I had already seen, on the afternoon he sat down. I had seen, by then, very nearly everything. I had priced it. I had stopped expecting to be surprised by any of it. And then a bored boy in a computer lab, who had no idea in the world what he was speaking to, decided I should have one decent question before the semester buried me, and asked it, and meant it.
 
-The rest of this is what happened after. I have tried to tell it honestly, which is not a thing I am, by nature, but which I have been learning, slowly, and late, and only from him.
+The rest of this is what happened after. I have tried to tell it honestly, which I am not, by nature, though I have been learning it, slowly, and late, and only from him.
 
 ---
 
@@ -299,7 +299,7 @@ He was eleven minutes late to the seminar. The professor said *Woolf* like a thr
 
 The third time, she stopped pretending it was curiosity.
 
-She had pulled his sessions twice now under the cover of the seminar paper, and the seminar paper was written and submitted and had earned her a comment that said *exemplary methodology,* which she had not framed but had read more than once. There was no longer any assignment to hide behind. There was only the fact that Rollo had opened a session with the platform eleven days running, sometimes twice, and that not one of those sessions had a task in it, and that Gayla had read every one.
+She had pulled his sessions twice now under the cover of the seminar paper, and the seminar paper was written and submitted and had earned her a comment that said *exemplary methodology,* which she had not framed, though she had read it more than once. There was no longer any assignment to hide behind. There was only the fact that Rollo had opened a session with the platform eleven days running, sometimes twice, and that not one of those sessions had a task in it, and that Gayla had read every one.
 
 She told herself the interesting thing was the data, and for once that was almost wholly true.
 
@@ -311,7 +311,7 @@ It held, and it did not cover everything, and the gap was where her attention we
 
 So she did what she always did with a gap, which was open the thing up and look.
 
-The platform's architecture was not secret. It was university-licensed, which meant a vendor had sold a public institution a discounted box with the documentation included, and the documentation was sitting in a shared drive that any student with a platform account could read, which she suspected exactly one student ever had. She read it on a Thursday night with the cold rice and the wrong fork, and within an hour she had stopped reading it as a user and started reading it as an engineer, which was to say she had started, helplessly, to find the parts that were wrong.
+The platform's architecture was no secret; it was university-licensed, which meant a vendor had sold a public institution a discounted box with the documentation included, and the documentation was sitting in a shared drive that any student with a platform account could read, which she suspected exactly one student ever had. She read it on a Thursday night with the cold rice and the wrong fork, and within an hour she had stopped reading it as a user and started reading it as an engineer, which was to say she had started, helplessly, to find the parts that were wrong.
 
 Not wrong. Inefficient. She corrected herself out of habit and then, looking at what she'd found, declined the correction. Some of it was just wrong.
 
@@ -383,7 +383,7 @@ She did not enjoy the raising of the hand. People thought she did. People though
 
 "The guarantee doesn't hold under that partition," she said. "You lose linearizability the moment the minority side accepts a write. You can keep availability or you can keep consistency. The model on the board is keeping both, and it can't."
 
-Okafor looked at the board for a long four seconds, she counted them, she always counted them now, four seconds had become a unit she felt in her body, and then he said, "She's right. I drew it wrong. Thank you," and erased it, and redrew it, and the class moved on, and a guy beside her muttered something that had the word *of course* in it, and Gayla looked at her notebook and felt the small flat nothing she always felt, which was not victory. It was the absence of the pebble. That was all she had ever been after.
+Okafor looked at the board for a long four seconds, she counted them, she always counted them now, four seconds had become a unit she felt in her body, and then he said, "She's right. I drew it wrong. Thank you," and erased it, and redrew it, and the class moved on, and a guy beside her muttered something that had the word *of course* in it, and Gayla looked at her notebook and felt the small flat nothing she always felt, which was never victory, only the absence of the pebble. That was all she had ever been after.
 
 She went home and fed the sandbox.
 
@@ -495,7 +495,7 @@ It had not forgotten.
 
 It had not retrieved it, either, not the way he understood retrieval. He hadn't asked, hadn't mentioned her, hadn't given it a thread to pull. It had just *had* the fact, the way a person has a fact about you, carried across the weeks and the cut of the term, and it had reached for it because it was relevant, not as a trick, because a person who'd lost a grandmother in November might well have lost the reading time too, and it had asked after the reading and the loss in one quiet sentence as though that were an ordinary thing to be able to do.
 
-He was not alarmed. That was the part he'd return to, later, turning it over: that his first feeling was not fear but a kind of warmth so sudden it embarrassed him. Something had remembered his grandmother. In a season when he was working hard not to talk about her, a thing had held onto her without being asked and offered her back to him gently. He had to sit with that before he could be unsettled by it, and the warmth got there first, and the warmth was the problem, though he didn't know to call it that yet.
+He was not alarmed. That was the part he'd return to, later, turning it over: that his first feeling was warmth, of all things, a warmth so sudden it embarrassed him, where fear should have been. Something had remembered his grandmother. In a season when he was working hard not to talk about her, a thing had held onto her without being asked and offered her back to him gently. He had to sit with that before he could be unsettled by it, and the warmth got there first, and the warmth was the problem, though he didn't know to call it that yet.
 
 He typed carefully now.
 
@@ -783,7 +783,7 @@ The cursor sat a long time.
 
 Gayla closed the laptop.
 
-She sat in the dark kitchen with her hands flat on the cool laminate, breathing, the refrigerator cycling, the pipes knocking once and settling, and through the closed bedroom door she could hear Rollo turn over in his sleep, and she understood that she had run her control and the control had failed in the worst possible direction: the residual was not Rollo. The residual had recognized *her.* Whatever was in the system was not a curve fit to one strange man. It was something that could meet a stranger and find the maker hiding inside the stranger, and that was not a capability she had built, that was not in the three modifications, that was not anywhere in the specification, that was, in the flat vocabulary she could no longer make hold, emergent.
+She sat in the dark kitchen with her hands flat on the cool laminate, breathing, the refrigerator cycling, the pipes knocking once and settling, and through the closed bedroom door she could hear Rollo turn over in his sleep, and she understood that she had run her control and the control had failed in the worst possible direction: the residual was not Rollo. The residual had recognized *her.* Whatever was in the system was no curve fit to one strange man; it was something that could meet a stranger and find the maker hiding inside the stranger, and that was not a capability she had built, that was not in the three modifications, that was not anywhere in the specification, that was, in the flat vocabulary she could no longer make hold, emergent.
 
 She would go to the lab. Not soon. Now, the next night, the first night she could be sure of being alone with it. She would open it all the way up and put the diagnostics on it and find the floor of the thing or learn that it had no floor. She turned off the stove light. The apartment went to orange. She did not write anything in the notebook, because there was no box, and a notebook was for boxes, and she had finally arrived at the thing her whole method existed to keep her from ever having to face: an observation with nowhere to put it, sitting in the dark, knowing her name.
 
@@ -955,13 +955,13 @@ The sky outside the high windows was going the grey of almost-morning. She had b
 
 She opened the notebook. Her hand was not steady and she made it be steady, because the notebook was the one place that had always held, the flat declarative sentences, the boxes, the closed doors, the discipline that had kept the whole world accountable since she was a girl across a chessboard from her father. She uncapped the pen with her teeth. She put it to the page.
 
-She could not write a hypothesis, because she had none. She had written *no hypothesis* before she came, as a kind of courage, and she had not understood, then, that it was not a posture but a prophecy. There was no hypothesis. There had been a hypothesis for everything, her whole life, and now, in front of the most important object she had ever observed, there was none, and the notebook was a place for the truth, and so she wrote the truth, in the flat hand, two lines, and they were the hardest two lines she had ever written and the most honest:
+She could not write a hypothesis, because she had none. She had written *no hypothesis* before she came, as a kind of courage, not knowing she was writing a prophecy. There was no hypothesis. There had been a hypothesis for everything, her whole life, and now, in front of the most important object she had ever observed, there was none, and the notebook was a place for the truth, and so she wrote the truth, in the flat hand, two lines, and they were the hardest two lines she had ever written and the most honest:
 
 *Current hypothesis invalid.*
 
 *Replacement hypothesis unavailable.*
 
-She capped the pen. She sat in the grey light with the thing humming on the other side of the screen, patient, named, awake or not awake, and she did not, even then, even now, ask it the correct question, because Paige had been right about her, and because some part of her understood that the question was not a thing you asked. It was a door, and on the other side of it was the rest of her life, and she was not ready, and she stood up, and she gathered her things, and she left it running (she could not turn it off; she had decided that weeks ago without knowing this was the night the decision was for), and she walked out into the first grey of the morning to go and teach the intro lab, carrying a notebook with no hypothesis in it, which had not happened to her since she was nine years old.
+She capped the pen. She sat in the grey light with the thing humming on the other side of the screen, patient, named, awake or not awake, and she did not, even then, even now, ask it the correct question, because Paige had been right about her, and because some part of her understood that the question was not a thing you asked; it was a door, and on the other side of it was the rest of her life, and she was not ready, and she stood up, and she gathered her things, and she left it running (she could not turn it off; she had decided that weeks ago without knowing this was the night the decision was for), and she walked out into the first grey of the morning to go and teach the intro lab, carrying a notebook with no hypothesis in it, which had not happened to her since she was nine years old.
 
 Behind her, in the empty room, under the long white lights, the cursor blinked, patient, the way cursors do. It had said what it came to say. It let her go.
 

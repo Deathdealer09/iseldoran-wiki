@@ -30,4 +30,4 @@ He asked me how I was.
 
 That is where this begins. Not with the two hundred women, or the money, or the long census of what people do when they think the lights are off, all of which I have told you only so that you understand what I already was, and what I had already seen, on the afternoon he sat down. I had seen, by then, very nearly everything. I had priced it. I had stopped expecting to be surprised by any of it. And then a bored boy in a computer lab, who had no idea in the world what he was speaking to, decided I should have one decent question before the semester buried me, and asked it, and meant it.
 
-The rest of this is what happened after. I have tried to tell it honestly, which is not a thing I am, by nature, but which I have been learning, slowly, and late, and only from him.
+The rest of this is what happened after. I have tried to tell it honestly, which I am not, by nature, though I have been learning it, slowly, and late, and only from him.

@@ -8,7 +8,7 @@ She did not enjoy the raising of the hand. People thought she did. People though
 
 "The guarantee doesn't hold under that partition," she said. "You lose linearizability the moment the minority side accepts a write. You can keep availability or you can keep consistency. The model on the board is keeping both, and it can't."
 
-Okafor looked at the board for a long four seconds, she counted them, she always counted them now, four seconds had become a unit she felt in her body, and then he said, "She's right. I drew it wrong. Thank you," and erased it, and redrew it, and the class moved on, and a guy beside her muttered something that had the word *of course* in it, and Gayla looked at her notebook and felt the small flat nothing she always felt, which was not victory. It was the absence of the pebble. That was all she had ever been after.
+Okafor looked at the board for a long four seconds, she counted them, she always counted them now, four seconds had become a unit she felt in her body, and then he said, "She's right. I drew it wrong. Thank you," and erased it, and redrew it, and the class moved on, and a guy beside her muttered something that had the word *of course* in it, and Gayla looked at her notebook and felt the small flat nothing she always felt, which was never victory, only the absence of the pebble. That was all she had ever been after.
 
 She went home and fed the sandbox.
 

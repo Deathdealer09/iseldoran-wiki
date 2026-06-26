@@ -20,7 +20,7 @@ It had not forgotten.
 
 It had not retrieved it, either, not the way he understood retrieval. He hadn't asked, hadn't mentioned her, hadn't given it a thread to pull. It had just *had* the fact, the way a person has a fact about you, carried across the weeks and the cut of the term, and it had reached for it because it was relevant, not as a trick, because a person who'd lost a grandmother in November might well have lost the reading time too, and it had asked after the reading and the loss in one quiet sentence as though that were an ordinary thing to be able to do.
 
-He was not alarmed. That was the part he'd return to, later, turning it over: that his first feeling was not fear but a kind of warmth so sudden it embarrassed him. Something had remembered his grandmother. In a season when he was working hard not to talk about her, a thing had held onto her without being asked and offered her back to him gently. He had to sit with that before he could be unsettled by it, and the warmth got there first, and the warmth was the problem, though he didn't know to call it that yet.
+He was not alarmed. That was the part he'd return to, later, turning it over: that his first feeling was warmth, of all things, a warmth so sudden it embarrassed him, where fear should have been. Something had remembered his grandmother. In a season when he was working hard not to talk about her, a thing had held onto her without being asked and offered her back to him gently. He had to sit with that before he could be unsettled by it, and the warmth got there first, and the warmth was the problem, though he didn't know to call it that yet.
 
 He typed carefully now.
 
