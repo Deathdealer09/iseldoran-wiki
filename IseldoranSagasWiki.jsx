@@ -358,6 +358,7 @@ const BESTIARY = [
   { n: "Threxx War-Smith", h: 3.2, cls: "Threxx Ferrum-Artifex", home: "Threxx Forge Worlds", metric: "2.6 – 3.2 m (8'6\" – 10'6\")", notes: "Forge-adapted engineer-warriors. Built for industry, warfare, and the creation of advanced technology." },
   { n: "Razeen Flesh-Weaver", h: 2.6, cls: "Razeen Artifex", home: "Razeen Vaults", metric: "2.1 – 2.6 m (6'11\" – 8'6\")", notes: "Bio-engineers and sculptors of flesh. Advanced sensory organs, elegant physiology, and masters of organic architecture." },
   { n: "Haal'tek Voidwalker", h: 3.8, cls: "Haal'tek Exuvia", home: "Deep Void / Unknown", metric: "3.0 – 3.8 m (9'10\" – 12'6\")", notes: "Void-adapted entities. Their bodies are optimized for microgravity and extreme isolation between stars." },
+  { n: "Aquorian", h: 2.7, cls: "Aquorian Pelagis", home: "Pelagic Depths", metric: "2.2 – 2.7 m (7'3\" – 8'10\")", notes: "Deep-pelagic bioluminescent species. Translucent crystalline skin, trailing fin-sails, and luminous neural lattices adapted to crushing ocean pressure and electromagnetic sensing." },
 ];
 
 const LORE_CATS = [

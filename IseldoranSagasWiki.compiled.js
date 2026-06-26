@@ -784,6 +784,13 @@ const BESTIARY = [{
   home: "Deep Void / Unknown",
   metric: "3.0 – 3.8 m (9'10\" – 12'6\")",
   notes: "Void-adapted entities. Their bodies are optimized for microgravity and extreme isolation between stars."
+}, {
+  n: "Aquorian",
+  h: 2.7,
+  cls: "Aquorian Pelagis",
+  home: "Pelagic Depths",
+  metric: "2.2 – 2.7 m (7'3\" – 8'10\")",
+  notes: "Deep-pelagic bioluminescent species. Translucent crystalline skin, trailing fin-sails, and luminous neural lattices adapted to crushing ocean pressure and electromagnetic sensing."
 }];
 const LORE_CATS = [{
   id: "all",
