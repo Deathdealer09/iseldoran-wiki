@@ -9,8 +9,10 @@
 - **One-line description:** The Iseldoran Sagas — a science-fantasy universe of empires, god-kings, dynastic wars, and cosmic theology, with an official interactive lore wiki at iseldoransagas.com.
 - **What it is:** A long-form fictional IP franchise spanning 35,000+ years of imperial history, developed across novels, archival lore, dynastic genealogies, and visual canon. The wiki is the central digital archive — a searchable lore compendium, canon timeline, character dossier system, and manuscript vault.
 - **Category / "shelf":** Epic science-fantasy / space opera fiction franchise. Adjacent to Dune, Foundation, and Warhammer 40K in reader mindspace.
-- **Product type:** Creative IP (book series + worldbuilding universe) with a companion web archive. _(assumption: primary commercial product is the novels; wiki is a fan/discovery hub)_
-- **Business model:** _(needs input — book sales? Patreon/serialized? free wiki as top-of-funnel? merchandise?)_
+- **Product type:** Creative IP (book series + worldbuilding universe) with a companion web archive. The **novels are the product**; the wiki is a free top-of-funnel discovery hub.
+- **Business model:** Sell novels. The series is ongoing — "the books, then more books" — so the long game is a loyal readership that buys each new release.
+- **Primary goals (in order):** (1) Sell novels, (2) Build an audience from zero.
+- **Stage:** Starting from scratch — no existing mailing list, social following, or sales to build on yet.
 
 ## 2. Target Audience
 
@@ -55,14 +57,14 @@
 
 ## 8. Channels & Assets
 
-- **Site:** www.iseldoransagas.com (GitHub Pages, React-based interactive wiki).
+- **Site:** www.iseldoransagas.com (GitHub Pages, React-based interactive wiki) — the main owned asset.
 - **Author/owner:** Kerron Pierre — PCM Group / Pearl Properties Ltd., Trinidad & Tobago.
 - **Existing assets:** Manuscripts, canon timelines, character dossiers, dynastic genealogies, cover/promo art _(per README — confirm what's publicly live)_.
+- **Priority channels (this phase):**
+  1. **Wiki SEO** — turn the lore archive into a discovery engine (the asset that already exists).
+  2. **Email** — capture wiki visitors into a list so launches have an audience.
+  3. **Social** — drive initial traffic and build the following from zero.
 
----
+## 9. Marketing Strategy (current phase)
 
-### Open questions to confirm
-1. What is the **commercial goal**? (Sell novels, build a fan following, grow a mailing list, sell merch?) This drives every marketing skill.
-2. What's **live and buyable today** vs. in development?
-3. Where do you want to **focus first** — SEO for the wiki, social/community building, a launch moment, or an email list?
-4. Any **existing audience** (mailing list size, social following, sales numbers) to cite as proof?
+Starting from zero, the flywheel is: **SEO/social bring readers to the wiki → email captures them → list buys the books → reviews + word-of-mouth feed the next launch.** The wiki is both the SEO surface and the conversion surface, so foundational SEO + an email capture come first; social is the traffic engine on top.
