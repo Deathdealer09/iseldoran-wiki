@@ -1,12 +1,18 @@
 const { useState, useEffect, useRef } = React;
 
 // ─── NEWSLETTER CONFIG ───────────────────────────────────────────────────────
-// Paste your email provider's form-action URL here to start capturing signups
-// (MailerLite, Kit/ConvertKit, Buttondown, Mailchimp, Formspree, etc.). Until a
-// URL is set, the form shows a friendly "coming soon" notice instead of posting.
-// Set EMAIL_FIELD to your provider's expected field name
+// Signups are delivered to your inbox via FormSubmit (https://formsubmit.co) —
+// no account needed. IMPORTANT: the FIRST submission triggers a one-time
+// confirmation email to Kerron.pierre@live.com; click the link in it to
+// activate delivery. After activating, FormSubmit gives you a random alias
+// (e.g. https://formsubmit.co/ajax/abc123…) — swap the raw email below for that
+// alias to keep the address out of the page source and reduce spam.
+//
+// To switch to a real email-marketing platform later (recommended once the list
+// grows — MailerLite, Kit/ConvertKit, Buttondown), replace this URL with the
+// provider's form-action and set EMAIL_FIELD to its expected field name
 // (Buttondown: "email", Mailchimp: "EMAIL", Kit/ConvertKit: "email_address").
-const NEWSLETTER_ACTION = "";
+const NEWSLETTER_ACTION = "https://formsubmit.co/ajax/Kerron.pierre@live.com";
 const NEWSLETTER_EMAIL_FIELD = "email";
 
 function Newsletter({ compact }) {
@@ -20,7 +26,11 @@ function Newsletter({ compact }) {
     try {
       const body = new FormData();
       body.append(NEWSLETTER_EMAIL_FIELD, email);
-      await fetch(NEWSLETTER_ACTION, { method: "POST", body, mode: "no-cors" });
+      body.append("_subject", "New Imperial Dispatch signup");
+      const res = await fetch(NEWSLETTER_ACTION, {
+        method: "POST", body, headers: { Accept: "application/json" },
+      });
+      if (!res.ok) throw new Error("Request failed");
       setStatus("done");
       setEmail("");
     } catch (err) {
