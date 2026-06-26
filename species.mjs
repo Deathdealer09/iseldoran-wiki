@@ -174,6 +174,20 @@ export const SPECIES = {
       "blue-black carapaced bodies with a large smooth head and trailing tendrils, optimized for " +
       "microgravity and extreme isolation between the stars.",
   },
+  12: {
+    name: "Aquorian",
+    classification: "Aquorian Pelagis",
+    homeworld: "Pelagic Depths",
+    metric: "2.2 - 2.7 m (7'3\" - 8'10\")",
+    rulerMax: 3.0,
+    notes:
+      "Deep-pelagic bioluminescent species. Translucent crystalline skin, trailing " +
+      "fin-sails, and luminous neural lattices adapted to crushing ocean pressure.",
+    descriptor:
+      "Aquorian Pelagis from the pelagic depths, a deep-ocean bioluminescent species 2.2-2.7 m tall. " +
+      "Translucent crystalline blue skin, glowing internal neural lattices, trailing fin-sails and " +
+      "webbed digits, adapted to crushing pressure and electromagnetic sensing.",
+  },
 };
 
 /**
