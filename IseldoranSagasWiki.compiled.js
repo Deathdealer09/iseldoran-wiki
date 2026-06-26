@@ -2487,7 +2487,7 @@ function SovereignsPage() {
     }
   }, r.note)))))))));
 }
-const plateSrc = i => `assets/bestiary/${String(i + 1).padStart(3, "0")}.png`;
+const plateSrc = i => `assets/bestiary/${String(i + 1).padStart(3, "0")}.jpg`;
 function BestiaryPage() {
   const [sel, setSel] = useState(0);
   const [zoom, setZoom] = useState(false);
