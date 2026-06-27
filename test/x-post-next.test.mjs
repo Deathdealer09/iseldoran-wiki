@@ -10,6 +10,7 @@ const sample = `# Queue
 > This one is done.
 
 [ ] **1. Manufactured divinity**
+Image: assets/bestiary/001.jpg
 > At his coronation, Cassian I executed 433 rival princes.
 > You end every bloodline that could argue otherwise.
 
@@ -35,6 +36,17 @@ test("parseNext stops the body at the next item", () => {
   const next = parseNext(sample);
   assert.ok(!next.text.includes("Second item"));
   assert.ok(!next.text.includes("Body of the second"));
+});
+
+test("parseNext extracts the Image: line and keeps it out of the text", () => {
+  const next = parseNext(sample);
+  assert.deepEqual(next.images, ["assets/bestiary/001.jpg"]);
+  assert.ok(!next.text.includes("Image:"));
+});
+
+test("parseNext returns an empty images array when none declared", () => {
+  const noImg = `[ ] **A. No image**\n> Just text.\n`.split("\n");
+  assert.deepEqual(parseNext(noImg).images, []);
 });
 
 test("parseNext returns null when nothing is queued", () => {

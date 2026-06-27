@@ -28,9 +28,12 @@ const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 export const QUEUE = path.join(__dirname, "..", "content", "x-posts.md");
 
 /**
- * Find the first unchecked `[ ]` item and its blockquote body.
+ * Find the first unchecked `[ ]` item, its blockquote body, and an optional
+ * image. An image is declared with a non-blockquote line directly in the block:
+ *   Image: assets/bestiary/001.jpg
+ * (comma-separate for up to 4 images).
  * @param {string[]} lines  file split on "\n"
- * @returns {{index:number, header:string, text:string}|null}
+ * @returns {{index:number, header:string, text:string, images:string[]}|null}
  */
 export function parseNext(lines) {
   for (let i = 0; i < lines.length; i++) {
@@ -38,6 +41,7 @@ export function parseNext(lines) {
     if (!m) continue;
     const header = m[1];
     const body = [];
+    const images = [];
     let j = i + 1;
     while (j < lines.length) {
       const l = lines[j];
@@ -47,12 +51,21 @@ export function parseNext(lines) {
         if (j < lines.length && /^(\[[ x]\]|#|---)/.test(lines[j])) break;
         continue;
       }
+      const im = l.match(/^Image:\s*(.+)$/i);
+      if (im) {
+        for (const p of im[1].split(",")) {
+          const t = p.trim();
+          if (t) images.push(t);
+        }
+        j++;
+        continue;
+      }
       const bm = l.match(/^>\s?(.*)$/);
       if (!bm) break;
       body.push(bm[1]);
       j++;
     }
-    return { index: i, header, text: body.join("\n").trim() };
+    return { index: i, header, text: body.join("\n").trim(), images };
   }
   return null;
 }
@@ -86,13 +99,15 @@ async function main() {
   }
 
   console.log(
-    `Next: "${next.header}" (${[...next.text].length} chars)\n---\n${next.text}\n---`
+    `Next: "${next.header}" (${[...next.text].length} chars)` +
+      (next.images.length ? ` + ${next.images.length} image(s): ${next.images.join(", ")}` : "") +
+      `\n---\n${next.text}\n---`
   );
 
   if (peek) process.exit(0);
 
   try {
-    await postTweet(next.text, { dryRun });
+    await postTweet(next.text, { dryRun, images: next.images });
   } catch (e) {
     console.error("ERROR:", e.message);
     process.exit(e.code === "NO_CREDS" ? 2 : 1);

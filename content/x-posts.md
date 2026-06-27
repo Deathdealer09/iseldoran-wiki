@@ -85,5 +85,115 @@ Status key: `[ ] queued` · `[x] posted`
 
 ---
 
-*Next batches: pull from the Star Wolves, the Nine Foundry Houses, Leraq of Vath,
-the Napoleonic God-Emperors, and the Twin Thrones.*
+## Batch 6 — Character bios
+
+[ ] **18. Kerron, the Dragon Emperor**
+> CHARACTER: Kerron Pierre von Care — the Dragon Emperor. Conquered Trinidad, then Venezuela, then the Americas, and forged the Trinitarian Empire from the wreckage. The founding sword of a bloodline that would one day rule beneath the Dragon Throne. 🐉
+
+[ ] **19. Cassian I, the first God-King**
+> CHARACTER: Cassian I — the first true God-King. He marked his coronation by executing 433 rival princes, ending every competing dynasty in a single stroke. He did not inherit divinity; he transformed empire into divinity and made the claim unanswerable.
+
+[ ] **20. Asha Kers I, La Diosa**
+Image: assets/bestiary/004.jpg
+> CHARACTER: Asha Kers I — the God-Empress called La Diosa. She codified the Universal Khanate Law and engineered the immortal Ashari'i warrior caste (pictured). After 41 years she read aloud a list of 17,426 names, walked to the transit platform, and vanished.
+
+[ ] **21. Selene Jaza, the first Generalísima**
+> CHARACTER: Selene Jaza — the first Generalísima. She led the Black Death for 48 years. "She never sought the throne; she sought the thing the throne is supposed to do." At the Battle of Seven Moons she beat an enemy using the very maneuver he invented.
+
+[ ] **22. Kaelen Rainmaker, the Living Weapon**
+> CHARACTER: Kaelen Rainmaker — founder of the Black Death, the Living Weapon. Black armor, golden dreadlocks, green eyes flecked with gold. His creed: "We do not speak of the abstract. We speak of the tactile, bleeding, physical reality."
+
+[ ] **23. Augustus Lucius Jaza, the Generalísimo**
+> CHARACTER: Augustus Lucius Jaza — the Generalísimo, eyes the silver-grey of a cooling reactor core. He could have lived; the Vah'Sumir neural lattice would have repaired him. He refused it on Mérida theological grounds and died on principle. "You carry what you have earned."
+
+[ ] **24. Germionus de Maldor, the Immune System**
+> CHARACTER: Germionus de Maldor. For the 25 years the empire had no sovereign, he alone kept it alive — eliminating 26 pretenders and running a galaxy on institutional momentum. The empire didn't fall. That is the horror, and it has his name on it.
+
+[ ] **25. Isolde, the Twin Empress**
+> CHARACTER: Isolde Pierre von Care — the Twin Empress. She predicted the wedding-convoy attack three months out, down to the approach corridor and the window. Her doctrine, repeated across the archive: "The empire is not land. It is continuity."
+
+[ ] **26. Niccolò "Thunderborn"**
+> CHARACTER: Niccolò Kerron von Hapsburgi — the Thunderborn. A military prodigy raised inside the Sardukar Écoles who became one of the deadliest commanders in imperial history. Born of the Hapsburgi house, bound to the von Care line by blood, conquest, and theology.
+
+[ ] **27. Leraq of Vath, the defector admiral**
+> CHARACTER: Leraq of Vath — pointed ears, a crown of gold lattice. Held in Anunaki mental bondage, he broke free, defected, and rose to Grand Admiral. His 5,157-word autobiography is a primary source. "A monster. Wise — said by people who had never met wise."
+
+## Batch 7 — Major plot lines
+
+[ ] **28. The Seven Days**
+> PLOT: A masterclass in succession. Three rivals removed in seven days — Day 2, Day 4 (one shot, in a 17-second gap in the surveillance), Day 6. The investiture was set for 1100 on Day 7. By then no one was left to contest it.
+
+[ ] **29. The Great Interregnum**
+> PLOT: For 25 years the Dragon Throne had no stable sovereign — and the empire did not fall. One man quietly eliminated 26 pretenders and kept the machine running on momentum alone. The continuity was the point. The continuity was also the horror.
+
+[ ] **30. The Ten Thousand Years**
+> PLOT: The al-Sa'ud dynasty held the Dragon Throne for ten thousand years — the longest unbroken tenure in its history. A compact built four centuries earlier by Demetrius Jaza, finally matured. Patience is a weapon with a very long fuse.
+
+[ ] **31. The Cooling Riots**
+> PLOT: 2.4 million dead in 11 days. House Varekh rerouted a forge-moon's coolant to weapons production. Director Havel Tor Varekh's name is still a curse on Ixoria — workers spit after saying it aloud.
+
+[ ] **32. Beyond the Rim**
+> PLOT: Augustus Rex led 90 BILLION soldiers past the edge of known space — and returned having replaced a god. The Dragon Throne is said to carry his passage in its very stone.
+
+[ ] **33. The Killing of Talassar Vey**
+> PLOT: 37 seconds passed between Augustus Lucius Jaza picking up the abdication instrument and setting it back down. Afterward he held the man upright "until the synthetic eyes stopped tracking." You do not let a man like that die on the floor — even when you are the reason he is dying.
+
+## Batch 8 — The Great Bestiary of the Rim (with plates)
+
+[ ] **34. Imperial Human**
+Image: assets/bestiary/001.jpg
+> BESTIARY: Homo Imperialis (Optimized Strain), Terra, the Holy World. 1.88 m of genetically optimized humanity at the peak of Imperial refinement — athletic, disciplined, engineered for command. Plate 001, Great Bestiary of the Rim. 🐉
+
+[ ] **35. Noirak**
+Image: assets/bestiary/002.jpg
+> BESTIARY: Noirak Nobilis, Noirak Prime. An ancient, noble species standing 2.45–2.75 m — human-presenting but subtly alien, with enhanced physiology, long lifespans, and the bearing of natural rulers. Plate 002.
+
+[ ] **36. Vah'Sumir**
+Image: assets/bestiary/003.jpg
+> BESTIARY: Vah'Sumir Maximus, Sumir Prime. Massive apex warriors, 3.0–3.6 m, digitigrade, crested, sheathed in bronze-grey armored hide over dense muscle. Engineered for domination and endurance. Plate 003.
+
+[ ] **37. Ashari'i**
+Image: assets/bestiary/004.jpg
+> BESTIARY: Ashari'i Immortalis, Ashar. An ancient immortal warrior caste, 2.3–2.9 m — pale ivory skin, sharp cranial ridges, ceremonial armor of great age. Engineered by La Diosa herself. Plate 004.
+
+[ ] **38. Gor'nath Brute**
+Image: assets/bestiary/005.jpg
+> BESTIARY: Gor'nath Colossus, Gor'nath. A gigantic, powerfully built species, 3.5–4.2 m — dense skeleton, spiked cranial crest, brown armor-like skin plates across a hulking frame. Plate 005.
+
+[ ] **39. Yurshak Brood**
+Image: assets/bestiary/006.jpg
+> BESTIARY: Yurshak Broodling, the Yurshak Hive Worlds. Hive-evolved predators, 2.0–2.6 m — insectoid-reptilian, mandibled, multi-sensory, plated in dark chitin with natural bladed weapons. Plate 006.
+
+[ ] **40. Shal'mak Aerophage**
+Image: assets/bestiary/007.jpg
+> BESTIARY: Shal'mak Dominus — aerial apex hunters of the high atmosphere, 6.0–7.5 m wingspan. Membranous wings, a crested draconic head, light sinewy anatomy built for high-speed killing on the wing. Plate 007.
+
+[ ] **41. Oolak Luminary**
+Image: assets/bestiary/008.jpg
+> BESTIARY: Oolak Sapientis, Oolak. Bioluminescent beings, 2.2–2.7 m — translucent silvery-white bodies that glow blue through organic structures. Ancient, wise, deeply spiritual. Plate 008.
+
+[ ] **42. Threxx War-Smith**
+Image: assets/bestiary/009.jpg
+> BESTIARY: Threxx Ferrum-Artifex, Thorexia Prime. Forge-adapted engineer-warriors, 2.6–3.2 m — stocky, grey-skinned, clad in heavy industrial plate. Masters of advanced technology, built for industry and war. Plate 009.
+
+[ ] **43. Razeen Flesh-Weaver**
+Image: assets/bestiary/010.jpg
+> BESTIARY: Razeen Artifex, the Razeen Vaults. Bio-engineers and sculptors of flesh, 2.1–2.6 m — pale, elegant, with branching root-like tendrils and advanced sensory organs. Masters of organic architecture. Plate 010.
+
+[ ] **44. Haal'tek Voidwalker**
+Image: assets/bestiary/011.jpg
+> BESTIARY: Haal'tek Exuvia, the deep void. Void-adapted entities, 3.0–3.8 m — elongated blue-black carapaces, smooth heads, trailing tendrils, optimized for microgravity and the isolation between stars. Plate 011.
+
+[ ] **45. Aquorian**
+Image: assets/bestiary/012.jpg
+> BESTIARY: Aquorian Pelagis, the pelagic depths. A deep-ocean bioluminescent species, 2.2–2.7 m — translucent crystalline-blue skin, glowing neural lattices, trailing fin-sails, built for crushing pressure and electromagnetic sensing. Plate 012.
+
+---
+
+### Image attachments
+Posts can carry up to 4 images via an `Image:` line (comma-separated paths)
+directly under the `[ ]` header. Bestiary plates live in `assets/bestiary/`.
+The poster (`scripts/x-post.mjs`) uploads them before posting.
+
+*Further batches to pull: the Star Wolves, the Nine Foundry Houses,
+the Napoleonic God-Emperors, the Sullied Legions, and the Twin Thrones.*

@@ -14,6 +14,10 @@
 set -uo pipefail
 cd "$(dirname "$0")/.." || exit 1
 
+# Node's fetch needs these to use the agent proxy (see scripts/x-post.mjs).
+export NODE_USE_ENV_PROXY="${NODE_USE_ENV_PROXY:-1}"
+[ -f /root/.ccr/ca-bundle.crt ] && export NODE_EXTRA_CA_CERTS="${NODE_EXTRA_CA_CERTS:-/root/.ccr/ca-bundle.crt}"
+
 DRY=""
 [ "${1:-}" = "--dry-run" ] && DRY="--dry-run"
 

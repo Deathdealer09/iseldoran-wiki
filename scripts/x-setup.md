@@ -3,6 +3,17 @@
 Posts Iseldoran Sagas lore from `content/x-posts.md` to X via the API v2
 `POST /2/tweets` endpoint, signed with OAuth 1.0a (no external dependencies).
 
+## 0. Pricing reality (read first)
+
+As of **Feb 6, 2026**, X removed the free tier for new developer accounts. New
+accounts are **Pay-Per-Use**: ~**$0.015 per post** ( **$0.20** if the post
+contains a link), $0.005 per read. With no credits you get
+`402 CreditsDepleted`. Add credits (or redeem a voucher) in the Developer
+Console — text-only lore posts have no links, so $5 ≈ ~330 posts.
+
+Hosts to allowlist for posting: `api.twitter.com` (text) and
+`upload.twitter.com` (images).
+
 ## 1. Get X API credentials
 
 1. Create / open an app at the [X Developer Portal](https://developer.x.com/).
@@ -55,6 +66,12 @@ https://code.claude.com/docs/en/claude-code-on-the-web
 
 ## 3. Use it
 
+> **Proxy (Claude Code on the web):** Node's `fetch` ignores `HTTPS_PROXY` and
+> the proxy re-terminates TLS. The SessionStart hook exports the needed vars, but
+> for a manual run prefix with:
+> `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt`
+> (or just use `scripts/social-tick.sh`, which sets them).
+
 ```bash
 # Show the next queued item without posting:
 node scripts/x-post-next.mjs --peek
@@ -65,8 +82,18 @@ node scripts/x-post-next.mjs --dry-run
 # Post the next queued item and mark it [x] in content/x-posts.md:
 node scripts/x-post-next.mjs
 
-# Post arbitrary text directly:
+# Post arbitrary text directly (optionally with up to 4 images):
 node scripts/x-post.mjs "Some one-off tweet"
+node scripts/x-post.mjs --image assets/bestiary/003.jpg "Behold the Vah'Sumir 🐉"
+```
+
+### Images in the queue
+Add an `Image:` line directly under a `[ ]` header (comma-separate up to 4):
+
+```
+[ ] **Vah'Sumir**
+Image: assets/bestiary/003.jpg
+> BESTIARY: Vah'Sumir Maximus, Sumir Prime...
 ```
 
 After a successful post the queue line flips from `[ ]` to `[x] … — posted <timestamp>`.

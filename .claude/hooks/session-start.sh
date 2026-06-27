@@ -10,6 +10,17 @@ set -uo pipefail
 
 cd "${CLAUDE_PROJECT_DIR:-.}" || exit 0
 
+# --- 0. Make Node's fetch honor the agent proxy -------------------------------
+# Node's built-in fetch ignores HTTPS_PROXY unless NODE_USE_ENV_PROXY=1, and the
+# proxy re-terminates TLS so NODE_EXTRA_CA_CERTS must point at the CA bundle.
+# Persist both for the whole session (cron/X posting inherit them).
+if [ -n "${CLAUDE_ENV_FILE:-}" ]; then
+  echo 'export NODE_USE_ENV_PROXY=1' >> "$CLAUDE_ENV_FILE"
+  if [ -f /root/.ccr/ca-bundle.crt ]; then
+    echo 'export NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt' >> "$CLAUDE_ENV_FILE"
+  fi
+fi
+
 # --- 1. Node dependencies (best-effort; container caches after first success) -
 if [ -f package.json ]; then
   echo ">> Installing Node dependencies (npm install)…"
@@ -59,6 +70,7 @@ probe_host() {
   fi
 }
 probe_host "api.twitter.com"
+probe_host "upload.twitter.com"   # required for posting images
 probe_host "www.moltbook.com"
 
 exit 0
