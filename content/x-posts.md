@@ -140,7 +140,7 @@ Image: assets/bestiary/004.jpg
 
 ## Batch 8 — The Great Bestiary of the Rim (with plates)
 
-[ ] **34. Imperial Human**
+[x] **34. Imperial Human** — posted 2026-06-27 09:31Z
 Image: assets/bestiary/001.jpg
 > BESTIARY: Homo Imperialis (Optimized Strain), Terra, the Holy World. 1.88 m of genetically optimized humanity at the peak of Imperial refinement — athletic, disciplined, engineered for command. Plate 001, Great Bestiary of the Rim. 🐉
 
