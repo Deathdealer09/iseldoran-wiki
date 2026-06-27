@@ -10,7 +10,7 @@ Status key: `[ ] queued` · `[x] posted`
 
 ## Batch 1 — The God-Kings & the Throne
 
-[ ] **1. Manufactured divinity**
+[x] **1. Manufactured divinity** — posted 2026-06-27 05:44Z
 > At his coronation, Cassian I executed 433 rival princes. He didn't inherit divinity — he manufactured it. In the Iseldoran Sagas you don't *claim* to be a God-King. You end every bloodline that could argue otherwise. 🐉
 
 [ ] **2. La Diosa's list**
