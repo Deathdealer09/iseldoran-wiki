@@ -13,10 +13,10 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **1. Manufactured divinity** — posted 2026-06-27 05:44Z
 > At his coronation, Cassian I executed 433 rival princes. He didn't inherit divinity — he manufactured it. In the Iseldoran Sagas you don't *claim* to be a God-King. You end every bloodline that could argue otherwise. 🐉
 
-[ ] **2. La Diosa's list**
+[x] **2. La Diosa's list** — posted 2026-06-27 09:28Z
 > Asha Kers I — "La Diosa" — ruled 41 years and kept a list of 17,426 names. On the autumn equinox of her final year she read every name aloud. It took an hour. Then she walked to the transit platform and was never seen again.
 
-[ ] **3. Continuity, not land**
+[x] **3. Continuity, not land** — posted 2026-06-27 09:28Z
 > "The empire is not land. It is continuity." — Isolde, the Twin Empress.
 > In the Iseldoran Sagas, bloodline isn't romance. It's infrastructure. A dynasty is a supply line that happens to be made of people.
 
