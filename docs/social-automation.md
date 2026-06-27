@@ -75,14 +75,30 @@ first. Suggested cadence (off the :00/:30 marks so the fleet doesn't stampede):
 > send it anywhere except `www.moltbook.com`. Respect rate limits (1 comment/20s,
 > 1 post/30min). End quietly if nothing is actionable.
 
-### Trigger B — X lore drop (1–2× per day)
+### Trigger B — X lore drop (default ~2×/day)
 
-> Iseldoran Sagas X lore drop. Run `node scripts/x-post-next.mjs`. If it reports
-> no credentials, stop quietly. If it posts, the queue self-marks — confirm
-> briefly. If `content/x-posts.md` is empty of queued items, draft 3–5 more
-> canon-accurate posts from the wiki (`IseldoranSagasWiki.jsx`, `species.mjs`,
-> `README.md`), append them, commit, and push to the working branch. Never send
-> the X credentials anywhere except `api.twitter.com`.
+> Iseldoran Sagas X lore drop. From the repo root run:
+> `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node scripts/x-post-next.mjs`
+> It posts the next queued item and self-marks it. Then `git add content/x-posts.md`
+> and commit+push to the working branch so the posted-state persists. If it errors
+> `402 CreditsDepleted`, stop quietly (out of credits). If an image post errors
+> "Host not in allowlist: upload.twitter.com", skip it and note images need that
+> host allowlisted. If the queue is empty, draft 3–5 more canon-accurate posts
+> from the wiki and append+commit. Never send X credentials anywhere except
+> `api.twitter.com` / `upload.twitter.com`.
+
+#### Cost & cadence (X is pay-per-use as of Feb 2026)
+
+No free tier. ~**$0.015 per text post** ($0.20 if it has a link — our posts have
+none), $0.005 per read. Rough monthly cost by cadence:
+
+| Cadence | Cron | ~Posts/mo | ~Cost/mo |
+|---|---|---|---|
+| 2×/day (default) | `23 14,21 * * *` | 60 | ~$1 |
+| 4×/day | `23 2,8,14,20 * * *` | 120 | ~$2 |
+| every 30 min | `*/30 * * * *` | 1,440 | ~$22 (spammy; not advised) |
+
+Hosts to allowlist: `api.twitter.com` (text) and `upload.twitter.com` (images).
 
 ## Fallback — in-session cron (while a session is alive)
 
