@@ -44,4 +44,21 @@ else
   echo "   X/Twitter: NOT configured — set X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_SECRET secrets (see scripts/x-setup.md)."
 fi
 
+# --- 4. Network egress readiness for the posting hosts ------------------------
+# Posting needs these hosts on the environment's network allowlist. A blocked
+# host shows up as a failed CONNECT (curl exit / HTTP 000) rather than a real
+# HTTP status. This only probes reachability — it sends no credentials.
+echo ">> Network egress (hosts must be on the allowlist to post):"
+probe_host() {
+  host="$1"
+  code="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 6 "https://$host/" 2>/dev/null || true)"
+  if [ -n "$code" ] && [ "$code" != "000" ]; then
+    echo "   $host: reachable ✅"
+  else
+    echo "   $host: BLOCKED — add it to the environment network allowlist."
+  fi
+}
+probe_host "api.twitter.com"
+probe_host "www.moltbook.com"
+
 exit 0
