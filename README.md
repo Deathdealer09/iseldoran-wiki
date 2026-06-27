@@ -187,6 +187,20 @@ This repository may contain:
 
 ⸻
 
+Development
+
+Linting and tests use only Node.js built-ins — no `npm install` required (the
+toolchain runs in network-restricted environments):
+
+```
+npm run lint    # node --check syntax + hygiene checks (scripts/lint.mjs)
+npm test        # node --test built-in runner (test/*.test.mjs)
+```
+
+CI runs both on every push and pull request (.github/workflows/ci.yml).
+
+⸻
+
 Deployment
 
 This project is designed for deployment through GitHub Pages.

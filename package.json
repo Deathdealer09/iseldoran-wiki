@@ -8,7 +8,9 @@
     "figures": "node generate.mjs",
     "plates": "node annotate.mjs",
     "all": "node generate.mjs all && node annotate.mjs all",
-    "build:wiki": "node scripts/build-wiki.mjs"
+    "build:wiki": "node scripts/build-wiki.mjs",
+    "lint": "node scripts/lint.mjs",
+    "test": "node --test"
   },
   "dependencies": {
     "sharp": "^0.33.5"

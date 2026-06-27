@@ -25,9 +25,14 @@ import url from "node:url";
 import { postTweet } from "./x-post.mjs";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-const QUEUE = path.join(__dirname, "..", "content", "x-posts.md");
+export const QUEUE = path.join(__dirname, "..", "content", "x-posts.md");
 
-function parseNext(lines) {
+/**
+ * Find the first unchecked `[ ]` item and its blockquote body.
+ * @param {string[]} lines  file split on "\n"
+ * @returns {{index:number, header:string, text:string}|null}
+ */
+export function parseNext(lines) {
   for (let i = 0; i < lines.length; i++) {
     const m = lines[i].match(/^\[ \]\s+\*\*(.+?)\*\*/);
     if (!m) continue;
@@ -52,43 +57,58 @@ function parseNext(lines) {
   return null;
 }
 
-const args = process.argv.slice(2);
-const dryRun = args.includes("--dry-run");
-const peek = args.includes("--peek");
-
-if (!fs.existsSync(QUEUE)) {
-  console.error(`Queue not found: ${QUEUE}`);
-  process.exit(1);
-}
-const raw = fs.readFileSync(QUEUE, "utf8");
-const lines = raw.split("\n");
-const next = parseNext(lines);
-
-if (!next) {
-  console.log("Nothing queued — every item is marked posted. Add more to content/x-posts.md.");
-  process.exit(0);
+/**
+ * Flip a queue line from `[ ]` to `[x]` and stamp the header.
+ * @returns {string} the rewritten line
+ */
+export function markPostedLine(line, stamp) {
+  return line.replace(/^\[ \]/, "[x]").replace(/\*\*\s*$/, `** — posted ${stamp}`);
 }
 
-console.log(`Next: "${next.header}" (${[...next.text].length} chars)\n---\n${next.text}\n---`);
+async function main() {
+  const args = process.argv.slice(2);
+  const dryRun = args.includes("--dry-run");
+  const peek = args.includes("--peek");
 
-if (peek) process.exit(0);
+  if (!fs.existsSync(QUEUE)) {
+    console.error(`Queue not found: ${QUEUE}`);
+    process.exit(1);
+  }
+  const raw = fs.readFileSync(QUEUE, "utf8");
+  const lines = raw.split("\n");
+  const next = parseNext(lines);
 
-try {
-  await postTweet(next.text, { dryRun });
-} catch (e) {
-  console.error("ERROR:", e.message);
-  process.exit(e.code === "NO_CREDS" ? 2 : 1);
+  if (!next) {
+    console.log(
+      "Nothing queued — every item is marked posted. Add more to content/x-posts.md."
+    );
+    process.exit(0);
+  }
+
+  console.log(
+    `Next: "${next.header}" (${[...next.text].length} chars)\n---\n${next.text}\n---`
+  );
+
+  if (peek) process.exit(0);
+
+  try {
+    await postTweet(next.text, { dryRun });
+  } catch (e) {
+    console.error("ERROR:", e.message);
+    process.exit(e.code === "NO_CREDS" ? 2 : 1);
+  }
+
+  if (dryRun) {
+    console.log("[dry-run] queue not modified.");
+    process.exit(0);
+  }
+
+  const stamp = new Date().toISOString().slice(0, 16).replace("T", " ") + "Z";
+  lines[next.index] = markPostedLine(lines[next.index], stamp);
+  fs.writeFileSync(QUEUE, lines.join("\n"));
+  console.log(`Marked posted in queue (${stamp}).`);
 }
 
-if (dryRun) {
-  console.log("[dry-run] queue not modified.");
-  process.exit(0);
+if (import.meta.url === `file://${process.argv[1]}`) {
+  await main();
 }
-
-// Mark posted: flip [ ] -> [x] and stamp the header line.
-const stamp = new Date().toISOString().slice(0, 16).replace("T", " ") + "Z";
-lines[next.index] = lines[next.index]
-  .replace(/^\[ \]/, "[x]")
-  .replace(/\*\*\s*$/, `** — posted ${stamp}`);
-fs.writeFileSync(QUEUE, lines.join("\n"));
-console.log(`Marked posted in queue (${stamp}).`);
