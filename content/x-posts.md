@@ -59,12 +59,12 @@ Status key: `[ ] queued` · `[x] posted`
 [ ] **12. He died on principle**
 > Augustus Lucius Jaza could have lived — the Vah'Sumir neural lattice would have repaired him. He refused it. Mérida theology holds it's a transgression against the form Tengri gave you: "You carry what you have earned." He died on principle.
 
-[ ] **13. Humanity didn't stay one shape** *(thread-friendly)*
-> Humanity didn't stay one shape in the Iseldoran Sagas:
+[ ] **13. Humanity didn't stay one shape**
+> Humanity didn't stay one shape:
 > • Imperial Human — 1.88m, optimized strain
-> • Vah'Sumir — 3.6m of armored hide, apex warriors
+> • Vah'Sumir — 3.6m of armored hide
 > • Gor'nath Brute — 4.2m, skin like plate
-> • Shal'mak — hunts the high atmosphere on a 7.5m wingspan
+> • Shal'mak — a 7.5m wingspan in the high atmosphere
 > Engineered for survival on an existential scale.
 
 [ ] **14. Obedience seeks an owner**
@@ -136,7 +136,7 @@ Image: assets/bestiary/004.jpg
 > PLOT: Augustus Rex led 90 BILLION soldiers past the edge of known space — and returned having replaced a god. The Dragon Throne is said to carry his passage in its very stone.
 
 [ ] **33. The Killing of Talassar Vey**
-> PLOT: 37 seconds passed between Augustus Lucius Jaza picking up the abdication instrument and setting it back down. Afterward he held the man upright "until the synthetic eyes stopped tracking." You do not let a man like that die on the floor — even when you are the reason he is dying.
+> PLOT: 37 seconds passed between Jaza lifting the abdication instrument and setting it down. Then he held the dying man upright "until the synthetic eyes stopped tracking." You don't let a man like that die on the floor — even when you're the reason he is dying.
 
 ## Batch 8 — The Great Bestiary of the Rim (with plates)
 
@@ -187,6 +187,48 @@ Image: assets/bestiary/011.jpg
 [ ] **45. Aquorian**
 Image: assets/bestiary/012.jpg
 > BESTIARY: Aquorian Pelagis, the pelagic depths. A deep-ocean bioluminescent species, 2.2–2.7 m — translucent crystalline-blue skin, glowing neural lattices, trailing fin-sails, built for crushing pressure and electromagnetic sensing. Plate 012.
+
+## Batch 9 — Battles & Wars
+
+[ ] **46. The Seven Moons of Harak**
+> BATTLE: Year 8 of the Meraud War — the Seven Moons of Harak. Selene Jaza's decisive victory, won by turning an enemy's own signature maneuver back against him. In the Iseldoran Sagas, the archive remembers who studies hardest. 🐉
+
+[x] **47. The Corridor of Yren** — posted 2026-06-27 09:34Z
+> BATTLE: Corridor of Yren, Year 5. Talos Briath threaded SEVEN vessels through on an 8% debris-cycle variance no one thought survivable — and wounded Selene Jaza doing it. She spent three months studying the trick, then used it to end him.
+
+[ ] **48. The Meraud Free Republic War**
+> WAR: Nine years against the Meraud Free Republic, raised by Remi Vey at just 23. He moved in three years where his father had taken fifteen — and repeated the same fatal error. Selene Jaza ran the whole war from the flagship Sable Absolute.
+
+[ ] **49. The Duel — "the code is satisfied"**
+> BATTLE: After nine years, the war ended in single combat — Selene Jaza vs. Remi Vey.
+> Remi: "You cheated twice."
+> Selene: "The code says the fight ends when one combatant cannot continue. The code is satisfied."
+
+[ ] **50. The Gold Sky**
+> WAR: The Merchant War opened with the Gold Sky — seven battle fleets launched from Ixoria's dock-rings in 36 hours. The orbital sky burned gold for three nights. The forge-workers watched through the smoke, then went back to their stations without ceremony.
+
+[ ] **51. The Star Wolf Frontier Wars**
+Image: assets/bestiary/003.jpg
+> WAR: Eleven commanders. Five frontier wars. One Crown Prince of War — Khuvius Pierre von Care — and his Star Wolves, who fought by a doctrine called "Horse into Vacuum." The sixth war, Hesh-Kar, forged the woman who'd become La Diosa.
+
+[ ] **52. Hesh-Kar**
+> BATTLE: Hesh-Kar — the sixth and decisive Star Wolf campaign. The Orbital Battle of Tarrid, then the Khotai Pass, then Hesh-Kar itself. It didn't just win the frontier; it made Asha Kers I. Scars are a kind of curriculum.
+
+[ ] **53. The Wedding War**
+> WAR: It began as a wedding and ended as a dynasty. The forward marriage barges — unarmored for four centuries — burned in the convoy: silk first, then lacquer, then fuel lines. From the Battle of Mars rose the Twin Thrones.
+
+[ ] **54. Cassander's answer**
+> BATTLE: They murdered Aurelian, the Murdered Sun. Cassander's reply was total, methodical, merciless — advancing through a burning city on foot with a flamethrower. Then: "I have spoken for the Flame long enough. Let it speak for itself."
+
+[ ] **55. The War at the Mouth of Creation**
+Image: assets/bestiary/011.jpg
+> WAR: Augustus Rex led NINETY BILLION soldiers past the edge of known space — through the Fall of Ra'ah, the War at the Mouth of Creation, the Breaking of the Rim — and returned having replaced a god. The Dragon Throne carries his passage in its stone.
+
+[ ] **56. The Strangling of the Belt**
+> WAR: The deadliest opening move of the Merchant War was fired without a shot — 312 supply lines went dark in eleven days. A war of pure economic annihilation, the "Thirty Years' Burn," that starved a civilization built on transit mathematics.
+
+[ ] **57. Khutun's Revenge**
+> WAR: They killed Niccolò the Thunderborn at Vey Kashar. Khutun's answer was 19 years of "administrative annihilation" — not fleets and sieges, but the systematic erasure of the Belt itself. Some revenge is waged with paperwork. It is no gentler for it.
 
 ---
 
