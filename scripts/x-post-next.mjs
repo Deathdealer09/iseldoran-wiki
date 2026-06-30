@@ -25,7 +25,11 @@ import url from "node:url";
 import { postTweet } from "./x-post.mjs";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-export const QUEUE = path.join(__dirname, "..", "content", "x-posts.md");
+// Default queue is content/x-posts.md; override with $X_QUEUE to drip a separate
+// serialized queue (e.g. content/black-death-saga.md).
+export const QUEUE = process.env.X_QUEUE
+  ? path.resolve(process.env.X_QUEUE)
+  : path.join(__dirname, "..", "content", "x-posts.md");
 
 /**
  * Find the first unchecked `[ ]` item, its blockquote body, and an optional
