@@ -3,15 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Iseldoran Sagas Wiki</title>
-  <meta name="description" content="Official Master Archive and Interactive Lore Repository for The Iseldoran Sagas." />
+
+  <!-- Primary meta -->
+  <title>The Iseldoran Sagas — Epic Science-Fantasy Book Series & Lore Archive</title>
+  <meta name="description" content="The Iseldoran Sagas: an epic science-fantasy book series of empires, god-kings, and dynastic war across 35,000 years. Explore 38+ volumes, characters, timelines, and the official lore compendium." />
+  <link rel="canonical" href="https://www.iseldoransagas.com/" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="author" content="Kerron Pierre" />
+
+  <!-- Open Graph (Facebook, LinkedIn, Discord, iMessage, Slack) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Iseldoran Sagas" />
+  <meta property="og:title" content="The Iseldoran Sagas — Epic Science-Fantasy Book Series" />
+  <meta property="og:description" content="Empires, god-kings, and dynastic war across 35,000 years. 38+ volumes, 1.74M+ words. Explore the official lore archive." />
+  <meta property="og:url" content="https://www.iseldoransagas.com/" />
+  <meta property="og:image" content="https://www.iseldoransagas.com/uploads/9B0996B6-B0D3-43D8-92F0-59A0A41C0D0B.png" />
+  <meta property="og:image:alt" content="The God Emperors of the Iseldoran Sagas" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Iseldoran Sagas — Epic Science-Fantasy Book Series" />
+  <meta name="twitter:description" content="Empires, god-kings, and dynastic war across 35,000 years. 38+ volumes, 1.74M+ words. Explore the official lore archive." />
+  <meta name="twitter:image" content="https://www.iseldoransagas.com/uploads/9B0996B6-B0D3-43D8-92F0-59A0A41C0D0B.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.iseldoransagas.com/#website",
+        "url": "https://www.iseldoransagas.com/",
+        "name": "The Iseldoran Sagas",
+        "description": "Official master archive and interactive lore repository for The Iseldoran Sagas science-fantasy book series."
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.iseldoransagas.com/#publisher",
+        "name": "The Iseldoran Press",
+        "url": "https://www.iseldoransagas.com/"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.iseldoransagas.com/#author",
+        "name": "Kerron Pierre"
+      },
+      {
+        "@type": "BookSeries",
+        "name": "The Iseldoran Sagas",
+        "url": "https://www.iseldoransagas.com/",
+        "author": { "@id": "https://www.iseldoransagas.com/#author" },
+        "publisher": { "@id": "https://www.iseldoransagas.com/#publisher" },
+        "genre": ["Science Fantasy", "Space Opera", "Epic Fantasy"],
+        "description": "An epic science-fantasy saga of empires, god-kings, dynastic wars, and cosmic theology spanning more than 35,000 years of imperial history."
+      }
+    ]
+  }
+  </script>
+
   <!-- Self-contained: React + the compiled app are served locally (no CDN, no in-browser Babel). -->
   <!-- Edit IseldoranSagasWiki.jsx then run `npm run build:wiki` to regenerate the .js files below. -->
   <script src="vendor/react.production.min.js"></script>
   <script src="vendor/react-dom.production.min.js"></script>
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Static fallback for crawlers and no-JS visitors. The React app replaces this on load. -->
+    <noscript>
+      <h1>The Iseldoran Sagas</h1>
+      <p>The official master archive and interactive lore repository for The Iseldoran Sagas — an
+      epic science-fantasy book series of empires, god-kings, dynastic wars, and cosmic theology
+      spanning more than 35,000 years of imperial history. 38+ volumes, 1.74M+ words.</p>
+      <p>The Iseldoran Sagas combine imperial science fiction, dynastic political drama, mythic space
+      opera, and military realism, drawing on African, Arabian, Mongolian, and imperial European
+      influences. Readers of Dune, Foundation, and Warhammer 40K will feel at home beneath the
+      Dragon Throne.</p>
+      <p>Major dynasties and factions include the Pierre von Care Dynasty, the Church of Iseldora,
+      the Black Death, the Sardukar and Red Sardukar, the Vah'Sumir, the Ashari'i, and the Hapsburgi.
+      Key figures include Kerron Pierre von Care the Dragon Emperor, Cassian I the first God-King,
+      Niccolò Kerron von Hapsburgi "Thunderborn," Khutun Ghegha Khan, Lucius Luceron II the Soldier
+      Emperor, and Asha Kers I "La Diosa."</p>
+      <p>This site requires JavaScript to explore the full interactive compendium of novels,
+      characters, sovereigns, and timelines.</p>
+    </noscript>
+  </div>
   <script src="IseldoranSagasWiki.compiled.js"></script>
 </body>
 </html>

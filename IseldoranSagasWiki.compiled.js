@@ -4,6 +4,107 @@ const {
   useEffect,
   useRef
 } = React;
+const NEWSLETTER_ACTION = "https://formsubmit.co/ajax/Kerron.pierre@live.com";
+const NEWSLETTER_EMAIL_FIELD = "email";
+function Newsletter({
+  compact
+}) {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("idle");
+  const submit = async e => {
+    e.preventDefault();
+    if (!email) return;
+    if (!NEWSLETTER_ACTION) {
+      setStatus("unconfigured");
+      return;
+    }
+    setStatus("sending");
+    try {
+      const body = new FormData();
+      body.append(NEWSLETTER_EMAIL_FIELD, email);
+      body.append("_subject", "New Imperial Dispatch signup");
+      const res = await fetch(NEWSLETTER_ACTION, {
+        method: "POST",
+        body,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setStatus("done");
+      setEmail("");
+    } catch (err) {
+      setStatus("error");
+    }
+  };
+  const wrap = {
+    maxWidth: compact ? "420px" : "560px",
+    margin: "0 auto",
+    padding: compact ? "0" : "2.5rem 1.5rem",
+    textAlign: "center"
+  };
+  return React.createElement("section", {
+    style: wrap,
+    "aria-label": "Newsletter signup"
+  }, !compact && React.createElement("h2", {
+    className: "section-title",
+    style: {
+      marginBottom: "0.5rem"
+    }
+  }, "The Imperial Dispatch"), React.createElement("p", {
+    style: {
+      color: "var(--mist)",
+      fontSize: compact ? "0.85rem" : "0.95rem",
+      marginBottom: "1rem"
+    }
+  }, "New volumes, lore, and release news from the Dragon Throne \u2014 straight to your inbox."), status === "done" ? React.createElement("p", {
+    style: {
+      color: "var(--gold)",
+      fontFamily: "var(--font-title)",
+      letterSpacing: "0.12em",
+      textTransform: "uppercase",
+      fontSize: "0.8rem"
+    }
+  }, "Welcome to the archive. Watch your inbox.") : React.createElement("form", {
+    onSubmit: submit,
+    style: {
+      display: "flex",
+      gap: "0.5rem",
+      flexWrap: "wrap",
+      justifyContent: "center"
+    }
+  }, React.createElement("input", {
+    type: "email",
+    required: true,
+    value: email,
+    onChange: e => setEmail(e.target.value),
+    placeholder: "your@email.com",
+    "aria-label": "Email address",
+    className: "lore-search-input",
+    style: {
+      marginBottom: 0,
+      flex: "1 1 240px",
+      maxWidth: "320px"
+    }
+  }), React.createElement("button", {
+    type: "submit",
+    className: "btn-primary",
+    disabled: status === "sending"
+  }, status === "sending" ? "Joining…" : "Join")), status === "unconfigured" && React.createElement("p", {
+    style: {
+      color: "var(--smoke)",
+      fontSize: "0.78rem",
+      marginTop: "0.75rem",
+      fontStyle: "italic"
+    }
+  }, "Signups open soon. (Connect an email provider in NEWSLETTER_ACTION to go live.)"), status === "error" && React.createElement("p", {
+    style: {
+      color: "var(--rust)",
+      fontSize: "0.78rem",
+      marginTop: "0.75rem"
+    }
+  }, "Something went wrong \u2014 please try again."));
+}
 const STYLES = `
   @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1715,7 +1816,7 @@ function HomePage({
     className: "stat-number"
   }, s.n), React.createElement("div", {
     className: "stat-label"
-  }, s.l)))));
+  }, s.l)))), React.createElement(Newsletter, null));
 }
 function NovelsPage() {
   const [search, setSearch] = useState("");
@@ -2336,7 +2437,13 @@ function Footer({
     className: "footer-brand"
   }, "The Iseldoran Sagas"), React.createElement("div", {
     className: "footer-tagline"
-  }, "\"Loyalty is reality. Reality is law. Law is eternal.\""), React.createElement("ul", {
+  }, "\"Loyalty is reality. Reality is law. Law is eternal.\""), React.createElement("div", {
+    style: {
+      margin: "1.5rem auto 0.5rem"
+    }
+  }, React.createElement(Newsletter, {
+    compact: true
+  })), React.createElement("ul", {
     className: "footer-links"
   }, pages.map(p => React.createElement("li", {
     key: p
