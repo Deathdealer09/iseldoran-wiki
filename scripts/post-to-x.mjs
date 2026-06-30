@@ -19,6 +19,7 @@
  *   node scripts/post-to-x.mjs "Your tweet text here"
  *   node scripts/post-to-x.mjs --file path/to/tweet.txt
  *   node scripts/post-to-x.mjs --dry-run "Preview without posting"
+ *   node scripts/post-to-x.mjs --last       # show the account's latest tweet
  *
  * Exit code 0 on success, non-zero on any error.
  */
@@ -26,7 +27,8 @@
 import crypto from 'node:crypto';
 import { readFileSync } from 'node:fs';
 
-const API_URL = 'https://api.twitter.com/2/tweets';
+const POST_URL = 'https://api.twitter.com/2/tweets';
+const ME_URL = 'https://api.twitter.com/2/users/me';
 // X always counts a URL as 23 characters; the standard tweet limit is 280.
 const TWEET_LIMIT = 280;
 
@@ -36,14 +38,31 @@ function fail(msg) {
 }
 
 function parseArgs(argv) {
-  const opts = { dryRun: false, file: null, text: null };
+  const opts = { dryRun: false, file: null, text: null, last: false };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
     if (arg === '--dry-run') opts.dryRun = true;
+    else if (arg === '--last') opts.last = true;
     else if (arg === '--file') opts.file = argv[++i];
     else if (!opts.text) opts.text = arg;
   }
   return opts;
+}
+
+function loadCreds() {
+  const creds = {
+    apiKey: process.env.X_API_KEY,
+    apiSecret: process.env.X_API_SECRET,
+    accessToken: process.env.X_ACCESS_TOKEN,
+    accessSecret: process.env.X_ACCESS_SECRET,
+  };
+  const names = [];
+  if (!creds.apiKey) names.push('X_API_KEY');
+  if (!creds.apiSecret) names.push('X_API_SECRET');
+  if (!creds.accessToken) names.push('X_ACCESS_TOKEN');
+  if (!creds.accessSecret) names.push('X_ACCESS_SECRET');
+  if (names.length) fail(`Missing env var(s): ${names.join(', ')}`);
+  return creds;
 }
 
 function getText(opts) {
@@ -60,8 +79,8 @@ function rfc3986(str) {
   );
 }
 
-function oauthHeader({ method, url, creds }) {
-  const params = {
+function oauthHeader({ method, url, creds, queryParams = {} }) {
+  const oauth = {
     oauth_consumer_key: creds.apiKey,
     oauth_nonce: crypto.randomBytes(16).toString('hex'),
     oauth_signature_method: 'HMAC-SHA1',
@@ -70,10 +89,12 @@ function oauthHeader({ method, url, creds }) {
     oauth_version: '1.0',
   };
 
-  // For a JSON body request, only the oauth_* params are signed.
-  const paramString = Object.keys(params)
+  // The signature base includes the oauth_* params plus any query-string
+  // params. A JSON request body is NOT included in the signature.
+  const allParams = { ...oauth, ...queryParams };
+  const paramString = Object.keys(allParams)
     .sort()
-    .map((k) => `${rfc3986(k)}=${rfc3986(params[k])}`)
+    .map((k) => `${rfc3986(k)}=${rfc3986(allParams[k])}`)
     .join('&');
 
   const baseString = [
@@ -83,25 +104,69 @@ function oauthHeader({ method, url, creds }) {
   ].join('&');
 
   const signingKey = `${rfc3986(creds.apiSecret)}&${rfc3986(creds.accessSecret)}`;
-  const signature = crypto
+  oauth.oauth_signature = crypto
     .createHmac('sha1', signingKey)
     .update(baseString)
     .digest('base64');
 
-  params.oauth_signature = signature;
-
-  const header =
+  // Only oauth_* params go in the Authorization header.
+  return (
     'OAuth ' +
-    Object.keys(params)
+    Object.keys(oauth)
       .sort()
-      .map((k) => `${rfc3986(k)}="${rfc3986(params[k])}"`)
-      .join(', ');
+      .map((k) => `${rfc3986(k)}="${rfc3986(oauth[k])}"`)
+      .join(', ')
+  );
+}
 
-  return header;
+// Fetch and print the authenticated account's most recent tweet.
+async function showLast(creds) {
+  const me = await apiGet(ME_URL, {}, creds);
+  const userId = me?.data?.id;
+  if (!userId) fail('Could not resolve the authenticated user id.');
+
+  const tweetsUrl = `https://api.twitter.com/2/users/${userId}/tweets`;
+  const query = { max_results: '5', 'tweet.fields': 'created_at' };
+  const tl = await apiGet(tweetsUrl, query, creds);
+
+  const latest = tl?.data?.[0];
+  if (!latest) {
+    console.log('No tweets found on this account.');
+    return;
+  }
+
+  console.log(`Last post by @${me.data.username}:`);
+  console.log('─'.repeat(50));
+  console.log(latest.text);
+  console.log('─'.repeat(50));
+  if (latest.created_at) console.log(`Posted: ${latest.created_at}`);
+  console.log(`https://x.com/i/web/status/${latest.id}`);
+}
+
+async function apiGet(url, queryParams, creds) {
+  const authorization = oauthHeader({ method: 'GET', url, creds, queryParams });
+  const qs = new URLSearchParams(queryParams).toString();
+  const res = await fetch(qs ? `${url}?${qs}` : url, {
+    headers: { Authorization: authorization },
+  });
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    fail(
+      `X API ${res.status}: ${JSON.stringify(body.detail || body.errors || body)}`
+    );
+  }
+  return body;
 }
 
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
+
+  // Read mode: show the account's most recent tweet and exit.
+  if (opts.last) {
+    await showLast(loadCreds());
+    return;
+  }
+
   const text = getText(opts);
 
   if (!text) {
@@ -124,22 +189,10 @@ async function main() {
     return;
   }
 
-  const creds = {
-    apiKey: process.env.X_API_KEY,
-    apiSecret: process.env.X_API_SECRET,
-    accessToken: process.env.X_ACCESS_TOKEN,
-    accessSecret: process.env.X_ACCESS_SECRET,
-  };
-  const names = [];
-  if (!creds.apiKey) names.push('X_API_KEY');
-  if (!creds.apiSecret) names.push('X_API_SECRET');
-  if (!creds.accessToken) names.push('X_ACCESS_TOKEN');
-  if (!creds.accessSecret) names.push('X_ACCESS_SECRET');
-  if (names.length) fail(`Missing env var(s): ${names.join(', ')}`);
+  const creds = loadCreds();
+  const authorization = oauthHeader({ method: 'POST', url: POST_URL, creds });
 
-  const authorization = oauthHeader({ method: 'POST', url: API_URL, creds });
-
-  const res = await fetch(API_URL, {
+  const res = await fetch(POST_URL, {
     method: 'POST',
     headers: {
       Authorization: authorization,
