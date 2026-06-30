@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # No `npm install`: the linter and test suite use only Node built-ins
+      # (`node --check`, `node --test`, `node:assert`), so CI needs no registry.
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm test

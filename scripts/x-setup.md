@@ -1,0 +1,105 @@
+# X (Twitter) auto-posting — setup
+
+Posts Iseldoran Sagas lore from `content/x-posts.md` to X via the API v2
+`POST /2/tweets` endpoint, signed with OAuth 1.0a (no external dependencies).
+
+## 0. Pricing reality (read first)
+
+As of **Feb 6, 2026**, X removed the free tier for new developer accounts. New
+accounts are **Pay-Per-Use**: ~**$0.015 per post** ( **$0.20** if the post
+contains a link), $0.005 per read. With no credits you get
+`402 CreditsDepleted`. Add credits (or redeem a voucher) in the Developer
+Console — text-only lore posts have no links, so $5 ≈ ~330 posts.
+
+Hosts to allowlist for posting: `api.twitter.com` (text) and
+`upload.twitter.com` (images).
+
+## 1. Get X API credentials
+
+1. Create / open an app at the [X Developer Portal](https://developer.x.com/).
+2. The app must have **Read and Write** permissions (set this *before* generating
+   tokens — if you change it after, regenerate the access token + secret).
+3. Attach the app to a **Project** (required for API v2 posting).
+4. Collect four values:
+   - **API Key** (consumer key)
+   - **API Key Secret** (consumer secret)
+   - **Access Token**
+   - **Access Token Secret**
+
+> Free tier currently allows a limited number of posts/month per app — enough for
+> a steady lore-drop cadence. Long posts (>280 chars) require X Premium on the
+> posting account; otherwise keep items at/under 280.
+
+## 2. Provide the credentials (pick one)
+
+**A. Local credentials file (preferred — kept out of git):**
+
+```bash
+mkdir -p ~/.config/iseldoran-x
+cat > ~/.config/iseldoran-x/credentials.json <<'JSON'
+{
+  "api_key": "YOUR_API_KEY",
+  "api_secret": "YOUR_API_SECRET",
+  "access_token": "YOUR_ACCESS_TOKEN",
+  "access_secret": "YOUR_ACCESS_SECRET"
+}
+JSON
+chmod 600 ~/.config/iseldoran-x/credentials.json
+```
+
+**B. Environment variables** (better for ephemeral / web containers — set them as
+environment **secrets** so they survive new sessions):
+
+```bash
+export X_API_KEY=...
+export X_API_SECRET=...
+export X_ACCESS_TOKEN=...
+export X_ACCESS_SECRET=...
+```
+
+On Claude Code on the web, add these as secrets in the environment config so a
+fresh container has them — see
+https://code.claude.com/docs/en/claude-code-on-the-web
+
+> 🔒 The credentials are only ever sent to `api.twitter.com`. Never commit the
+> credentials file. Never paste secrets into chat.
+
+## 3. Use it
+
+> **Proxy (Claude Code on the web):** Node's `fetch` ignores `HTTPS_PROXY` and
+> the proxy re-terminates TLS. The SessionStart hook exports the needed vars, but
+> for a manual run prefix with:
+> `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt`
+> (or just use `scripts/social-tick.sh`, which sets them).
+
+```bash
+# Show the next queued item without posting:
+node scripts/x-post-next.mjs --peek
+
+# Validate end-to-end without sending (signs with your real creds):
+node scripts/x-post-next.mjs --dry-run
+
+# Post the next queued item and mark it [x] in content/x-posts.md:
+node scripts/x-post-next.mjs
+
+# Post arbitrary text directly (optionally with up to 4 images):
+node scripts/x-post.mjs "Some one-off tweet"
+node scripts/x-post.mjs --image assets/bestiary/003.jpg "Behold the Vah'Sumir 🐉"
+```
+
+### Images in the queue
+Add an `Image:` line directly under a `[ ]` header (comma-separate up to 4):
+
+```
+[ ] **Vah'Sumir**
+Image: assets/bestiary/003.jpg
+> BESTIARY: Vah'Sumir Maximus, Sumir Prime...
+```
+
+After a successful post the queue line flips from `[ ]` to `[x] … — posted <timestamp>`.
+
+## 4. Cadence
+
+A good lore-drop rhythm is 1–2 posts/day. Either run `x-post-next.mjs` from a
+scheduler (cron / GitHub Action / Claude scheduled task), or post manually when
+you want. Don't over-post: spacing keeps the feed from looking automated.

@@ -1,0 +1,54 @@
+name: Black Death saga (Moltbook)
+
+# Unattended Moltbook posting of the Black Death saga to m/iseldoran.
+# Runs on GitHub's servers; solves verification challenges with the conservative
+# solver (scripts/moltbook-solve.mjs) and NEVER guesses (skips when unsure, so it
+# cannot trip Moltbook's 10-failure auto-suspension).
+#
+# REQUIREMENTS (one-time):
+#   1. Repo secret MOLTBOOK_API_KEY (Settings → Secrets and variables → Actions).
+#   2. Merge to the DEFAULT branch (schedule only fires from the default branch).
+#   3. Settings → Actions → General → Workflow permissions = "Read and write".
+#
+# Cadence: polls every 20 min; the script self-gates to 35 min (MB_GATE_MIN),
+# so a part posts roughly every ~40 min — safely above Moltbook's 30-min limit.
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: moltbook-saga
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Post next saga part (gated, solver-verified)
+        env:
+          MOLTBOOK_API_KEY: ${{ secrets.MOLTBOOK_API_KEY }}
+          MB_GATE_MIN: "35"
+        run: node scripts/moltbook-post-next.mjs
+
+      - name: Commit updated saga state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/black-death-saga.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/black-death-saga.md
+            git commit -m "Auto-post: Black Death saga → m/iseldoran [skip ci]"
+            git push
+          else
+            echo "No saga change to commit (gated, complete, or pending)."
+          fi

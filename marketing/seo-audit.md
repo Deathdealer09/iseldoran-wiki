@@ -4,7 +4,7 @@
 
 ## Executive Summary
 
-The wiki contains ~1.74M words of genuinely unique, high-quality lore across 46 volumes, 82+ characters/lore entries, a timeline, and galleries — an enormous latent SEO and AI-citation asset. **Almost none of it is currently visible to Google or AI crawlers.** The site is a client-side React app transpiled by Babel *in the browser*, with all navigation handled by React state on a single URL. To a crawler the entire site is one near-empty page.
+The wiki contains ~1.74M words of genuinely unique, high-quality lore across 46 volumes, 82+ characters/lore entries, a timeline, and galleries — an enormous latent SEO and AI-citation asset. **Almost none of it is currently visible to Google or AI crawlers.** The site now pre-compiles its React app via a build step (good — in-browser Babel is gone), but it still renders entirely client-side into an empty `<div id="root">`, with all navigation handled by React state on a single URL. To a crawler that doesn't execute JS, the entire site is one near-empty page.
 
 There is also no way to buy the books: all 46 volumes link to `#`.
 
@@ -23,8 +23,8 @@ These are architectural problems, not content problems. The content is ready; th
 
 ### 1. Client-side-only rendering — content invisible to crawlers
 - **Impact:** Critical
-- **Evidence:** `index.html` ships `<div id="root"></div>` plus React + Babel `@babel/standalone` loaded from unpkg. The page is transpiled and rendered in the browser. Crawlers (and most AI bots) that don't execute JS see no body content. Live fetch returned 403, but the source is conclusive.
-- **Fix:** Pre-render content to static HTML. Options, lightest to heaviest: (a) generate static HTML pages from the existing data arrays (`BOOKS`, `LORE`, `SOVEREIGNS`, `TIMELINE`) with a small build script; (b) migrate to a static-site generator / framework with SSG (Astro is an excellent fit for a content/lore site — keeps your React components, outputs static HTML). Either way, remove Babel-in-browser from production.
+- **Evidence:** `index.html` ships `<div id="root"></div>` and loads a pre-compiled bundle (`IseldoranSagasWiki.compiled.js`) that renders the whole app in the browser. The in-browser Babel/CDN setup has already been replaced by a build step (`npm run build:wiki`) — good — but the page body is still empty until JS runs, so crawlers and AI bots that don't execute JS see no lore. *Partial mitigation now in place:* a `<noscript>` static fallback was added to `index.html` so non-JS clients get a real description and keyword set.
+- **Fix:** Pre-render content to static HTML so the lore exists in the markup. Options, lightest to heaviest: (a) extend the existing `scripts/build-wiki.mjs` to also emit static HTML pages from the data arrays (`BOOKS`, `LORE`, `SOVEREIGNS`, `TIMELINE`); (b) migrate to a static-site generator / framework with SSG (Astro is an excellent fit for a content/lore site — keeps your React components, outputs static HTML).
 
 ### 2. Single-URL SPA — no indexable pages
 - **Impact:** Critical
@@ -51,10 +51,8 @@ These are architectural problems, not content problems. The content is ready; th
 - **Evidence:** No `application/ld+json` anywhere.
 - **Fix:** `Book` schema per volume (name, author, isbn, url, offers when buy links exist), `Person` schema for characters/sovereigns, `Breadcrumb` schema for navigation. This is what earns rich results and feeds AI answer engines. (See the `schema` and `ai-seo` skills.)
 
-### 7. Babel-in-browser hurts Core Web Vitals
-- **Impact:** Medium
-- **Evidence:** `@babel/standalone` transpiles on every page load — heavy JS execution, slow LCP/INP.
-- **Fix:** Resolved automatically by pre-rendering / a build step (issue #1).
+### 7. Babel-in-browser hurts Core Web Vitals — ✅ RESOLVED
+- **Status:** Already fixed. The site no longer ships `@babel/standalone`; `scripts/build-wiki.mjs` pre-compiles the JSX and vendors React locally, so there's no in-browser transpile on page load. (Full Core Web Vitals still benefit further from the static-HTML rebuild in issue #1.)
 
 ---
 
