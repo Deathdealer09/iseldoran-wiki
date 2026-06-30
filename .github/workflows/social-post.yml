@@ -1,0 +1,60 @@
+name: X lore auto-post
+
+# Unattended X posting — runs on GitHub's servers, no Claude session needed.
+#
+# REQUIREMENTS (one-time):
+#   1. Add these as repo secrets (Settings → Secrets and variables → Actions):
+#        X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET
+#   2. This workflow only fires on `schedule` from the repository's DEFAULT
+#      branch — merge it to the default branch for the timer to start.
+#   3. Settings → Actions → General → Workflow permissions = "Read and write"
+#      (so it can commit the updated queue back).
+#
+# Cadence: 4×/day (UTC). GitHub may delay scheduled runs by a few minutes.
+# Each run posts the next item from content/x-posts.md (~$0.015/text post).
+
+on:
+  schedule:
+    - cron: "23 2 * * *"
+    - cron: "23 8 * * *"
+    - cron: "23 14 * * *"
+    - cron: "23 20 * * *"
+  workflow_dispatch: {}   # lets you trigger a post manually from the Actions tab
+
+concurrency:
+  group: x-lore-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Post next queued item
+        id: post
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: node scripts/x-post-next.mjs
+
+      - name: Commit updated queue state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/x-posts.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/x-posts.md
+            git commit -m "Auto-post: mark next X lore item posted [skip ci]"
+            git push
+          else
+            echo "No queue change to commit."
+          fi
