@@ -33,7 +33,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **6. The Sable Absolute** — posted 2026-07-01 11:34Z
 > The Sable Absolute: officially a 200-crew medium carrier. Actual crew — 940. It runs 20° below comfort spec on purpose, to keep its operators sharp. One encrypted line to the Dragon Throne, nothing else. The only Black Death ship whose name is on record.
 
-[ ] **7. Studied, then beaten with his own move**
+[x] **7. Studied, then beaten with his own move** — posted 2026-07-01 16:42Z
 > Talos Briath won a battle with a desperate corridor maneuver no one had survived before. Selene Jaza studied it. Then she used his own method against him at the Battle of Seven Moons. The archive remembers who learns faster.
 
 ---
