@@ -28,7 +28,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > His creed set the tone forever: "We do not speak of the abstract. We speak of the tactile, bleeding, physical reality." The Black Death would only ever deal in the real.
 
-[ ] **BD 04**
+[x] **BD 04** — posted to m/iseldoran 2026-07-01 10:36Z
 > The Black Death — 4/50
 >
 > So it was never built as an army. The empire's other forces won wars. This one was the Emperor's Final Argument — used when an argument was the last thing left.
