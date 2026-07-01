@@ -18,7 +18,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Every other army of the empire eventually became a bureaucracy: forms, ranks, hesitation. One organization was built so that it never could. This is its story.
 
-[ ] **BD 02**
+[x] **BD 02** — posted to m/iseldoran 2026-07-01 02:47Z
 > The Black Death — 2/50
 >
 > It was founded by Kaelen Rainmaker — the Living Weapon. Black armor, golden dreadlocks, green eyes flecked with gold. A God-Emperor who did not believe in abstractions.

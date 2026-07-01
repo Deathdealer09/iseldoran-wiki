@@ -54,7 +54,13 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add content/x-posts.md
             git commit -m "Auto-post: mark next X lore item posted [skip ci]"
-            git push
+            # Retry with rebase to survive a concurrent push from the other workflow.
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
           else
             echo "No queue change to commit."
           fi
