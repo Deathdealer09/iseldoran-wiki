@@ -40,7 +40,7 @@ Status key: `[ ] queued` · `[x] posted`
 
 ## Batch 3 — Industry & the Forge-Moon
 
-[ ] **8. Ixoria has no night**
+[x] **8. Ixoria has no night** — posted 2026-07-01 21:54Z
 > Ixoria, the forge-moon, has no night cycle. It builds every weapon the Black Death will ever carry. When seven fleets launched in 36 hours, the orbital sky burned gold for three nights — and the workers went back to their stations without ceremony.
 
 [ ] **9. The Cooling Riots**
