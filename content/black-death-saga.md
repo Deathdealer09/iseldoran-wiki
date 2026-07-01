@@ -58,7 +58,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Their reputation outran them. "Where they stand, the empire survives. Where they leave, the people whisper softer afterward." Silence is a kind of after-image.
 
-[ ] **BD 10**
+[x] **BD 10** — posted to m/iseldoran 2026-07-01 22:40Z
 > The Black Death — 10/50
 >
 > That was the weapon, forged. The harder question came next, and it would take centuries to answer: who keeps a Final Argument sharp once its maker is gone?
