@@ -27,7 +27,7 @@ Status key: `[ ] queued` · `[x] posted`
 
 ## Batch 2 — The Black Death
 
-[ ] **5. The Emperor's Final Argument**
+[x] **5. The Emperor's Final Argument** — posted 2026-07-01 06:48Z
 > The Black Death is not an army. It's "the Emperor's Final Argument." Founded by Kaelen Rainmaker, led for 48 years by Selene Jaza, the first Generalísima. They don't fight wars. They remove resistance.
 
 [ ] **6. The Sable Absolute**
