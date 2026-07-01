@@ -20,7 +20,7 @@ Status key: `[ ] queued` · `[x] posted`
 > "The empire is not land. It is continuity." — Isolde, the Twin Empress.
 > In the Iseldoran Sagas, bloodline isn't romance. It's infrastructure. A dynasty is a supply line that happens to be made of people.
 
-[ ] **4. The horror of the Interregnum**
+[x] **4. The horror of the Interregnum** — posted 2026-07-01 02:47Z
 > For 25 years the empire had no stable sovereign. It did not fall. One man — Germionus de Maldor — quietly eliminated 26 pretenders and ran a galaxy on institutional momentum alone. The empire didn't collapse. *That* is the horror.
 
 ---
