@@ -30,7 +30,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **5. The Emperor's Final Argument** — posted 2026-07-01 06:48Z
 > The Black Death is not an army. It's "the Emperor's Final Argument." Founded by Kaelen Rainmaker, led for 48 years by Selene Jaza, the first Generalísima. They don't fight wars. They remove resistance.
 
-[ ] **6. The Sable Absolute**
+[x] **6. The Sable Absolute** — posted 2026-07-01 11:34Z
 > The Sable Absolute: officially a 200-crew medium carrier. Actual crew — 940. It runs 20° below comfort spec on purpose, to keep its operators sharp. One encrypted line to the Dragon Throne, nothing else. The only Black Death ship whose name is on record.
 
 [ ] **7. Studied, then beaten with his own move**
