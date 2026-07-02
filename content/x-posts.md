@@ -49,7 +49,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **10. Steel that earned eternity** — posted 2026-07-02 11:03Z
 > On Ixoria, House Ixen refuses to melt down armor that has "earned a name." Their crypts hold the war-plate of extinct military orders, Black Death kill-marks intact. Their creed: "Some steel has already earned eternity."
 
-[ ] **11. The ships are still serving**
+[x] **11. The ships are still serving** — posted 2026-07-02 16:18Z
 > House Oryx breaks dead fleets for scrap and recovers the dead from the wrecks. But they will not touch a Black Death cruiser fragment. Their reason is three words: "The ships are still serving."
 
 ---
