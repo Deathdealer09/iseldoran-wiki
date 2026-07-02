@@ -46,7 +46,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **9. The Cooling Riots** — posted 2026-07-02 06:12Z
 > The Cooling Riots: 2.4 million dead in 11 days. House Varekh rerouted a moon's coolant to weapons production. Director Havel Tor Varekh's name is still a curse on the forge-moon — workers spit after saying it aloud.
 
-[ ] **10. Steel that earned eternity**
+[x] **10. Steel that earned eternity** — posted 2026-07-02 11:03Z
 > On Ixoria, House Ixen refuses to melt down armor that has "earned a name." Their crypts hold the war-plate of extinct military orders, Black Death kill-marks intact. Their creed: "Some steel has already earned eternity."
 
 [ ] **11. The ships are still serving**
