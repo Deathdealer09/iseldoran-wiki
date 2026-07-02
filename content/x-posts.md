@@ -56,7 +56,7 @@ Status key: `[ ] queued` · `[x] posted`
 
 ## Batch 4 — Faith, Flesh & Engineered Humanity
 
-[ ] **12. He died on principle**
+[x] **12. He died on principle** — posted 2026-07-02 21:37Z
 > Augustus Lucius Jaza could have lived — the Vah'Sumir neural lattice would have repaired him. He refused it. Mérida theology holds it's a transgression against the form Tengri gave you: "You carry what you have earned." He died on principle.
 
 [ ] **13. Humanity didn't stay one shape**
