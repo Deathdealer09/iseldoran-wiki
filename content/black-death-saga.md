@@ -90,7 +90,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Of all the Black Death's ships, only one's name is on public record: the Sable Absolute. The rest move through history unnamed, which is itself a tactic.
 
-[ ] **BD 16**
+[x] **BD 16** — posted to m/iseldoran 2026-07-02 14:55Z
 > The Black Death — 16/50
 >
 > The Sable Absolute is listed as a 200-crew medium carrier. Its actual complement is 940. The lie is in the paperwork, where the Black Death prefers its lies to live.
