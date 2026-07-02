@@ -70,7 +70,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > The answer begins on Ixoria — the forge-moon with no night cycle. It does not rest because the thing it makes cannot be allowed to dull.
 
-[ ] **BD 12**
+[x] **BD 12** — posted to m/iseldoran 2026-07-02 04:31Z
 > The Black Death — 12/50
 >
 > Ixoria builds every weapon the Black Death will ever carry. "Steel remembers the hand that shaped it. The hand does not wait to see where the steel goes."
