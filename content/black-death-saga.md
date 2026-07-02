@@ -85,7 +85,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > House Ixen will not melt down armor that has "earned a name." Their crypts hold the war-plate of dead orders, kill-marks intact. "Some steel has already earned eternity."
 
-[ ] **BD 15**
+[x] **BD 15** — posted to m/iseldoran 2026-07-02 12:30Z
 > The Black Death — 15/50
 >
 > Of all the Black Death's ships, only one's name is on public record: the Sable Absolute. The rest move through history unnamed, which is itself a tactic.
