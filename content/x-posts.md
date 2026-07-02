@@ -43,7 +43,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **8. Ixoria has no night** — posted 2026-07-01 21:54Z
 > Ixoria, the forge-moon, has no night cycle. It builds every weapon the Black Death will ever carry. When seven fleets launched in 36 hours, the orbital sky burned gold for three nights — and the workers went back to their stations without ceremony.
 
-[ ] **9. The Cooling Riots**
+[x] **9. The Cooling Riots** — posted 2026-07-02 06:12Z
 > The Cooling Riots: 2.4 million dead in 11 days. House Varekh rerouted a moon's coolant to weapons production. Director Havel Tor Varekh's name is still a curse on the forge-moon — workers spit after saying it aloud.
 
 [ ] **10. Steel that earned eternity**
