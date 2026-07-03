@@ -152,7 +152,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Day 7, 1100: the investiture. The VISHALAY chant. By the time the ceremony began, there was simply no one left who could stand up and object.
 
-[ ] **BD 28**
+[x] **BD 28** — posted to m/iseldoran 2026-07-03 15:35Z
 > The Black Death — 28/50
 >
 > And so Selene Jaza rose as the first Generalísima of the Black Death — not by claiming the weapon, but by ensuring no one else could.
