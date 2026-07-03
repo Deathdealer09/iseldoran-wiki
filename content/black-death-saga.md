@@ -189,7 +189,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > He was the son of Talassar Vey, and he moved in three years where his father had taken fifteen. Faster — and into the very same fatal error his father made.
 
-[ ] **BD 35**
+[x] **BD 35** — posted to m/iseldoran 2026-07-03 23:54Z
 > The Black Death — 35/50
 >
 > Nine years of war followed, run by Selene Jaza from the deck of the Sable Absolute. The Black Death had finally found resistance worth removing slowly.
