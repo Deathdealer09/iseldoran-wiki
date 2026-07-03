@@ -147,7 +147,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Day 6, 0600: Arch-General Dará Muskus dies over a cup of tea. Three rival claimants to the weapon, removed in three precise strokes across five days.
 
-[ ] **BD 27**
+[x] **BD 27** — posted to m/iseldoran 2026-07-03 13:22Z
 > The Black Death — 27/50
 >
 > Day 7, 1100: the investiture. The VISHALAY chant. By the time the ceremony began, there was simply no one left who could stand up and object.
