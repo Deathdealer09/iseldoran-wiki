@@ -162,7 +162,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > They said of her: "She never sought the throne. She sought the thing the throne is supposed to do." The distinction was her entire command philosophy.
 
-[ ] **BD 30**
+[x] **BD 30** — posted to m/iseldoran 2026-07-03 18:12Z
 > The Black Death — 30/50
 >
 > The colleges teach the Seven Days as clean succession theory and never mention the eliminations. The cleanest histories are the ones with the most carefully removed names.
