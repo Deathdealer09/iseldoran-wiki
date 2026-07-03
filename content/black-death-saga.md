@@ -184,7 +184,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > The Meraud Free Republic rose under Remi Vey — twenty-three years old, raising a rebel flag against the Dragon Throne itself. Youth is its own kind of artillery.
 
-[ ] **BD 34**
+[x] **BD 34** — posted to m/iseldoran 2026-07-03 22:52Z
 > The Black Death — 34/50
 >
 > He was the son of Talassar Vey, and he moved in three years where his father had taken fifteen. Faster — and into the very same fatal error his father made.
