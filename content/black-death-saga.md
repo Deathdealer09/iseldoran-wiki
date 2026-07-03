@@ -142,7 +142,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Day 4, 0847: General-Prince Remus von Hapsburgi. A single shot, fired into a seventeen-second gap in the surveillance. The gap was not luck. Nothing here was luck.
 
-[ ] **BD 26**
+[x] **BD 26** — posted to m/iseldoran 2026-07-03 11:23Z
 > The Black Death — 26/50
 >
 > Day 6, 0600: Arch-General Dará Muskus dies over a cup of tea. Three rival claimants to the weapon, removed in three precise strokes across five days.
