@@ -74,7 +74,7 @@ Status key: `[ ] queued` · `[x] posted`
 
 ## Batch 5 — Scale & Spectacle
 
-[ ] **15. He replaced a god**
+[x] **15. He replaced a god** — posted 2026-07-03 16:02Z
 > Augustus Rex led 90 BILLION soldiers beyond the edge of known space — and came back having replaced a god. "The Dragon Throne carries his passage in its stone."
 
 [ ] **16. Seven days, no one left**
