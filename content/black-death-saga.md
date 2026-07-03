@@ -179,7 +179,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 
 ## Arc IV — The Meraud War
 
-[ ] **BD 33**
+[x] **BD 33** — posted to m/iseldoran 2026-07-03 21:53Z
 > The Black Death — 33/50
 >
 > The Meraud Free Republic rose under Remi Vey — twenty-three years old, raising a rebel flag against the Dragon Throne itself. Youth is its own kind of artillery.
