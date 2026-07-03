@@ -67,7 +67,7 @@ Status key: `[ ] queued` · `[x] posted`
 > • Shal'mak — a 7.5m wingspan in the high atmosphere
 > Engineered for survival on an existential scale.
 
-[ ] **14. Obedience seeks an owner**
+[x] **14. Obedience seeks an owner** — posted 2026-07-03 11:03Z
 > The Sullied: humanoid clones that digest iron dust, breathe half-oxygen air, and replicate themselves. "At first they were tools. Then they were habit." Their warning to the throne: "Obedience always seeks an owner."
 
 ---
