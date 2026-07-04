@@ -87,7 +87,7 @@ Status key: `[ ] queued` · `[x] posted`
 
 ## Batch 6 — Character bios
 
-[ ] **18. Kerron, the Dragon Emperor**
+[x] **18. Kerron, the Dragon Emperor** — posted 2026-07-04 10:28Z
 > CHARACTER: Kerron Pierre von Care — the Dragon Emperor. Conquered Trinidad, then Venezuela, then the Americas, and forged the Trinitarian Empire from the wreckage. The founding sword of a bloodline that would one day rule beneath the Dragon Throne. 🐉
 
 [ ] **19. Cassian I, the first God-King**
