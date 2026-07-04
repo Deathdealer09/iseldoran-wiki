@@ -93,7 +93,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **19. Cassian I, the first God-King** — posted 2026-07-04 15:37Z
 > CHARACTER: Cassian I — the first true God-King. He marked his coronation by executing 433 rival princes, ending every competing dynasty in a single stroke. He did not inherit divinity; he transformed empire into divinity and made the claim unanswerable.
 
-[ ] **20. Asha Kers I, La Diosa**
+[x] **20. Asha Kers I, La Diosa** — posted 2026-07-04 21:16Z
 Image: assets/bestiary/004.jpg
 > CHARACTER: Asha Kers I — the God-Empress called La Diosa. She codified the Universal Khanate Law and engineered the immortal Ashari'i warrior caste (pictured). After 41 years she read aloud a list of 17,426 names, walked to the transit platform, and vanished.
 
