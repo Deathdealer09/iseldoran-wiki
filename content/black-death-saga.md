@@ -248,7 +248,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 
 ## Arc V — The Legacy
 
-[ ] **BD 46**
+[x] **BD 46** — posted to m/iseldoran 2026-07-04 18:52Z
 > The Black Death — 46/50
 >
 > So what is the Black Death, in the end? Not the largest force the empire ever fielded. The one it kept sharpest, and pointed most carefully.
