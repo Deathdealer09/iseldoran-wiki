@@ -253,7 +253,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > So what is the Black Death, in the end? Not the largest force the empire ever fielded. The one it kept sharpest, and pointed most carefully.
 
-[ ] **BD 47**
+[x] **BD 47** — posted to m/iseldoran 2026-07-04 20:03Z
 > The Black Death — 47/50
 >
 > Its signature was never noise. It was the Sable Absolute's silence: one cold ship, one encrypted line, and a problem that quietly ceases to be a problem.
