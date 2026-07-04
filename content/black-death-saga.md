@@ -219,7 +219,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > A lesser commander would have called it a freak loss and moved on. Selene took the maneuver apart and studied it for three months. She did not want revenge. She wanted the method.
 
-[ ] **BD 41**
+[x] **BD 41** — posted to m/iseldoran 2026-07-04 12:55Z
 > The Black Death — 41/50
 >
 > Year 8, the Seven Moons of Harak: she used Briath's own impossible maneuver against the men who taught it to her. The archive remembers who studies hardest.
