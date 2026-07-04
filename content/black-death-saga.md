@@ -241,7 +241,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > That line is the Black Death entire: it does not honor the spirit of the contest. It honors the result. Rules are terrain, and terrain is to be used.
 
-[ ] **BD 45**
+[x] **BD 45** — posted to m/iseldoran 2026-07-04 17:54Z
 > The Black Death — 45/50
 >
 > Remi Vey vanished at thirty-two, on a Wednesday. No battle, no body. The republic he raised simply stopped being spoken of. Resistance, removed.
