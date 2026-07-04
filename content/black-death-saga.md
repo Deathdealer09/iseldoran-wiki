@@ -199,7 +199,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Year 2, the Cassian Drift: the empire loses the Relentless. Even a Final Argument bleeds. The difference is what it does with the lesson afterward.
 
-[ ] **BD 37**
+[x] **BD 37** — posted to m/iseldoran 2026-07-04 05:34Z
 > The Black Death — 37/50
 >
 > At Meraud Station the war became a siege fought through the air itself — atmosphere as weapon, the slow arithmetic of who can breathe longest.
