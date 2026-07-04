@@ -194,7 +194,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Nine years of war followed, run by Selene Jaza from the deck of the Sable Absolute. The Black Death had finally found resistance worth removing slowly.
 
-[ ] **BD 36**
+[x] **BD 36** — posted to m/iseldoran 2026-07-04 01:44Z
 > The Black Death — 36/50
 >
 > Year 2, the Cassian Drift: the empire loses the Relentless. Even a Final Argument bleeds. The difference is what it does with the lesson afterward.
