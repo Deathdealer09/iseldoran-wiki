@@ -80,7 +80,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **16. Seven days, no one left** — posted 2026-07-03 21:35Z
 > A masterclass in succession: three rivals removed in seven days. Day 2. Day 4 — a single shot, in a 17-second gap in the surveillance. Day 6. The investiture was set for 1100 on Day 7. By then there was no one left to contest it.
 
-[ ] **17. Ten thousand years**
+[x] **17. Ten thousand years** — posted 2026-07-04 05:56Z
 > The al-Sa'ud dynasty held the Dragon Throne for ten thousand years — the longest unbroken tenure in its history. A compact built four centuries earlier by Demetrius Jaza, finally come to maturity. Patience is a weapon with a very long fuse.
 
 ---
