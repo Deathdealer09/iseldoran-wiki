@@ -90,7 +90,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **18. Kerron, the Dragon Emperor** — posted 2026-07-04 10:28Z
 > CHARACTER: Kerron Pierre von Care — the Dragon Emperor. Conquered Trinidad, then Venezuela, then the Americas, and forged the Trinitarian Empire from the wreckage. The founding sword of a bloodline that would one day rule beneath the Dragon Throne. 🐉
 
-[ ] **19. Cassian I, the first God-King**
+[x] **19. Cassian I, the first God-King** — posted 2026-07-04 15:37Z
 > CHARACTER: Cassian I — the first true God-King. He marked his coronation by executing 433 rival princes, ending every competing dynasty in a single stroke. He did not inherit divinity; he transformed empire into divinity and made the claim unanswerable.
 
 [ ] **20. Asha Kers I, La Diosa**
