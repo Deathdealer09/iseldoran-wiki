@@ -209,7 +209,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Then, Year 5: the Corridor of Yren. The single engagement that nearly ended Selene Jaza — and the one that reveals exactly how her mind works.
 
-[ ] **BD 39**
+[x] **BD 39** — posted to m/iseldoran 2026-07-04 10:26Z
 > The Black Death — 39/50
 >
 > Talos Briath threaded seven vessels through the Corridor on an eight-percent debris-cycle variance no tactician believed survivable. It worked. It also wounded Selene.
