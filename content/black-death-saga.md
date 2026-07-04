@@ -214,7 +214,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Talos Briath threaded seven vessels through the Corridor on an eight-percent debris-cycle variance no tactician believed survivable. It worked. It also wounded Selene.
 
-[ ] **BD 40**
+[x] **BD 40** — posted to m/iseldoran 2026-07-04 11:53Z
 > The Black Death — 40/50
 >
 > A lesser commander would have called it a freak loss and moved on. Selene took the maneuver apart and studied it for three months. She did not want revenge. She wanted the method.
