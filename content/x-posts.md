@@ -100,7 +100,7 @@ Image: assets/bestiary/004.jpg
 [x] **21. Selene Jaza, the first Generalísima** — posted 2026-07-05 06:16Z
 > CHARACTER: Selene Jaza — the first Generalísima. She led the Black Death for 48 years. "She never sought the throne; she sought the thing the throne is supposed to do." At the Battle of Seven Moons she beat an enemy using the very maneuver he invented.
 
-[ ] **22. Kaelen Rainmaker, the Living Weapon**
+[x] **22. Kaelen Rainmaker, the Living Weapon** — posted 2026-07-05 10:30Z
 > CHARACTER: Kaelen Rainmaker — founder of the Black Death, the Living Weapon. Black armor, golden dreadlocks, green eyes flecked with gold. His creed: "We do not speak of the abstract. We speak of the tactile, bleeding, physical reality."
 
 [ ] **23. Augustus Lucius Jaza, the Generalísimo**
