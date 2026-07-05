@@ -106,7 +106,7 @@ Image: assets/bestiary/004.jpg
 [x] **23. Augustus Lucius Jaza, the Generalísimo** — posted 2026-07-05 15:40Z
 > CHARACTER: Augustus Lucius Jaza — the Generalísimo, eyes the silver-grey of a cooling reactor core. He could have lived; the Vah'Sumir neural lattice would have repaired him. He refused it on Mérida theological grounds and died on principle. "You carry what you have earned."
 
-[ ] **24. Germionus de Maldor, the Immune System**
+[x] **24. Germionus de Maldor, the Immune System** — posted 2026-07-05 21:30Z
 > CHARACTER: Germionus de Maldor. For the 25 years the empire had no sovereign, he alone kept it alive — eliminating 26 pretenders and running a galaxy on institutional momentum. The empire didn't fall. That is the horror, and it has his name on it.
 
 [ ] **25. Isolde, the Twin Empress**
