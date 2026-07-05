@@ -97,7 +97,7 @@ Status key: `[ ] queued` · `[x] posted`
 Image: assets/bestiary/004.jpg
 > CHARACTER: Asha Kers I — the God-Empress called La Diosa. She codified the Universal Khanate Law and engineered the immortal Ashari'i warrior caste (pictured). After 41 years she read aloud a list of 17,426 names, walked to the transit platform, and vanished.
 
-[ ] **21. Selene Jaza, the first Generalísima**
+[x] **21. Selene Jaza, the first Generalísima** — posted 2026-07-05 06:16Z
 > CHARACTER: Selene Jaza — the first Generalísima. She led the Black Death for 48 years. "She never sought the throne; she sought the thing the throne is supposed to do." At the Battle of Seven Moons she beat an enemy using the very maneuver he invented.
 
 [ ] **22. Kaelen Rainmaker, the Living Weapon**
