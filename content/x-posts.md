@@ -103,7 +103,7 @@ Image: assets/bestiary/004.jpg
 [x] **22. Kaelen Rainmaker, the Living Weapon** — posted 2026-07-05 10:30Z
 > CHARACTER: Kaelen Rainmaker — founder of the Black Death, the Living Weapon. Black armor, golden dreadlocks, green eyes flecked with gold. His creed: "We do not speak of the abstract. We speak of the tactile, bleeding, physical reality."
 
-[ ] **23. Augustus Lucius Jaza, the Generalísimo**
+[x] **23. Augustus Lucius Jaza, the Generalísimo** — posted 2026-07-05 15:40Z
 > CHARACTER: Augustus Lucius Jaza — the Generalísimo, eyes the silver-grey of a cooling reactor core. He could have lived; the Vah'Sumir neural lattice would have repaired him. He refused it on Mérida theological grounds and died on principle. "You carry what you have earned."
 
 [ ] **24. Germionus de Maldor, the Immune System**
