@@ -43,7 +43,6 @@
     section{padding:44px 0; border-bottom:1px solid var(--line)}
     h2{color:var(--gold-soft); font-size:1.5rem; margin:0 0 .5em}
     .lead{font-size:1.12rem}
-    /* CTA buttons */
     .cta-row{display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:26px}
     .btn{
       display:inline-block; padding:14px 26px; border-radius:8px; font-weight:bold;
@@ -53,27 +52,17 @@
     .btn-primary:hover{color:#000; filter:brightness(1.08)}
     .btn-ghost{background:transparent; color:var(--gold-soft)}
     .btn-ghost:hover{background:rgba(201,162,39,.1); color:#fff}
-    /* tiers */
     .tiers{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:22px}
     .tier{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px}
     .tier h3{color:var(--gold-soft); margin:.1em 0 .4em; font-size:1.15rem}
     .tier .price{color:var(--gold); font-family:Arial,Helvetica,sans-serif; font-size:1.4rem; font-weight:bold}
     .tier ul{margin:.6em 0 0; padding-left:1.1em; color:var(--muted); font-size:.98rem}
-    /* art strip */
     .art{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin-top:20px}
     .art img{width:100%; height:170px; object-fit:cover; border-radius:8px; border:1px solid var(--line); filter:saturate(.95)}
-    /* email form */
-    form.email{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
-    form.email input{
-      flex:1 1 260px; padding:13px 14px; border-radius:8px; border:1px solid var(--line);
-      background:#0f0d0b; color:var(--ink); font-size:1rem; font-family:Arial,Helvetica,sans-serif;
-    }
     .note{color:var(--muted); font-size:.86rem; margin-top:10px}
     .socials{display:flex; gap:22px; justify-content:center; flex-wrap:wrap; font-family:Arial,Helvetica,sans-serif}
     footer{padding:34px 20px 60px; text-align:center; color:var(--muted); font-size:.9rem}
     .quote{font-style:italic; color:var(--gold-soft); text-align:center; font-size:1.15rem; margin:8px auto 0; max-width:56ch}
-    /* SETUP callout — remove once links are filled in */
-    .setup{background:#1a1206; border:1px dashed var(--gold); border-radius:10px; padding:16px 18px; margin:22px 0; color:var(--gold-soft); font-family:Arial,Helvetica,sans-serif; font-size:.9rem}
   </style>
 </head>
 <body>
@@ -83,28 +72,21 @@
       <h1>Carry the Archive <span class="dragon">🐉</span></h1>
       <p class="sub">Ten thousand years of dynastic war, god-kings, engineered species, and forge-moons — chronicled beneath the Dragon Throne. Help keep the saga being written.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://ko-fi.com/YOUR_KOFI_USERNAME" rel="noopener">☕ Support on Ko-fi</a>
-        <a class="btn btn-ghost" href="#newsletter">Get free lore drops</a>
+        <a class="btn btn-primary" href="https://github.com/sponsors/Deathdealer09" rel="noopener">❤️ Sponsor the Saga</a>
+        <a class="btn btn-ghost" href="#follow">Follow for free</a>
       </div>
     </div>
   </header>
 
   <div class="wrap">
-    <!-- Remove this box once you've filled in the two links (Ko-fi + email form). -->
-    <div class="setup">
-      ⚙️ <strong>Setup (remove this box when done):</strong> replace <code>YOUR_KOFI_USERNAME</code>
-      with your Ko-fi handle, and set the newsletter form's <code>action</code> to your Formspree
-      (or Buttondown) endpoint. Both are free to create.
-    </div>
-
     <section>
       <h2>Why support?</h2>
-      <p class="lead">The Iseldoran Sagas is an independent, one-author universe — 38+ volumes and 1.74M+ words of imperial science-fantasy, plus a living lore archive and an illustrated bestiary. Every bit of support buys time to write more of it, and to keep the archive free for everyone.</p>
+      <p class="lead">The Iseldoran Sagas is an independent, one-author universe — 38+ volumes and 1.74M+ words of imperial science-fantasy, plus a living lore archive and an illustrated bestiary. Every bit of support buys time to write more of it, and keeps the archive free for everyone.</p>
       <p class="quote">"Power is not inherited. Power is remembered."</p>
     </section>
 
     <section>
-      <h2>Support tiers</h2>
+      <h2>Sponsor tiers</h2>
       <div class="tiers">
         <div class="tier">
           <h3>Squire</h3>
@@ -134,8 +116,9 @@
         </div>
       </div>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://ko-fi.com/YOUR_KOFI_USERNAME" rel="noopener">Become a patron →</a>
+        <a class="btn btn-primary" href="https://github.com/sponsors/Deathdealer09" rel="noopener">Become a patron →</a>
       </div>
+      <p class="note">Sponsorship is handled securely through GitHub Sponsors.</p>
     </section>
 
     <section>
@@ -149,23 +132,15 @@
       </div>
     </section>
 
-    <section id="newsletter">
-      <h2>Free lore drops</h2>
-      <p>Not ready to pledge? Get canon histories, bestiary entries, and battle chronicles in your inbox — free, no spam.</p>
-      <!-- Set action to your Formspree endpoint, e.g. https://formspree.io/f/abcdwxyz -->
-      <form class="email" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address" />
-        <button class="btn btn-primary" type="submit">Join the archive</button>
-      </form>
-      <p class="note">You can unsubscribe anytime. Your email is only used for Iseldoran Sagas updates.</p>
-    </section>
-
-    <section>
-      <h2>Follow the saga</h2>
-      <p class="socials">
-        <a href="https://x.com/PierreKerron" rel="noopener">𝕏 @PierreKerron</a>
-        <a href="https://www.moltbook.com/u/kaizar" rel="noopener">🦞 Moltbook · Kaizar</a>
-        <a href="https://www.iseldoransagas.com/">📖 The Lore Archive</a>
+    <section id="follow">
+      <h2>Follow for free</h2>
+      <p>Not ready to pledge? Follow along — canon histories, bestiary entries, and battle chronicles drop daily, free.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://x.com/PierreKerron" rel="noopener">𝕏 Follow @PierreKerron</a>
+        <a class="btn btn-ghost" href="https://www.moltbook.com/u/kaizar" rel="noopener">🦞 Kaizar on Moltbook</a>
+      </div>
+      <p class="socials" style="margin-top:26px">
+        <a href="https://www.iseldoransagas.com/">📖 Explore the Lore Archive</a>
       </p>
     </section>
   </div>
