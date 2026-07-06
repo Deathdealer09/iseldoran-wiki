@@ -115,7 +115,7 @@ Image: assets/bestiary/004.jpg
 [x] **26. Niccolò "Thunderborn"** — posted 2026-07-06 12:15Z
 > CHARACTER: Niccolò Kerron von Hapsburgi — the Thunderborn. A military prodigy raised inside the Sardukar Écoles who became one of the deadliest commanders in imperial history. Born of the Hapsburgi house, bound to the von Care line by blood, conquest, and theology.
 
-[ ] **27. Leraq of Vath, the defector admiral**
+[x] **27. Leraq of Vath, the defector admiral** — posted 2026-07-06 17:18Z
 > CHARACTER: Leraq of Vath — pointed ears, a crown of gold lattice. Held in Anunaki mental bondage, he broke free, defected, and rose to Grand Admiral. His 5,157-word autobiography is a primary source. "A monster. Wise — said by people who had never met wise."
 
 ## Batch 7 — Major plot lines
