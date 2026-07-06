@@ -112,7 +112,7 @@ Image: assets/bestiary/004.jpg
 [x] **25. Isolde, the Twin Empress** — posted 2026-07-06 06:49Z
 > CHARACTER: Isolde Pierre von Care — the Twin Empress. She predicted the wedding-convoy attack three months out, down to the approach corridor and the window. Her doctrine, repeated across the archive: "The empire is not land. It is continuity."
 
-[ ] **26. Niccolò "Thunderborn"**
+[x] **26. Niccolò "Thunderborn"** — posted 2026-07-06 12:15Z
 > CHARACTER: Niccolò Kerron von Hapsburgi — the Thunderborn. A military prodigy raised inside the Sardukar Écoles who became one of the deadliest commanders in imperial history. Born of the Hapsburgi house, bound to the von Care line by blood, conquest, and theology.
 
 [ ] **27. Leraq of Vath, the defector admiral**
