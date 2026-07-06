@@ -120,7 +120,7 @@ Image: assets/bestiary/004.jpg
 
 ## Batch 7 — Major plot lines
 
-[ ] **28. The Seven Days**
+[x] **28. The Seven Days** — posted 2026-07-06 21:51Z
 > PLOT: A masterclass in succession. Three rivals removed in seven days — Day 2, Day 4 (one shot, in a 17-second gap in the surveillance), Day 6. The investiture was set for 1100 on Day 7. By then no one was left to contest it.
 
 [ ] **29. The Great Interregnum**
