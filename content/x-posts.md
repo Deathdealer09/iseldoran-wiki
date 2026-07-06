@@ -109,7 +109,7 @@ Image: assets/bestiary/004.jpg
 [x] **24. Germionus de Maldor, the Immune System** — posted 2026-07-05 21:30Z
 > CHARACTER: Germionus de Maldor. For the 25 years the empire had no sovereign, he alone kept it alive — eliminating 26 pretenders and running a galaxy on institutional momentum. The empire didn't fall. That is the horror, and it has his name on it.
 
-[ ] **25. Isolde, the Twin Empress**
+[x] **25. Isolde, the Twin Empress** — posted 2026-07-06 06:49Z
 > CHARACTER: Isolde Pierre von Care — the Twin Empress. She predicted the wedding-convoy attack three months out, down to the approach corridor and the window. Her doctrine, repeated across the archive: "The empire is not land. It is continuity."
 
 [ ] **26. Niccolò "Thunderborn"**
