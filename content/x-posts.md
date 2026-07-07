@@ -129,7 +129,7 @@ Image: assets/bestiary/004.jpg
 [x] **30. The Ten Thousand Years** — posted 2026-07-07 11:20Z
 > PLOT: The al-Sa'ud dynasty held the Dragon Throne for ten thousand years — the longest unbroken tenure in its history. A compact built four centuries earlier by Demetrius Jaza, finally matured. Patience is a weapon with a very long fuse.
 
-[ ] **31. The Cooling Riots**
+[x] **31. The Cooling Riots** — posted 2026-07-07 16:43Z
 > PLOT: 2.4 million dead in 11 days. House Varekh rerouted a forge-moon's coolant to weapons production. Director Havel Tor Varekh's name is still a curse on Ixoria — workers spit after saying it aloud.
 
 [ ] **32. Beyond the Rim**
