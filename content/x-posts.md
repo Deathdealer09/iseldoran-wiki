@@ -123,7 +123,7 @@ Image: assets/bestiary/004.jpg
 [x] **28. The Seven Days** — posted 2026-07-06 21:51Z
 > PLOT: A masterclass in succession. Three rivals removed in seven days — Day 2, Day 4 (one shot, in a 17-second gap in the surveillance), Day 6. The investiture was set for 1100 on Day 7. By then no one was left to contest it.
 
-[ ] **29. The Great Interregnum**
+[x] **29. The Great Interregnum** — posted 2026-07-07 06:27Z
 > PLOT: For 25 years the Dragon Throne had no stable sovereign — and the empire did not fall. One man quietly eliminated 26 pretenders and kept the machine running on momentum alone. The continuity was the point. The continuity was also the horror.
 
 [ ] **30. The Ten Thousand Years**
