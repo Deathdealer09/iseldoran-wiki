@@ -132,7 +132,7 @@ Image: assets/bestiary/004.jpg
 [x] **31. The Cooling Riots** — posted 2026-07-07 16:43Z
 > PLOT: 2.4 million dead in 11 days. House Varekh rerouted a forge-moon's coolant to weapons production. Director Havel Tor Varekh's name is still a curse on Ixoria — workers spit after saying it aloud.
 
-[ ] **32. Beyond the Rim**
+[x] **32. Beyond the Rim** — posted 2026-07-07 21:47Z
 > PLOT: Augustus Rex led 90 BILLION soldiers past the edge of known space — and returned having replaced a god. The Dragon Throne is said to carry his passage in its very stone.
 
 [ ] **33. The Killing of Talassar Vey**
