@@ -152,7 +152,7 @@ Image: assets/bestiary/002.jpg
 Image: assets/bestiary/003.jpg
 > BESTIARY: Vah'Sumir Maximus, Sumir Prime. Massive apex warriors, 3.0–3.6 m, digitigrade, crested, sheathed in bronze-grey armored hide over dense muscle. Engineered for domination and endurance. Plate 003.
 
-[ ] **37. Ashari'i**
+[x] **37. Ashari'i** — posted 2026-07-08 21:35Z
 Image: assets/bestiary/004.jpg
 > BESTIARY: Ashari'i Immortalis, Ashar. An ancient immortal warrior caste, 2.3–2.9 m — pale ivory skin, sharp cranial ridges, ceremonial armor of great age. Engineered by La Diosa herself. Plate 004.
 
