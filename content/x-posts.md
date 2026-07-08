@@ -148,7 +148,7 @@ Image: assets/bestiary/001.jpg
 Image: assets/bestiary/002.jpg
 > BESTIARY: Noirak Nobilis, Noirak Prime. An ancient, noble species standing 2.45–2.75 m — human-presenting but subtly alien, with enhanced physiology, long lifespans, and the bearing of natural rulers. Plate 002.
 
-[ ] **36. Vah'Sumir**
+[x] **36. Vah'Sumir** — posted 2026-07-08 16:13Z
 Image: assets/bestiary/003.jpg
 > BESTIARY: Vah'Sumir Maximus, Sumir Prime. Massive apex warriors, 3.0–3.6 m, digitigrade, crested, sheathed in bronze-grey armored hide over dense muscle. Engineered for domination and endurance. Plate 003.
 
