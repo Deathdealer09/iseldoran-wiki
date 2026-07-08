@@ -135,7 +135,7 @@ Image: assets/bestiary/004.jpg
 [x] **32. Beyond the Rim** — posted 2026-07-07 21:47Z
 > PLOT: Augustus Rex led 90 BILLION soldiers past the edge of known space — and returned having replaced a god. The Dragon Throne is said to carry his passage in its very stone.
 
-[ ] **33. The Killing of Talassar Vey**
+[x] **33. The Killing of Talassar Vey** — posted 2026-07-08 05:32Z
 > PLOT: 37 seconds passed between Jaza lifting the abdication instrument and setting it down. Then he held the dying man upright "until the synthetic eyes stopped tracking." You don't let a man like that die on the floor — even when you're the reason he is dying.
 
 ## Batch 8 — The Great Bestiary of the Rim (with plates)
