@@ -144,7 +144,7 @@ Image: assets/bestiary/004.jpg
 Image: assets/bestiary/001.jpg
 > BESTIARY: Homo Imperialis (Optimized Strain), Terra, the Holy World. 1.88 m of genetically optimized humanity at the peak of Imperial refinement — athletic, disciplined, engineered for command. Plate 001, Great Bestiary of the Rim. 🐉
 
-[ ] **35. Noirak**
+[x] **35. Noirak** — posted 2026-07-08 10:31Z
 Image: assets/bestiary/002.jpg
 > BESTIARY: Noirak Nobilis, Noirak Prime. An ancient, noble species standing 2.45–2.75 m — human-presenting but subtly alien, with enhanced physiology, long lifespans, and the bearing of natural rulers. Plate 002.
 
