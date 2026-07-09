@@ -156,7 +156,7 @@ Image: assets/bestiary/003.jpg
 Image: assets/bestiary/004.jpg
 > BESTIARY: Ashari'i Immortalis, Ashar. An ancient immortal warrior caste, 2.3–2.9 m — pale ivory skin, sharp cranial ridges, ceremonial armor of great age. Engineered by La Diosa herself. Plate 004.
 
-[ ] **38. Gor'nath Brute**
+[x] **38. Gor'nath Brute** — posted 2026-07-09 06:17Z
 Image: assets/bestiary/005.jpg
 > BESTIARY: Gor'nath Colossus, Gor'nath. A gigantic, powerfully built species, 3.5–4.2 m — dense skeleton, spiked cranial crest, brown armor-like skin plates across a hulking frame. Plate 005.
 
