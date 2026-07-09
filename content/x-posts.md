@@ -164,7 +164,7 @@ Image: assets/bestiary/005.jpg
 Image: assets/bestiary/006.jpg
 > BESTIARY: Yurshak Broodling, the Yurshak Hive Worlds. Hive-evolved predators, 2.0–2.6 m — insectoid-reptilian, mandibled, multi-sensory, plated in dark chitin with natural bladed weapons. Plate 006.
 
-[ ] **40. Shal'mak Aerophage**
+[x] **40. Shal'mak Aerophage** — posted 2026-07-09 16:57Z
 Image: assets/bestiary/007.jpg
 > BESTIARY: Shal'mak Dominus — aerial apex hunters of the high atmosphere, 6.0–7.5 m wingspan. Membranous wings, a crested draconic head, light sinewy anatomy built for high-speed killing on the wing. Plate 007.
 
