@@ -160,7 +160,7 @@ Image: assets/bestiary/004.jpg
 Image: assets/bestiary/005.jpg
 > BESTIARY: Gor'nath Colossus, Gor'nath. A gigantic, powerfully built species, 3.5–4.2 m — dense skeleton, spiked cranial crest, brown armor-like skin plates across a hulking frame. Plate 005.
 
-[ ] **39. Yurshak Brood**
+[x] **39. Yurshak Brood** — posted 2026-07-09 11:21Z
 Image: assets/bestiary/006.jpg
 > BESTIARY: Yurshak Broodling, the Yurshak Hive Worlds. Hive-evolved predators, 2.0–2.6 m — insectoid-reptilian, mandibled, multi-sensory, plated in dark chitin with natural bladed weapons. Plate 006.
 
