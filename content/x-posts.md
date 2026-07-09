@@ -168,7 +168,7 @@ Image: assets/bestiary/006.jpg
 Image: assets/bestiary/007.jpg
 > BESTIARY: Shal'mak Dominus — aerial apex hunters of the high atmosphere, 6.0–7.5 m wingspan. Membranous wings, a crested draconic head, light sinewy anatomy built for high-speed killing on the wing. Plate 007.
 
-[ ] **41. Oolak Luminary**
+[x] **41. Oolak Luminary** — posted 2026-07-09 21:52Z
 Image: assets/bestiary/008.jpg
 > BESTIARY: Oolak Sapientis, Oolak. Bioluminescent beings, 2.2–2.7 m — translucent silvery-white bodies that glow blue through organic structures. Ancient, wise, deeply spiritual. Plate 008.
 
