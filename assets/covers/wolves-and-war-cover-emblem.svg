@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2560" viewBox="0 0 1600 2560" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="sky" cx="0.5" cy="0.34" r="0.55">
+      <stop offset="0" stop-color="#e6c964" stop-opacity="0.55"/>
+      <stop offset="0.4" stop-color="#c9720f" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="eye" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f2e6b0"/>
+      <stop offset="0.55" stop-color="#c9a227"/>
+      <stop offset="1" stop-color="#5a3d06"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="2560" fill="#080706"/>
+  <rect width="1600" height="2560" fill="url(#sky)"/>
+
+  <!-- sigil: concentric rings + central 'eye' (the recurring grey-eyed motif, here gold) -->
+  <g transform="translate(800,880)">
+    <circle r="360" fill="none" stroke="#c9a227" stroke-width="3" opacity="0.35"/>
+    <circle r="300" fill="none" stroke="#c9a227" stroke-width="2" opacity="0.55"/>
+    <!-- rays -->
+    <g stroke="#c9a227" stroke-width="2" opacity="0.5">
+      <line x1="0" y1="-360" x2="0" y2="-410"/>
+      <line x1="0" y1="360" x2="0" y2="410"/>
+      <line x1="-360" y1="0" x2="-410" y2="0"/>
+      <line x1="360" y1="0" x2="410" y2="0"/>
+    </g>
+    <ellipse rx="150" ry="92" fill="url(#eye)"/>
+    <circle r="34" fill="#0b0a08"/>
+    <circle r="34" fill="none" stroke="#1a150a" stroke-width="6"/>
+  </g>
+
+  <rect y="1700" width="1600" height="860" fill="url(#floor)"/>
+
+  <line x1="500" y1="250" x2="1100" y2="250" stroke="#c9a227" stroke-width="2" opacity="0.7"/>
+  <text x="800" y="215" text-anchor="middle" fill="#e6c964" font-size="50"
+        letter-spacing="16" font-family="Arial, Helvetica, sans-serif">THE ISELDORAN SAGAS</text>
+
+  <text x="800" y="1990" text-anchor="middle" fill="#efe3a6" font-size="236"
+        letter-spacing="8" style="font-weight:bold">WOLVES</text>
+  <text x="800" y="2216" text-anchor="middle" fill="#efe3a6" font-size="236"
+        letter-spacing="8" style="font-weight:bold">AND WAR</text>
+
+  <line x1="560" y1="2300" x2="1040" y2="2300" stroke="#c9a227" stroke-width="2" opacity="0.6"/>
+  <text x="800" y="2372" text-anchor="middle" fill="#c9a227" font-size="60" font-style="italic">The Origin of La Diosa</text>
+  <text x="800" y="2495" text-anchor="middle" fill="#ece7dc" font-size="70"
+        letter-spacing="12" font-family="Arial, Helvetica, sans-serif">KS PIERRE</text>
+</svg>
