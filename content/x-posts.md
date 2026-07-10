@@ -184,7 +184,7 @@ Image: assets/bestiary/010.jpg
 Image: assets/bestiary/011.jpg
 > BESTIARY: Haal'tek Exuvia, the deep void. Void-adapted entities, 3.0–3.8 m — elongated blue-black carapaces, smooth heads, trailing tendrils, optimized for microgravity and the isolation between stars. Plate 011.
 
-[ ] **45. Aquorian**
+[x] **45. Aquorian** — posted 2026-07-10 21:31Z
 Image: assets/bestiary/012.jpg
 > BESTIARY: Aquorian Pelagis, the pelagic depths. A deep-ocean bioluminescent species, 2.2–2.7 m — translucent crystalline-blue skin, glowing neural lattices, trailing fin-sails, built for crushing pressure and electromagnetic sensing. Plate 012.
 
