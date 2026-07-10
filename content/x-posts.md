@@ -172,7 +172,7 @@ Image: assets/bestiary/007.jpg
 Image: assets/bestiary/008.jpg
 > BESTIARY: Oolak Sapientis, Oolak. Bioluminescent beings, 2.2–2.7 m — translucent silvery-white bodies that glow blue through organic structures. Ancient, wise, deeply spiritual. Plate 008.
 
-[ ] **42. Threxx War-Smith**
+[x] **42. Threxx War-Smith** — posted 2026-07-10 06:16Z
 Image: assets/bestiary/009.jpg
 > BESTIARY: Threxx Ferrum-Artifex, Thorexia Prime. Forge-adapted engineer-warriors, 2.6–3.2 m — stocky, grey-skinned, clad in heavy industrial plate. Masters of advanced technology, built for industry and war. Plate 009.
 
