@@ -176,7 +176,7 @@ Image: assets/bestiary/008.jpg
 Image: assets/bestiary/009.jpg
 > BESTIARY: Threxx Ferrum-Artifex, Thorexia Prime. Forge-adapted engineer-warriors, 2.6–3.2 m — stocky, grey-skinned, clad in heavy industrial plate. Masters of advanced technology, built for industry and war. Plate 009.
 
-[ ] **43. Razeen Flesh-Weaver**
+[x] **43. Razeen Flesh-Weaver** — posted 2026-07-10 11:21Z
 Image: assets/bestiary/010.jpg
 > BESTIARY: Razeen Artifex, the Razeen Vaults. Bio-engineers and sculptors of flesh, 2.1–2.6 m — pale, elegant, with branching root-like tendrils and advanced sensory organs. Masters of organic architecture. Plate 010.
 
