@@ -13,6 +13,8 @@
 - **Business model:** Sell novels. The series is ongoing — "the books, then more books" — so the long game is a loyal readership that buys each new release.
 - **Primary goals (in order):** (1) Sell novels, (2) Build an audience from zero.
 - **Stage:** Starting from scratch — no existing mailing list, social following, or sales to build on yet.
+- **Author byline:** Books are published as **KS Pierre** (in-world compiler: Prince Kairoh Pierre von Care). Publisher: **The Iseldoran Press**.
+- **Current launch focus:** The **Wolves and War** sequence (publisher-ready manuscripts, Edition 9 v23): Book 0 *Star Wolves* (prequel) → Book I *The Forging* → Book II *Asha's Reign* → Book III *Military Archive*, + *After Asha Leaves* (spinoff). **Recommended debut lead: Book I *The Forging*** (origin of Asha Kers I). Sales copy: `marketing/wolves-and-war-sales-copy.md`.
 
 ## 2. Target Audience
 
