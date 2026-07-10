@@ -4,6 +4,8 @@ Retargeted from the earlier *No Gods No Masters* draft to the actual manuscripts
 
 **Reading order** (from your packaging map): Book 0 *Star Wolves* (prequel) → **Book I *The Forging*** → Book II *Asha's Reign* → Book III *Military Archive*, with *After Asha Leaves* as a spinoff bridge.
 
+> **Live product note:** What's published today is the **combined volume** *Wolves and War: Books I & II* (Amazon ASIN `B0H57Y8QWZ`), already wired across the wiki. The per-volume blurbs below are copy-in-waiting for **if/when** you split the sequence into separate SKUs — they are not describing four live listings yet.
+
 ## Recommended lead title: **Book I — *The Forging***
 
 *Star Wolves* is labeled a prequel in your own front matter. Prequels almost always sell better *after* readers are invested — so for a debut aimed at new readers, **lead with Book I, *The Forging*** (the origin of Asha Kers I, who's already a marquee character on the wiki as "La Diosa"). Position *Star Wolves* as "start at the very beginning if you like." If you'd rather launch strictly in reading order, the *Star Wolves* copy below is ready too.
@@ -86,14 +88,11 @@ The complete *Wolves and War* sequence — from the frontier wars of the Star Wo
 
 ---
 
-## ⚠️ Catalog reconciliation needed (your call)
+## Catalog status & when to split
 
-The wiki catalog currently has **one combined entry** — id 11, *"Wolves and War · Books I & II · The Making of Asha Kers I"* — which predates this packaging. Your manuscripts are now split into **Book 0 *Star Wolves*, Book I *The Forging*, Book II *Asha's Reign*, Book III *Military Archive***, plus the *After Asha Leaves* spinoff. Before wiring buy links, decide how to present them on the wiki:
+**Current state (done):** The wiki catalog has one entry — id 11, *"Wolves and War · Books I & II · The Making of Asha Kers I"* — and its Buy buttons now point to the live Amazon listing (ASIN `B0H57Y8QWZ`). That matches the single published SKU, so this is correct as-is.
 
-- **Option A:** Replace id 11 with four separate volume entries (0, I, II, III) + spinoff — matches how they'll sell on Amazon and gives each its own buy link. *(Recommended.)*
-- **Option B:** Keep one combined entry linking to a collection/omnibus.
-
-Tell me which and I'll update the catalog and wire the buy links in one pass.
+**When you publish separate volumes**, split id 11 into per-volume cards (Book 0 → I → II → III + spinoff), paste each ASIN into that card's `k`/`p` fields, and link them as an Amazon Series. The blurbs above are ready for that moment. Until those SKUs exist, do **not** split — four cards with three dead buy links reads as broken. Ping me with the new ASINs and I'll wire them in one pass.
 
 ---
 
