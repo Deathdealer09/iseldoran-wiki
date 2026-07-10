@@ -180,7 +180,7 @@ Image: assets/bestiary/009.jpg
 Image: assets/bestiary/010.jpg
 > BESTIARY: Razeen Artifex, the Razeen Vaults. Bio-engineers and sculptors of flesh, 2.1–2.6 m — pale, elegant, with branching root-like tendrils and advanced sensory organs. Masters of organic architecture. Plate 010.
 
-[ ] **44. Haal'tek Voidwalker**
+[x] **44. Haal'tek Voidwalker** — posted 2026-07-10 16:35Z
 Image: assets/bestiary/011.jpg
 > BESTIARY: Haal'tek Exuvia, the deep void. Void-adapted entities, 3.0–3.8 m — elongated blue-black carapaces, smooth heads, trailing tendrils, optimized for microgravity and the isolation between stars. Plate 011.
 
