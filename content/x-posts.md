@@ -204,7 +204,7 @@ Image: assets/bestiary/012.jpg
 > Remi: "You cheated twice."
 > Selene: "The code says the fight ends when one combatant cannot continue. The code is satisfied."
 
-[ ] **50. The Gold Sky**
+[x] **50. The Gold Sky** — posted 2026-07-11 21:10Z
 > WAR: The Merchant War opened with the Gold Sky — seven battle fleets launched from Ixoria's dock-rings in 36 hours. The orbital sky burned gold for three nights. The forge-workers watched through the smoke, then went back to their stations without ceremony.
 
 [ ] **51. The Star Wolf Frontier Wars**
