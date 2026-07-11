@@ -190,7 +190,7 @@ Image: assets/bestiary/012.jpg
 
 ## Batch 9 — Battles & Wars
 
-[ ] **46. The Seven Moons of Harak**
+[x] **46. The Seven Moons of Harak** — posted 2026-07-11 05:23Z
 > BATTLE: Year 8 of the Meraud War — the Seven Moons of Harak. Selene Jaza's decisive victory, won by turning an enemy's own signature maneuver back against him. In the Iseldoran Sagas, the archive remembers who studies hardest. 🐉
 
 [x] **47. The Corridor of Yren** — posted 2026-06-27 09:34Z
