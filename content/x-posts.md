@@ -199,7 +199,7 @@ Image: assets/bestiary/012.jpg
 [x] **48. The Meraud Free Republic War** — posted 2026-07-11 09:52Z
 > WAR: Nine years against the Meraud Free Republic, raised by Remi Vey at just 23. He moved in three years where his father had taken fifteen — and repeated the same fatal error. Selene Jaza ran the whole war from the flagship Sable Absolute.
 
-[ ] **49. The Duel — "the code is satisfied"**
+[x] **49. The Duel — "the code is satisfied"** — posted 2026-07-11 15:26Z
 > BATTLE: After nine years, the war ended in single combat — Selene Jaza vs. Remi Vey.
 > Remi: "You cheated twice."
 > Selene: "The code says the fight ends when one combatant cannot continue. The code is satisfied."
