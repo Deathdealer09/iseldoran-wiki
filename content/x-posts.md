@@ -196,7 +196,7 @@ Image: assets/bestiary/012.jpg
 [x] **47. The Corridor of Yren** — posted 2026-06-27 09:34Z
 > BATTLE: Corridor of Yren, Year 5. Talos Briath threaded SEVEN vessels through on an 8% debris-cycle variance no one thought survivable — and wounded Selene Jaza doing it. She spent three months studying the trick, then used it to end him.
 
-[ ] **48. The Meraud Free Republic War**
+[x] **48. The Meraud Free Republic War** — posted 2026-07-11 09:52Z
 > WAR: Nine years against the Meraud Free Republic, raised by Remi Vey at just 23. He moved in three years where his father had taken fifteen — and repeated the same fatal error. Selene Jaza ran the whole war from the flagship Sable Absolute.
 
 [ ] **49. The Duel — "the code is satisfied"**
