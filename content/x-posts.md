@@ -211,7 +211,7 @@ Image: assets/bestiary/012.jpg
 Image: assets/bestiary/003.jpg
 > WAR: Eleven commanders. Five frontier wars. One Crown Prince of War — Khuvius Pierre von Care — and his Star Wolves, who fought by a doctrine called "Horse into Vacuum." The sixth war, Hesh-Kar, forged the woman who'd become La Diosa.
 
-[ ] **52. Hesh-Kar**
+[x] **52. Hesh-Kar** — posted 2026-07-12 10:02Z
 > BATTLE: Hesh-Kar — the sixth and decisive Star Wolf campaign. The Orbital Battle of Tarrid, then the Khotai Pass, then Hesh-Kar itself. It didn't just win the frontier; it made Asha Kers I. Scars are a kind of curriculum.
 
 [ ] **53. The Wedding War**
