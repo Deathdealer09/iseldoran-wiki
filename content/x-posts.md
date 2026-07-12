@@ -217,7 +217,7 @@ Image: assets/bestiary/003.jpg
 [x] **53. The Wedding War** — posted 2026-07-12 15:29Z
 > WAR: It began as a wedding and ended as a dynasty. The forward marriage barges — unarmored for four centuries — burned in the convoy: silk first, then lacquer, then fuel lines. From the Battle of Mars rose the Twin Thrones.
 
-[ ] **54. Cassander's answer**
+[x] **54. Cassander's answer** — posted 2026-07-12 21:09Z
 > BATTLE: They murdered Aurelian, the Murdered Sun. Cassander's reply was total, methodical, merciless — advancing through a burning city on foot with a flamethrower. Then: "I have spoken for the Flame long enough. Let it speak for itself."
 
 [ ] **55. The War at the Mouth of Creation**
