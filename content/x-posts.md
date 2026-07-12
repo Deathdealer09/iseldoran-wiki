@@ -207,7 +207,7 @@ Image: assets/bestiary/012.jpg
 [x] **50. The Gold Sky** — posted 2026-07-11 21:10Z
 > WAR: The Merchant War opened with the Gold Sky — seven battle fleets launched from Ixoria's dock-rings in 36 hours. The orbital sky burned gold for three nights. The forge-workers watched through the smoke, then went back to their stations without ceremony.
 
-[ ] **51. The Star Wolf Frontier Wars**
+[x] **51. The Star Wolf Frontier Wars** — posted 2026-07-12 05:40Z
 Image: assets/bestiary/003.jpg
 > WAR: Eleven commanders. Five frontier wars. One Crown Prince of War — Khuvius Pierre von Care — and his Star Wolves, who fought by a doctrine called "Horse into Vacuum." The sixth war, Hesh-Kar, forged the woman who'd become La Diosa.
 
