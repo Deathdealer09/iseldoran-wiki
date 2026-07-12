@@ -214,7 +214,7 @@ Image: assets/bestiary/003.jpg
 [x] **52. Hesh-Kar** — posted 2026-07-12 10:02Z
 > BATTLE: Hesh-Kar — the sixth and decisive Star Wolf campaign. The Orbital Battle of Tarrid, then the Khotai Pass, then Hesh-Kar itself. It didn't just win the frontier; it made Asha Kers I. Scars are a kind of curriculum.
 
-[ ] **53. The Wedding War**
+[x] **53. The Wedding War** — posted 2026-07-12 15:29Z
 > WAR: It began as a wedding and ended as a dynasty. The forward marriage barges — unarmored for four centuries — burned in the convoy: silk first, then lacquer, then fuel lines. From the Battle of Mars rose the Twin Thrones.
 
 [ ] **54. Cassander's answer**
