@@ -227,7 +227,7 @@ Image: assets/bestiary/011.jpg
 [x] **56. The Strangling of the Belt** — posted 2026-07-13 11:32Z
 > WAR: The deadliest opening move of the Merchant War was fired without a shot — 312 supply lines went dark in eleven days. A war of pure economic annihilation, the "Thirty Years' Burn," that starved a civilization built on transit mathematics.
 
-[ ] **57. Khutun's Revenge**
+[x] **57. Khutun's Revenge** — posted 2026-07-13 16:44Z
 > WAR: They killed Niccolò the Thunderborn at Vey Kashar. Khutun's answer was 19 years of "administrative annihilation" — not fleets and sieges, but the systematic erasure of the Belt itself. Some revenge is waged with paperwork. It is no gentler for it.
 
 ---
