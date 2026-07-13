@@ -224,7 +224,7 @@ Image: assets/bestiary/003.jpg
 Image: assets/bestiary/011.jpg
 > WAR: Augustus Rex led NINETY BILLION soldiers past the edge of known space — through the Fall of Ra'ah, the War at the Mouth of Creation, the Breaking of the Rim — and returned having replaced a god. The Dragon Throne carries his passage in its stone.
 
-[ ] **56. The Strangling of the Belt**
+[x] **56. The Strangling of the Belt** — posted 2026-07-13 11:32Z
 > WAR: The deadliest opening move of the Merchant War was fired without a shot — 312 supply lines went dark in eleven days. A war of pure economic annihilation, the "Thirty Years' Burn," that starved a civilization built on transit mathematics.
 
 [ ] **57. Khutun's Revenge**
