@@ -6,6 +6,7 @@ const {
 } = React;
 const NEWSLETTER_ACTION = "https://formsubmit.co/ajax/Kerron.pierre@live.com";
 const NEWSLETTER_EMAIL_FIELD = "email";
+const NEWSLETTER_MODE = "cors";
 function Newsletter({
   compact
 }) {
@@ -23,14 +24,22 @@ function Newsletter({
       const body = new FormData();
       body.append(NEWSLETTER_EMAIL_FIELD, email);
       body.append("_subject", "New Imperial Dispatch signup");
-      const res = await fetch(NEWSLETTER_ACTION, {
-        method: "POST",
-        body,
-        headers: {
-          Accept: "application/json"
-        }
-      });
-      if (!res.ok) throw new Error("Request failed");
+      if (NEWSLETTER_MODE === "no-cors") {
+        await fetch(NEWSLETTER_ACTION, {
+          method: "POST",
+          body,
+          mode: "no-cors"
+        });
+      } else {
+        const res = await fetch(NEWSLETTER_ACTION, {
+          method: "POST",
+          body,
+          headers: {
+            Accept: "application/json"
+          }
+        });
+        if (!res.ok) throw new Error("Request failed");
+      }
       setStatus("done");
       setEmail("");
     } catch (err) {

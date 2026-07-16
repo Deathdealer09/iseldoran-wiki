@@ -8,12 +8,26 @@ const { useState, useEffect, useRef } = React;
 // (e.g. https://formsubmit.co/ajax/abc123…) — swap the raw email below for that
 // alias to keep the address out of the page source and reduce spam.
 //
-// To switch to a real email-marketing platform later (recommended once the list
-// grows — MailerLite, Kit/ConvertKit, Buttondown), replace this URL with the
-// provider's form-action and set EMAIL_FIELD to its expected field name
-// (Buttondown: "email", Mailchimp: "EMAIL", Kit/ConvertKit: "email_address").
+// ── Switching to MailerLite (recommended once you're ready) ──────────────────
+// 1. mailerlite.com → create a free account; verify your sender email/domain.
+// 2. Subscribers → Groups → create a group (e.g. "Imperial Dispatch").
+// 3. Forms → Embedded form → build it → Install → choose the plain-HTML option.
+//    In the <form> snippet MailerLite gives you, copy the action URL. It looks like:
+//    https://assets.mailerlite.com/jsonp/<ACCOUNT_ID>/forms/<FORM_ID>/subscribe
+// 4. Set the THREE constants below:
+//      NEWSLETTER_ACTION      = that subscribe URL
+//      NEWSLETTER_EMAIL_FIELD = "fields[email]"
+//      NEWSLETTER_MODE        = "no-cors"   ← required: MailerLite's endpoint sends
+//                                             no CORS headers, so the browser can't
+//                                             read the reply; we treat a completed
+//                                             POST as success.
+// 5. Enable double opt-in in MailerLite, then load marketing/email-welcome-sequence.md
+//    as the group's automation. Full walkthrough: marketing/email-setup.md.
+// Other providers keep NEWSLETTER_MODE = "cors" and set the field name:
+//   Buttondown "email" · Mailchimp "EMAIL" · Kit/ConvertKit "email_address".
 const NEWSLETTER_ACTION = "https://formsubmit.co/ajax/Kerron.pierre@live.com";
 const NEWSLETTER_EMAIL_FIELD = "email";
+const NEWSLETTER_MODE = "cors"; // "cors" = FormSubmit/JSON APIs · "no-cors" = MailerLite embedded
 
 function Newsletter({ compact }) {
   const [email, setEmail] = useState("");
@@ -27,10 +41,16 @@ function Newsletter({ compact }) {
       const body = new FormData();
       body.append(NEWSLETTER_EMAIL_FIELD, email);
       body.append("_subject", "New Imperial Dispatch signup");
-      const res = await fetch(NEWSLETTER_ACTION, {
-        method: "POST", body, headers: { Accept: "application/json" },
-      });
-      if (!res.ok) throw new Error("Request failed");
+      if (NEWSLETTER_MODE === "no-cors") {
+        // Opaque response (e.g. MailerLite embedded) — status is unreadable, so a
+        // resolved fetch (no network error) is our success signal.
+        await fetch(NEWSLETTER_ACTION, { method: "POST", body, mode: "no-cors" });
+      } else {
+        const res = await fetch(NEWSLETTER_ACTION, {
+          method: "POST", body, headers: { Accept: "application/json" },
+        });
+        if (!res.ok) throw new Error("Request failed");
+      }
       setStatus("done");
       setEmail("");
     } catch (err) {
