@@ -10,5 +10,21 @@
         ]
       }
     ]
+  },
+  "extraKnownMarketplaces": {
+    "superpowers-dev": {
+      "source": { "source": "github", "repo": "obra/superpowers" }
+    },
+    "ecc": {
+      "source": { "source": "github", "repo": "affaan-m/everything-claude-code" }
+    },
+    "thedotmack": {
+      "source": { "source": "github", "repo": "thedotmack/claude-mem" }
+    }
+  },
+  "enabledPlugins": {
+    "superpowers@superpowers-dev": true,
+    "ecc@ecc": true,
+    "claude-mem@thedotmack": true
   }
 }
