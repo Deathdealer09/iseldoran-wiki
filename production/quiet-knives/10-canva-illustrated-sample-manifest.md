@@ -39,7 +39,10 @@ The 7 scenes that first came back as generic Canva **templates** (placeholder "r
     4. Ishak von Care — the Withered King (DiCaprio register) — `DAHQ67QN0sk`
     5. Jovarian the Red — Master of the Red Vexori (Yahya Abdul-Mateen II) — `DAHQ6-FQWdQ`
     6. Gamelon the Jester — Valerien (LaKeith Stanfield) — `DAHQ67urQw4`
-  - All are **original performers inspired by** the named actors' register — not likenesses (Canva refuses real likenesses; this is the intended result). Batch 1 of the 25-role slate; scalable via the same generate→verify-title→nameplate flow.
+  - **Batch 2 added (now 12 of 25):** 7 Marcellus/Mud Prince (Kelvin Harrison Jr.) `DAHQ7LtR0E0` · 8 Nashim XII (Brian Tyree Henry) `DAHQ7PnRIPg` · 9 Nostavius (Damson Idris) `DAHQ7DqBtjc` · 10 Kaelor (John Boyega) `DAHQ7CwD_XY` · 11 Kalia (Thuso Mbedu) `DAHQ7EhJTaI` · 12 Bashir (Ashton Sanders) `DAHQ7DOou_Y`. (Gallery re-exported: job `15fd5e45-c3b8-4523-a4e8-256ec758340d`.)
+  - **Verification note:** the title heuristic (descriptive = art, "Poster -" = template) caught Nashim & Bashir template candidates on the first pick; the Marcellus candidate had a *stray placeholder text element* baked in ("A solo página…") despite a clean title — deleted during nameplating. Lesson logged: also scan each new page's document for stray text elements, not just the title.
+  - All are **original performers inspired by** the named actors' register — not likenesses (Canva refuses real likenesses; this is the intended result).
+  - **Remaining 13 of 25:** Sephira, Jamileighn, Shadak, Verus Aureline, Duke Oleric II, Meret Saba XXXIII, Asha Kers, Fatima, Admiral Harkor, Rasmus, Sarimus, Kaisar Vane, The Imperial Niece — to be produced in further batches via the same generate→verify→nameplate flow.
 
 ## Page order + source plate designs + page IDs (for caption edits)
 | Pg | Page ID | Plate | Source design | Caption |
