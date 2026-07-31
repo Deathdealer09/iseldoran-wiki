@@ -88,6 +88,12 @@ A polished, print-ready realization of the plates specced as **DIAG_001 (family 
 
 ---
 
+## ✅ PLACED INTO THE BOOK (2026-07-31)
+All four reference plates were uploaded to Canva and placed into the illustrated edition **`DAHQ6Kri720`** at their positions; the book is now **17 pages**, re-exported to PDF (job `22003940-b591-4204-8d86-80caa6e5059d`). Final order:
+1 Front cover · 2 Frontispiece (Maldorus) · 3 Baths of Kasparia · 4 Mars landing · 5 Ashim–Jovarian duel · 6 Dymora Oath · **7 Battle of Dymora storyboard [ref, image 3]** · 8 Sword theft · 9 Antechamber · 10 Glass Wastes · 11 Ashim/Lattice · 12 Goliath · 13 Coronation · **14 Canonical Family Tree + 93-yr chronology [ref, image 5]** · **15 Trinitarian dynasty timeline [ref, image 4]** · **16 Commoners' War / Age of Erulius [ref, image 1]** · 17 Back cover.
+- Canva asset IDs: family tree `MAHQ6yANpCk` · Dymora storyboard `MAHQ60LFRS4` · dynasty timeline `MAHQ63HkJFo` · Commoners' War `MAHQ650b2j4`.
+- Canon tensions in §6 remain **unresolved by author's instruction** ("decide later") — no canon docs were changed; the plates are placed as the author's own art.
+
 ## 5. HOW THESE FEED THE PRODUCTION (actionable)
 - **Image 5** → import as the book's **Family Tree** + **93-Year Collapse** diagram plates (Parts Three/Four). It already contains legible, correct text — no AI-generation needed. (Ready to add to `DAHQ6Kri720` or a diagrams section.)
 - **Image 3** → the **definitive style + beat reference for the Dymora/Vexori battle plates**. Use it to (a) restyle/regenerate the duel, Kaelor, Nostavius, and "Ashim alone" scenes to match this crimson-black look, or (b) import its frames directly as battle plates.
