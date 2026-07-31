@@ -28,6 +28,19 @@ The 7 scenes that first came back as generic Canva **templates** (placeholder "r
 ## Draft (mixed) book design
 - `DAHQ6IKgYyE` — 13 pages (6 clean + 7 template-wrapped). Superseded by the clean book above.
 
+## ✅ DELIVERED: Casting Gallery (6 principal portraits, nameplated)
+- **QUIET KNIVES — Casting Gallery (Principals)** — design ID **`DAHQ66-DS24`**
+  - View / edit: https://www.canva.com/d/kkLB4fuYW3IRQr2
+  - **PDF export (pro):** job `27ff8d35-d681-41fe-ae2f-8a503885e47f`.
+  - 6 full-bleed original-performer portraits, each with a bone-white nameplate (CHARACTER — TITLE / Dream-cast: ACTOR · Unofficial fan-casting concept):
+    1. Shapur XIV — the God-Emperor (Djimon Hounsou) — `DAHQ6xkA_Ww`
+    2. Laurentis Kers — the Stone Giant (Winston Duke) — `DAHQ6y-9I3I`
+    3. Ashim von Care — the Lion / the Lattice (Aaron Pierre) — `DAHQ6zeV_yU`
+    4. Ishak von Care — the Withered King (DiCaprio register) — `DAHQ67QN0sk`
+    5. Jovarian the Red — Master of the Red Vexori (Yahya Abdul-Mateen II) — `DAHQ6-FQWdQ`
+    6. Gamelon the Jester — Valerien (LaKeith Stanfield) — `DAHQ67urQw4`
+  - All are **original performers inspired by** the named actors' register — not likenesses (Canva refuses real likenesses; this is the intended result). Batch 1 of the 25-role slate; scalable via the same generate→verify-title→nameplate flow.
+
 ## Page order + source plate designs + page IDs (for caption edits)
 | Pg | Page ID | Plate | Source design | Caption |
 |----|---------|-------|---------------|---------|
