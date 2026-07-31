@@ -42,7 +42,9 @@ The 7 scenes that first came back as generic Canva **templates** (placeholder "r
   - **Batch 2 added (now 12 of 25):** 7 Marcellus/Mud Prince (Kelvin Harrison Jr.) `DAHQ7LtR0E0` · 8 Nashim XII (Brian Tyree Henry) `DAHQ7PnRIPg` · 9 Nostavius (Damson Idris) `DAHQ7DqBtjc` · 10 Kaelor (John Boyega) `DAHQ7CwD_XY` · 11 Kalia (Thuso Mbedu) `DAHQ7EhJTaI` · 12 Bashir (Ashton Sanders) `DAHQ7DOou_Y`. (Gallery re-exported: job `15fd5e45-c3b8-4523-a4e8-256ec758340d`.)
   - **Verification note:** the title heuristic (descriptive = art, "Poster -" = template) caught Nashim & Bashir template candidates on the first pick; the Marcellus candidate had a *stray placeholder text element* baked in ("A solo página…") despite a clean title — deleted during nameplating. Lesson logged: also scan each new page's document for stray text elements, not just the title.
   - All are **original performers inspired by** the named actors' register — not likenesses (Canva refuses real likenesses; this is the intended result).
-  - **Remaining 13 of 25:** Sephira, Jamileighn, Shadak, Verus Aureline, Duke Oleric II, Meret Saba XXXIII, Asha Kers, Fatima, Admiral Harkor, Rasmus, Sarimus, Kaisar Vane, The Imperial Niece — to be produced in further batches via the same generate→verify→nameplate flow.
+  - **Batch 3 added (now 19 of 25):** 13 Sephira (Cate Blanchett) `DAHQ7WvRbQw` · 14 Meret Saba XXXIII (Lupita Nyong'o) `DAHQ7QDjVok` · 15 Jamileighn (Ruth Negga) `DAHQ7acy8xk` · 16 Verus Aureline (Jeffrey Wright) `DAHQ7d6-VrA` · 17 Shadak (Delroy Lindo) `DAHQ7UOhGjY` · 18 Duke Oleric II (Mahershala Ali) `DAHQ7eytp58` · 19 Kaisar Vane (Andy Serkis) `DAHQ7V5iL3w`. (Re-exported: job `f4d3d76c-a71a-43fc-b604-788e1b4a71ae`. Jamileighn & Shadak first candidates were templates → used candidate 2.)
+  - All are **original performers inspired by** the named actors' register — not likenesses.
+  - **Remaining 6 of 25:** Asha Kers, Fatima, Admiral Harkor, Captain Rasmus, Baron Sarimus, The Imperial Niece — final batch, same generate→verify→nameplate flow.
 
 ## Page order + source plate designs + page IDs (for caption edits)
 | Pg | Page ID | Plate | Source design | Caption |
