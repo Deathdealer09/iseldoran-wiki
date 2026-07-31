@@ -2,22 +2,28 @@
 
 *Real Canva assets generated this session. This is the **illustrated sample edition** — a genuine, exportable image-driven book proving the full pipeline (AI plate → merged multi-page design → allocated caption text → PDF export). It is Canva Magic-Design fidelity, NOT the continuity-locked photoreal final; see `09-canva-production-log.md` §2.*
 
-## ✅ DELIVERED: clean 6-page illustrated PDF
-- **QUIET KNIVES — Illustrated Sample Edition (clean)** — design ID **`DAHQ6Kri720`**
+## ✅ DELIVERED: full 13-page illustrated edition PDF
+- **QUIET KNIVES — Illustrated Sample Edition** — design ID **`DAHQ6Kri720`**
   - View / edit in Canva: https://www.canva.com/d/sYJgiiiSQskfwof
-  - **PDF export (pro quality):** generated from job `cb6f5a2d-1279-40c1-ae47-481996983a4f` — open the design's View link and File ▸ Download ▸ PDF Print, or use the time-limited export URL returned this session.
-  - **6 pages, all confirmed clean full-bleed art with bone-white captions in dark bands:**
+  - **PDF export (pro quality):** latest job `475499f7-e947-43c2-b7de-1584091fb587` — open the design's View link and File ▸ Download ▸ PDF Print for a fresh file.
+  - **13 pages, all confirmed clean full-bleed art with bone-white captions in dark bands:**
     1. Front cover — obsidian dragon throne + "QUIET KNIVES" title lockup
-    2. THE FIRST DOMINO — Baths of Kasparia
-    3. THE LANDING OF JOVARIAN — black ships over red Mars
-    4. THE DYMORA OATH — blood-moon over the Red Vexori host
-    5. THE STONE GIANT WAITS — the antechamber (giant + kneeling figure)
-    6. GOLIATH ECLIPSES MALDORUS — orbital mass over the night city
+    2. Frontispiece — Maldorus / Miraflores at dusk (title + author)
+    3. THE FIRST DOMINO — Baths of Kasparia
+    4. THE LANDING OF JOVARIAN — black ships over red Mars
+    5. THE DUEL OF ASHIM AND JOVARIAN — champions clashing in the domed hall
+    6. THE DYMORA OATH — blood-moon over the Red Vexori host
+    7. THE THEFT OF THE SWORD OF ISELDORA — fox-masked figure, violet blade
+    8. THE STONE GIANT WAITS — the antechamber (giant + kneeling figure)
+    9. OPHIS III — THE GLASS WASTES — hooded figure, crystalline spire
+    10. ASHIM MERGES WITH THE LATTICE — cabled face, sapphire eyes, mercury tears
+    11. GOLIATH ECLIPSES MALDORUS — orbital mass over the night city
+    12. THE CORONATION OF THE MUD — lone figure before the vast crowd
+    13. Back cover — sealed notebook by candlelight + Sarimus epigraph + disclaimer
 
-### ⚠️ Known issue — 7 scenes returned as Canva *templates*, excluded from the clean PDF
-When saving candidates, several `generate-design` results were generic event-poster **templates** (placeholder text: "reallygreatsite.com", "RSVP by July 15", "Jul 31 7:00 PM") wrapping a smaller AI image — NOT acceptable full-bleed art. These were caught and left out of the clean edition. They need a clean-regeneration pass (generate → verify the saved design is full-bleed art, not a "Poster - …" template — check the returned title and a thumbnail before accepting):
-- Title page, Ashim–Jovarian duel (had NO usable art — pure template), Ishak steals the Sword, Ophis Glass Wastes, Ashim/Lattice, Coronation of the Mud, Back cover.
-- The 13-page draft book `DAHQ6IKgYyE` retains these template pages for reference/rescue.
+### Resolution of the earlier template issue (option 1 — DONE)
+The 7 scenes that first came back as generic Canva **templates** (placeholder "reallygreatsite.com / RSVP" chrome) were **regenerated with per-plate verification** (accept only descriptive-titled full-bleed designs; reject "Poster - …" templates) and folded into the book above. New verified plate designs: frontispiece `DAHQ62B66uY`, duel `DAHQ65idtS8`, sword `DAHQ6-SyIjc`, glass wastes `DAHQ67vKQ9w`, lattice `DAHQ65BcX-w`, coronation `DAHQ61G7fl8`, back cover `DAHQ69f6PxA`.
+- Superseded draft book `DAHQ6IKgYyE` (13 pp, 6 clean + 7 template) retained for reference only.
 
 ## Draft (mixed) book design
 - `DAHQ6IKgYyE` — 13 pages (6 clean + 7 template-wrapped). Superseded by the clean book above.
