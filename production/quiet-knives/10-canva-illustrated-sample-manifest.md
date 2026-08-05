@@ -2,24 +2,35 @@
 
 *Real Canva assets generated this session. This is the **illustrated sample edition** — a genuine, exportable image-driven book proving the full pipeline (AI plate → merged multi-page design → allocated caption text → PDF export). It is Canva Magic-Design fidelity, NOT the continuity-locked photoreal final; see `09-canva-production-log.md` §2.*
 
-## ✅ DELIVERED: full 13-page illustrated edition PDF
-- **QUIET KNIVES — Illustrated Sample Edition** — design ID **`DAHQ6Kri720`**
+## ✅✅ THE FINAL DOCUMENT: unified 42-page book (narrative + appendices + full Casting Gallery)
+- **QUIET KNIVES — Illustrated Sample Edition** — design ID **`DAHQ6Kri720`** — **42 pages, complete.**
   - View / edit in Canva: https://www.canva.com/d/sYJgiiiSQskfwof
-  - **PDF export (pro quality):** latest job `475499f7-e947-43c2-b7de-1584091fb587` — open the design's View link and File ▸ Download ▸ PDF Print for a fresh file.
-  - **13 pages, all confirmed clean full-bleed art with bone-white captions in dark bands:**
+  - **PDF export (pro quality):** latest job `c8708892-d30d-4fb6-8713-3d429eb06242` — open the design's View link and File ▸ Download ▸ PDF Print for a fresh file. (All earlier job IDs below are superseded by this one.)
+  - **What changed:** the completed 25-portrait Casting Gallery (`DAHQ66-DS24`) was merged into this book as pages 17–41, inserted after the appendix plates (16) and before the back cover (now page 42). A first merge attempt inserted the 25 portraits in **reverse order** (a `merge-designs` insert-order bug — the tool appears to insert each source page immediately after the same anchor rather than advancing it, reversing the block); this was caught by reading `design_content` after the merge, and corrected with a single `move_pages` reorder before export. Verified afterward: page 17 = Shapur XIV (#1) … page 41 = The Imperial Niece (#25), page 42 = back cover.
+  - **Full 42-page order:**
     1. Front cover — obsidian dragon throne + "QUIET KNIVES" title lockup
     2. Frontispiece — Maldorus / Miraflores at dusk (title + author)
     3. THE FIRST DOMINO — Baths of Kasparia
     4. THE LANDING OF JOVARIAN — black ships over red Mars
     5. THE DUEL OF ASHIM AND JOVARIAN — champions clashing in the domed hall
     6. THE DYMORA OATH — blood-moon over the Red Vexori host
-    7. THE THEFT OF THE SWORD OF ISELDORA — fox-masked figure, violet blade
-    8. THE STONE GIANT WAITS — the antechamber (giant + kneeling figure)
-    9. OPHIS III — THE GLASS WASTES — hooded figure, crystalline spire
-    10. ASHIM MERGES WITH THE LATTICE — cabled face, sapphire eyes, mercury tears
-    11. GOLIATH ECLIPSES MALDORUS — orbital mass over the night city
-    12. THE CORONATION OF THE MUD — lone figure before the vast crowd
-    13. Back cover — sealed notebook by candlelight + Sarimus epigraph + disclaimer
+    7. Battle of Dymora storyboard [uploaded reference, image 3]
+    8. THE THEFT OF THE SWORD OF ISELDORA — fox-masked figure, violet blade
+    9. THE STONE GIANT WAITS — the antechamber (giant + kneeling figure)
+    10. OPHIS III — THE GLASS WASTES — hooded figure, crystalline spire
+    11. ASHIM MERGES WITH THE LATTICE — cabled face, sapphire eyes, mercury tears
+    12. GOLIATH ECLIPSES MALDORUS — orbital mass over the night city
+    13. THE CORONATION OF THE MUD — lone figure before the vast crowd
+    14. Canonical Family Tree + 93-yr chronology [uploaded reference, image 5]
+    15. Trinitarian dynasty timeline, 65 God-Emperors [uploaded reference, image 4]
+    16. The Commoners' War / Age of Erulius [uploaded reference, images 1/2]
+    17–41. **Casting Gallery — all 25 dream-cast portraits, nameplated, in role order** (Shapur XIV → Laurentis Kers → Ashim von Care → Ishak von Care → Jovarian the Red → Gamelon the Jester → Marcellus → Nashim XII → Nostavius → Kaelor → Kalia → Bashir → Sephira → Meret Saba XXXIII → Jamileighn → Verus Aureline → Shadak → Duke Oleric II → Kaisar Vane → Asha Kers → Fatima → Admiral Harkor → Captain Rasmus → Baron Sarimus → The Imperial Niece)
+    42. Back cover — sealed notebook by candlelight + Sarimus epigraph + disclaimer
+
+## Earlier 13-page narrative-only edition (superseded, kept for reference)
+Before the reference plates and Casting Gallery were merged in, this same design (`DAHQ6Kri720`) was a 13-page narrative-only book:
+- **PDF export (pro quality):** job `475499f7-e947-43c2-b7de-1584091fb587` (superseded — same design ID, now 42 pages).
+- Pages 1–13 matched items 1–6 and 8–13 above (without the Dymora storyboard reference at what is now page 7).
 
 ### Resolution of the earlier template issue (option 1 — DONE)
 The 7 scenes that first came back as generic Canva **templates** (placeholder "reallygreatsite.com / RSVP" chrome) were **regenerated with per-plate verification** (accept only descriptive-titled full-bleed designs; reject "Poster - …" templates) and folded into the book above. New verified plate designs: frontispiece `DAHQ62B66uY`, duel `DAHQ65idtS8`, sword `DAHQ6-SyIjc`, glass wastes `DAHQ67vKQ9w`, lattice `DAHQ65BcX-w`, coronation `DAHQ61G7fl8`, back cover `DAHQ69f6PxA`.
@@ -72,6 +83,6 @@ Per page: `insert_shape` a dark band (`#0B0B0D`, opacity 0.55) at bottom (top≈
 Project `FAHQ5_Q2T8E`; 13 subfolders 00–12 (see `09-canva-production-log.md`).
 
 ## Honest status
-- ✅ 13 plates generated, merged into one book design, exportable to PDF.
-- ◐ Captions: cover + pages 3, 4 committed; remaining pages in progress.
-- ⛔ Not the final 105-plate continuity-locked photoreal book (tooling ceiling per `09` §2). This is a real sample edition to evaluate and scale from.
+- ✅ 42-page unified book: 13 narrative/cover plates + 3 uploaded reference/appendix plates + all 25 nameplated Casting Gallery portraits, in one merged design, exported to PDF (job `c8708892-d30d-4fb6-8713-3d429eb06242`).
+- ✅ All captions/nameplates committed (no drafts in progress).
+- ⛔ Not the final 105-plate continuity-locked photoreal book (tooling ceiling per `09` §2) — the ledger's 20 remaining event/scene/environment/artefact/diagram categories are not yet plated. This is a real, complete sample edition proving the full pipeline end to end.
