@@ -5,10 +5,11 @@
 ## ✅✅ THE FINAL DOCUMENT: unified 42-page book (narrative + appendices + full Casting Gallery)
 - **QUIET KNIVES — Illustrated Sample Edition** — design ID **`DAHQ6Kri720`** — **42 pages, complete.**
   - View / edit in Canva: https://www.canva.com/d/sYJgiiiSQskfwof
-  - **PDF export (pro quality):** latest job `c8708892-d30d-4fb6-8713-3d429eb06242` — open the design's View link and File ▸ Download ▸ PDF Print for a fresh file. (All earlier job IDs below are superseded by this one.)
+  - **PDF export (pro quality):** latest job `ed2726fc-90bd-4e7b-a7d7-b4afa137b275` — open the design's View link and File ▸ Download ▸ PDF Print for a fresh file. (All earlier job IDs below are superseded by this one.)
   - **What changed:** the completed 25-portrait Casting Gallery (`DAHQ66-DS24`) was merged into this book as pages 17–41, inserted after the appendix plates (16) and before the back cover (now page 42). A first merge attempt inserted the 25 portraits in **reverse order** (a `merge-designs` insert-order bug — the tool appears to insert each source page immediately after the same anchor rather than advancing it, reversing the block); this was caught by reading `design_content` after the merge, and corrected with a single `move_pages` reorder before export. Verified afterward: page 17 = Shapur XIV (#1) … page 41 = The Imperial Niece (#25), page 42 = back cover.
+  - **Front cover replaced (author note):** the original cover art read as too close to an existing pop-culture "iron/sword throne" design. Regenerated per author direction — a white marble throne with a glowing black basalt base and a white marble dragon rising with wings spread as the throne's back — verified as clean art (no stray template text), composited as a new page 1 with the original title lockup re-applied, and the old cover page deleted (explicit user-approved deletion). New cover source design: `DAHRZctKNkw` ("Somber Imperial Throne Room with Majestic Dragon").
   - **Full 42-page order:**
-    1. Front cover — obsidian dragon throne + "QUIET KNIVES" title lockup
+    1. Front cover — white marble throne, glowing black basalt base, dragon rising with open wings + "QUIET KNIVES" title lockup
     2. Frontispiece — Maldorus / Miraflores at dusk (title + author)
     3. THE FIRST DOMINO — Baths of Kasparia
     4. THE LANDING OF JOVARIAN — black ships over red Mars
