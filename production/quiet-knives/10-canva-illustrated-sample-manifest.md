@@ -28,10 +28,10 @@ The 7 scenes that first came back as generic Canva **templates** (placeholder "r
 ## Draft (mixed) book design
 - `DAHQ6IKgYyE` — 13 pages (6 clean + 7 template-wrapped). Superseded by the clean book above.
 
-## ✅ DELIVERED: Casting Gallery (6 principal portraits, nameplated)
-- **QUIET KNIVES — Casting Gallery (Principals)** — design ID **`DAHQ66-DS24`**
+## ✅ DELIVERED: Casting Gallery — ALL 25 dream-cast portraits, nameplated
+- **QUIET KNIVES — Casting Gallery (Principals)** — design ID **`DAHQ66-DS24`** — **25 pages, complete.**
   - View / edit: https://www.canva.com/d/kkLB4fuYW3IRQr2
-  - **PDF export (pro):** job `27ff8d35-d681-41fe-ae2f-8a503885e47f`.
+  - **Latest full PDF export (pro):** job `25f7853f-7275-4b6a-a1de-5e028910919e` (all 25). Earlier partial exports below are superseded.
   - 6 full-bleed original-performer portraits, each with a bone-white nameplate (CHARACTER — TITLE / Dream-cast: ACTOR · Unofficial fan-casting concept):
     1. Shapur XIV — the God-Emperor (Djimon Hounsou) — `DAHQ6xkA_Ww`
     2. Laurentis Kers — the Stone Giant (Winston Duke) — `DAHQ6y-9I3I`
@@ -44,7 +44,9 @@ The 7 scenes that first came back as generic Canva **templates** (placeholder "r
   - All are **original performers inspired by** the named actors' register — not likenesses (Canva refuses real likenesses; this is the intended result).
   - **Batch 3 added (now 19 of 25):** 13 Sephira (Cate Blanchett) `DAHQ7WvRbQw` · 14 Meret Saba XXXIII (Lupita Nyong'o) `DAHQ7QDjVok` · 15 Jamileighn (Ruth Negga) `DAHQ7acy8xk` · 16 Verus Aureline (Jeffrey Wright) `DAHQ7d6-VrA` · 17 Shadak (Delroy Lindo) `DAHQ7UOhGjY` · 18 Duke Oleric II (Mahershala Ali) `DAHQ7eytp58` · 19 Kaisar Vane (Andy Serkis) `DAHQ7V5iL3w`. (Re-exported: job `f4d3d76c-a71a-43fc-b604-788e1b4a71ae`. Jamileighn & Shadak first candidates were templates → used candidate 2.)
   - All are **original performers inspired by** the named actors' register — not likenesses.
-  - **Remaining 6 of 25:** Asha Kers, Fatima, Admiral Harkor, Captain Rasmus, Baron Sarimus, The Imperial Niece — final batch, same generate→verify→nameplate flow.
+  - **Batch 4 added — GALLERY COMPLETE (25 of 25):** 20 Asha Kers / Queen of the Vah'Sumir (Tati Gabrielle) `DAHRZApa5TU` · 21 Fatima (Angela Bassett) `DAHRZOqiOCs` · 22 Admiral Harkor (David Oyelowo) `DAHRZODjh1g` · 23 Captain Aenius Rasmus de los Andes (Chiwetel Ejiofor) `DAHRZNY_zBM` · 24 Baron Sarimus von Sah'wahr Viele (Giancarlo Esposito) `DAHRZJCNYFs` · 25 The Imperial Niece (Taylor Russell) `DAHRZOuv2sc`. Rasmus & Imperial Niece first candidates were templates → used candidate 2. Each portrait matches its costume/palette brief (Asha cobalt/indigo, Fatima gold/deep-red, Harkor violet/scrap-iron, Rasmus campaign-khaki, Sarimus austere-black/tarnished-gold, the Niece bone-white veil). All nameplated bone-white in dark bands, transaction committed.
+  - **✅ FINAL EXPORT: all 25 portraits** — PDF (pro) job `25f7853f-7275-4b6a-a1de-5e028910919e`. Open the design's View link and File ▸ Download ▸ PDF Print for a fresh file.
+  - All 25 are **original performers inspired by** the named actors' register — not likenesses. The Imperial Niece is **never named** (Canon Lock 16).
 
 ## Page order + source plate designs + page IDs (for caption edits)
 | Pg | Page ID | Plate | Source design | Caption |
