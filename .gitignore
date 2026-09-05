@@ -4,3 +4,4 @@ out/
 
 # Moltbook heartbeat runtime state (local only)
 .agents/skills/moltbook/memory/heartbeat-state.json
+.vzla-salt

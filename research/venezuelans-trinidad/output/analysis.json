@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "generated_utc": "2026-09-05T12:36:54.029Z",
+    "dataset": "dataset.csv",
+    "pipeline": "scripts/vzla-tt/analyze.mjs",
+    "note": "OBSERVED DATA. Every figure is computed from the input dataset. No value is estimated, imputed or modelled."
+  },
+  "sample": {
+    "rows_in_file": 0,
+    "duplicates_removed": 0,
+    "comments_analysed": 0,
+    "unique_commenters": 0,
+    "by_platform": {},
+    "date_range": null,
+    "first_hand": {
+      "comments": 0,
+      "commenters": 0,
+      "share": {
+        "n": 0,
+        "pct": null,
+        "below_threshold": true
+      }
+    },
+    "languages": {},
+    "target_vs_actual": {
+      "target_comments": 5000,
+      "actual_comments": 0,
+      "shortfall": 5000
+    }
+  },
+  "themes_top20": [],
+  "themes_all": [],
+  "sentiment": {
+    "toward_trinidad": {
+      "distribution": {
+        "strongly_positive": 0,
+        "positive": 0,
+        "neutral": 0,
+        "mixed": 0,
+        "negative": 0,
+        "strongly_negative": 0,
+        "not_expressed": 0
+      },
+      "n_expressed": 0,
+      "mean": null,
+      "shares": {
+        "strongly_positive": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "positive": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "neutral": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "mixed": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "negative": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "strongly_negative": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        }
+      }
+    },
+    "toward_venezuela": {
+      "distribution": {
+        "strongly_positive": 0,
+        "positive": 0,
+        "neutral": 0,
+        "mixed": 0,
+        "negative": 0,
+        "strongly_negative": 0,
+        "not_expressed": 0
+      },
+      "n_expressed": 0,
+      "mean": null,
+      "shares": {
+        "strongly_positive": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "positive": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "neutral": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "mixed": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "negative": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        },
+        "strongly_negative": {
+          "n": 0,
+          "pct": null,
+          "below_threshold": true
+        }
+      }
+    }
+  },
+  "trinidad_advantages": [],
+  "trinidad_complaints": [],
+  "missed_about_venezuela": [],
+  "destination_preference": {
+    "n_commenters_expressing": 0,
+    "conflicting_excluded": 0,
+    "counts": {
+      "stay_trinidad": 0,
+      "return_venezuela": 0,
+      "another_country": 0,
+      "undecided": 0
+    },
+    "shares": {
+      "stay_trinidad": {
+        "n": 0,
+        "pct": null,
+        "below_threshold": true
+      },
+      "return_venezuela": {
+        "n": 0,
+        "pct": null,
+        "below_threshold": true
+      },
+      "another_country": {
+        "n": 0,
+        "pct": null,
+        "below_threshold": true
+      },
+      "undecided": {
+        "n": 0,
+        "pct": null,
+        "below_threshold": true
+      }
+    }
+  },
+  "crosstabs": {
+    "gender": {},
+    "age_group": {},
+    "time_in_trinidad": {},
+    "family_status": {},
+    "employment_context": {}
+  },
+  "quotations": [],
+  "quality_control": {
+    "validation_errors": [],
+    "warnings": [],
+    "open_coded_themes": [],
+    "reporting_threshold": 30
+  }
+}

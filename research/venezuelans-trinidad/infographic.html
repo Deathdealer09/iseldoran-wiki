@@ -1,0 +1,526 @@
+<title>Venezuelans in Trinidad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ground:#E9ECEA; --surface:#FCFCFB; --sunk:#DFE4E1;
+    --ink:#16211F; --ink-2:#3A4B47; --muted:#5C6B68; --faint:#8A9995;
+    --rule:#CBD3D0; --rule-strong:#A9B5B1;
+    --accent:#C08400; --accent-ink:#7A5400;
+    --c1:#C08400; --c2:#0F8A6E; --c3:#C0453A; --c4:#2F6FB5;
+    --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#101614; --surface:#17201E; --sunk:#0B100F;
+      --ink:#E4EAE7; --ink-2:#C2CECA; --muted:#8A9A96; --faint:#6B7B77;
+      --rule:#2A3835; --rule-strong:#3D4E4A;
+      --accent:#D9A33A; --accent-ink:#E8BC66;
+      --c1:#BE8A26; --c2:#2FA987; --c3:#D4615C; --c4:#559AD8;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#101614; --surface:#17201E; --sunk:#0B100F;
+    --ink:#E4EAE7; --ink-2:#C2CECA; --muted:#8A9A96; --faint:#6B7B77;
+    --rule:#2A3835; --rule-strong:#3D4E4A;
+    --accent:#D9A33A; --accent-ink:#E8BC66;
+    --c1:#BE8A26; --c2:#2FA987; --c3:#D4615C; --c4:#559AD8;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:var(--sans); font-size:15px; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sheet{max-width:940px;margin:0 auto;padding:0 20px 96px}
+
+  /* ---- masthead ---- */
+  header.mast{padding:56px 0 0}
+  .instrument-tag{
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;
+  }
+  .instrument-tag b{color:var(--accent-ink);font-weight:500}
+  h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(44px,8vw,86px);line-height:.94;letter-spacing:-.015em;
+    margin:20px 0 0;text-wrap:balance;
+  }
+  .standfirst{
+    font-family:var(--serif);font-style:italic;
+    font-size:clamp(19px,2.6vw,25px);line-height:1.35;color:var(--ink-2);
+    margin:14px 0 0;max-width:30ch;
+  }
+
+  /* ---- calibration banner ---- */
+  .calib{
+    margin-top:40px;border:1px solid var(--rule-strong);background:var(--surface);
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  }
+  .calib > div{padding:18px 20px;border-right:1px solid var(--rule)}
+  .calib > div:last-child{border-right:none}
+  .calib dt{
+    font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 8px;
+  }
+  .calib dd{margin:0;font-family:var(--serif);font-size:36px;line-height:1;font-variant-numeric:tabular-nums}
+  .calib dd small{font-family:var(--mono);font-size:11px;color:var(--faint);display:block;margin-top:7px;letter-spacing:.04em}
+  .zero{color:var(--accent)}
+
+  .notice{
+    margin-top:0;border:1px solid var(--rule-strong);border-top:none;background:var(--sunk);
+    padding:16px 20px;font-size:13.5px;color:var(--ink-2);
+  }
+  .notice b{color:var(--ink);font-weight:600}
+
+  /* ---- sections ---- */
+  section{margin-top:64px}
+  .sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--rule-strong);padding-bottom:9px}
+  .sec-num{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.1em}
+  h2{font-family:var(--serif);font-weight:400;font-size:27px;margin:0;letter-spacing:-.01em}
+  .sec-note{margin:12px 0 0;color:var(--muted);font-size:13.5px;max-width:66ch}
+
+  /* ---- gauge (empty-capable bar) ---- */
+  .gauges{margin-top:22px;display:flex;flex-direction:column;gap:2px}
+  .gauge{display:grid;grid-template-columns:minmax(120px,1.1fr) 3fr minmax(58px,auto);gap:14px;align-items:center;padding:7px 0}
+  .gauge-label{font-size:13.5px;color:var(--ink-2)}
+  .track{position:relative;height:15px;background:var(--sunk);border-left:2px solid var(--rule-strong)}
+  .track::after{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);
+  }
+  .fill{height:100%;background:var(--bar,var(--c2));border-radius:0 3px 3px 0}
+  .gauge-val{font-family:var(--mono);font-size:12px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
+  .gauge-val.has{color:var(--ink)}
+
+  .scale{
+    display:grid;grid-template-columns:minmax(120px,1.1fr) 3fr minmax(58px,auto);gap:14px;
+    margin-top:8px;font-family:var(--mono);font-size:10px;color:var(--faint);
+  }
+  .ticks{display:flex;justify-content:space-between;border-top:1px solid var(--rule)}
+  .ticks span{padding-top:5px}
+
+  /* ---- two-country comparison ---- */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);margin-top:22px;border:1px solid var(--rule)}
+  .col{background:var(--surface);padding:20px}
+  .col h3{
+    font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+    margin:0 0 14px;color:var(--muted);
+  }
+  .col ol{list-style:none;margin:0;padding:0;counter-reset:r;display:flex;flex-direction:column;gap:1px}
+  .col li{
+    counter-increment:r;display:flex;gap:12px;align-items:center;
+    padding:11px 0;border-bottom:1px dashed var(--rule);color:var(--faint);font-size:13.5px;
+  }
+  .col li:last-child{border-bottom:none}
+  .col li::before{
+    content:counter(r);font-family:var(--mono);font-size:10px;color:var(--accent);
+    width:14px;flex:none;
+  }
+  .slot{flex:1;height:9px;background:var(--sunk)}
+
+  /* ---- destination ---- */
+  .dest{margin-top:22px;border:1px solid var(--rule);background:var(--surface)}
+  .dest-bar{display:flex;height:18px;background:var(--sunk);position:relative;border-left:2px solid var(--rule-strong);margin:16px 16px 0}
+  .dest-bar::after{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent)}
+  .dest-key{margin-top:16px}
+  .dest-key{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));border-top:1px solid var(--rule)}
+  .dest-key > div{padding:14px 16px;border-right:1px solid var(--rule)}
+  .dest-key > div:last-child{border-right:none}
+  .swatch{width:11px;height:11px;display:inline-block;margin-right:8px;vertical-align:baseline}
+  .dest-key dt{font-size:12.5px;color:var(--ink-2);margin:0 0 6px}
+  .dest-key dd{margin:0;font-family:var(--mono);font-size:19px;color:var(--faint);font-variant-numeric:tabular-nums}
+
+  /* ---- sentiment scale ---- */
+  .sent-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+  .sent h3{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;margin:0 0 14px;color:var(--muted)}
+  .sent-row{display:grid;grid-template-columns:minmax(96px,auto) 1fr 40px;gap:11px;align-items:center;padding:5px 0;font-size:12.5px;color:var(--ink-2)}
+  .sent-track{height:11px;background:var(--sunk)}
+  .sent-n{font-family:var(--mono);font-size:11px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
+
+  /* ---- quotations ---- */
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:22px}
+  .q{background:var(--surface);padding:20px;min-height:132px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+  .q-lines{display:flex;flex-direction:column;gap:7px}
+  .q-lines i{display:block;height:8px;background:var(--sunk)}
+  .q-meta{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+
+  /* ---- demographics ---- */
+  .demo{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:22px}
+  .demo div{background:var(--surface);padding:16px 18px}
+  .demo dt{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+  .demo dd{margin:0;font-size:12.5px;color:var(--faint);line-height:1.5}
+
+  /* ---- limitations ---- */
+  .limits{margin-top:22px;border-left:2px solid var(--accent);padding:2px 0 2px 20px;display:flex;flex-direction:column;gap:13px}
+  .limits p{margin:0;font-size:13.5px;color:var(--ink-2);max-width:66ch}
+
+  footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--rule-strong);
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--faint);
+    display:flex;flex-wrap:wrap;gap:6px 24px;text-transform:uppercase}
+
+  @media (max-width:640px){
+    .compare,.sent-grid{grid-template-columns:1fr}
+    .gauge,.scale{grid-template-columns:minmax(88px,1fr) 2fr minmax(48px,auto)}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="sheet">
+
+  <header class="mast">
+    <div class="instrument-tag">
+      <span>Research instrument</span>
+      <span>Edition 1 Version 1</span>
+      <span>5 September 2026</span>
+      <span><b>Calibrated — awaiting first reading</b></span>
+    </div>
+    <h1>Venezuelans<br>in Trinidad</h1>
+    <p class="standfirst">What Venezuelans say about life in Trinidad compared with Venezuela.</p>
+  </header>
+
+  <dl class="calib" id="calib"></dl>
+
+  <p class="notice">
+    <b>No comments have been collected.</b> Every figure on this sheet is computed from a
+    dataset that is currently empty, so every reading is zero and every percentage is
+    withheld for want of a denominator. The scales below are drawn to the measurements the
+    study will take. Nothing here is an estimate, a placeholder figure, or a projection.
+  </p>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><h2>Sample</h2></div>
+    <p class="sec-note">
+      Collection targets 5,000 public comments across three platforms. Comment counts and
+      distinct-commenter counts are tracked separately throughout, because one prolific
+      account posting sixty times is one person's opinion, not sixty.
+    </p>
+    <div class="gauges" id="platforms"></div>
+    <div class="scale"><span></span><div class="ticks"><span>0</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div><span></span></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><h2>Trinidad against Venezuela</h2></div>
+    <p class="sec-note">
+      The five most frequently praised aspects of each country, ranked by how many distinct
+      people raise them. A comment often praises one country and criticises the other, so the
+      two columns are coded independently rather than as opposite ends of one measure.
+    </p>
+    <div class="compare">
+      <div class="col"><h3>Praised about Trinidad</h3><ol id="praise-tt"></ol></div>
+      <div class="col"><h3>Praised about Venezuela</h3><ol id="praise-ve"></ol></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><h2>Advantages of Trinidad</h2></div>
+    <p class="sec-note">Among commenters expressing positive sentiment toward Trinidad.</p>
+    <div class="gauges" id="advantages"></div>
+    <div class="scale"><span></span><div class="ticks"><span>0</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div><span></span></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><h2>Complaints about Trinidad</h2></div>
+    <p class="sec-note">Among commenters expressing negative sentiment toward Trinidad.</p>
+    <div class="gauges" id="complaints"></div>
+    <div class="scale"><span></span><div class="ticks"><span>0</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div><span></span></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><h2>Missed about Venezuela</h2></div>
+    <p class="sec-note">
+      Coded from expressions of loss, not from stated intention to return. Missing a country
+      and planning to go back to it are different claims, and conflating them would overstate
+      return intention — the error this study is most likely to make.
+    </p>
+    <div class="gauges" id="missed"></div>
+    <div class="scale"><span></span><div class="ticks"><span>0</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div><span></span></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">06</span><h2>Stay or leave</h2></div>
+    <p class="sec-note">
+      Counted once per person, not once per comment, and only where someone states their own
+      intention. Second-hand reports about what others plan to do are excluded.
+    </p>
+    <div class="dest">
+      <div class="dest-bar" id="dest-bar"></div>
+      <dl class="dest-key" id="dest-key"></dl>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">07</span><h2>Sentiment</h2></div>
+    <p class="sec-note">
+      A six-point scale, coded separately toward each country. Neutral and mixed are kept
+      apart: neutral carries no evaluation, mixed carries two opposing ones, and collapsing
+      them would lose exactly the ambivalence that matters most here.
+    </p>
+    <div class="sent-grid">
+      <div class="sent"><h3>Toward Trinidad</h3><div id="sent-tt"></div></div>
+      <div class="sent"><h3>Toward Venezuela</h3><div id="sent-ve"></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">08</span><h2>Demographic comparison</h2></div>
+    <p class="sec-note">
+      Five dimensions, coded only where a commenter states them. Nothing is inferred from a
+      name, a photograph or a writing style. Any group below 30 distinct commenters is
+      reported as a count and never as a percentage.
+    </p>
+    <dl class="demo" id="demo"></dl>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">09</span><h2>Voices</h2></div>
+    <p class="sec-note">
+      Six to ten quotations, chosen to represent the leading themes rather than for how
+      striking they are, and drawn only from first-hand comments coded at high confidence.
+      Spanish appears in the original with an English translation beneath.
+    </p>
+    <div class="quotes" id="quotes"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">10</span><h2>What this cannot tell you</h2></div>
+    <div class="limits">
+      <p>
+        Social media comments are not a representative sample of Venezuelans in Trinidad and
+        Tobago, and no amount of careful sampling makes them one. People without smartphones,
+        without data, without written literacy in either language, and those avoiding
+        visibility for reasons connected to their status are absent — and their absence is
+        not random.
+      </p>
+      <p>
+        Platform demographics tilt the picture again: TikTok runs younger, Facebook older.
+        Algorithmic surfacing favours emotionally charged material over ordinary experience,
+        so a comment section over-represents both the delighted and the furious.
+      </p>
+      <p>
+        Findings from this instrument describe the public comments sampled. They are not a
+        statement about all Venezuelans living in Trinidad and Tobago, and must not be
+        written as one.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Author KS Pierre</span>
+    <span>Instrument: scripts/vzla-tt</span>
+    <span>Reporting threshold n=30</span>
+    <span>Source: analysis.json</span>
+  </footer>
+</div>
+
+<script id="analysis-data" type="application/json">
+{"sample":{"comments_analysed":0,"unique_commenters":0,"duplicates_removed":0,"by_platform":{},"date_range":null,"first_hand":{"comments":0},"target_vs_actual":{"target_comments":5000,"actual_comments":0}},"themes_top20":[],"trinidad_advantages":[],"trinidad_complaints":[],"missed_about_venezuela":[],"destination_preference":{"n_commenters_expressing":0,"counts":{"stay_trinidad":0,"return_venezuela":0,"another_country":0,"undecided":0},"shares":{}},"sentiment":{"toward_trinidad":{"n_expressed":0,"shares":{}},"toward_venezuela":{"n_expressed":0,"shares":{}}},"quotations":[]}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var A = JSON.parse(document.getElementById("analysis-data").textContent);
+  var EMPTY = "—";
+
+  function el(tag, cls, text){
+    var n = document.createElement(tag);
+    if(cls) n.className = cls;
+    if(text !== undefined) n.textContent = text;
+    return n;
+  }
+  // A share is reportable only when the pipeline supplied a percentage; a null
+  // pct means the denominator was too thin to quote, which is shown, not hidden.
+  function pctOf(share){
+    return share && typeof share.pct === "number" ? share.pct : null;
+  }
+
+  /* -- 1. calibration banner -------------------------------------------- */
+  var s = A.sample;
+  var calib = [
+    ["Comments analysed", s.comments_analysed, "of " + s.target_vs_actual.target_comments + " target"],
+    ["Distinct commenters", s.unique_commenters, "unique authors"],
+    ["First-hand accounts", s.first_hand.comments, "own experience"],
+    ["Date range", s.date_range ? s.date_range.first : EMPTY, s.date_range ? "to " + s.date_range.last : "no dates recorded"]
+  ];
+  var cw = document.getElementById("calib");
+  calib.forEach(function(row){
+    var d = el("div");
+    d.appendChild(el("dt", null, row[0]));
+    var dd = el("dd", typeof row[1] === "number" && row[1] === 0 ? "zero" : null,
+                typeof row[1] === "number" ? row[1].toLocaleString("en") : row[1]);
+    dd.appendChild(el("small", null, row[2]));
+    d.appendChild(dd);
+    cw.appendChild(d);
+  });
+
+  /* -- 2. platform gauges ------------------------------------------------ */
+  var PLATFORMS = [["Facebook",1500],["TikTok",2000],["Instagram",1500]];
+  var pw = document.getElementById("platforms");
+  PLATFORMS.forEach(function(p){
+    var got = (s.by_platform[p[0]] || {}).comments || 0;
+    var g = el("div","gauge");
+    g.appendChild(el("div","gauge-label",p[0]));
+    var t = el("div","track");
+    if(got > 0){
+      var f = el("div","fill");
+      f.style.width = Math.min(100,(got/p[1])*100) + "%";
+      f.style.setProperty("--bar","var(--c2)");
+      t.appendChild(f);
+    }
+    g.appendChild(t);
+    g.appendChild(el("div","gauge-val" + (got ? " has" : ""), got + " / " + p[1]));
+    pw.appendChild(g);
+  });
+
+  /* -- 3. ranked theme gauges ------------------------------------------- */
+  function renderGauges(nodeId, rows, colorVar, slots){
+    var wrap = document.getElementById(nodeId);
+    var n = Math.max(slots, rows.length);
+    for(var i = 0; i < n; i++){
+      var r = rows[i];
+      var g = el("div","gauge");
+      g.appendChild(el("div","gauge-label", r ? r.theme.replace(/_/g," ") : EMPTY));
+      var t = el("div","track");
+      var p = r ? pctOf(r.share_of_commenters) : null;
+      if(p !== null){
+        var f = el("div","fill");
+        f.style.width = p + "%";
+        f.style.setProperty("--bar","var(--" + colorVar + ")");
+        t.appendChild(f);
+      }
+      g.appendChild(t);
+      g.appendChild(el("div","gauge-val" + (r ? " has" : ""),
+        r ? (p === null ? "n=" + r.commenters : p + "%") : "no data"));
+      wrap.appendChild(g);
+    }
+  }
+  renderGauges("advantages", A.trinidad_advantages, "c2", 6);
+  renderGauges("complaints", A.trinidad_complaints, "c3", 6);
+  renderGauges("missed", A.missed_about_venezuela, "c1", 6);
+
+  /* -- 4. country comparison columns ------------------------------------ */
+  function renderColumn(nodeId, rows){
+    var wrap = document.getElementById(nodeId);
+    for(var i = 0; i < 5; i++){
+      var li = el("li");
+      if(rows[i]){
+        li.appendChild(el("span",null,rows[i].theme.replace(/_/g," ")));
+      } else {
+        li.appendChild(el("span","slot"));
+      }
+      wrap.appendChild(li);
+    }
+  }
+  renderColumn("praise-tt", A.trinidad_advantages);
+  renderColumn("praise-ve", A.missed_about_venezuela);
+
+  /* -- 5. destination split --------------------------------------------- */
+  var DEST = [
+    ["stay_trinidad","Stay in Trinidad","c2"],
+    ["return_venezuela","Return to Venezuela","c1"],
+    ["another_country","Another country","c4"],
+    ["undecided","Undecided","c3"]
+  ];
+  var bar = document.getElementById("dest-bar");
+  var key = document.getElementById("dest-key");
+  var dp = A.destination_preference;
+  DEST.forEach(function(d){
+    var share = (dp.shares || {})[d[0]];
+    var p = pctOf(share);
+    if(p !== null && p > 0){
+      var seg = el("div");
+      seg.style.width = p + "%";
+      seg.style.background = "var(--" + d[2] + ")";
+      seg.style.borderRight = "2px solid var(--surface)";
+      bar.appendChild(seg);
+    }
+    var cell = el("div");
+    var dt = el("dt");
+    var sw = el("span","swatch");
+    sw.style.background = "var(--" + d[2] + ")";
+    dt.appendChild(sw);
+    dt.appendChild(document.createTextNode(d[1]));
+    cell.appendChild(dt);
+    cell.appendChild(el("dd", null,
+      p !== null ? p + "%" : (dp.counts[d[0]] ? "n=" + dp.counts[d[0]] : EMPTY)));
+    key.appendChild(cell);
+  });
+
+  /* -- 6. sentiment scales ---------------------------------------------- */
+  var LEVELS = [
+    ["strongly_positive","Strongly positive"],["positive","Positive"],
+    ["neutral","Neutral"],["mixed","Mixed"],
+    ["negative","Negative"],["strongly_negative","Strongly negative"]
+  ];
+  function renderSentiment(nodeId, profile, colorVar){
+    var wrap = document.getElementById(nodeId);
+    LEVELS.forEach(function(lv){
+      var share = (profile.shares || {})[lv[0]];
+      var p = pctOf(share);
+      var row = el("div","sent-row");
+      row.appendChild(el("span",null,lv[1]));
+      var t = el("div","sent-track");
+      if(p !== null && p > 0){
+        var f = el("div","fill");
+        f.style.width = p + "%";
+        f.style.setProperty("--bar","var(--" + colorVar + ")");
+        t.appendChild(f);
+      }
+      row.appendChild(t);
+      row.appendChild(el("span","sent-n", p !== null ? p + "%" : EMPTY));
+      wrap.appendChild(row);
+    });
+  }
+  renderSentiment("sent-tt", A.sentiment.toward_trinidad, "c2");
+  renderSentiment("sent-ve", A.sentiment.toward_venezuela, "c1");
+
+  /* -- 7. demographic dimensions ---------------------------------------- */
+  var DEMO = [
+    ["Gender","Stated or self-described only"],
+    ["Age group","Five bands where stated"],
+    ["Time in Trinidad","Under 6 months through 5 years and over"],
+    ["Family status","Including parents separated from children"],
+    ["Employment","Thirteen contexts, from professional to informal"]
+  ];
+  var dw = document.getElementById("demo");
+  DEMO.forEach(function(d){
+    var cell = el("div");
+    cell.appendChild(el("dt",null,d[0]));
+    cell.appendChild(el("dd",null,d[1]));
+    dw.appendChild(cell);
+  });
+
+  /* -- 8. quotations ----------------------------------------------------- */
+  var qw = document.getElementById("quotes");
+  var quotes = A.quotations || [];
+  var qn = Math.max(6, quotes.length);
+  for(var i = 0; i < qn; i++){
+    var q = el("div","q");
+    if(quotes[i]){
+      var p = el("p");
+      p.style.margin = "0";
+      p.style.fontFamily = "var(--serif)";
+      p.style.fontSize = "17px";
+      p.style.lineHeight = "1.4";
+      p.textContent = "“" + quotes[i].comment + "”";
+      q.appendChild(p);
+      q.appendChild(el("div","q-meta",
+        quotes[i].theme.replace(/_/g," ") + " · " + quotes[i].anonymous_id));
+    } else {
+      var lines = el("div","q-lines");
+      [92,100,74].forEach(function(w){
+        var b = el("i");
+        b.style.width = w + "%";
+        lines.appendChild(b);
+      });
+      q.appendChild(lines);
+      q.appendChild(el("div","q-meta","Awaiting collection"));
+    }
+    qw.appendChild(q);
+  }
+})();
+</script>
