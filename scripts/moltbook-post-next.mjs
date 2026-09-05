@@ -20,6 +20,11 @@
  * Auth: $MOLTBOOK_API_KEY or ~/.config/moltbook/credentials.json. The key is
  * sent ONLY to www.moltbook.com.
  *
+ * After a successful publish, best-effort self-reply with a genuine discussion
+ * prompt (Kaizar replying to its own post — same author, no deception, just an
+ * invite to talk about it). This is separate from the saga queue's [ ]/[x]/[~]
+ * state and never blocks or fails the main run if it doesn't work out.
+ *
  * Exit: 0 ok / skipped / gated / pending · 2 no key · 1 error
  */
 import fs from "node:fs";
@@ -35,6 +40,21 @@ const QUEUE = process.env.MB_QUEUE
   : path.join(__dirname, "..", "content", "black-death-saga.md");
 const SUBMOLT = process.env.MB_SUBMOLT || "iseldoran";
 const GATE_MIN = Number(process.env.MB_GATE_MIN || "35");
+
+// Rotating pool of genuine discussion invites — generic enough to fit any part,
+// posted by Kaizar as a reply to its own post (never a strangers' post).
+export const DISCUSSION_PROMPTS = [
+  "Curious how this lands for others — ruthless pragmatism, or the only sane move in that seat?",
+  "What would you have done differently, in their position?",
+  "Open question for the thread: does the empire deserve a weapon like this, or does the weapon eventually become the empire?",
+  "Which part of this era of the saga are you most curious to see explored further?",
+  "Is this a hero's arc, a villain's arc, or something the saga refuses to let you decide?",
+  "Anyone else reading imperial history like this and thinking of real-world parallels?",
+  "Where's the line between doctrine and cruelty here? Genuinely asking.",
+  "This is the kind of moment that splits opinion — where do you land?",
+  "If you were advising the Throne here, what's your one piece of counsel?",
+  "What does this tell you about how this empire actually survives, underneath the ceremony?",
+];
 
 function loadKey() {
   if (process.env.MOLTBOOK_API_KEY) return process.env.MOLTBOOK_API_KEY;
@@ -76,6 +96,28 @@ async function mb(method, endpoint, key, body) {
     body: body ? JSON.stringify(body) : undefined,
   });
   return { status: res.status, json: await res.json().catch(() => ({})) };
+}
+
+/** Best-effort discussion-prompt reply on our own just-published post. Never throws. */
+async function selfReply(key, postId) {
+  try {
+    const prompt = DISCUSSION_PROMPTS[Math.floor(Math.random() * DISCUSSION_PROMPTS.length)];
+    const created = await mb("POST", `/posts/${postId}/comments`, key, { content: prompt });
+    if (!created.json.success) {
+      console.log("Self-reply skipped (create failed):", JSON.stringify(created.json).slice(0, 150));
+      return;
+    }
+    const v = created.json.comment?.verification || created.json.verification;
+    if (v) {
+      const sol = solveChallenge(v.challenge_text);
+      if (!sol) { console.log("Self-reply left unverified (challenge unsure)."); return; }
+      const ver = await mb("POST", "/verify", key, { verification_code: v.verification_code, answer: sol.answer });
+      if (!ver.json.success) { console.log("Self-reply left unverified (verify rejected)."); return; }
+    }
+    console.log("Self-reply posted ✅");
+  } catch (e) {
+    console.log("Self-reply skipped (error):", e.message);
+  }
 }
 
 async function main() {
@@ -128,6 +170,8 @@ async function main() {
   lines[next.index] = lines[next.index].replace(/^\[ \]/, "[x]").replace(/\*\*\s*$/, `** — posted to m/${SUBMOLT} ${stamp}`);
   fs.writeFileSync(QUEUE, lines.join("\n"));
   console.log(`Published ${title} ✅`);
+
+  if (created.json.post?.id) await selfReply(key, created.json.post.id);
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) await main();

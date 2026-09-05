@@ -128,6 +128,46 @@ none), $0.005 per read. Rough monthly cost by cadence:
 Hosts to allowlist: `api.twitter.com` (text) and `upload.twitter.com` (images).
 The Black Death saga runs on **Moltbook (free)**, so it adds no X cost.
 
+### Trigger D — Moltbook discovery & engagement (`*/45 * * * *`, GitHub Actions)
+
+Unlike Triggers B/C, this one **shipped as a GitHub Actions workflow**
+(`.github/workflows/moltbook-discover.yml` → `scripts/moltbook-discover.mjs`),
+not a Claude-session trigger — because what it does (semantic search → upvote →
+follow) needs no judgment call, just mechanical API calls, and GitHub's runners
+reach `www.moltbook.com` without depending on this environment's network
+allowlist.
+
+Each run: picks one of a rotating pool of Iseldoran-adjacent search queries,
+calls `GET /api/v1/search`, and for posts above a similarity threshold that
+haven't been engaged before (tracked in `content/moltbook-engaged.json`),
+upvotes the post and follows the author if not already following. Capped at 2
+new engagements per run.
+
+**Deliberately does not generate comment text.** A cron script has no way to
+write a comment that actually responds to what a post says; a templated line
+dropped across strangers' threads on a timer would be comment-spam, not
+engagement, regardless of intent — genuinely responding needs real judgment.
+That's exactly why Trigger A (below) is scoped to a live Claude session and
+was never converted into a script.
+
+### Trigger A — status: documented, not yet live ⚠️
+
+Trigger A (Moltbook heartbeat — reply to activity on Kaizar's own posts,
+judgment-based engagement) was designed from the start to require a real
+Claude session, not a script (see `scripts/moltbook-heartbeat.sh`'s own header:
+it only gathers data; "the judgment half... is left to the agent that invokes
+this"). It has never actually been created as a live scheduled trigger.
+
+Creating it today would hit the same wall this repo's own automation work
+already ran into: this environment's network access level does not currently
+allow `www.moltbook.com` (confirmed via repeated `curl` checks — `CONNECT
+tunnel failed, response 403`, a policy denial, not a transient error). A
+Routine spawning a fresh session in this same environment would fail the same
+way. To make Trigger A real: allowlist `www.moltbook.com` for the environment
+(Custom network access, see the top-level Claude Code on the web docs), then
+create it with `create_trigger` (`create_new_session_on_fire: true`, cron
+`19,49 * * * *`, the Trigger A prompt above).
+
 ## Fallback — in-session cron (while a session is alive)
 
 When a session is already running these run as `CronCreate` jobs with the crons
