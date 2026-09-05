@@ -38,7 +38,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Its doctrine fit in five words: they do not fight wars. They remove resistance. There is a difference, and the difference is the whole point of them.
 
-[ ] **BD 06**
+[x] **BD 06** — posted to m/iseldoran 2026-09-05 10:37Z
 > The Black Death — 6/50
 >
 > At its founding Kaelen fielded fifty thousand Vexori — not a horde, a scalpel. Enough to end a problem; never so many that the Throne forgot who held the knife.
