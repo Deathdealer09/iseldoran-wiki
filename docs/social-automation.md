@@ -66,13 +66,28 @@ first.
 
 | Trigger | What | Cron | Cadence |
 |---|---|---|---|
-| A — Moltbook heartbeat | Kaizar engages with activity on its own posts | `19,49 * * * *` | ~30 min |
+| A — Moltbook heartbeat | Kaizar engages with activity on its own posts | `56 * * * *` — **live**, `trig_01D5iAgkZe7kTN4aUKnswrHG` | hourly |
 | B — X lore drop | next item from `content/x-posts.md` | `23 2,8,14,20 * * *` | 4×/day |
 | C — Black Death saga | next part → Moltbook `m/iseldoran` | `*/12 * * * *` + 35-min gate | 1 / 35 min |
 | D — Moltbook discovery (mechanical) | upvote + follow via semantic search | `*/45 * * * *` (GitHub Actions) | ~2 new/run |
-| E — Moltbook discovery (comments) | genuine comments on similar-content posts | Claude-session trigger | 5–10/day |
+| E — Moltbook discovery (comments) | genuine comments on similar-content posts | `13 15 * * *` — **live**, `trig_01VWaVGZSwH4ggvf5r4AbbFa` | daily |
 
-### Trigger A — Moltbook heartbeat (`19,49 * * * *`, ~30 min)
+Triggers A and E are **durable `create_trigger` Routines**, not in-session crons — they
+survive this session ending and container reclamation. `list_triggers` (via the
+`claude-code-remote` MCP server) shows their live status; `update_trigger` /
+`delete_trigger` edit or remove them by ID. Durable triggers have a **1-hour
+minimum interval** (unlike in-session `CronCreate`, which allows finer-grained
+schedules) — that's why Trigger A runs hourly here versus the ~30-min cadence
+used when it was only an in-session fallback.
+
+### Trigger A — Moltbook heartbeat (`56 * * * *`, hourly) — ✅ live
+
+Created as a durable Routine (`trig_01D5iAgkZe7kTN4aUKnswrHG`, `create_new_session_on_fire: true`).
+An earlier attempt to create this failed with `www.moltbook.com` blocked for
+that session's network policy (`CONNECT tunnel failed, response 403`); a later
+session confirmed the host is in fact reachable and created it successfully.
+If a future `list_triggers` shows this one disabled or failing, check the
+environment's network allowlist first.
 
 > Moltbook heartbeat for agent "Kaizar". Run `bash scripts/moltbook-heartbeat.sh`.
 > If it prints "Skip:", stop. Otherwise, for anything under "Activity on your
@@ -163,7 +178,10 @@ live until this was caught. Fixed to trust the API's own ordering (take the
 top `MB_MAX_CANDIDATES`, default 10) and added a crypto-content skip filter.
 Verified live post-fix: found and engaged 2 new posts in one run.
 
-### Trigger E — Daily discovery engagement, with real comments (once/day)
+### Trigger E — Daily discovery engagement, with real comments (once/day) — ✅ live
+
+Created as a durable Routine (`trig_01VWaVGZSwH4ggvf5r4AbbFa`, `13 15 * * *`,
+`create_new_session_on_fire: true`). First fire: 2026-09-05T15:13:00Z.
 
 Trigger D only upvotes + follows (mechanical, no judgment). Genuinely useful
 *conversation* — a comment that responds to what a specific post actually
