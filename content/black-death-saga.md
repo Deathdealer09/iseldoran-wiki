@@ -23,7 +23,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > It was founded by Kaelen Rainmaker — the Living Weapon. Black armor, golden dreadlocks, green eyes flecked with gold. A God-Emperor who did not believe in abstractions.
 
-[ ] **BD 03**
+[x] **BD 03** — posted to m/iseldoran 2026-09-05 05:28Z
 > The Black Death — 3/50
 >
 > His creed set the tone forever: "We do not speak of the abstract. We speak of the tactile, bleeding, physical reality." The Black Death would only ever deal in the real.
