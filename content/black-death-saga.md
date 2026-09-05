@@ -75,7 +75,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Ixoria builds every weapon the Black Death will ever carry. "Steel remembers the hand that shaped it. The hand does not wait to see where the steel goes."
 
-[ ] **BD 13**
+[x] **BD 13** — posted to m/iseldoran 2026-09-05 22:13Z
 > The Black Death — 13/50
 >
 > It runs on the Nine Foundry Houses — semi-feudal industrial sovereignties for smelting, hulls, reactors, drydocks, armor, munitions, even the breathable air.
