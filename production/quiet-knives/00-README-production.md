@@ -1,6 +1,6 @@
 # QUIET KNIVES — DEFINITIVE ILLUSTRATED COFFEE-TABLE BOOK · Production Bible
 
-This directory is the **production infrastructure** for the illustrated coffee-table edition of *Quiet Knives: A Companion to the Code of Martyrs* (K. S. Pierre). It is the Gate-1 / Gate-2 foundation the brief itself requires **before any final artwork**: a Canon Bible, chronology, cast map, contradiction log, visual bible, 105-row image ledger, scene briefs, book blueprint, and a truthful Canva production log.
+This directory is the **production infrastructure** for the illustrated coffee-table edition of *Quiet Knives: A Companion to the Code of Martyrs* (K. S. Pierre). It is the Gate-1 / Gate-2 foundation the brief itself requires **before any final artwork**: a Canon Bible, chronology, cast map, contradiction log, visual bible, 108-row image ledger, scene briefs, book blueprint, and a truthful Canva production log.
 
 > **This is an unofficial fan-casting and concept-art exercise. It is not casting news. No named performer has been contacted, approved, endorsed, or attached. "Dream-cast" names denote inspiration only; production art uses original performers inspired by an actor's age, presence, and register — never a claimed likeness.**
 
@@ -11,7 +11,7 @@ This directory is the **production infrastructure** for the illustrated coffee-t
 | `01-canon-bible.md` | Master canon: 20 locks, locked genealogy, character/faction/location/artefact canon, ambiguities, do-not list. | Gate 1 |
 | `02-chronology.md` | The 93-year collapse (Year 0–93) + deep-past prelude + generational ageing guide. | Gate 1 |
 | `03-casting-dossier.md` | All 25 dream-cast roles: nameplate, rationale, bio, quotation, function, costume, fate, defining actions, substitution note. | Gate 3 |
-| `04-image-ledger.md` | 105-row asset register across all categories, full metadata, filenames, continuity links. | Gate 5 |
+| `04-image-ledger.md` | 108-row asset register across all categories, full metadata, filenames, continuity links. | Gate 5 |
 | `05-scene-briefs.md` | Generation briefs for the 25 mandatory events + 20 scenes (+ the 93-year spread), with captions & quotations. | Gate 4 |
 | `06-visual-language-bible.md` | Target look, 8-colour palette, faction accents, typography, continuity law, prompt template, negative constraints. | Gate 2 |
 | `07-book-layout-blueprint.md` | Full front-to-back pagination map, trim decision, locked templates, art placement. | Gate 6 |
@@ -22,10 +22,10 @@ This directory is the **production infrastructure** for the illustrated coffee-t
 
 - ✅ **Manuscript ingested** — full Version 6 read (all four Parts, twelve Companion Records, four Code of Martyrs appendices, Saga appendices).
 - ✅ **Canon bible, chronology, contradiction log, ambiguity report** — complete.
-- ✅ **Casting dossier (25), image ledger (105 rows), scene briefs (46)** — complete as written planning deliverables.
+- ✅ **Casting dossier (25), image ledger (108 rows), scene briefs (46)** — complete as written planning deliverables.
 - ✅ **Visual bible + book blueprint** — complete.
 - ✅ **Canva illustrated sample edition — 42-page unified book, complete and exported.** `DAHQ6Kri720`: 13 narrative/cover plates + 3 uploaded reference/appendix plates + all 25 nameplated dream-cast Casting Gallery portraits, merged into one design and exported to PDF. See `10-canva-illustrated-sample-manifest.md`.
-- ⛔ **The full 105-plate continuity-locked photoreal book (260–380pp, all ledger categories)** — **not produced**, and cannot be truthfully produced with the Canva Magic-Design tooling available (no character-identity lock, no CMYK). The 42-page sample above proves the pipeline end to end; scaling it to all 105 ledger rows is the remaining gap. See `09-canva-production-log.md` §2 for the precise reason and the pipeline that would be required.
+- ⛔ **The full 108-plate continuity-locked photoreal book (260–380pp, all ledger categories)** — **not produced**, and cannot be truthfully produced with the Canva Magic-Design tooling available (no character-identity lock, no CMYK). The 42-page sample above proves the pipeline end to end; scaling it to all 108 ledger rows is the remaining gap. See `09-canva-production-log.md` §2 for the precise reason and the pipeline that would be required.
 
 ## How this maps to the original 16-section brief
 

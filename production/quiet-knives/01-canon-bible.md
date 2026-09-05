@@ -192,6 +192,9 @@ The network "was never meant to survive the coronation." Its success is defined 
 | **Imperial Archives** | Where Bashir kills Hiram; marble shadow, sealed dispatches. | Ink, parchment, blue ember, shadow. |
 | **Te Pes** | Palace-city / sacred complex under Vexori assault (spelling/geography unresolved — see §8). | Burning palace-city; retain "Te Pes." |
 | **Gathis (caverns)** | Where Ishak's new covenant is sworn by broken houses. | Hollow stone, Sword-glow like dawn. |
+| **The Standing Stones** | Ancient basalt monoliths on a windswept cliff bluff near Miraflores, each bound with a red ribbon; witness to countless duels and oaths. Wider Iseldoran Sagas canon (see `11-uploaded-visual-references.md` §7.2). | Weathered black basalt, red ribbon ties, lantern-lit path, sea cliff. |
+| **The Pleasure Gardens** | Terraced water courts and pavilion gardens on Maldorus, lush and ornamental, lantern-lit at dusk. Wider Iseldoran Sagas canon (see `11-uploaded-visual-references.md` §7.5). | Red-lacquer pavilions, terraced pools, palm and flowering growth, dusk lantern glow. |
+| **Library of Stone and Reed** | Archive of the Yanuikii — records, maps, and star charts held in stone shelving and reed scroll-racks, opening onto a rain-soaked courtyard. Wider Iseldoran Sagas canon (see `11-uploaded-visual-references.md` §7.3); relationship to the separately-attested **Imperial Archives** (Maldorus) is not yet specified. | Dark stone shelving, reed scroll-racks, warm amber/gold light, red pillars. |
 
 ---
 

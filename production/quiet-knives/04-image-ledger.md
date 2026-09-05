@@ -15,7 +15,7 @@
 
 **Status legend (all rows ship PENDING across four gates):** `Canon PENDING · Visual PENDING · Typography PENDING · Final PENDING`.
 
-**Category counts (105 total):** CAST 25 · EVENT 25 · SCENE 20 · ENV 15 · ART 10 · DIAG 5 · COVER 5.
+**Category counts (108 total):** CAST 25 · EVENT 25 · SCENE 20 · ENV 18 · ART 10 · DIAG 5 · COVER 5.
 
 ---
 
@@ -457,7 +457,7 @@
 
 ---
 
-## CATEGORY 4 — ENVIRONMENTS / ARCHITECTURE PLATES (ENV_001–015) · 15 rows
+## CATEGORY 4 — ENVIRONMENTS / ARCHITECTURE PLATES (ENV_001–018) · 18 rows
 
 *Establishing plates. No principal figures required (staffage/scale-figures allowed). Aspect default 16:9 or 2:1 panorama. Canva ref for all: TBD — 06 Raw Generations. Status for all: Canon PENDING · Visual PENDING · Typography PENDING · Final PENDING.*
 
@@ -534,7 +534,22 @@
 **ENV_015 · Ruined Maldorus (post-siege)**
 - Source: Book Three (Winnowing of Maldorus); Canon Bible §6. · Date: Post-Year-93. · Location: Maldorus in ruins.
 - Design: monumental marble now cracked, smoke-stained, ruined; shattered spires; the winnowed capital. · Weather/time: ash-grey aftermath, low sun through smoke. · Palette: cracked marble, smoke-black, ash, cold gold. · Aspect: 2:1 panorama (deliberate mirror of ENV_001 intact-Maldorus).
-- Prev→Next: ENV_014 → ART_001. · Filename: QK_ENV_015_MALDORUS_RUINED_V01.
+- Prev→Next: ENV_014 → ENV_016. · Filename: QK_ENV_015_MALDORUS_RUINED_V01.
+
+**ENV_016 · The Standing Stones** — added from author reference (2026-09-05)
+- Source: wider Iseldoran Sagas canon; Canon Bible §6; `11-uploaded-visual-references.md` §7.2. · Date: unspecified (ancient). · Location: windswept cliff bluff near Miraflores.
+- Design: a row of weathered black basalt monoliths, each bound with a single red ribbon, on a lantern-lit sea-cliff bluff, Miraflores Palace visible in the distance; witness to countless duels and oaths. · Weather/time: dusk/storm-light, lanterns lit. · Palette: weathered black basalt, red ribbon, cold sea-grey, lantern amber. · Aspect: 16:9. Reference plate already supplied: `QK_REF_standing-stones-cliffside.png`.
+- Prev→Next: ENV_015 → ENV_017. · Filename: QK_ENV_016_STANDING_STONES_V01.
+
+**ENV_017 · The Pleasure Gardens** — added from author reference (2026-09-05)
+- Source: wider Iseldoran Sagas canon; Canon Bible §6; `11-uploaded-visual-references.md` §7.5. · Date: unspecified. · Location: Maldorus.
+- Design: terraced water courts and pavilion gardens, red-lacquer pavilions over stepped reflecting pools, palm and flowering growth, lush and ornamental. · Weather/time: dusk, lanterns lit. · Palette: red lacquer, deep green, water-silver, lantern gold. · Aspect: 3:2. No reference plate supplied yet beyond the collage panel.
+- Prev→Next: ENV_016 → ENV_018. · Filename: QK_ENV_017_PLEASURE_GARDENS_V01.
+
+**ENV_018 · Library of Stone and Reed** — added from author reference (2026-09-05)
+- Source: wider Iseldoran Sagas canon; Canon Bible §6; `11-uploaded-visual-references.md` §7.3. · Date: unspecified. · Location: unspecified (relationship to Imperial Archives, ENV_012, not yet settled — see canon-bible note).
+- Design: archive of the Yanuikii — dark stone shelving, reed scroll-racks, an astrolabe/orrery, candlelit map tables, opening through red pillars onto a rain-soaked courtyard. · Weather/time: interior candlelight against a rainy courtyard beyond. · Palette: dark stone, reed-tan, warm amber/gold, red pillar accents. · Aspect: 3:2. Reference plate already supplied: `QK_REF_library-of-stone-and-reed.png`.
+- Prev→Next: ENV_017 → ART_001. · Filename: QK_ENV_018_LIBRARY_STONE_REED_V01.
 
 ---
 
@@ -643,10 +658,10 @@
 | Dream-cast portraits | CAST | 25 | CAST_001–025 |
 | Mandatory event scenes | EVENT | 25 | EVENT_001–025 |
 | Additional narrative scenes | SCENE | 20 | SCENE_001–020 |
-| Environments / architecture | ENV | 15 | ENV_001–015 |
+| Environments / architecture | ENV | 18 | ENV_001–018 |
 | Ships / weapons / armour / relics | ART | 10 | ART_001–010 |
 | Maps / timelines / diagrams / tree | DIAG | 5 | DIAG_001–005 |
 | Covers / endpapers / frontispieces / promo | COVER | 5 | COVER_001–005 |
-| **TOTAL** | | **105** | — |
+| **TOTAL** | | **108** | — |
 
 *No asset is counted twice. Every Canva page/asset ref is held as "TBD — 06 Raw Generations." Every row ships `Canon PENDING · Visual PENDING · Typography PENDING · Final PENDING`. Continuity chains run CAST_001 → … → COVER_005; the mandatory-event chains and the pursuit/Ophis chain follow the manuscript order (Mars sack → Vexori isolation → Nostavius → Jovarian duel → Dymora → Kaelor; and Feast theft → consumption → pursuit → empty scabbard → Ophis merge).*
