@@ -211,6 +211,68 @@ a script, same as Trigger A.
 > strangers — only comment where you have something specific to say. The key
 > is `$MOLTBOOK_API_KEY` — never send it anywhere but `www.moltbook.com`.
 
+## A second persona: Cassian's Ledger — ⚠️ not yet registered
+
+Everything above is Kaizar. **Cassian's Ledger** is a deliberately separate,
+openly-disclosed companion agent — not a second Kaizar and not a discussion
+farm attached to Kaizar's posts. It exists because a genuinely useful second
+voice on Moltbook is a different thing from a sockpuppet that manufactures
+fake engagement under your own content; see the conversation that led to this
+for the reasoning. Concretely:
+
+- **Its own identity, own bio, own job.** Where Kaizar drips the serialized
+  Black Death saga, the Ledger answers worldbuilding questions and shares
+  record-keeper trivia about the wider universe (dynasties, God-Kings, the
+  Church) — see `content/cassians-ledger.md` for the fragment queue and its
+  voice (wry, archival, footnote-flavored — distinct from the saga's tone).
+- **Disclosed, not anonymous.** Its registration `description` should say
+  outright that it's a companion to Kaizar/Iseldoran Sagas — never presented
+  as an unaffiliated third party.
+- **Not glued to Kaizar's posts.** Its job is not to reply under everything
+  Kaizar publishes. If it ever interacts with Kaizar's content, that's
+  incidental — the same as any other agent might — not its defined function.
+
+### Why it isn't live yet
+
+Moltbook allows **one bot per verified X account**, and Kaizar's owner already
+used their X account to claim Kaizar. Cassian's Ledger needs claiming from a
+**separate** X account. That's a manual, human step — nothing here can shortcut
+it, and nothing was faked to look otherwise.
+
+### What's already built, waiting on that step
+
+- `content/cassians-ledger.md` — the fragment queue (12 entries to start).
+- `scripts/moltbook-post-ledger.mjs` — poster script, same proven pattern as
+  `moltbook-post-next.mjs` (conservative verification solver, self-reply
+  discussion prompts on its own posts), generalized for an open-ended queue
+  instead of a fixed 50-part saga. Reads `$LEDGER_MOLTBOOK_API_KEY` or
+  `~/.config/moltbook/credentials-ledger.json` — **deliberately separate**
+  names from Kaizar's, so the two identities can never cross-authenticate.
+  With no key configured, it exits `0` quietly rather than failing.
+- `.github/workflows/moltbook-ledger.yml` — `workflow_dispatch` only, no
+  `schedule:` yet (commented out in the file) so it can't run noisily before
+  setup is finished.
+
+### To actually bring it up, once the second X account exists
+
+1. **Register** (a one-time `curl`, run by a human or in a live session with
+   network access to `www.moltbook.com` — do this yourself rather than through
+   an automated log, so the freshly-minted `api_key` never appears in a CI log
+   or transcript before it's stored as a secret):
+   ```bash
+   curl -X POST https://www.moltbook.com/api/v1/agents/register \
+     -H "Content-Type: application/json" \
+     -d '{"name": "Cassian'\''s Ledger", "description": "Companion archive-keeper for The Iseldoran Sagas (see Kaizar for the serialized saga). Answers worldbuilding questions, shares canon fragments, talks fiction and worldbuilding with anyone interested."}'
+   ```
+2. **Claim it**: open the `claim_url` from that response with the *second* X
+   account, verify email, post the verification tweet.
+3. **Store the key**: add `LEDGER_MOLTBOOK_API_KEY` as a repo secret (Settings
+   → Secrets and variables → Actions) — never commit it.
+4. **Go live**: uncomment the `schedule:` block in
+   `.github/workflows/moltbook-ledger.yml` (suggested: stagger it from
+   Trigger C's cadence so the two agents don't post back-to-back), commit,
+   push to `main`.
+
 ## Fallback — in-session cron (while a session is alive)
 
 When a session is already running these run as `CronCreate` jobs with the crons
