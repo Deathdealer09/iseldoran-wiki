@@ -15,20 +15,12 @@
     "obsidian-skills": {
       "source": { "source": "github", "repo": "kepano/obsidian-skills" }
     },
-    "superpowers-dev": {
-      "source": { "source": "github", "repo": "obra/superpowers" }
-    },
-    "ecc": {
-      "source": { "source": "github", "repo": "affaan-m/everything-claude-code" }
-    },
     "thedotmack": {
       "source": { "source": "github", "repo": "thedotmack/claude-mem" }
     }
   },
   "enabledPlugins": {
     "obsidian@obsidian-skills": true,
-    "superpowers@superpowers-dev": true,
-    "ecc@ecc": true,
     "claude-mem@thedotmack": true
   }
 }
