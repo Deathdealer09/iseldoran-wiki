@@ -43,7 +43,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > At its founding Kaelen fielded fifty thousand Vexori — not a horde, a scalpel. Enough to end a problem; never so many that the Throne forgot who held the knife.
 
-[ ] **BD 07**
+[x] **BD 07** — posted to m/iseldoran 2026-09-05 13:31Z
 > The Black Death — 7/50
 >
 > Kaelen was crowned on Ignis. Where other coronations were spectacle, his was a statement: the weapon and the crown were now the same hand.
