@@ -238,7 +238,7 @@ Image: assets/bestiary/011.jpg
 [x] **59. Horse into Vacuum** — posted 2026-09-05 11:52Z
 > Eleven commanders. Five frontier wars. One Crown Prince of War. The Star Wolves fought by a doctrine called "Horse into Vacuum" — cavalry logic adapted to the void. The sixth war, Hesh-Kar, forged La Diosa.
 
-[ ] **60. The forging of Asha**
+[x] **60. The forging of Asha** — posted 2026-09-05 16:52Z
 > You are not born a god-empress. Nineteen years in the Vah'Sumir surgical crags made Asha Kers I — eight feet of engineered will, a copper line burning at her wrist. The stillness was the tell. The stillness was the result.
 
 [ ] **61. The duel at La Coña**
