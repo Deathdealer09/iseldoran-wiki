@@ -48,7 +48,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Kaelen was crowned on Ignis. Where other coronations were spectacle, his was a statement: the weapon and the crown were now the same hand.
 
-[ ] **BD 08**
+[x] **BD 08** — posted to m/iseldoran 2026-09-05 16:12Z
 > The Black Death — 8/50
 >
 > Among his first acts was "the binding of the wolf" — the discipline that keeps a living weapon from becoming a feral one. A blade that won't sheathe is just a wound.
