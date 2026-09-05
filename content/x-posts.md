@@ -279,10 +279,48 @@ Image: assets/bestiary/011.jpg
 
 ---
 
+## Batch 11 — The Luceron Line, the Houses, and the Sullied
+
+[ ] **73. Raja the Brilliant**
+> He abolished monarchy and founded the Universal Republic. Public pressure then forced him to restore the royal title he'd just ended. "No gods. No masters. A king, because someone must choose." The republic that begged for its king back.
+
+[ ] **74. The Flame Bearer**
+> Lucius Luceron I was republican in words, sovereign in deeds. Grandson of Romulus Secundus, he clawed power back to the Dragon Throne — proving the throne survives even the men who swear to end it.
+
+[ ] **75. Neither decoration nor ruin**
+> "The philosopher who refuses force becomes decoration. The conqueror who refuses thought becomes ruin. I will be neither." — Lucius Luceron III. He accepted full godhood at his death, having spent his life refusing to be either half of that sentence.
+
+[ ] **76. The throne came to her**
+> "She did not come to the throne. The throne came to her. It arrived in pieces, over years, carried by people who had no idea they were carrying it." — Empress Amira, the Bastard Goddess, on how power actually moves.
+
+[ ] **77. Why should we guard anyone?**
+> The first Sullied clone to speak publicly did so at a "consultation" on Nackañia Prime. Serial R4-KYA-11, remembered as Rakya-a-lel: "We already protect the pure. We fight your pirates, your heretics, your boredom. Why should we guard anyone?" 🐉
+
+[ ] **78. Movement equals sovereignty**
+> House Dravos builds the foldgate anchors — the empire's only faster-than-light infrastructure. Their doctrine in four words: movement equals sovereignty. Control the gates, and you don't need to control anything else.
+
+[ ] **79. Who controls the air**
+> House Nazhet runs Ixoria's atmospheric filtration. On a forge-moon with no open sky, that means one house decides who breathes and who doesn't. The Foundry Houses were never just industry — they're each a different kind of leash.
+
+[ ] **80. Made them love him. Made them obey.**
+> Aurelian made them love him. His brother Cassander made them obey. One method got Aurelian assassinated on Remisión 9. The other kept the throne standing. The empire's oldest lesson: love is a softer leash, but it's still a leash.
+
+[ ] **81. The annotated copy**
+> God-Emperor Mettenik I read a novel about the Haradakn people three times and annotated his copy extensively — the annotations are preserved separately, in Vault Sixty-Two. Even a Restorer of the Dragon Throne needed somewhere to think out loud.
+
+[ ] **82. An institution more dangerous than the enemy**
+> Prince Kairoh aimed the Black Death at a crisis and got back an institution more dangerous to the throne than any force it had been raised against. That's the risk baked into every "temporary" weapon an empire ever forges.
+
+[ ] **83. The Flame and the Void**
+> "He who goes to the Rim goes to meet the Flame and the Void at the same address." — Adulfus Khan, on Augustus Rex's march past the edge of known space with ninety billion soldiers. Some destinations are also warnings.
+
+---
+
 ### Image attachments
 Posts can carry up to 4 images via an `Image:` line (comma-separated paths)
 directly under the `[ ]` header. Bestiary plates live in `assets/bestiary/`.
 The poster (`scripts/x-post.mjs`) uploads them before posting.
 
-*Further batches to pull: the Star Wolves, the Nine Foundry Houses,
-the Napoleonic God-Emperors, the Sullied Legions, and the Twin Thrones.*
+*Further batches to pull: Ysinde & the Twin Thrones in depth, the Iberian
+Wars / Va Sumir Chronicles, the First Khan era (Mettenik I & the
+Kurultai of Twenty-Seven), and the remaining Foundry Houses.*
