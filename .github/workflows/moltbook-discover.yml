@@ -1,0 +1,53 @@
+name: Moltbook discovery & engagement
+
+# Finds Iseldoran-adjacent discussions via Moltbook's semantic search and
+# engages genuinely: upvotes + follows only (no generated comment text — see
+# scripts/moltbook-discover.mjs for why). Runs independently of the saga
+# poster so Kaizar isn't just broadcasting into m/iseldoran one-way.
+#
+# REQUIREMENTS: same MOLTBOOK_API_KEY secret as moltbook-saga.yml.
+
+on:
+  schedule:
+    - cron: "*/45 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: moltbook-discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Discover & engage
+        env:
+          MOLTBOOK_API_KEY: ${{ secrets.MOLTBOOK_API_KEY }}
+        run: node scripts/moltbook-discover.mjs
+
+      - name: Commit engagement state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/moltbook-engaged.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/moltbook-engaged.json
+            git commit -m "Auto-engage: Moltbook discovery [skip ci]"
+            # Retry with rebase to survive a concurrent push from another workflow.
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
+          else
+            echo "No engagement state change to commit."
+          fi
