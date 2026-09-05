@@ -1,12 +1,19 @@
 # QUIET KNIVES — UPLOADED VISUAL REFERENCES (author-supplied)
 
-*Five reference plates supplied by the author (2026-07-31). Preserved in `reference-images/`. These are **visual precedent and extended-canon context**. Per the source-of-truth rule, Version 6 controls story canon; these plates supply (a) the preferred art style, (b) finished diagram designs, and (c) extended dynastic/future history beyond Quiet Knives' own frame. Where a plate diverges from Version 6, that divergence is flagged in §6 for the author to rule on — nothing here was silently merged into the locked canon.*
+*Reference plates supplied by the author. Preserved in `reference-images/`. These are **visual precedent and extended-canon context**. Per the source-of-truth rule, Version 6 controls story canon; these plates supply (a) the preferred art style, (b) finished diagram designs, and (c) extended locations/history beyond Quiet Knives' own frame. Where a plate diverges from Version 6, that divergence is flagged in §6 for the author to rule on — nothing here was silently merged into the locked canon.*
 
-Saved files:
+**Batch 1 saved files (2026-07-31):**
 - `QK_REF_commoners-war-erulius.png` (images 1 & 2 — identical)
 - `QK_REF_battle-of-dymora-storyboard.png` (image 3)
 - `QK_REF_trinitarian-empire-timeline-65-emperors.png` (image 4)
 - `QK_REF_canonical-family-tree-93yr.png` (image 5)
+
+**Batch 2 saved files (2026-09-05) — see §7:**
+- `QK_REF_standing-stones-cliffside.png`
+- `QK_REF_miraflores-palace-cliffside.png`
+- `QK_REF_library-of-stone-and-reed.png`
+- `QK_REF_throne-temple-interior-red-banners.png`
+- `QK_REF_environments-collage-library-gardens-stones.png`
 
 ---
 
@@ -102,6 +109,35 @@ All four reference plates were uploaded to Canva and placed into the illustrated
 
 ---
 
+## 7. BATCH 2 — ENVIRONMENT PLATES (2026-09-05)
+
+Five images: one establishing shot of Miraflores Palace, one interior throne/temple hall, and three that name **new locations not present in `01-canon-bible.md`** — confirmed absent from the Canon Bible and the extracted Version 6 manuscript by direct search. These are treated the same way as Batch 1: preserved as the author's reference art, catalogued here, cross-referenced against canon, and **not silently added as canon locations**.
+
+**7.1 · Miraflores Palace, cliffside establishing shot** (`QK_REF_miraflores-palace-cliffside.png`)
+A tiered red-lacquer-and-dark-stone palace built into a sea cliff, waterfalls pouring through its arches, storm surf below, red banners on the balustrades. Corresponds to the canon location **Miraflores Palace** (`01-canon-bible.md` line 182: "Seat on Maldorus; the Ivory Tower where Laurentis learns of Valerien's death; the gene-locked Vault of Iseldora beneath it. White stone, fire-gilded roofs, arched glass, rain.") and ledger row **ENV_002 · Miraflores Palace**.
+> **Tension (see §6-D):** the canon palette is *white stone, fire-gilded roofs, arched glass* — closer to an imperial/marble register. This plate is a **dark stone, red-lacquer, tiered-pagoda** design, an East/Southeast-Asian architectural language rather than the imperial-marble one used for the six already-produced cast portraits and the book's existing environment plates. Strikingly close in massing/waterfall-through-arches to the SCENE_012 "Stone Giant" antechamber already in the book, but the roofline and colour language differ from every previously approved palace/throne plate.
+
+**7.2 · The Standing Stones** (`QK_REF_standing-stones-cliffside.png`; also the bottom panel of the collage, §7.5)
+A row of weathered black basalt monoliths, each bound with a single red ribbon, on a windswept, lantern-lit cliff bluff over the ocean, with Miraflores Palace visible in the distance. Caption on the collage: *"Ancient basalt monoliths, witness to countless duels and oaths, set on a windswept bluff."*
+> **Not in canon.** No "Standing Stones" location appears in `01-canon-bible.md`, `02-chronology.md`, or the extracted manuscript. This is a **new environment concept** supplied by the author — a plausible 16th environment plate (a duel/oath site) but not yet part of the locked 15-row `ENV_001–015` list in `04-image-ledger.md`.
+
+**7.3 · Library of Stone and Reed** (`QK_REF_library-of-stone-and-reed.png`; also the top panel of the collage, §7.5)
+A dark archive hall — stone shelving, reed scroll-racks, an astrolabe/orrery, candlelit map tables — opening through red pillars onto a rain-soaked pagoda courtyard. Collage caption: *"Records, maps, star charts, and the accumulated memory of the Yanuikii. Stone archive shelves and reed scroll racks."*
+> **Not in canon — and names a new proper noun.** "Yanuikii" does not appear anywhere in the Canon Bible or the extracted Version 6 manuscript (confirmed by direct search). This plate reads as a **candidate restyle of ENV_012 · Imperial Archives** (canon: "Where Bashir kills Hiram; marble shadow, sealed dispatches. Ink, parchment, blue ember, shadow.") but under a different name, a different (warm amber/gold rather than blue-ember) palette, and a named people/culture ("the Yanuikii") absent from Version 6.
+
+**7.4 · Throne/temple interior, red banners** (`QK_REF_throne-temple-interior-red-banners.png`)
+A long dark hall lined with red silk banners and gilded shrine-altars, candlelit, leading to a distant lit doorway. Could correspond to the **Dragon Throne** hall, the **God-Emperor's Temple**, or the **Church of Iseldora's Sanctuary of Silence** — the plate itself doesn't specify which, and its red-banner/gold-shrine language is closer to the Miraflores/pagoda style above than to any of canon's throne-room descriptions (ENV_003 Dragon Throne: "Armanite-faceted seat... black adamant, purple ruby, cold reflective facets"; ENV_004 God-Emperor's Temple; ENV_011 Sanctuary of Silence: "white, amber, blue flame").
+> **Unresolved which location this depicts** — needs the author's call before it's assigned to a specific ledger row.
+
+**7.5 · Environments collage — three captioned panels** (`QK_REF_environments-collage-library-gardens-stones.png`)
+A vertical triptych, each panel with a title card in the same style as the diagram plates (dark band, serif gold caption):
+1. **"LIBRARY OF STONE AND REED"** — same image as §7.3.
+2. **"THE PLEASURE GARDENS"** — *"Terraced water courts and pavilion gardens, lush and ornamental, lantern-lit at dusk."* **New location, not in canon** — no match in `01-canon-bible.md`'s location table.
+3. **"THE STANDING STONES"** — same image as §7.2.
+> This collage reads as the author's own finished concept-art page (matching the polish of the Batch-1 family-tree/timeline diagrams) rather than a raw AI plate. Treated as reference art, not auto-merged into the ledger.
+
+---
+
 ## 6. TENSIONS TO RESOLVE (author's call — not silently merged)
 **A. Battle beat order (image 3 vs Version 6 / `05-scene-briefs.md`).** V6 has Nostavius *wear Jovarian's armour and die by Ashim's hand* before Jovarian's own duel at the Golden Palace; image 3 puts the whole thing at Dymora with Nostavius *arriving too late*. → Which sequence should the battle plates follow?
 
@@ -109,4 +145,13 @@ All four reference plates were uploaded to Canva and placed into the illustrated
 
 **C. Timeline anchoring.** `02-chronology.md` (from Record XI) anchors **Year 0 = the theft of the Sword**; image 5 anchors **Year 0 = Shapur's reign, with the theft at Year 68**. Both describe a 93-year span but count differently. → Adopt image 5's markers as canonical (recommended, since it's the author's finished plate), keep Record XI's internal ledger as the "administrative register," or reconcile into one scheme.
 
-*Recommended defaults if no other steer: adopt image 5's year markers (C), keep the Black imperial identity (B), and follow the Version-6 Nostavius sequence for the plates while offering image 3's framing as an alternate spread (A).*
+**D. Architecture/palette language (Batch 2 vs canon).** `01-canon-bible.md` describes Maldorus/Miraflores as *imperial gold/ivory/black, monumental marble* and the Dragon Throne as *black adamant, purple ruby*. Batch 2's Miraflores plate (§7.1) and throne/temple interior (§7.4) are instead **dark-stone, red-lacquer, tiered-pagoda** architecture — a different design language from every previously produced plate in the book, including the new white-marble/basalt cover (`10-canva-illustrated-sample-manifest.md`). → Should Maldorus/Miraflores adopt this pagoda-and-red-lacquer language going forward, stay with the marble/ivory canon description, or do the two coexist as distinct locations?
+
+**E. Three new locations (Batch 2).** "The Standing Stones," "The Pleasure Gardens," and "Library of Stone and Reed" (with its "Yanuikii" people) are not present in `01-canon-bible.md`, `02-chronology.md`, or the extracted manuscript. → Are these canon additions to fold into the bible and the 15-row environment ledger (as ENV_016–018), reference-only mood art with no in-world status, or does "Library of Stone and Reed" replace/restyle the existing **ENV_012 Imperial Archives**?
+
+*Recommended defaults if no other steer: adopt image 5's year markers (C), keep the Black imperial identity (B), follow the Version-6 Nostavius sequence for the plates while offering image 3's framing as an alternate spread (A), treat Batch 2's pagoda language as a distinct location rather than overwriting Maldorus's marble canon (D), and add the three new Batch-2 locations to the bible as new environment plates rather than silently substituting them for existing ledger rows (E).*
+
+---
+
+## 8. STATUS — NOT YET PLACED INTO THE BOOK
+Batch 2 is catalogued and saved to `reference-images/` but **not yet uploaded into Canva or placed into `DAHQ6Kri720`** — the Canva connector needs to be re-authorized in this environment before any Canva tool call can run (this session hit an auth-required error on every Canva tool). Once reconnected, the placement follows the same proven method as Batch 1 (§5): `upload-asset-from-url` (or a flattened export) → `merge-designs`/`edit-design` to insert as new environment pages → re-export. No canon docs or the image ledger have been changed by this batch — placement and any canon additions are gated on the author's ruling on tensions D–E above.
