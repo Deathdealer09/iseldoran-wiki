@@ -26,8 +26,10 @@
  *   TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET
  *
  * Usage:
+ *   node scripts/vzla-tt/collect-tiktok.mjs --preflight     # prove credentials, 1 request
+ *   node scripts/vzla-tt/collect-tiktok.mjs --dry-run       # show the plan, 0 requests
  *   node scripts/vzla-tt/collect-tiktok.mjs --out raw-tiktok.csv \
- *     --start 2025-01-01 --end 2026-09-01 --max-videos 50 [--dry-run]
+ *     --start 2025-01-01 --end 2026-09-01 --max-videos 50 --window 7
  *
  * Exit codes: 0 ok · 1 error · 2 no credentials
  */
@@ -97,17 +99,19 @@ async function getToken() {
 const compact = (iso) => iso.replace(/-/g, "");
 
 /**
- * Search public videos. The API caps a single query window at 30 days, so the
- * requested range is walked in monthly slices.
+ * Search public videos. The API caps a single query window at 30 days. The walk
+ * defaults to 7-day slices rather than sitting on that ceiling, matching what
+ * TikTok's own wrapper libraries do: queries at the boundary fail more often,
+ * and a failure costs the whole window.
  */
-async function searchVideos(token, terms, startDate, endDate, maxVideos) {
+async function searchVideos(token, terms, startDate, endDate, maxVideos, windowDays) {
   const videos = [];
   let windowStart = new Date(startDate);
   const final = new Date(endDate);
 
   while (windowStart < final && videos.length < maxVideos) {
     const windowEnd = new Date(windowStart);
-    windowEnd.setDate(windowEnd.getDate() + 29);
+    windowEnd.setDate(windowEnd.getDate() + windowDays - 1);
     const sliceEnd = windowEnd > final ? final : windowEnd;
 
     let cursor = 0;
@@ -178,6 +182,8 @@ function main() {
   const end = opt("--end", new Date().toISOString().slice(0, 10));
   const maxVideos = Number(opt("--max-videos", "50"));
   const dryRun = args.includes("--dry-run");
+  const preflight = args.includes("--preflight");
+  const windowDays = Number(opt("--window", "7"));
 
   const terms = SEARCH_TERMS.filter((t) => t.platform_query).map((t) => t.term);
 
@@ -185,14 +191,36 @@ function main() {
     console.log(`dry run: would search ${terms.length} terms in region TT and VE`);
     console.log(`window ${start} to ${end}, up to ${maxVideos} videos`);
     console.log(`terms: ${terms.slice(0, 20).join(" | ")}`);
+    console.log(`window slices: ${windowDays} days`);
     console.log(`estimated request spend: ${Math.ceil(maxVideos / PAGE)} search + up to ${maxVideos} comment pages`);
     return;
   }
 
   (async () => {
     const token = await getToken();
-    console.error(`searching videos ${start} to ${end}...`);
-    const videos = await searchVideos(token, terms, start, end, maxVideos);
+
+    // Preflight proves the credentials and the network path with the smallest
+    // possible query, so a misconfiguration surfaces for one request rather
+    // than after a long collection run.
+    if (preflight) {
+      const probe = await post(
+        `${API}/v2/research/video/query/?fields=id,create_time`,
+        token,
+        {
+          query: { and: [{ operation: "IN", field_name: "region_code", field_values: ["TT"] }] },
+          start_date: compact(end),
+          end_date: compact(end),
+          max_count: 1,
+        },
+      );
+      console.log("preflight ok: token accepted, video query reachable");
+      console.log(`  videos returned for a single-day TT probe: ${(probe?.data?.videos ?? []).length}`);
+      console.log(`  requests spent: ${requestsSpent}`);
+      return;
+    }
+
+    console.error(`searching videos ${start} to ${end} in ${windowDays}-day slices...`);
+    const videos = await searchVideos(token, terms, start, end, maxVideos, windowDays);
     console.error(`found ${videos.length} videos; pulling comments...`);
 
     const rows = [];
