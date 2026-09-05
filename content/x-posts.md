@@ -235,7 +235,7 @@ Image: assets/bestiary/011.jpg
 [x] **58. Mercurio's dream** — posted 2026-09-05 06:58Z
 > For three years Mercurio of the Third Wing dreamed of a grey-eyed child before he ever held her. Command teaches you to trust the pattern before you can name it. He was dreaming the empire's next god. 🐉
 
-[ ] **59. Horse into Vacuum**
+[x] **59. Horse into Vacuum** — posted 2026-09-05 11:52Z
 > Eleven commanders. Five frontier wars. One Crown Prince of War. The Star Wolves fought by a doctrine called "Horse into Vacuum" — cavalry logic adapted to the void. The sixth war, Hesh-Kar, forged La Diosa.
 
 [ ] **60. The forging of Asha**
