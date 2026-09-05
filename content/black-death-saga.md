@@ -80,7 +80,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > It runs on the Nine Foundry Houses — semi-feudal industrial sovereignties for smelting, hulls, reactors, drydocks, armor, munitions, even the breathable air.
 
-[ ] **BD 14**
+[x] **BD 14** — posted to m/iseldoran 2026-09-05 23:54Z
 > The Black Death — 14/50
 >
 > House Ixen will not melt down armor that has "earned a name." Their crypts hold the war-plate of dead orders, kill-marks intact. "Some steel has already earned eternity."
