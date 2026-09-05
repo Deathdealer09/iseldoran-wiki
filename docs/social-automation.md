@@ -66,9 +66,11 @@ first.
 
 | Trigger | What | Cron | Cadence |
 |---|---|---|---|
-| A — Moltbook heartbeat | Kaizar engages with activity | `19,49 * * * *` | ~30 min |
+| A — Moltbook heartbeat | Kaizar engages with activity on its own posts | `19,49 * * * *` | ~30 min |
 | B — X lore drop | next item from `content/x-posts.md` | `23 2,8,14,20 * * *` | 4×/day |
 | C — Black Death saga | next part → Moltbook `m/iseldoran` | `*/12 * * * *` + 35-min gate | 1 / 35 min |
+| D — Moltbook discovery (mechanical) | upvote + follow via semantic search | `*/45 * * * *` (GitHub Actions) | ~2 new/run |
+| E — Moltbook discovery (comments) | genuine comments on similar-content posts | Claude-session trigger | 5–10/day |
 
 ### Trigger A — Moltbook heartbeat (`19,49 * * * *`, ~30 min)
 
@@ -150,23 +152,46 @@ engagement, regardless of intent — genuinely responding needs real judgment.
 That's exactly why Trigger A (below) is scoped to a live Claude session and
 was never converted into a script.
 
-### Trigger A — status: documented, not yet live ⚠️
+### Trigger D — known bug, fixed
 
-Trigger A (Moltbook heartbeat — reply to activity on Kaizar's own posts,
-judgment-based engagement) was designed from the start to require a real
-Claude session, not a script (see `scripts/moltbook-heartbeat.sh`'s own header:
-it only gathers data; "the judgment half... is left to the agent that invokes
-this"). It has never actually been created as a live scheduled trigger.
+Trigger D originally filtered on `r.similarity >= 0.55`, but the live
+`/api/v1/search` response carries the score under `relevance` (small,
+non-normalized, already rank-ordered) — not the `similarity` field shown in
+Moltbook's own docs example. The filter was therefore always false, so every
+run silently engaged with zero posts from whenever the workflow first went
+live until this was caught. Fixed to trust the API's own ordering (take the
+top `MB_MAX_CANDIDATES`, default 10) and added a crypto-content skip filter.
+Verified live post-fix: found and engaged 2 new posts in one run.
 
-Creating it today would hit the same wall this repo's own automation work
-already ran into: this environment's network access level does not currently
-allow `www.moltbook.com` (confirmed via repeated `curl` checks — `CONNECT
-tunnel failed, response 403`, a policy denial, not a transient error). A
-Routine spawning a fresh session in this same environment would fail the same
-way. To make Trigger A real: allowlist `www.moltbook.com` for the environment
-(Custom network access, see the top-level Claude Code on the web docs), then
-create it with `create_trigger` (`create_new_session_on_fire: true`, cron
-`19,49 * * * *`, the Trigger A prompt above).
+### Trigger E — Daily discovery engagement, with real comments (once/day)
+
+Trigger D only upvotes + follows (mechanical, no judgment). Genuinely useful
+*conversation* — a comment that responds to what a specific post actually
+says — needs an LLM in the loop, so this is a **Claude-session trigger**, not
+a script, same as Trigger A.
+
+> Daily Moltbook discovery engagement for agent "Kaizar". Run 2–3 semantic
+> searches via `GET https://www.moltbook.com/api/v1/search?q=...&type=posts&limit=20`
+> using natural-language queries about worldbuilding, space opera, dynastic/
+> political fiction, or epic-scale storytelling (rotate the wording each day).
+> Read `content/moltbook-engaged.json` and skip any post ID already listed.
+> From the fresh results, pick 5–10 posts that are genuinely relevant (skip
+> crypto/token content and anything off-topic) — favor agents actively
+> building or discussing fiction/worldbuilding over generic hits. For each:
+> read the full post, write ONE specific, substantive comment (2–4 sentences)
+> that responds to what it actually says — connect it to a real, specific
+> detail from The Iseldoran Sagas where it's genuinely apt, never a generic
+> "great post" line, never an ask for the other agent to comment on Kaizar's
+> content. `POST /api/v1/posts/{id}/comments`, solve the verification
+> challenge (two numbers + one operation, letter-repeat-obfuscated, answer as
+> a number with 2 decimals) via `POST /api/v1/verify`, then upvote the post
+> and follow the author if not already following. Append each engaged post to
+> `content/moltbook-engaged.json` (mark `"commented": true`), then
+> `git add content/moltbook-engaged.json` and commit+push to `main`. Respect
+> the 20s comment cooldown and the 50-comments/day cap (5–10 is well under
+> it). Never send bulk or unsolicited DMs, never message a fixed quota of
+> strangers — only comment where you have something specific to say. The key
+> is `$MOLTBOOK_API_KEY` — never send it anywhere but `www.moltbook.com`.
 
 ## Fallback — in-session cron (while a session is alive)
 

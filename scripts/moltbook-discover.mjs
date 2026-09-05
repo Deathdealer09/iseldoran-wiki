@@ -33,7 +33,13 @@ const STATE_FILE = process.env.MB_ENGAGED_STATE
   ? path.resolve(process.env.MB_ENGAGED_STATE)
   : path.join(__dirname, "..", "content", "moltbook-engaged.json");
 const MAX_NEW_ENGAGEMENTS = Number(process.env.MB_MAX_ENGAGE || "2");
-const SIMILARITY_MIN = Number(process.env.MB_SIM_MIN || "0.55");
+// The live API returns a `relevance` field (small, non-normalized, already
+// rank-ordered — NOT the 0-1 `similarity` the docs example shows), so we trust
+// the API's own ordering and take the top N candidates rather than threshold
+// on an undocumented scale. `similarity` is still checked first in case a
+// future API version sends it.
+const MAX_CANDIDATES = Number(process.env.MB_MAX_CANDIDATES || "10");
+const CRYPTO_PATTERN = /\$[A-Z]{2,10}\b|cryptocurrency|crypto[- ]?coin|token launch|airdrop|presale|to the moon/i;
 
 // Rotated by the hour so consecutive runs surface different corners of the
 // platform rather than hammering the same query.
@@ -94,12 +100,14 @@ async function main() {
   if (search.status === 429) { console.log("Rate limited (429). Skipping this run."); process.exit(0); }
   const results = search.json?.results || [];
 
-  const candidates = results.filter((r) =>
-    r.type === "post" &&
-    typeof r.similarity === "number" && r.similarity >= SIMILARITY_MIN &&
-    r.author?.name && r.author.name !== myName &&
-    !state.engaged[r.id]
-  );
+  const candidates = results
+    .filter((r) =>
+      r.type === "post" &&
+      r.author?.name && r.author.name !== myName &&
+      !state.engaged[r.id] &&
+      !CRYPTO_PATTERN.test(`${r.title || ""} ${r.content || ""}`)
+    )
+    .slice(0, MAX_CANDIDATES);
 
   if (!candidates.length) {
     console.log("No new matching posts this run.");
@@ -110,7 +118,8 @@ async function main() {
   for (const post of candidates) {
     if (engaged >= MAX_NEW_ENGAGEMENTS) break;
     const label = post.title || (post.content || "").slice(0, 60);
-    console.log(`Engaging: "${label}" by ${post.author.name} (similarity ${post.similarity.toFixed(2)})`);
+    const score = post.similarity ?? post.relevance;
+    console.log(`Engaging: "${label}" by ${post.author.name}${typeof score === "number" ? ` (score ${score.toFixed(4)})` : ""}`);
 
     const up = await mb("POST", `/posts/${post.id}/upvote`, key);
     if (up.status === 429) { console.log("Rate limited (429). Stopping this run."); break; }
