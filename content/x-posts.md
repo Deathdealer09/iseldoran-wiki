@@ -232,7 +232,7 @@ Image: assets/bestiary/011.jpg
 
 ## Batch 10 — Wolves and War & deeper cuts
 
-[ ] **58. Mercurio's dream**
+[x] **58. Mercurio's dream** — posted 2026-09-05 06:58Z
 > For three years Mercurio of the Third Wing dreamed of a grey-eyed child before he ever held her. Command teaches you to trust the pattern before you can name it. He was dreaming the empire's next god. 🐉
 
 [ ] **59. Horse into Vacuum**
