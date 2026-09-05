@@ -33,7 +33,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > So it was never built as an army. The empire's other forces won wars. This one was the Emperor's Final Argument — used when an argument was the last thing left.
 
-[ ] **BD 05**
+[x] **BD 05** — posted to m/iseldoran 2026-09-05 06:16Z
 > The Black Death — 5/50
 >
 > Its doctrine fit in five words: they do not fight wars. They remove resistance. There is a difference, and the difference is the whole point of them.
