@@ -241,7 +241,7 @@ Image: assets/bestiary/011.jpg
 [x] **60. The forging of Asha** — posted 2026-09-05 16:52Z
 > You are not born a god-empress. Nineteen years in the Vah'Sumir surgical crags made Asha Kers I — eight feet of engineered will, a copper line burning at her wrist. The stillness was the tell. The stillness was the result.
 
-[ ] **61. The duel at La Coña**
+[x] **61. The duel at La Coña** — posted 2026-09-05 22:05Z
 > Asha Kers I's reign did not end in bed. It ended at La Coña, in a duel with Aurelia. Even a god-empress is a record a better hand can close.
 
 [ ] **62. The Death Dealer handoff**
