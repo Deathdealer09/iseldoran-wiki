@@ -230,6 +230,53 @@ Image: assets/bestiary/011.jpg
 [x] **57. Khutun's Revenge** — posted 2026-07-13 16:44Z
 > WAR: They killed Niccolò the Thunderborn at Vey Kashar. Khutun's answer was 19 years of "administrative annihilation" — not fleets and sieges, but the systematic erasure of the Belt itself. Some revenge is waged with paperwork. It is no gentler for it.
 
+## Batch 10 — Wolves and War & deeper cuts
+
+[ ] **58. Mercurio's dream**
+> For three years Mercurio of the Third Wing dreamed of a grey-eyed child before he ever held her. Command teaches you to trust the pattern before you can name it. He was dreaming the empire's next god. 🐉
+
+[ ] **59. Horse into Vacuum**
+> Eleven commanders. Five frontier wars. One Crown Prince of War. The Star Wolves fought by a doctrine called "Horse into Vacuum" — cavalry logic adapted to the void. The sixth war, Hesh-Kar, forged La Diosa.
+
+[ ] **60. The forging of Asha**
+> You are not born a god-empress. Nineteen years in the Vah'Sumir surgical crags made Asha Kers I — eight feet of engineered will, a copper line burning at her wrist. The stillness was the tell. The stillness was the result.
+
+[ ] **61. The duel at La Coña**
+> Asha Kers I's reign did not end in bed. It ended at La Coña, in a duel with Aurelia. Even a god-empress is a record a better hand can close.
+
+[ ] **62. The Death Dealer handoff**
+> The sword called Death Dealer did not retire with its wielder. Eloanda's handoff to Dominus is the empire's whole logic: the blade outlives the hand, and the hand is chosen to fit the blade.
+
+[ ] **63. The copper line**
+> Every Vah'Sumir-forged carries a copper line at the inner wrist — already there, already burning. Not decoration. It is the receipt for what was done to make them.
+
+[ ] **64. The Queen of the Belt**
+> Khutun Ghegha Khan — the Queen of the Belt — built a civilization on transit mathematics, where movement was sovereignty. Then someone killed her Thunderborn, and she proved erasure is also a kind of math.
+
+[ ] **65. The Kurultai of Twenty-Seven**
+> Twenty Years of Iron. The Kurultai of Twenty-Seven bound a confederation with four codes — Chegai, Agayuk, Sornai, Yasa. Law is just the shape a threat takes when it means to last.
+
+[ ] **66. Mercurio's gauntlets**
+> They read Mercurio's career off his gauntlets — a ridge of scar for each frontier war. Some officers keep a service record. The Star Wolves wear theirs.
+
+[ ] **67. The Orbital Battle of Tarrid**
+> Tarrid burned gold in orbit before Asha ever took the field. The battle that opened her legend was won in the arithmetic of who could hold formation while the sky came apart.
+
+[ ] **68. The Khotai Pass**
+> At the Khotai Pass the frontier war became geometry — a corridor, a chokepoint, and a commander who knew that terrain is an argument you can win before the first shot.
+
+[ ] **69. What the Water Remembers**
+> The Iseldoran archive keeps a section titled "What the Water Remembers." Empires prefer their histories dry. The ones that last keep the drowned parts too.
+
+[ ] **70. The incomplete record**
+> Wolves and War closes on an incomplete official record — on purpose. The most honest thing an archive can do is mark where it stops knowing. Certainty reads like propaganda; the gaps read like truth.
+
+[ ] **71. Vor'Dressal of the First Horde**
+> Vor'Dressal of the First Horde held the frontier rim by holding momentum, never ground. Stop moving and you are no longer a horde — just a target with a flag.
+
+[ ] **72. Nayra of Kithoun**
+> When the council needed Hesh-Kar won, they summoned Nayra of Kithoun. Some commanders are held in reserve not because they're weaker — but because the war that needs them hasn't started yet.
+
 ---
 
 ### Image attachments
