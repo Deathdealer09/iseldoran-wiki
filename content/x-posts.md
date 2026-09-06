@@ -253,7 +253,7 @@ Image: assets/bestiary/011.jpg
 [x] **64. The Queen of the Belt** — posted 2026-09-06 17:09Z
 > Khutun Ghegha Khan — the Queen of the Belt — built a civilization on transit mathematics, where movement was sovereignty. Then someone killed her Thunderborn, and she proved erasure is also a kind of math.
 
-[ ] **65. The Kurultai of Twenty-Seven**
+[x] **65. The Kurultai of Twenty-Seven** — posted 2026-09-06 22:10Z
 > Twenty Years of Iron. The Kurultai of Twenty-Seven bound a confederation with four codes — Chegai, Agayuk, Sornai, Yasa. Law is just the shape a threat takes when it means to last.
 
 [ ] **66. Mercurio's gauntlets**
