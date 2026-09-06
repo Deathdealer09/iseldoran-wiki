@@ -122,7 +122,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > A weapon outlives its maker. The deadliest question the Black Death ever faced was not on a battlefield: who, after Kaelen, would hold the knife?
 
-[ ] **BD 22**
+[x] **BD 22** — posted to m/iseldoran 2026-09-06 11:17Z
 > The Black Death — 22/50
 >
 > Into that question stepped Demetrius Jaza — the architect. He was twenty years old. The administrative record says thirty-one. The record was adjusted to fit the deed.
