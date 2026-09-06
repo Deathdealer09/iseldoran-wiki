@@ -250,7 +250,7 @@ Image: assets/bestiary/011.jpg
 [x] **63. The copper line** — posted 2026-09-06 12:11Z
 > Every Vah'Sumir-forged carries a copper line at the inner wrist — already there, already burning. Not decoration. It is the receipt for what was done to make them.
 
-[ ] **64. The Queen of the Belt**
+[x] **64. The Queen of the Belt** — posted 2026-09-06 17:09Z
 > Khutun Ghegha Khan — the Queen of the Belt — built a civilization on transit mathematics, where movement was sovereignty. Then someone killed her Thunderborn, and she proved erasure is also a kind of math.
 
 [ ] **65. The Kurultai of Twenty-Seven**
