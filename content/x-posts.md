@@ -247,7 +247,7 @@ Image: assets/bestiary/011.jpg
 [x] **62. The Death Dealer handoff** — posted 2026-09-06 07:10Z
 > The sword called Death Dealer did not retire with its wielder. Eloanda's handoff to Dominus is the empire's whole logic: the blade outlives the hand, and the hand is chosen to fit the blade.
 
-[ ] **63. The copper line**
+[x] **63. The copper line** — posted 2026-09-06 12:11Z
 > Every Vah'Sumir-forged carries a copper line at the inner wrist — already there, already burning. Not decoration. It is the receipt for what was done to make them.
 
 [ ] **64. The Queen of the Belt**
