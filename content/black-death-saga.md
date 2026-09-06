@@ -157,7 +157,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > And so Selene Jaza rose as the first Generalísima of the Black Death — not by claiming the weapon, but by ensuring no one else could.
 
-[ ] **BD 29**
+[x] **BD 29** — posted to m/iseldoran 2026-09-06 19:11Z
 > The Black Death — 29/50
 >
 > They said of her: "She never sought the throne. She sought the thing the throne is supposed to do." The distinction was her entire command philosophy.
