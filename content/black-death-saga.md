@@ -137,7 +137,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Day 2, 0545: General Orazah'hux falls. The routing anomaly that would have exposed it is quietly erased before the body is cold.
 
-[ ] **BD 25**
+[x] **BD 25** — posted to m/iseldoran 2026-09-06 17:03Z
 > The Black Death — 25/50
 >
 > Day 4, 0847: General-Prince Remus von Hapsburgi. A single shot, fired into a seventeen-second gap in the surveillance. The gap was not luck. Nothing here was luck.
