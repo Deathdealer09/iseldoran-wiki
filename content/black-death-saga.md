@@ -204,7 +204,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > At Meraud Station the war became a siege fought through the air itself — atmosphere as weapon, the slow arithmetic of who can breathe longest.
 
-[ ] **BD 38**
+[x] **BD 38** — posted to m/iseldoran 2026-09-06 23:04Z
 > The Black Death — 38/50
 >
 > Then, Year 5: the Corridor of Yren. The single engagement that nearly ended Selene Jaza — and the one that reveals exactly how her mind works.
