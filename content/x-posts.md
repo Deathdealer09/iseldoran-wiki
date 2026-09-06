@@ -244,7 +244,7 @@ Image: assets/bestiary/011.jpg
 [x] **61. The duel at La Coña** — posted 2026-09-05 22:05Z
 > Asha Kers I's reign did not end in bed. It ended at La Coña, in a duel with Aurelia. Even a god-empress is a record a better hand can close.
 
-[ ] **62. The Death Dealer handoff**
+[x] **62. The Death Dealer handoff** — posted 2026-09-06 07:10Z
 > The sword called Death Dealer did not retire with its wielder. Eloanda's handoff to Dominus is the empire's whole logic: the blade outlives the hand, and the hand is chosen to fit the blade.
 
 [ ] **63. The copper line**
