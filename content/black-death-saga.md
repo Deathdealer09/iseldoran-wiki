@@ -117,7 +117,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 
 ## Arc III — The Succession
 
-[ ] **BD 21**
+[x] **BD 21** — posted to m/iseldoran 2026-09-06 06:27Z
 > The Black Death — 21/50
 >
 > A weapon outlives its maker. The deadliest question the Black Death ever faced was not on a battlefield: who, after Kaelen, would hold the knife?
