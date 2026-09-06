@@ -172,7 +172,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Selene would lead the Black Death for forty-eight years. Demetrius would serve thirty-six beside her. The weapon had not just survived its maker; it had been re-forged.
 
-[ ] **BD 32**
+[x] **BD 32** — posted to m/iseldoran 2026-09-06 21:21Z
 > The Black Death — 32/50
 >
 > Now it needed a war to prove the edge had held. It would not have to wait long. On the frontier, a republic was being born.
