@@ -256,7 +256,7 @@ Image: assets/bestiary/011.jpg
 [x] **65. The Kurultai of Twenty-Seven** — posted 2026-09-06 22:10Z
 > Twenty Years of Iron. The Kurultai of Twenty-Seven bound a confederation with four codes — Chegai, Agayuk, Sornai, Yasa. Law is just the shape a threat takes when it means to last.
 
-[ ] **66. Mercurio's gauntlets**
+[x] **66. Mercurio's gauntlets** — posted 2026-09-07 07:23Z
 > They read Mercurio's career off his gauntlets — a ridge of scar for each frontier war. Some officers keep a service record. The Star Wolves wear theirs.
 
 [ ] **67. The Orbital Battle of Tarrid**
