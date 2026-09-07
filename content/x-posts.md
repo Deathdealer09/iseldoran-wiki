@@ -265,7 +265,7 @@ Image: assets/bestiary/011.jpg
 [x] **68. The Khotai Pass** — posted 2026-09-07 18:46Z
 > At the Khotai Pass the frontier war became geometry — a corridor, a chokepoint, and a commander who knew that terrain is an argument you can win before the first shot.
 
-[ ] **69. What the Water Remembers**
+[x] **69. What the Water Remembers** — posted 2026-09-07 22:53Z
 > The Iseldoran archive keeps a section titled "What the Water Remembers." Empires prefer their histories dry. The ones that last keep the drowned parts too.
 
 [ ] **70. The incomplete record**
