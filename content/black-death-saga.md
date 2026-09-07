@@ -263,7 +263,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Even the wreckers honor it. House Oryx breaks dead fleets for scrap — but will not touch a Black Death cruiser fragment. Their reason is three words: "The ships are still serving."
 
-[ ] **BD 49**
+[x] **BD 49** — posted to m/iseldoran 2026-09-07 20:52Z
 > The Black Death — 49/50
 >
 > The archive keeps all of this not as legend but as argument — recorded, dated, load-bearing. What it preserves, it preserves as judgement on what was done.
