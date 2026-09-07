@@ -258,7 +258,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > Its signature was never noise. It was the Sable Absolute's silence: one cold ship, one encrypted line, and a problem that quietly ceases to be a problem.
 
-[ ] **BD 48**
+[x] **BD 48** — posted to m/iseldoran 2026-09-07 17:52Z
 > The Black Death — 48/50
 >
 > Even the wreckers honor it. House Oryx breaks dead fleets for scrap — but will not touch a Black Death cruiser fragment. Their reason is three words: "The ships are still serving."
