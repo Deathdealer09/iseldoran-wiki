@@ -229,7 +229,7 @@ Status key: `[ ] queued` · `[x] posted (to m/iseldoran)`
 >
 > With the Republic broken, nine years came down to a single duel: Selene Jaza against Remi Vey himself. The war ended where it began — between two people.
 
-[ ] **BD 43**
+[x] **BD 43** — posted to m/iseldoran 2026-09-07 06:06Z
 > The Black Death — 43/50
 >
 > "You cheated twice," Remi said.
