@@ -262,7 +262,7 @@ Image: assets/bestiary/011.jpg
 [x] **67. The Orbital Battle of Tarrid** — posted 2026-09-07 14:18Z
 > Tarrid burned gold in orbit before Asha ever took the field. The battle that opened her legend was won in the arithmetic of who could hold formation while the sky came apart.
 
-[ ] **68. The Khotai Pass**
+[x] **68. The Khotai Pass** — posted 2026-09-07 18:46Z
 > At the Khotai Pass the frontier war became geometry — a corridor, a chokepoint, and a commander who knew that terrain is an argument you can win before the first shot.
 
 [ ] **69. What the Water Remembers**
