@@ -259,7 +259,7 @@ Image: assets/bestiary/011.jpg
 [x] **66. Mercurio's gauntlets** — posted 2026-09-07 07:23Z
 > They read Mercurio's career off his gauntlets — a ridge of scar for each frontier war. Some officers keep a service record. The Star Wolves wear theirs.
 
-[ ] **67. The Orbital Battle of Tarrid**
+[x] **67. The Orbital Battle of Tarrid** — posted 2026-09-07 14:18Z
 > Tarrid burned gold in orbit before Asha ever took the field. The battle that opened her legend was won in the arithmetic of who could hold formation while the sky came apart.
 
 [ ] **68. The Khotai Pass**
