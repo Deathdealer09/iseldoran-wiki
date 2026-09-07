@@ -159,6 +159,99 @@ and exported as PNG/JPG. The workflow:
 
 ---
 
+## Title-header plate prompts (ready to paste)
+
+These match the finished title-header plate style (species name + homeworld set
+at the top, vertical metric ruler down the right edge, gold Imperial
+double-headed eagle seal lower-left, aged parchment). Every prompt shares the
+same **layout / style / text** wrapper — stated once here, then each species
+block fills the four variables (`title`, `homeworld line`, `ruler max`,
+`subject`).
+
+**Shared wrapper (prepend/append to each subject below):**
+
+```text
+A museum-grade xenobiology reference plate in an aged Imperial archive style.
+
+LAYOUT (strict):
+- Portrait orientation, 2:3 framing (1024x1536).
+- Aged pale-grey/cream parchment sheet with subtle stains, a fine printed
+  inner border and small ornamental filigree corner pieces.
+- Centered title header at the top in large classical serif capitals:
+  "{{TITLE}}"  then a smaller centered "of" flanked by tiny diamond ornaments,
+  then the homeworld in a smaller serif title: "{{HOMEWORLD}}".
+- One specimen, full body, head-to-feet, no cropping, centered below the
+  title, front-facing in a neutral anatomical reference pose, arms at sides.
+- A vertical metric ruler down the RIGHT edge with clean tick marks and labels
+  from "0m" at the bottom up to "{{RULER_MAX}}m" at the top; the specimen's
+  height reads correctly against the ruler ({{TYPICAL_HEIGHT}}m).
+- A small gold Imperial double-headed eagle seal in the LOWER-LEFT corner.
+
+STYLE:
+Hyperrealistic digital concept art, fine anatomical and material detail,
+natural coloration, cinematic soft studio lighting, muted desaturated palette
+with bronze and gold archive accents, sharp focus, painterly realism.
+
+TEXT RULES:
+No text anywhere except the title header, the "of", the homeworld line, and the
+metric ruler markings. No captions, no paragraphs, no watermark.
+```
+
+### 01 · Imperial Human
+- **title:** `IMPERIAL HUMAN` · **of** `Terra, the Holy World` · **ruler:** `2.0m` · **height:** `~1.9m`
+- **subject:** Homo Imperialis (Optimized Strain), a genetically optimized human at the peak of Imperial refinement, ~1.88 m. Athletic build, dark skin, close-cropped hair, disciplined bearing; tan ceremonial tunic with a bronze-gold pauldron and sash, leather belt and bracers.
+
+### 02 · Noirak
+- **title:** `NOIRAK` · **of** `Noirak Prime` · **ruler:** `3.0m` · **height:** `~2.6m`
+- **subject:** Noirak Nobilis, an ancient noble species 2.45-2.75 m tall. Human-presenting but subtly alien, refined features, enhanced physiology, the bearing of a natural leader; ornate black-and-gold imperial vestments.
+
+### 03 · Vah'Sumir
+- **title:** `VAH'SUMIR` · **of** `Sumir Prime` · **ruler:** `4.0m` · **height:** `~3.3m`
+- **subject:** Vah'Sumir Maximus, massive reptilian apex warriors 3.0-3.6 m tall with a digitigrade stance. Crested reptilian head, predatory physiology, thick bronze-grey armored hide over dense heavy musculature, built for domination and endurance.
+
+### 04 · Ashari'i
+- **title:** `ASHARI'I` · **of** `Ashar` · **ruler:** `3.0m` · **height:** `~2.6m`
+- **subject:** Ashari'i Immortalis, an ancient immortal warrior caste 2.3-2.9 m tall. Pale ivory skin, elegant refined features, sharp cranial ridges; white-and-gold ceremonial armor of great age.
+
+### 05 · Gor'nath Brute
+- **title:** `GOR'NATH BRUTE` · **of** `Gor'nath` · **ruler:** `5.0m` · **height:** `~3.9m`
+- **subject:** Gor'nath Colossus, a gigantic powerfully built species 3.5-4.2 m tall. Incredible strength, dense skeletal structure, a spiked cranial crest, brown armor-like skin plates across a hulking heavily muscled frame.
+
+### 06 · Yurshak Brood
+- **title:** `YURSHAK BROOD` · **of** `the Yurshak Hive Worlds` · **ruler:** `3.0m` · **height:** `~2.3m`
+- **subject:** Yurshak Broodling, hive-evolved predators 2.0-2.6 m tall. Insectoid-reptilian morphology with mandibles, jutting horns, multiple sensory organs, dark chitinous plating and natural bladed weapons.
+
+### 07 · Shal'mak Aerophage
+- **title:** `SHAL'MAK AEROPHAGE` · **of** `the High Atmosphere` · **ruler:** `4.0m` · **height:** `~3.4m standing`
+- **subject:** Shal'mak Dominus, aerial apex organisms shown standing with wings folded, ~3.0-3.8 m tall (6.0-7.5 m wingspan). Large membranous wings, a crested draconic head, light but strong sinewy anatomy adapted for high-speed aerial hunting.
+
+### 08 · Oolak Luminary
+- **title:** `OOLAK LUMINARY` · **of** `Oolak` · **ruler:** `3.0m` · **height:** `~2.45m`
+- **subject:** Oolak Sapientis, bioluminescent beings 2.2-2.7 m tall. Translucent silvery-white bodies that produce natural light through glowing blue organic structures and luminous eyes; ancient, wise, highly spiritual.
+
+### 09 · Threxx War-Smith
+- **title:** `THREXX WAR-SMITH` · **of** `Thorexia Prime` · **ruler:** `4.0m` · **height:** `~2.9m`
+- **subject:** Threxx Ferrum-Artifex, a forge-adapted engineer-warrior 2.6-3.2 m tall. A broad hulking humanoid with a crested draconic-reptilian head, encased in heavy industrial battle-plate of dark iron and weathered brass; rivets, pistons and cabling, a circular gear-and-cog chest emblem, layered pauldrons, a segmented armored kilt, and a mechanical claw-arm rising over one shoulder. Part living warrior, part walking forge.
+
+### 10 · Razeen Flesh-Weaver
+- **title:** `RAZEEN FLESH-WEAVER` · **of** `the Razeen Vaults` · **ruler:** `3.0m` · **height:** `~2.35m`
+- **subject:** Razeen Artifex, bio-engineers and sculptors of flesh 2.1-2.6 m tall. Pale elegant humanoids with advanced sensory organs and branching root-like tendril growths extending from head and body; masters of organic architecture.
+
+### 11 · Haal'tek Voidwalker
+- **title:** `HAAL'TEK VOIDWALKER` · **of** `the Deep Void` · **ruler:** `4.0m` · **height:** `~3.4m`
+- **subject:** Haal'tek Exuvia, void-adapted entities 3.0-3.8 m tall. Elongated dark blue-black carapaced bodies with a large smooth head and trailing tendrils, optimized for microgravity and extreme isolation between the stars.
+
+### 12 · Aquorian
+- **title:** `AQUORIAN` · **of** `the Pelagic Depths` · **ruler:** `3.0m` · **height:** `~2.45m`
+- **subject:** Aquorian Pelagis, a deep-ocean bioluminescent species 2.2-2.7 m tall. Translucent crystalline blue skin, glowing internal neural lattices, trailing fin-sails and webbed digits, adapted to crushing pressure and electromagnetic sensing.
+
+> **Tip:** image models often misspell baked-in title text (especially the
+> apostrophe names — `Vah'Sumir`, `Ashari'i`, `Gor'nath`, `Shal'mak`,
+> `Haal'tek`). Generate a few candidates and pick the clean one, or render the
+> figure + ruler only and overlay the title text deterministically.
+
+---
+
 ## See also
 
 - [`../species.mjs`](../species.mjs) — canonical species catalog (source of truth)
