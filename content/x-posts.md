@@ -271,7 +271,7 @@ Image: assets/bestiary/011.jpg
 [x] **70. The incomplete record** — posted 2026-09-08 07:18Z
 > Wolves and War closes on an incomplete official record — on purpose. The most honest thing an archive can do is mark where it stops knowing. Certainty reads like propaganda; the gaps read like truth.
 
-[ ] **71. Vor'Dressal of the First Horde**
+[x] **71. Vor'Dressal of the First Horde** — posted 2026-09-08 12:55Z
 > Vor'Dressal of the First Horde held the frontier rim by holding momentum, never ground. Stop moving and you are no longer a horde — just a target with a flag.
 
 [ ] **72. Nayra of Kithoun**
