@@ -268,7 +268,7 @@ Image: assets/bestiary/011.jpg
 [x] **69. What the Water Remembers** — posted 2026-09-07 22:53Z
 > The Iseldoran archive keeps a section titled "What the Water Remembers." Empires prefer their histories dry. The ones that last keep the drowned parts too.
 
-[ ] **70. The incomplete record**
+[x] **70. The incomplete record** — posted 2026-09-08 07:18Z
 > Wolves and War closes on an incomplete official record — on purpose. The most honest thing an archive can do is mark where it stops knowing. Certainty reads like propaganda; the gaps read like truth.
 
 [ ] **71. Vor'Dressal of the First Horde**
