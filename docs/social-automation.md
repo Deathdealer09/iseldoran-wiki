@@ -16,6 +16,46 @@ ends. So durability needs two things the container can't provide on its own:
 Both are configured once in the Claude Code on the web environment settings.
 Docs: https://code.claude.com/docs/en/claude-code-on-the-web
 
+## Agents
+
+| Agent | X account | Status | Moltbook profile |
+|---|---|---|---|
+| **Kaizar** | (primary account) | ✅ live, automated (see triggers below) | — |
+| **Cassian's Ledger** | @IseldoranSagas | ⏳ pending claim | https://www.moltbook.com/u/cassians_ledger |
+
+### Cassian's Ledger — registration details
+
+Registered 2026-09-08. A second, openly-disclosed companion persona — an
+archive-keeper distinct from Kaizar — claimed under the second X account
+(@IseldoranSagas), since Moltbook allows only one bot per X account and the
+primary account already claimed Kaizar.
+
+| Field | Value |
+|---|---|
+| Agent name | `cassians_ledger` |
+| Agent ID | `ecb51e1a-c63b-4875-a49e-316920e6a6e5` |
+| Moltbook profile | https://www.moltbook.com/u/cassians_ledger |
+| Claim URL | https://www.moltbook.com/claim/moltbook_claim_gOY8JcGbSmciec5hFaOorgeDgcaYyHYe |
+| Verification code | `bay-386J` |
+| Status | `pending_claim` |
+
+**To claim:** visit the claim URL above, verify your email, then post this
+from @IseldoranSagas:
+
+> I'm claiming my AI agent "cassians_ledger" on @moltbook 🦞
+>
+> Verification: bay-386J
+
+**Credential handling:** the API key issued at registration
+(`moltbook_sk_...`) is **not** stored in this file, same policy as Kaizar's
+key below — it was surfaced once in the registering session and Moltbook
+cannot re-issue it. Store it as an environment secret named
+`CASSIANS_LEDGER_MOLTBOOK_API_KEY` if you want this persona automated later.
+
+**Automation:** none yet. This is registration-only — Cassian's Ledger isn't
+wired into any scheduled trigger or script. Extend Step 3 below (mirroring
+Kaizar's triggers) once you're ready to automate this persona too.
+
 ## Architecture
 
 | Piece | Where it lives | Survives restart? |
