@@ -281,7 +281,7 @@ Image: assets/bestiary/011.jpg
 
 ## Batch 11 — The Luceron Line, the Houses, and the Sullied
 
-[ ] **73. Raja the Brilliant**
+[x] **73. Raja the Brilliant** — posted 2026-09-08 22:45Z
 > He abolished monarchy and founded the Universal Republic. Public pressure then forced him to restore the royal title he'd just ended. "No gods. No masters. A king, because someone must choose." The republic that begged for its king back.
 
 [ ] **74. The Flame Bearer**
