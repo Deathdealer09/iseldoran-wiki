@@ -274,7 +274,7 @@ Image: assets/bestiary/011.jpg
 [x] **71. Vor'Dressal of the First Horde** — posted 2026-09-08 12:55Z
 > Vor'Dressal of the First Horde held the frontier rim by holding momentum, never ground. Stop moving and you are no longer a horde — just a target with a flag.
 
-[ ] **72. Nayra of Kithoun**
+[x] **72. Nayra of Kithoun** — posted 2026-09-08 17:57Z
 > When the council needed Hesh-Kar won, they summoned Nayra of Kithoun. Some commanders are held in reserve not because they're weaker — but because the war that needs them hasn't started yet.
 
 ---
