@@ -290,7 +290,7 @@ Image: assets/bestiary/011.jpg
 [x] **75. Neither decoration nor ruin** — posted 2026-09-09 13:00Z
 > "The philosopher who refuses force becomes decoration. The conqueror who refuses thought becomes ruin. I will be neither." — Lucius Luceron III. He accepted full godhood at his death, having spent his life refusing to be either half of that sentence.
 
-[ ] **76. The throne came to her**
+[x] **76. The throne came to her** — posted 2026-09-09 17:53Z
 > "She did not come to the throne. The throne came to her. It arrived in pieces, over years, carried by people who had no idea they were carrying it." — Empress Amira, the Bastard Goddess, on how power actually moves.
 
 [ ] **77. Why should we guard anyone?**
