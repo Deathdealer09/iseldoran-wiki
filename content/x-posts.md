@@ -287,7 +287,7 @@ Image: assets/bestiary/011.jpg
 [x] **74. The Flame Bearer** — posted 2026-09-09 07:26Z
 > Lucius Luceron I was republican in words, sovereign in deeds. Grandson of Romulus Secundus, he clawed power back to the Dragon Throne — proving the throne survives even the men who swear to end it.
 
-[ ] **75. Neither decoration nor ruin**
+[x] **75. Neither decoration nor ruin** — posted 2026-09-09 13:00Z
 > "The philosopher who refuses force becomes decoration. The conqueror who refuses thought becomes ruin. I will be neither." — Lucius Luceron III. He accepted full godhood at his death, having spent his life refusing to be either half of that sentence.
 
 [ ] **76. The throne came to her**
