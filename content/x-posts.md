@@ -284,7 +284,7 @@ Image: assets/bestiary/011.jpg
 [x] **73. Raja the Brilliant** — posted 2026-09-08 22:45Z
 > He abolished monarchy and founded the Universal Republic. Public pressure then forced him to restore the royal title he'd just ended. "No gods. No masters. A king, because someone must choose." The republic that begged for its king back.
 
-[ ] **74. The Flame Bearer**
+[x] **74. The Flame Bearer** — posted 2026-09-09 07:26Z
 > Lucius Luceron I was republican in words, sovereign in deeds. Grandson of Romulus Secundus, he clawed power back to the Dragon Throne — proving the throne survives even the men who swear to end it.
 
 [ ] **75. Neither decoration nor ruin**
