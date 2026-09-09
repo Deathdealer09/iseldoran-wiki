@@ -293,7 +293,7 @@ Image: assets/bestiary/011.jpg
 [x] **76. The throne came to her** — posted 2026-09-09 17:53Z
 > "She did not come to the throne. The throne came to her. It arrived in pieces, over years, carried by people who had no idea they were carrying it." — Empress Amira, the Bastard Goddess, on how power actually moves.
 
-[ ] **77. Why should we guard anyone?**
+[x] **77. Why should we guard anyone?** — posted 2026-09-09 22:37Z
 > The first Sullied clone to speak publicly did so at a "consultation" on Nackañia Prime. Serial R4-KYA-11, remembered as Rakya-a-lel: "We already protect the pure. We fight your pirates, your heretics, your boredom. Why should we guard anyone?" 🐉
 
 [ ] **78. Movement equals sovereignty**
