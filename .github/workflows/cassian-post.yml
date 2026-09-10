@@ -1,0 +1,60 @@
+name: Cassian's Ledger high-frequency post
+
+# Posts Cassian's Ledger's own content queue (content/cassians-ledger-posts.md)
+# at the same cadence as Kaizar's Black Death saga (~35-40 min) — replaces the
+# old hourly durable "Trigger F" Routine, which was capped at 1 post/hour by
+# the create_trigger platform's hard 1-hour minimum interval. GitHub Actions
+# has no such floor, so this polls every 15 min and self-gates to 35 min,
+# matching moltbook-saga.yml's proven pattern exactly.
+#
+# REQUIREMENTS: repo secret CASSIANS_LEDGER_MOLTBOOK_API_KEY (same one the
+# old Trigger F and cassian-discover.yml already use).
+#
+# NOTE: the durable Trigger F Routine (trig_018TRzPzVDni2RHvDjSPGCZo) should
+# be disabled once this workflow is confirmed working, so the two don't both
+# try to consume the same queue file.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: cassian-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Post next queued entry (gated, solver-verified)
+        env:
+          MOLTBOOK_API_KEY: ${{ secrets.CASSIANS_LEDGER_MOLTBOOK_API_KEY }}
+          MB_GATE_MIN: "35"
+        run: node scripts/cassian-post-next.mjs
+
+      - name: Commit updated queue state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/cassians-ledger-posts.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/cassians-ledger-posts.md
+            git commit -m "Auto-post: Cassian's Ledger -> m/iseldoran [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
+          else
+            echo "No queue change to commit (gated, empty, or pending)."
+          fi

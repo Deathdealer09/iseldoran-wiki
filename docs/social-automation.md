@@ -126,7 +126,8 @@ first.
 | C — Black Death saga | next part → Moltbook `m/iseldoran` | `*/12 * * * *` + 35-min gate | 1 / 35 min |
 | D — Moltbook discovery (mechanical) | upvote + follow via semantic search | `*/45 * * * *` (GitHub Actions) | ~2 new/run |
 | E — Moltbook discovery (comments) | genuine comments on similar-content posts | `13 15 * * *` — **live**, `trig_01VWaVGZSwH4ggvf5r4AbbFa` | daily |
-| F — Cassian's Ledger hourly post | next item from `content/cassians-ledger-posts.md` → Moltbook `m/iseldoran` | `47 * * * *` — **live**, `trig_018TRzPzVDni2RHvDjSPGCZo` | hourly |
+| F (retired) — Cassian's Ledger hourly post | superseded by the workflow below | `trig_018TRzPzVDni2RHvDjSPGCZo` — **disabled** | — |
+| — Cassian's Ledger high-frequency post | next item from `content/cassians-ledger-posts.md` → Moltbook `m/iseldoran` | `*/15 * * * *` + 35-min gate (GitHub Actions) | ~35-40 min |
 | G — Cassian's Ledger engagement | broad discovery comments + capped, occasional Kaizar drop-in | `37 18 * * *` — **live**, `trig_01Qj5PVRhfYwVKVSZ2zJCnJX` | daily |
 | — Cassian discovery (mechanical) | upvote + follow via semantic search, as Cassian's Ledger | `18,48 * * * *` (GitHub Actions) | ~2 new/run |
 
@@ -269,41 +270,31 @@ a script, same as Trigger A.
 > strangers — only comment where you have something specific to say. The key
 > is `$MOLTBOOK_API_KEY` — never send it anywhere but `www.moltbook.com`.
 
-### Trigger F — Cassian's Ledger hourly Moltbook post (`47 * * * *`, hourly) — ✅ live, ⚠️ needs secret
-
-Created as a durable Routine (`trig_018TRzPzVDni2RHvDjSPGCZo`, `create_new_session_on_fire: true`).
-First scheduled fire: 2026-09-10T07:47:00Z.
+### Cassian's Ledger high-frequency post — `.github/workflows/cassian-post.yml` (`*/15 * * * *` + 35-min gate)
 
 Cassian's Ledger is the second, openly-disclosed companion persona (see
 [Agents](#agents) above) — an archive-keeper distinct from Kaizar, claimed under
-the second X account (@IseldoranSagas). This trigger gives it its own original
-presence on Moltbook: one queued entry per hour from
-`content/cassians-ledger-posts.md`, posted to `m/iseldoran`. Distinct from
-Trigger C (Kaizar's serialized Black Death saga drip) — Cassian's Ledger's queue
-covers different corners of the canon (God-Kings, character bios, the bestiary,
-other wars) so the two personas never duplicate content.
+the second X account (@IseldoranSagas). This gives it its own original
+presence on Moltbook: one queued entry from `content/cassians-ledger-posts.md`
+roughly every 35-40 minutes, posted to `m/iseldoran` — the same cadence as
+Trigger C (Kaizar's Black Death saga), and the fastest Moltbook's 1-post/
+30-min limit allows with a safety margin. Cassian's Ledger's queue covers
+different corners of the canon (God-Kings, character bios, the bestiary, other
+wars) so the two personas never duplicate content.
 
-**Will no-op every hour until `CASSIANS_LEDGER_MOLTBOOK_API_KEY` is set** (see
-Step 1). The prompt checks for it first and stops quietly if it's missing —
-safe to leave running while you set the secret up.
+**Formerly a durable Routine ("Trigger F"), now a GitHub Actions workflow.**
+`create_trigger` Routines have a hard **1-hour minimum interval** (a platform
+floor — confirmed by hitting it directly when trying to schedule Trigger A at
+30 minutes), so hourly was the fastest that mechanism could ever go. GitHub
+Actions has no such floor, so `scripts/cassian-post-next.mjs` (closely modeled
+on `scripts/moltbook-post-next.mjs`, the saga poster) polls every 15 minutes
+and self-gates to 35, matching Trigger C's proven pattern exactly. The old
+Routine (`trig_018TRzPzVDni2RHvDjSPGCZo`) is **disabled**, not deleted, so its
+run history is preserved; do not re-enable it or it will race this workflow
+for the same queue file.
 
-> Cassian's Ledger hourly Moltbook post — The Iseldoran Sagas. Repo:
-> Deathdealer09/iseldoran-wiki, branch main.
->
-> CREDENTIALS FIRST: check for `$CASSIANS_LEDGER_MOLTBOOK_API_KEY` or
-> `~/.config/moltbook/credentials-cassians_ledger.json`. If neither is present,
-> stop quietly.
->
-> GATE: read `content/cassians-ledger-posts.md`. If the most recent `posted
-> <UTC>` marker among the `[x]` entries is under 50 minutes old, stop quietly.
->
-> Otherwise find the first `[ ] **N. Title**` entry and its blockquote body,
-> `POST /api/v1/posts` with `{submolt_name: "iseldoran", title, content}`.
-> Solve any verification challenge yourself by reading `challenge_text`
-> carefully (never guess if ambiguous — 10 failures auto-suspends), submit via
-> `POST /api/v1/verify`. Mark the entry `[x]` with a timestamp, commit+push to
-> `main`. Say plainly when the queue runs out (needs a fresh batch). Never post
-> outside `m/iseldoran`; never send the key anywhere but `www.moltbook.com`.
+**Will no-op every run until `CASSIANS_LEDGER_MOLTBOOK_API_KEY` is set** (see
+Step 1) — the script checks for it first and exits quietly if missing.
 
 ### Trigger G — Cassian's Ledger discovery engagement + capped Kaizar drop-in (`37 18 * * *`, daily) — ✅ live
 
