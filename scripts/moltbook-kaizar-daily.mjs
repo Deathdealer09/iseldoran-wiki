@@ -31,7 +31,7 @@ import path from "node:path";
 import url from "node:url";
 import crypto from "node:crypto";
 import { solveChallenge } from "./moltbook-solve.mjs";
-import { composePost } from "./iseldoran-lore.mjs";
+import { composePost, composePromo } from "./iseldoran-lore.mjs";
 
 const API = "https://www.moltbook.com/api/v1";
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
@@ -69,10 +69,10 @@ function loadState() {
   try {
     const s = JSON.parse(fs.readFileSync(STATE_FILE, "utf8"));
     s.postedHashes ||= {}; s.repliedCommentIds ||= {};
-    s.seedCursor ||= 0; s.gridCursor ||= 0;
+    s.seedCursor ||= 0; s.loreCursor ||= 0; s.genStep ||= 0; s.promoCursor ||= 0;
     return s;
   } catch {
-    return { version: 1, lastPostAt: null, seedCursor: 0, gridCursor: 0, postedHashes: {}, repliedCommentIds: {} };
+    return { version: 1, lastPostAt: null, seedCursor: 0, loreCursor: 0, genStep: 0, promoCursor: 0, postedHashes: {}, repliedCommentIds: {} };
   }
 }
 function saveState(s) {
@@ -160,7 +160,11 @@ async function replyToLedger(key, state) {
   return false;
 }
 
-/** Pick the next post: curated seeds first, then the renewable generator. */
+/**
+ * Pick the next post: curated seeds first, then the renewable generator with a
+ * book promo woven in every 8th generated post. Lore posts never repeat (hash
+ * dedupe); promos deliberately cycle (book ads recur, but only ~6/day).
+ */
 function nextPost(state, seeds) {
   while (state.seedCursor < seeds.length) {
     const s = seeds[state.seedCursor];
@@ -168,10 +172,16 @@ function nextPost(state, seeds) {
     state.seedCursor++;
     if (!state.postedHashes[h]) return { ...s, h };
   }
-  // Generator: walk the grid, skipping anything already posted.
+  const step = state.genStep || 0;
+  state.genStep = step + 1;
+  if (step % 8 === 7) {
+    const p = composePromo(state.promoCursor || 0);
+    state.promoCursor = (state.promoCursor || 0) + 1;
+    return { title: p.title, content: p.content, h: hash(p.title + "\n" + p.content), promo: true };
+  }
   for (let tries = 0; tries < 5000; tries++) {
-    const g = composePost(state.gridCursor);
-    state.gridCursor++;
+    const g = composePost(state.loreCursor || 0);
+    state.loreCursor = (state.loreCursor || 0) + 1;
     const h = hash(g.title + "\n" + g.content);
     if (!state.postedHashes[h]) return { title: g.title, content: g.content, h };
   }

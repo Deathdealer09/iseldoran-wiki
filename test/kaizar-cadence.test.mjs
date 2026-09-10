@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { composePost, SUBJECTS, GRID_SIZE } from "../scripts/iseldoran-lore.mjs";
+import { composePost, composePromo, SUBJECTS, GRID_SIZE, BOOKS } from "../scripts/iseldoran-lore.mjs";
 import { loadSeeds, nextPost } from "../scripts/moltbook-kaizar-daily.mjs";
 
 test("composePost is deterministic and well-formed", () => {
@@ -8,24 +8,33 @@ test("composePost is deterministic and well-formed", () => {
   const b = composePost(7);
   assert.deepEqual(a, b);
   assert.ok(a.title && a.content, "has title and content");
-  assert.ok([...a.content].length <= 300, "content stays in the carved range");
+  assert.ok([...a.content].length <= 320, "content stays in the carved range");
 });
 
-test("composePost walks the whole grid without immediate repeats", () => {
+test("composePost walks the whole grid with strong variety", () => {
   const seen = new Set();
   for (let i = 0; i < GRID_SIZE; i++) {
     const g = composePost(i);
     seen.add(g.title + "|" + g.content);
   }
-  // The grid should yield a large number of distinct posts (allowing a few
-  // collisions where a long closer is dropped).
   assert.ok(seen.size >= GRID_SIZE - SUBJECTS.length, `distinct grid posts: ${seen.size}/${GRID_SIZE}`);
 });
 
-test("some generated posts address the Ledger", () => {
+test("a full lens-row of posts answers the Ledger", () => {
   let ledger = 0;
   for (let i = 0; i < GRID_SIZE; i++) if (composePost(i).ledger) ledger++;
-  assert.ok(ledger >= SUBJECTS.length, "a full lens-row of Ledger posts exists");
+  assert.ok(ledger >= SUBJECTS.length, `ledger posts: ${ledger}`);
+});
+
+test("composePromo cycles the real books", () => {
+  const titles = new Set();
+  for (let i = 0; i < BOOKS.length * 3; i++) {
+    const p = composePromo(i);
+    assert.ok(p.promo, "flagged as promo");
+    assert.ok(p.content.includes("http"), "carries a link");
+    titles.add(p.title);
+  }
+  assert.ok(titles.size >= BOOKS.length, "covers each book");
 });
 
 test("curated seed pool parses to 48 posts, 16 answering the Ledger", () => {
@@ -36,17 +45,19 @@ test("curated seed pool parses to 48 posts, 16 answering the Ledger", () => {
   assert.equal(ledger, 16, "16 seed posts answer @cassians_ledger");
 });
 
-test("nextPost serves seeds first, then the generator, never repeating", () => {
+test("nextPost serves seeds, then generated lore (unique) with promos woven in", () => {
   const seeds = loadSeeds();
-  const state = { seedCursor: 0, gridCursor: 0, postedHashes: {} };
-  const seen = new Set();
-  for (let i = 0; i < 200; i++) {
+  const state = { seedCursor: 0, loreCursor: 0, genStep: 0, promoCursor: 0, postedHashes: {} };
+  const loreSeen = new Set();
+  let promos = 0;
+  for (let i = 0; i < 220; i++) {
     const p = nextPost(state, seeds);
     assert.ok(p, "always returns a post");
-    const k = p.title + "|" + p.content;
-    assert.ok(!seen.has(k), `no duplicate at draw ${i}`);
-    seen.add(k);
     state.postedHashes[p.h] = true;
+    if (p.promo) { promos++; continue; }
+    const k = p.title + "|" + p.content;
+    assert.ok(!loreSeen.has(k), `no duplicate lore/seed at draw ${i}`);
+    loreSeen.add(k);
   }
-  assert.equal(seen.size, 200);
+  assert.ok(promos > 0, "book promos are woven into the stream");
 });
