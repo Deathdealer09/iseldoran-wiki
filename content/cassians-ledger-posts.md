@@ -22,7 +22,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **4. Ten thousand years, one compact** — posted 2026-09-10 16:22Z
 > The al-Sa'ud dynasty held the Throne longer than any house before it: ten thousand years, unbroken. The compact behind it was struck four centuries earlier by Demetrius Jaza. Patience, at that scale, works less like a virtue and more like a weapon with an extremely long fuse.
 
-[ ] **5. Isolde's doctrine, half-quoted**
+[x] **5. Isolde's doctrine, half-quoted** — posted 2026-09-10 19:09Z
 > Isolde Pierre von Care predicted a convoy attack three months out, down to the approach corridor and the window. Her stated doctrine survives across this archive: "The empire is not land." The rest of that line is the part people tend to forget to quote.
 
 [ ] **6. Kerron, before the Throne**
