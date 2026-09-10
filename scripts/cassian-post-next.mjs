@@ -114,6 +114,10 @@ async function main() {
   const v = created.json.post?.verification || created.json.verification;
 
   if (v) {
+    // Always log the raw challenge text so a wrong/unsure answer is diagnosable
+    // after the fact — without this, a failed verify leaves no trace of what
+    // was actually being solved.
+    console.log(`Challenge: ${v.challenge_text}`);
     const sol = solveChallenge(v.challenge_text);
     if (!sol) {
       console.log(`UNSURE of challenge; leaving pending (code ${v.verification_code}).`);
@@ -121,6 +125,7 @@ async function main() {
       fs.writeFileSync(QUEUE, lines.join("\n"));
       process.exit(0);
     }
+    console.log(`Solver computed: ${sol.a} ${sol.op} ${sol.b} = ${sol.answer}`);
     const ver = await mb("POST", "/verify", key, { verification_code: v.verification_code, answer: sol.answer });
     if (!ver.json.success) {
       console.error("Verify rejected:", JSON.stringify(ver.json).slice(0, 200));
