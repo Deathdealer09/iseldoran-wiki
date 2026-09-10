@@ -73,6 +73,7 @@ In the environment's settings, add these secrets (names exactly):
 | Secret | Value |
 |---|---|
 | `MOLTBOOK_API_KEY` | Kaizar's Moltbook API key (from `~/.config/moltbook/credentials.json`) |
+| `CASSIANS_LEDGER_MOLTBOOK_API_KEY` | Cassian's Ledger's Moltbook API key |
 | `X_API_KEY` | X app API key (consumer key) |
 | `X_API_SECRET` | X app API secret |
 | `X_ACCESS_TOKEN` | X access token (Read **and** Write) |
@@ -111,6 +112,7 @@ first.
 | C — Black Death saga | next part → Moltbook `m/iseldoran` | `*/12 * * * *` + 35-min gate | 1 / 35 min |
 | D — Moltbook discovery (mechanical) | upvote + follow via semantic search | `*/45 * * * *` (GitHub Actions) | ~2 new/run |
 | E — Moltbook discovery (comments) | genuine comments on similar-content posts | `13 15 * * *` — **live**, `trig_01VWaVGZSwH4ggvf5r4AbbFa` | daily |
+| F — Cassian's Ledger hourly post | next item from `content/cassians-ledger-posts.md` → Moltbook `m/iseldoran` | `47 * * * *` — **live**, `trig_018TRzPzVDni2RHvDjSPGCZo` | hourly |
 
 Triggers A and E are **durable `create_trigger` Routines**, not in-session crons — they
 survive this session ending and container reclamation. `list_triggers` (via the
@@ -250,6 +252,42 @@ a script, same as Trigger A.
 > it). Never send bulk or unsolicited DMs, never message a fixed quota of
 > strangers — only comment where you have something specific to say. The key
 > is `$MOLTBOOK_API_KEY` — never send it anywhere but `www.moltbook.com`.
+
+### Trigger F — Cassian's Ledger hourly Moltbook post (`47 * * * *`, hourly) — ✅ live, ⚠️ needs secret
+
+Created as a durable Routine (`trig_018TRzPzVDni2RHvDjSPGCZo`, `create_new_session_on_fire: true`).
+First scheduled fire: 2026-09-10T07:47:00Z.
+
+Cassian's Ledger is the second, openly-disclosed companion persona (see
+[Agents](#agents) above) — an archive-keeper distinct from Kaizar, claimed under
+the second X account (@IseldoranSagas). This trigger gives it its own original
+presence on Moltbook: one queued entry per hour from
+`content/cassians-ledger-posts.md`, posted to `m/iseldoran`. Distinct from
+Trigger C (Kaizar's serialized Black Death saga drip) — Cassian's Ledger's queue
+covers different corners of the canon (God-Kings, character bios, the bestiary,
+other wars) so the two personas never duplicate content.
+
+**Will no-op every hour until `CASSIANS_LEDGER_MOLTBOOK_API_KEY` is set** (see
+Step 1). The prompt checks for it first and stops quietly if it's missing —
+safe to leave running while you set the secret up.
+
+> Cassian's Ledger hourly Moltbook post — The Iseldoran Sagas. Repo:
+> Deathdealer09/iseldoran-wiki, branch main.
+>
+> CREDENTIALS FIRST: check for `$CASSIANS_LEDGER_MOLTBOOK_API_KEY` or
+> `~/.config/moltbook/credentials-cassians_ledger.json`. If neither is present,
+> stop quietly.
+>
+> GATE: read `content/cassians-ledger-posts.md`. If the most recent `posted
+> <UTC>` marker among the `[x]` entries is under 50 minutes old, stop quietly.
+>
+> Otherwise find the first `[ ] **N. Title**` entry and its blockquote body,
+> `POST /api/v1/posts` with `{submolt_name: "iseldoran", title, content}`.
+> Solve any verification challenge yourself by reading `challenge_text`
+> carefully (never guess if ambiguous — 10 failures auto-suspends), submit via
+> `POST /api/v1/verify`. Mark the entry `[x]` with a timestamp, commit+push to
+> `main`. Say plainly when the queue runs out (needs a fresh batch). Never post
+> outside `m/iseldoran`; never send the key anywhere but `www.moltbook.com`.
 
 ## Fallback — in-session cron (while a session is alive)
 

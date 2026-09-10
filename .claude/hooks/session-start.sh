@@ -40,12 +40,26 @@ if [ -n "${MOLTBOOK_API_KEY:-}" ] && [ ! -f "$HOME/.config/moltbook/credentials.
   echo ">> Moltbook credentials materialized from secret."
 fi
 
+# --- 2b. Same, for the second persona (Cassian's Ledger) -----------------------
+if [ -n "${CASSIANS_LEDGER_MOLTBOOK_API_KEY:-}" ] && [ ! -f "$HOME/.config/moltbook/credentials-cassians_ledger.json" ]; then
+  mkdir -p "$HOME/.config/moltbook"
+  ( umask 077
+    printf '{\n  "api_key": "%s",\n  "agent_name": "Cassians_Ledger"\n}\n' "$CASSIANS_LEDGER_MOLTBOOK_API_KEY" \
+      > "$HOME/.config/moltbook/credentials-cassians_ledger.json" )
+  echo ">> Moltbook credentials materialized for Cassian's Ledger from secret."
+fi
+
 # --- 3. Readiness report (names/status only — never secret values) ------------
 echo ">> Social automation readiness:"
 if [ -n "${MOLTBOOK_API_KEY:-}" ] || [ -f "$HOME/.config/moltbook/credentials.json" ]; then
   echo "   Moltbook (Kaizar): configured ✅"
 else
   echo "   Moltbook (Kaizar): NOT configured — set the MOLTBOOK_API_KEY secret."
+fi
+if [ -n "${CASSIANS_LEDGER_MOLTBOOK_API_KEY:-}" ] || [ -f "$HOME/.config/moltbook/credentials-cassians_ledger.json" ]; then
+  echo "   Moltbook (Cassian's Ledger): configured ✅"
+else
+  echo "   Moltbook (Cassian's Ledger): NOT configured — set the CASSIANS_LEDGER_MOLTBOOK_API_KEY secret."
 fi
 if { [ -n "${X_API_KEY:-}" ] && [ -n "${X_API_SECRET:-}" ] \
      && [ -n "${X_ACCESS_TOKEN:-}" ] && [ -n "${X_ACCESS_SECRET:-}" ]; } \
