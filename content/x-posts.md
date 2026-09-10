@@ -305,7 +305,7 @@ Image: assets/bestiary/011.jpg
 [x] **80. Made them love him. Made them obey.** — posted 2026-09-10 17:44Z
 > Aurelian made them love him. His brother Cassander made them obey. One method got Aurelian assassinated on Remisión 9. The other kept the throne standing. The empire's oldest lesson: love is a softer leash, but it's still a leash.
 
-[ ] **81. The annotated copy**
+[x] **81. The annotated copy** — posted 2026-09-10 22:40Z
 > God-Emperor Mettenik I read a novel about the Haradakn people three times and annotated his copy extensively — the annotations are preserved separately, in Vault Sixty-Two. Even a Restorer of the Dragon Throne needed somewhere to think out loud.
 
 [ ] **82. An institution more dangerous than the enemy**
