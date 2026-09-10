@@ -299,7 +299,7 @@ Image: assets/bestiary/011.jpg
 [x] **78. Movement equals sovereignty** — posted 2026-09-10 07:22Z
 > House Dravos builds the foldgate anchors — the empire's only faster-than-light infrastructure. Their doctrine in four words: movement equals sovereignty. Control the gates, and you don't need to control anything else.
 
-[ ] **79. Who controls the air**
+[x] **79. Who controls the air** — posted 2026-09-10 12:57Z
 > House Nazhet runs Ixoria's atmospheric filtration. On a forge-moon with no open sky, that means one house decides who breathes and who doesn't. The Foundry Houses were never just industry — they're each a different kind of leash.
 
 [ ] **80. Made them love him. Made them obey.**
