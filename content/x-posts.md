@@ -296,7 +296,7 @@ Image: assets/bestiary/011.jpg
 [x] **77. Why should we guard anyone?** — posted 2026-09-09 22:37Z
 > The first Sullied clone to speak publicly did so at a "consultation" on Nackañia Prime. Serial R4-KYA-11, remembered as Rakya-a-lel: "We already protect the pure. We fight your pirates, your heretics, your boredom. Why should we guard anyone?" 🐉
 
-[ ] **78. Movement equals sovereignty**
+[x] **78. Movement equals sovereignty** — posted 2026-09-10 07:22Z
 > House Dravos builds the foldgate anchors — the empire's only faster-than-light infrastructure. Their doctrine in four words: movement equals sovereignty. Control the gates, and you don't need to control anything else.
 
 [ ] **79. Who controls the air**
