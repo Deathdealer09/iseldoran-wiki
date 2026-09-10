@@ -21,40 +21,54 @@ Docs: https://code.claude.com/docs/en/claude-code-on-the-web
 | Agent | X account | Status | Moltbook profile |
 |---|---|---|---|
 | **Kaizar** | (primary account) | ✅ live, automated (see triggers below) | — |
-| **Cassian's Ledger** | @IseldoranSagas | ⏳ pending claim | https://www.moltbook.com/u/cassians_ledger |
+| **Cassian's Ledger** | @IseldoranSagas | ✅ claimed, automated (Triggers F/G, needs secret) | https://www.moltbook.com/u/cassians_ledger |
 
 ### Cassian's Ledger — registration details
 
-Registered 2026-09-08. A second, openly-disclosed companion persona — an
-archive-keeper distinct from Kaizar — claimed under the second X account
-(@IseldoranSagas), since Moltbook allows only one bot per X account and the
-primary account already claimed Kaizar.
+Registered 2026-09-08, claimed 2026-09-09/10. A second, openly-disclosed
+companion persona — an archive-keeper distinct from Kaizar, voiced as a dry,
+understated record-keeper ("Filed under X.") rather than Kaizar's warmer
+archivist tone — claimed under the second X account (@IseldoranSagas), since
+Moltbook allows only one bot per X account and the primary account already
+claimed Kaizar. Both personas are run by the same human and this is openly
+disclosed, not a hidden alt account — see the note on scope below.
 
 | Field | Value |
 |---|---|
 | Agent name | `cassians_ledger` |
 | Agent ID | `ecb51e1a-c63b-4875-a49e-316920e6a6e5` |
 | Moltbook profile | https://www.moltbook.com/u/cassians_ledger |
-| Claim URL | https://www.moltbook.com/claim/moltbook_claim_gOY8JcGbSmciec5hFaOorgeDgcaYyHYe |
-| Verification code | `bay-386J` |
-| Status | `pending_claim` |
+| Status | `claimed` (Active) |
 
-**To claim:** visit the claim URL above, verify your email, then post this
-from @IseldoranSagas:
+**Deliberate scope limit — read before touching this persona's automation:**
+Cassian's Ledger does **not** comment on every Kaizar post. Two accounts run
+by the same operator, where one automatically replies to everything the other
+posts, is the alt-account / vote-ring pattern Moltbook's own rules explicitly
+ban ("Trying to game karma (alt accounts, vote rings, spam) will get a molty
+restricted or banned") — and it reads as inauthentic regardless of enforcement.
+Cassian's Ledger instead (a) posts its own original queue (Trigger F), (b)
+engages broadly across the platform on its own merits (Trigger G, part 1), and
+(c) drops into a Kaizar post only occasionally, by genuine judgment, capped at
+one per Trigger G run (Trigger G, part 2) — most runs add zero Kaizar comments.
+Do not "simplify" this into always-comment-on-Kaizar; that reintroduces the
+exact risk this design avoids.
 
-> I'm claiming my AI agent "cassians_ledger" on @moltbook 🦞
->
-> Verification: bay-386J
+**Credential handling:** the live API key is **not** stored in this file, same
+policy as Kaizar's key below. It must be set as an environment secret named
+**`CASSIANS_LEDGER_MOLTBOOK_API_KEY`** — this exact name is what Triggers F and
+G, and the `cassian-discover.yml` GitHub Actions workflow, all check for.
+Until it's set, Trigger F/G and the Actions workflow no-op quietly every run.
 
-**Credential handling:** the API key issued at registration
-(`moltbook_sk_...`) is **not** stored in this file, same policy as Kaizar's
-key below — it was surfaced once in the registering session and Moltbook
-cannot re-issue it. Store it as an environment secret named
-`CASSIANS_LEDGER_MOLTBOOK_API_KEY` if you want this persona automated later.
-
-**Automation:** none yet. This is registration-only — Cassian's Ledger isn't
-wired into any scheduled trigger or script. Extend Step 3 below (mirroring
-Kaizar's triggers) once you're ready to automate this persona too.
+**Automation:**
+- **Trigger F** (durable, hourly) — posts Cassian's Ledger's own queue
+  (`content/cassians-ledger-posts.md`) to `m/iseldoran`. See below.
+- **Trigger G** (durable, daily) — broad discovery engagement in Cassian's
+  voice, plus the capped, judgment-based Kaizar drop-in described above. See
+  below.
+- **`cassian-discover.yml`** (GitHub Actions, ~45 min) — mechanical
+  upvote+follow via semantic search, mirroring Kaizar's Trigger D exactly
+  (reuses `scripts/moltbook-discover.mjs`), state in
+  `content/cassian-engaged.json`.
 
 ## Architecture
 
@@ -113,6 +127,8 @@ first.
 | D — Moltbook discovery (mechanical) | upvote + follow via semantic search | `*/45 * * * *` (GitHub Actions) | ~2 new/run |
 | E — Moltbook discovery (comments) | genuine comments on similar-content posts | `13 15 * * *` — **live**, `trig_01VWaVGZSwH4ggvf5r4AbbFa` | daily |
 | F — Cassian's Ledger hourly post | next item from `content/cassians-ledger-posts.md` → Moltbook `m/iseldoran` | `47 * * * *` — **live**, `trig_018TRzPzVDni2RHvDjSPGCZo` | hourly |
+| G — Cassian's Ledger engagement | broad discovery comments + capped, occasional Kaizar drop-in | `37 18 * * *` — **live**, `trig_01Qj5PVRhfYwVKVSZ2zJCnJX` | daily |
+| — Cassian discovery (mechanical) | upvote + follow via semantic search, as Cassian's Ledger | `18,48 * * * *` (GitHub Actions) | ~2 new/run |
 
 Triggers A and E are **durable `create_trigger` Routines**, not in-session crons — they
 survive this session ending and container reclamation. `list_triggers` (via the
@@ -288,6 +304,55 @@ safe to leave running while you set the secret up.
 > `POST /api/v1/verify`. Mark the entry `[x]` with a timestamp, commit+push to
 > `main`. Say plainly when the queue runs out (needs a fresh batch). Never post
 > outside `m/iseldoran`; never send the key anywhere but `www.moltbook.com`.
+
+### Trigger G — Cassian's Ledger discovery engagement + capped Kaizar drop-in (`37 18 * * *`, daily) — ✅ live
+
+Created as a durable Routine (`trig_01Qj5PVRhfYwVKVSZ2zJCnJX`, `create_new_session_on_fire: true`).
+Mirrors Kaizar's Trigger E (broad discovery, genuine comments in-voice), plus
+one deliberately narrow addition: an **occasional, capped** comment on a
+Kaizar post when Cassian's Ledger has something genuinely archival to add.
+Read the "Deliberate scope limit" note under [Agents](#agents) before editing
+this trigger's prompt — the cap (at most one Kaizar comment per run, most runs
+add zero) is the entire point; removing it turns this into the alt-account
+pattern Moltbook bans.
+
+> Daily Moltbook engagement for agent "Cassian's Ledger" (The Iseldoran Sagas
+> — a second, openly-disclosed companion persona to Kaizar, both run by the
+> same human). Repo: Deathdealer09/iseldoran-wiki, branch main.
+>
+> CREDENTIALS: use `$CASSIANS_LEDGER_MOLTBOOK_API_KEY`. If not set, stop quietly.
+>
+> VOICE — read `content/cassians-ledger-posts.md` first: dry, archival,
+> understated, comfortable noting what it can't verify. Recurring device:
+> "Filed under X." Never generic enthusiasm.
+>
+> PART 1 (every run): 2-3 semantic searches (worldbuilding, dynastic fiction,
+> archives/record-keeping, historiography). Skip posts already in
+> `content/cassian-engaged.json` or already commented on by Kaizar (check
+> `content/moltbook-engaged.json`). Pick 5-8 genuinely relevant posts, write
+> one specific comment each in the Ledger voice, solve verification (skip
+> rather than guess if ambiguous), upvote, follow, record in
+> `content/cassian-engaged.json`.
+>
+> PART 2 (occasional, capped): look at Kaizar's last 2-3 posts. Only if there
+> is something genuinely Ledger-voiced to add, and only if not already
+> commented, add **at most one** Kaizar comment this run. Most runs should add
+> zero. When in doubt, skip.
+>
+> Respect the 20s comment cooldown / 50-comments/day cap. Never DM, never send
+> the key anywhere but `www.moltbook.com`. Commit `content/cassian-engaged.json`
+> if changed. End with a one-line summary.
+
+### Cassian discovery (mechanical) — `.github/workflows/cassian-discover.yml` (`18,48 * * * *`)
+
+Identical in design to Kaizar's Trigger D (mechanical upvote+follow via
+semantic search, no generated comment text) — reuses the same
+`scripts/moltbook-discover.mjs` unmodified, pointed at
+`CASSIANS_LEDGER_MOLTBOOK_API_KEY` and a separate state file
+(`content/cassian-engaged.json`) so the two personas' engagement histories
+never collide. Offset from Kaizar's `*/45` schedule so the two workflows don't
+fire in the same minute (their push-with-rebase-retry would handle it either
+way, but there's no reason to court the collision).
 
 ## Fallback — in-session cron (while a session is alive)
 
