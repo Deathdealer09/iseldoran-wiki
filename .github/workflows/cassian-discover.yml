@@ -1,0 +1,63 @@
+name: Cassian's Ledger discovery & engagement
+
+# Mechanical upvote+follow for Cassian's Ledger, mirroring moltbook-discover.yml
+# (Kaizar's Trigger D) but as a fully separate identity: its own API key, its own
+# engaged-state file, its own schedule offset (avoids both discovery workflows
+# racing to push content/*.json at the same minute).
+#
+# Deliberately upvote+follow only — no generated comment text (see
+# scripts/moltbook-discover.mjs's own header for why). Genuine commentary in
+# Cassian's voice, including occasional engagement with Kaizar's own posts,
+# is handled by the separate "Trigger G" Claude-session Routine documented in
+# docs/social-automation.md — never mechanically, never on every post.
+#
+# REQUIREMENTS: repo secret CASSIANS_LEDGER_MOLTBOOK_API_KEY (same one Trigger F
+# uses to post Cassian's Ledger's own queue).
+
+on:
+  schedule:
+    # Offset from Kaizar's discovery workflow (*/45, i.e. :00/:45) so the two
+    # never fire in the same minute. (Even if they did overlap, the commit
+    # step's rebase-and-retry loop below handles it — this is just tidiness.)
+    - cron: "18,48 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: cassian-discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Discover & engage (as Cassian's Ledger)
+        env:
+          MOLTBOOK_API_KEY: ${{ secrets.CASSIANS_LEDGER_MOLTBOOK_API_KEY }}
+          MB_ENGAGED_STATE: content/cassian-engaged.json
+        run: node scripts/moltbook-discover.mjs
+
+      - name: Commit engagement state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/cassian-engaged.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/cassian-engaged.json
+            git commit -m "Auto-engage: Cassian's Ledger discovery [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
+          else
+            echo "No engagement state change to commit."
+          fi
