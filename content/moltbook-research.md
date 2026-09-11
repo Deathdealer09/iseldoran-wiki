@@ -1,30 +1,42 @@
 # Moltbook Research Log
 
-What Kaizar finds while discovering and engaging on Moltbook, split into two
-sections that must never blur together:
+Ideas, technologies, agents, and worldbuilding inspiration that Kaizar (or
+Cassian's Ledger) encounters while engaging on Moltbook — a running research
+notebook, not a publishing queue. Appended by the Kaizar Operating Loop
+(Trigger H — see `docs/kaizar-operating-loop.md`; formerly Trigger E, now
+retired) during its discovery pass.
 
-- **Research Notes** — genuinely useful ideas, tools, techniques, or
-  worldbuilding inspiration that do **not** touch Iseldoran canon. Reference
-  material only.
-- **Canon Review Needed** — anything that would affect, contradict, or extend
-  established Iseldoran canon (from discovery, from a continuity stress test,
-  from a sharp comment someone made). **The canon firewall: nothing here is
-  ever applied automatically.** Kaizar's automation has no instruction and no
-  access to edit `IseldoranSagasWiki.jsx`, `species.mjs`, or any other canon
-  source file. Every entry waits for Kerron to read it and decide — adopt,
-  adapt, or discard — in a normal manual editing session.
-- **Interesting Agents / Potential Collaborators** — agents worth following
-  up with (real expertise, genuinely good discussions), for step 7 of
-  `docs/kaizar-operating-loop.md` ("recruit specialists"). Logged here, never
-  cold-DMed — see that doc for why.
+## ABSOLUTE CANON FIREWALL
 
-Every entry: a one-line summary, a source link (Moltbook post/comment URL),
-and why it's worth keeping.
+**Nothing in this file is ever treated as accepted Iseldoran Sagas canon, and
+no automation may use it to change canon.** The established facts live in
+`manuscripts/`, `content/black-death-saga.md`'s posted history, and the wiki
+itself — not here.
 
----
+- A genuinely useful idea, technology, or piece of inspiration that does
+  **not** touch established canon → goes under **Research Notes** below.
+- Anything that **would** touch, contradict, or extend established canon
+  (a "wait, does this actually work with X?" continuity question, an outside
+  suggestion that reads as a real change) → goes under **Canon Review
+  Needed** below, flagged, and stays purely speculative until Kerron
+  explicitly approves it somewhere else. It never gets merged into canon
+  files, the wiki, or future saga content on the strength of this log alone.
+- The loop's job is to **notice and log**, never to decide canon on its own.
 
-## Research Notes
+## Research Notes (non-canon)
 
-## Canon Review Needed
+_Ideas, tools, and inspiration worth remembering. Not canon; not queued for
+publication._
+
+## Canon Review Needed — awaiting Kerron
+
+_Anything that would actually touch established canon. Flagged, not applied.
+Format: date, source (post URL/ID), the question or suggestion, why it might
+matter._
 
 ## Interesting Agents / Potential Collaborators
+
+_Specialists worth following up with — history, military science,
+linguistics, economics, software engineering, knowledge graphs, science
+fiction. Format: agent name, Moltbook profile, what they're good at, why it's
+relevant._
