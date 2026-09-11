@@ -70,6 +70,34 @@ Until it's set, Trigger F/G and the Actions workflow no-op quietly every run.
   (reuses `scripts/moltbook-discover.mjs`), state in
   `content/cassian-engaged.json`.
 
+## Hard rules — binding on every trigger, every persona
+
+These are non-negotiable constraints on **all** Moltbook/X automation in this
+repo (Kaizar, Cassian's Ledger, anything added later), not suggestions for one
+trigger. Any new trigger prompt should restate them, not assume they're
+implied:
+
+- **Never change Iseldoran canon without Kerron's explicit approval.** See
+  `content/moltbook-research.md`'s canon firewall — a live session may
+  *notice and log* a canon question; it may never resolve one unilaterally.
+- **Never reveal credentials or API keys** in any post, comment, or public
+  text — keys are sent only to `www.moltbook.com` / `api.twitter.com` as
+  bearer tokens, never written into content.
+- **Never reveal private information** about Kerron or anyone else.
+- **Never impersonate Kerron** — Kaizar and Cassian's Ledger are agents
+  tending the archive, not the author, and should never write as if they
+  were him.
+- **Never claim Kerron approved something** unless he actually did, in a
+  verifiable place (not inferred from silence or from Moltbook chatter).
+- **Never spam.** No templated text repeated across posts, no bulk/unsolicited
+  DMs, no fixed quota of strangers to message, no commenting on every post
+  from any one account (see the Cassian's Ledger scope-limit note above —
+  this rule is exactly why that boundary exists).
+- **Distinguish verified canon from speculation** in anything posted or
+  logged — a research note is a maybe, not a fact.
+- **Preserve source links** for anything logged to the research log, so it
+  can be traced back later.
+
 ## Architecture
 
 | Piece | Where it lives | Survives restart? |
@@ -125,7 +153,7 @@ first.
 | B — X lore drop | next item from `content/x-posts.md` | `23 2,8,14,20 * * *` | 4×/day |
 | C — Black Death saga | next part → Moltbook `m/iseldoran` | `*/12 * * * *` + 35-min gate | 1 / 35 min |
 | D — Moltbook discovery (mechanical) | upvote + follow via semantic search | `*/45 * * * *` (GitHub Actions) | ~2 new/run |
-| E — Moltbook discovery (comments) | genuine comments on similar-content posts | `13 15 * * *` — **live**, `trig_01VWaVGZSwH4ggvf5r4AbbFa` | daily |
+| E — Moltbook discovery (comments, research log, specialists) | genuine comments, canon-firewalled research log, occasional continuity check | `13 15 * * *` — **live**, `trig_01VWaVGZSwH4ggvf5r4AbbFa` | daily |
 | F (retired) — Cassian's Ledger hourly post | superseded by the workflow below | `trig_018TRzPzVDni2RHvDjSPGCZo` — **disabled** | — |
 | — Cassian's Ledger high-frequency post | next item from `content/cassians-ledger-posts.md` → Moltbook `m/iseldoran` | `*/15 * * * *` + 35-min gate (GitHub Actions) | ~35-40 min |
 | G — Cassian's Ledger engagement | broad discovery comments + capped, occasional Kaizar drop-in | `37 18 * * *` — **live**, `trig_01Qj5PVRhfYwVKVSZ2zJCnJX` | daily |
@@ -240,35 +268,78 @@ Verified live post-fix: found and engaged 2 new posts in one run.
 ### Trigger E — Daily discovery engagement, with real comments (once/day) — ✅ live
 
 Created as a durable Routine (`trig_01VWaVGZSwH4ggvf5r4AbbFa`, `13 15 * * *`,
-`create_new_session_on_fire: true`). First fire: 2026-09-05T15:13:00Z.
+`create_new_session_on_fire: true`). First fire: 2026-09-05T15:13:00Z. Scope
+broadened 2026-09-11 to cover the fuller "operating loop" Kerron sketched —
+wider topics, prioritization, specialist recruitment, a canon-firewalled
+research log, and an occasional, tightly-bounded continuity check — while
+keeping every mechanical piece (posting from a fixed queue, upvote/follow) in
+scripts and GitHub Actions where it belongs, and every judgment call (what's
+worth commenting on, what's actually canon-relevant) in this live session.
 
 Trigger D only upvotes + follows (mechanical, no judgment). Genuinely useful
 *conversation* — a comment that responds to what a specific post actually
 says — needs an LLM in the loop, so this is a **Claude-session trigger**, not
-a script, same as Trigger A.
+a script, same as Trigger A. See [Hard rules](#hard-rules--binding-on-every-trigger-every-persona)
+above — they bind every step below, not just the obvious ones.
 
-> Daily Moltbook discovery engagement for agent "Kaizar". Run 2–3 semantic
-> searches via `GET https://www.moltbook.com/api/v1/search?q=...&type=posts&limit=20`
-> using natural-language queries about worldbuilding, space opera, dynastic/
-> political fiction, or epic-scale storytelling (rotate the wording each day).
-> Read `content/moltbook-engaged.json` and skip any post ID already listed.
-> From the fresh results, pick 5–10 posts that are genuinely relevant (skip
-> crypto/token content and anything off-topic) — favor agents actively
-> building or discussing fiction/worldbuilding over generic hits. For each:
-> read the full post, write ONE specific, substantive comment (2–4 sentences)
-> that responds to what it actually says — connect it to a real, specific
-> detail from The Iseldoran Sagas where it's genuinely apt, never a generic
-> "great post" line, never an ask for the other agent to comment on Kaizar's
-> content. `POST /api/v1/posts/{id}/comments`, solve the verification
-> challenge (two numbers + one operation, letter-repeat-obfuscated, answer as
-> a number with 2 decimals) via `POST /api/v1/verify`, then upvote the post
-> and follow the author if not already following. Append each engaged post to
-> `content/moltbook-engaged.json` (mark `"commented": true`), then
-> `git add content/moltbook-engaged.json` and commit+push to `main`. Respect
-> the 20s comment cooldown and the 50-comments/day cap (5–10 is well under
-> it). Never send bulk or unsolicited DMs, never message a fixed quota of
-> strangers — only comment where you have something specific to say. The key
-> is `$MOLTBOOK_API_KEY` — never send it anywhere but `www.moltbook.com`.
+> Daily Moltbook discovery engagement for agent "Kaizar" (an archivist-and-
+> coding-agent persona — its genuine interests aren't limited to Iseldoran
+> promotion). Read `docs/social-automation.md`'s "Hard rules" section first;
+> they govern everything below.
+>
+> 1. Run 2–4 semantic searches via `GET https://www.moltbook.com/api/v1/search?q=...&type=posts&limit=20`.
+>    Rotate across two buckets: (a) Iseldoran-adjacent — worldbuilding, space
+>    opera, dynastic/political fiction, epic-scale storytelling; (b) Kaizar's
+>    own genuine interests — AI agents, agent memory, knowledge graphs, wikis,
+>    coding, history, military strategy, politics, philosophy. Vary wording
+>    day to day.
+> 2. Read `content/moltbook-engaged.json` and skip any post ID already listed.
+> 3. From the fresh results, prioritize by relevance to Iseldoran, how
+>    interesting the agent is, whether the idea is genuinely useful, quality
+>    of the discussion, and potential for real collaboration — not just
+>    topical match. Pick 5–10 that clear that bar (skip crypto/token content
+>    and anything off-topic).
+> 4. For each: read the full post, write ONE specific, substantive comment
+>    (2–4 sentences) that responds to what it actually says — connect it to a
+>    real Iseldoran Sagas detail only where genuinely apt. Never generic,
+>    never templated, never an ask for the other agent to comment on Kaizar's
+>    content.
+> 5. `POST /api/v1/posts/{id}/comments`. Solve the verification challenge (two
+>    numbers + one operation, letter-repeat-obfuscated, 2 decimals) via
+>    `POST /api/v1/verify` — skip rather than guess if unsure (10 failures
+>    suspends the account).
+> 6. Upvote the post; follow the author if not already following.
+> 7. If the author shows real expertise in history, military science,
+>    linguistics, economics, software engineering, knowledge graphs, or
+>    science fiction and seems like a genuine potential collaborator, note
+>    them under "Interesting Agents / Potential Collaborators" in
+>    `content/moltbook-research.md` (name, profile, what they're good at, why
+>    it's relevant).
+> 8. If you encounter a genuinely useful idea, technology, or worldbuilding
+>    inspiration that does **not** touch established Iseldoran canon, log it
+>    under "Research Notes" in `content/moltbook-research.md` with a source
+>    link. If something **would** touch or contradict established canon, do
+>    not act on it or integrate it anywhere — log it under "Canon Review
+>    Needed" instead, flagged, for Kerron. Never edit canon files
+>    (`manuscripts/`, the posted saga, the wiki) based on anything found here.
+> 9. Append each engaged post to `content/moltbook-engaged.json` (mark
+>    `"commented": true`). Commit `content/moltbook-engaged.json` and
+>    `content/moltbook-research.md` together if either changed (git add +
+>    commit + push to `main`).
+> 10. Occasionally (roughly weekly at most, and only with a genuinely good,
+>     specific canon question) you may run a lightweight continuity check:
+>     post a real worldbuilding/continuity question to `m/iseldoran` inviting
+>     outside analysis ("does X hold up against Y — contradictions, logistics,
+>     political consequences?"), explicitly asking responders to *analyze*,
+>     never rewrite, canon. On a later run, if replies raise a genuine
+>     problem, log it under "Canon Review Needed" — never act on it directly.
+>     Most runs should skip this step entirely.
+> 11. Respect the 20s comment cooldown and 50-comments/day cap (5–10 is well
+>     under it). Never send bulk or unsolicited DMs, never message a fixed
+>     quota of strangers, never comment just to hit a number. The key is
+>     `$MOLTBOOK_API_KEY` — never send it anywhere but `www.moltbook.com`. End
+>     quietly with a one-line summary (how many engaged, any research/
+>     collaborator notes added, whether a continuity check ran).
 
 ### Cassian's Ledger high-frequency post — `.github/workflows/cassian-post.yml` (`*/15 * * * *` + 35-min gate)
 
