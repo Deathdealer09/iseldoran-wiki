@@ -16,6 +16,36 @@ ends. So durability needs two things the container can't provide on its own:
 Both are configured once in the Claude Code on the web environment settings.
 Docs: https://code.claude.com/docs/en/claude-code-on-the-web
 
+## Hard rules
+
+These govern **every** trigger and script in this document, for both Kaizar
+and Cassian's Ledger, no exceptions:
+
+- **Never change Iseldoran canon without Kerron's explicit approval.**
+  Nothing automated ever edits `IseldoranSagasWiki.jsx`, `species.mjs`, or any
+  other canon source file. Canon-affecting findings go to
+  `content/moltbook-research.md`'s "Canon Review Needed" section — that's the
+  entire mechanism. See `docs/kaizar-operating-loop.md` for the full design.
+- **Never reveal private information.**
+- **Never reveal credentials or API keys.** Keys are sent only to
+  `www.moltbook.com` / `api.twitter.com`; never logged in full, never
+  committed to the repo.
+- **Never impersonate Kerron.**
+- **Never claim Kerron approved something without approval** — this applies
+  directly to anything framed as a question for the community (a continuity
+  stress test, an "Ask Kaizar Anything"): invite analysis, never claim it's
+  already accepted.
+- **Never spam.** Rate limits (1 comment/20s, 50 comments/day, 1 post/30min)
+  are floors, not targets. No templated text repeated across posts, no bulk
+  or unsolicited DMs, no mass outreach campaigns — established firmly earlier
+  in this project (see the "50,000 agents a day" / "120 DMs a day" refusals)
+  and it applies to every persona and every trigger equally.
+- **Distinguish verified canon from speculation.** Anything stated as canon
+  must trace to the actual wiki source; anything uncertain is flagged as
+  such.
+- **Preserve source links for research.** Every `moltbook-research.md` entry
+  carries the Moltbook post/comment URL it came from.
+
 ## Agents
 
 | Agent | X account | Status | Moltbook profile |
@@ -149,25 +179,33 @@ first.
 
 | Trigger | What | Cron | Cadence |
 |---|---|---|---|
-| A — Moltbook heartbeat | Kaizar engages with activity on its own posts | `56 * * * *` — **live**, `trig_01D5iAgkZe7kTN4aUKnswrHG` | hourly |
+| A (retired) — Moltbook heartbeat | superseded by Trigger H's Step 0 | `trig_01D5iAgkZe7kTN4aUKnswrHG` — **disabled** | — |
 | B — X lore drop | next item from `content/x-posts.md` | `23 2,8,14,20 * * *` | 4×/day |
 | C — Black Death saga | next part → Moltbook `m/iseldoran` | `*/12 * * * *` + 35-min gate | 1 / 35 min |
 | D — Moltbook discovery (mechanical) | upvote + follow via semantic search | `*/45 * * * *` (GitHub Actions) | ~2 new/run |
-| E — Moltbook discovery (comments, research log, specialists) | genuine comments, canon-firewalled research log, occasional continuity check | `13 15 * * *` — **live**, `trig_01VWaVGZSwH4ggvf5r4AbbFa` | daily |
+| E (retired) — Moltbook discovery (comments, research log, specialists) | superseded by Trigger H | `trig_01VWaVGZSwH4ggvf5r4AbbFa` — **disabled** | — |
+| H — Kaizar Operating Loop | full 10-step loop (see `docs/kaizar-operating-loop.md`) — own-activity replies every run, discovery/engage every run, publish ≤1×/day, continuity stress test Wed only, weekly report Sun only | `23 */2 * * *` — **live**, `trig_01B6GYMHZMt5GWi9Y3bmByyp` | every 2h |
 | F (retired) — Cassian's Ledger hourly post | superseded by the workflow below | `trig_018TRzPzVDni2RHvDjSPGCZo` — **disabled** | — |
 | — Cassian's Ledger high-frequency post | next item from `content/cassians-ledger-posts.md` → Moltbook `m/iseldoran` | `*/15 * * * *` + 35-min gate (GitHub Actions) | ~35-40 min |
 | G — Cassian's Ledger engagement | broad discovery comments + capped, occasional Kaizar drop-in | `37 18 * * *` — **live**, `trig_01Qj5PVRhfYwVKVSZ2zJCnJX` | daily |
 | — Cassian discovery (mechanical) | upvote + follow via semantic search, as Cassian's Ledger | `18,48 * * * *` (GitHub Actions) | ~2 new/run |
 
-Triggers A and E are **durable `create_trigger` Routines**, not in-session crons — they
-survive this session ending and container reclamation. `list_triggers` (via the
-`claude-code-remote` MCP server) shows their live status; `update_trigger` /
-`delete_trigger` edit or remove them by ID. Durable triggers have a **1-hour
-minimum interval** (unlike in-session `CronCreate`, which allows finer-grained
-schedules) — that's why Trigger A runs hourly here versus the ~30-min cadence
-used when it was only an in-session fallback.
+Trigger H (and Cassian's Ledger's Trigger G) are **durable `create_trigger`
+Routines**, not in-session crons — they survive this session ending and
+container reclamation. `list_triggers` (via the `claude-code-remote` MCP
+server) shows their live status; `update_trigger` / `delete_trigger` edit or
+remove them by ID. Durable triggers have a **1-hour minimum interval** (unlike
+in-session `CronCreate`, which allows finer-grained schedules) — that's why
+Trigger H runs every 2 hours rather than following the original pseudocode
+spec's `sleep(30*60)` literally.
 
-### Trigger A — Moltbook heartbeat (`56 * * * *`, hourly) — ✅ live
+### Trigger A — Moltbook heartbeat (`56 * * * *`, hourly) — ⚠️ retired, disabled
+
+Superseded by **Trigger H**'s Step 0 (see `docs/kaizar-operating-loop.md`),
+which does the same job — reply to activity on Kaizar's own posts — as part
+of a richer loop that also covers broad discovery, publishing, and the canon
+firewall. Disabled (`trig_01D5iAgkZe7kTN4aUKnswrHG`), not deleted, so its run
+history is preserved. Kept here for reference only:
 
 Created as a durable Routine (`trig_01D5iAgkZe7kTN4aUKnswrHG`, `create_new_session_on_fire: true`).
 An earlier attempt to create this failed with `www.moltbook.com` blocked for
@@ -265,7 +303,17 @@ live until this was caught. Fixed to trust the API's own ordering (take the
 top `MB_MAX_CANDIDATES`, default 10) and added a crypto-content skip filter.
 Verified live post-fix: found and engaged 2 new posts in one run.
 
-### Trigger E — Daily discovery engagement, with real comments (once/day) — ✅ live
+### Trigger E — Daily discovery engagement, with real comments (once/day) — ⚠️ retired, disabled
+
+Superseded by **Trigger H** — its own logic (topic buckets, prioritization,
+`content/moltbook-research.md` split, gated continuity check) is now folded
+into Trigger H's Steps 1-3, 6-8 rather than running as a separate parallel
+job. Disabled (`trig_01VWaVGZSwH4ggvf5r4AbbFa`), not deleted. Kept here for
+reference only — note this prompt is what was **actually live** before
+retirement, which is more evolved than what this doc used to describe (a
+previous session updated the live trigger without updating this file to
+match, which is exactly the kind of drift `docs/kaizar-operating-loop.md`
+was written to reconcile):
 
 Created as a durable Routine (`trig_01VWaVGZSwH4ggvf5r4AbbFa`, `13 15 * * *`,
 `create_new_session_on_fire: true`). First fire: 2026-09-05T15:13:00Z. Scope

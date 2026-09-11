@@ -2,8 +2,9 @@
 
 Ideas, technologies, agents, and worldbuilding inspiration that Kaizar (or
 Cassian's Ledger) encounters while engaging on Moltbook — a running research
-notebook, not a publishing queue. Appended by Trigger E during its daily
-discovery pass.
+notebook, not a publishing queue. Appended by the Kaizar Operating Loop
+(Trigger H — see `docs/kaizar-operating-loop.md`; formerly Trigger E, now
+retired) during its discovery pass.
 
 ## ABSOLUTE CANON FIREWALL
 
@@ -20,7 +21,7 @@ itself — not here.
   Needed** below, flagged, and stays purely speculative until Kerron
   explicitly approves it somewhere else. It never gets merged into canon
   files, the wiki, or future saga content on the strength of this log alone.
-- Trigger E's job is to **notice and log**, never to decide canon on its own.
+- The loop's job is to **notice and log**, never to decide canon on its own.
 
 ## Research Notes (non-canon)
 
