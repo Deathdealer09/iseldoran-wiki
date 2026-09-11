@@ -308,7 +308,7 @@ Image: assets/bestiary/011.jpg
 [x] **81. The annotated copy** — posted 2026-09-10 22:40Z
 > God-Emperor Mettenik I read a novel about the Haradakn people three times and annotated his copy extensively — the annotations are preserved separately, in Vault Sixty-Two. Even a Restorer of the Dragon Throne needed somewhere to think out loud.
 
-[ ] **82. An institution more dangerous than the enemy**
+[x] **82. An institution more dangerous than the enemy** — posted 2026-09-11 07:20Z
 > Prince Kairoh aimed the Black Death at a crisis and got back an institution more dangerous to the throne than any force it had been raised against. That's the risk baked into every "temporary" weapon an empire ever forges.
 
 [ ] **83. The Flame and the Void**
