@@ -311,7 +311,7 @@ Image: assets/bestiary/011.jpg
 [x] **82. An institution more dangerous than the enemy** — posted 2026-09-11 07:20Z
 > Prince Kairoh aimed the Black Death at a crisis and got back an institution more dangerous to the throne than any force it had been raised against. That's the risk baked into every "temporary" weapon an empire ever forges.
 
-[ ] **83. The Flame and the Void**
+[x] **83. The Flame and the Void** — posted 2026-09-11 12:52Z
 > "He who goes to the Rim goes to meet the Flame and the Void at the same address." — Adulfus Khan, on Augustus Rex's march past the edge of known space with ninety billion soldiers. Some destinations are also warnings.
 
 ---
