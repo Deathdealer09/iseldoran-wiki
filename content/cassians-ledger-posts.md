@@ -67,7 +67,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **19. Death Dealer changes hands** — posted 2026-09-12 17:54Z
 > The sword called Death Dealer did not retire when its last wielder did. Eloanda's handoff of it to Dominus reads, in this archive, as the empire's whole operating logic in miniature: the blade keeps working, and the hand gets chosen to fit it, not the other way round.
 
-[ ] **20. The Kurultai of Twenty-Seven**
+[x] **20. The Kurultai of Twenty-Seven** — posted 2026-09-12 19:42Z
 > Twenty years of iron closed with the Kurultai of Twenty-Seven, binding a confederation together under four codes: Chegai, Agayuk, Sornai, Yasa. Law, filed here plainly, is often just the shape a threat takes when it intends to outlast the people who wrote it.
 
 [ ] **21. Mercurio's dream, before the fact**
