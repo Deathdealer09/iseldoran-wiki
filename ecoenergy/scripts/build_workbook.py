@@ -22,7 +22,7 @@ DATA = os.path.join(HERE, "..", "data")
 OUT = os.path.join(HERE, "..", "EcoEnergy_Aggregate_Sales_Pipeline.xlsx")
 
 EDITION = 1
-VERSION = 2
+VERSION = 3
 TT = timezone(timedelta(hours=-4))          # Trinidad & Tobago, AST / UTC-4
 NOW = datetime.now(TT)
 STAMP = NOW.strftime("%d %B %Y  %H:%M") + " (Trinidad time)"
@@ -168,6 +168,12 @@ discovered = [p for p in prospects if MERGED_TAG not in p["source_platform"]]
 PEND = "PENDING VERIFICATION"
 with_contact = [p for p in prospects if p["phone"] != PEND or p["email"] != PEND]
 contacted = [p for p in prospects if p["status"] == "OUTREACH SENT"]
+cycle2 = [p for p in prospects if p["notes"].startswith("CYCLE 2")]
+cycle1 = [p for p in discovered if not p["notes"].startswith("CYCLE 2")]
+try:
+    intel = json.load(open(os.path.join(DATA, "market_intel.json")))
+except Exception:
+    intel = []
 
 
 def count_type(*words):
@@ -193,7 +199,10 @@ def section(name):
 
 
 section("PIPELINE VOLUME")
-row("New prospects discovered this cycle", len(discovered), "Daily target is 25.")
+row("New prospects discovered, cycle 1", len(cycle1), "Directory and category sweep.")
+row("New prospects discovered, cycle 2", len(cycle2),
+    "Social, quarry-licensing and regional sweep requested with Metricool.")
+row("Total discovered today", len(discovered), "Daily target is 25.")
 row("Daily target", 25, "Brief section 1.")
 row("Performance against daily target",
     "%d%%" % round(100 * len(discovered) / 25), "Quality gate applied - no filler records.")
@@ -244,6 +253,26 @@ row("Materials flagged MARKET VERIFICATION REQUIRED",
 row("Pricing rule applied", "Benchmark x 0.90", "10% below verified market benchmark.")
 row("Maximum negotiated discount", "30%", "Closing tool. Never automatic, never advertised.")
 row("Next scheduled market review", pricing["meta"]["next_review"], "Brief section 6.")
+section("CHANNEL ACCESS - VERIFIED THIS CYCLE")
+row("Metricool MCP connector", "CONNECTED",
+    "Authenticated and responding. It returned 4 brands, all personal or Iseldoran Sagas accounts: "
+    "kerron.pierre5, thekerron, kerron347, kerron.shaul.pier and IseldoranSagas.")
+row("EcoEnergy brand in Metricool", "NOT PRESENT",
+    "No EcoEnergy brand exists in the account, so Metricool cannot publish for EcoEnergy or report "
+    "EcoEnergy analytics. Nothing was posted to the personal accounts.")
+row("Metricool as a prospecting tool", "NOT CAPABLE",
+    "Its toolset is scheduling, analytics and best-time-to-post for accounts you own. It cannot "
+    "search Facebook, Instagram, TikTok, X or Threads for third-party prospects or prices. Its only "
+    "third-party feature is competitor tracking on Instagram, Facebook, Twitch, YouTube, X and "
+    "Bluesky, and that needs an EcoEnergy brand first.")
+row("Facebook / Instagram / TikTok / X / Threads", "PLATFORM NOT ACCESSIBLE",
+    "Direct connection to facebook.com, instagram.com, tiktok.com, x.com and threads.net was tested "
+    "this cycle and every one was refused by the network egress policy. Social findings below came "
+    "from public search indexing of those pages, not from browsing them.")
+section("MARKET INTELLIGENCE - CYCLE 2")
+for it in intel:
+    row(it["headline"], it["verified"] if it["verified"] == "NOT VERIFIED" else "VERIFIED",
+        it["detail"] + "  IMPLICATION: " + it["implication"])
 section("BLOCKERS - REQUIRE HUMAN ACTION")
 row("1. Contact details for the discovered prospects", "BLOCKING",
     "%d of %d prospects have no verified contact route. Directory and company pages (findyello.com, "
@@ -259,7 +288,15 @@ row("3. NQCL price list PDF", "PARTIALLY RESOLVED",
     "PDF itself is still blocked, and it is effective 31-Aug-2022, so the benchmark is four years old.")
 row("4. Social comment mining", "NOT ACCESSIBLE",
     "Facebook, Instagram, X and Threads are not reachable from this environment. Section 4 comment mining "
-    "could not be run beyond what public search indexes surfaced.")
+    "could not be run beyond what public search indexes surfaced. Three active T&T buyer groups were "
+    "located and are named in the weekly report for someone with Facebook access to mine.")
+row("5. EcoEnergy quarry licence status", "BLOCKING THE STRONGEST PITCH",
+    "24 quarries shut in a licensing dispute and police are acting against illegal operations, which makes "
+    "licensed supply a powerful selling position. EcoEnergy's own licence or hold-over permit status is not "
+    "recorded anywhere and was not supplied. Do NOT claim licensed supply in outreach until confirmed.")
+row("6. Metricool EcoEnergy brand", "ACTION",
+    "Create an EcoEnergy brand in Metricool and connect its Facebook and Instagram pages. That enables "
+    "competitor tracking on rival aggregate sellers and gives EcoEnergy an inbound lead channel.")
 s5.freeze = (hdr5, 0)
 
 # ----------------------------------------------------------- 6. WEEKLY ADDITIONS

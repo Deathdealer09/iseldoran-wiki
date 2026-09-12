@@ -8,6 +8,64 @@
 
 ---
 
+## Edition 1 Version 3
+
+**Date:** 12 September 2026
+**Time:** 04:32 (Trinidad time, AST/UTC-4)
+
+**Status:** Cycle 2 prospecting run, requested with Metricool and social media coverage.
+
+### Changes
+
+- Added 26 new prospects, ECO-0060 to ECO-0085. Pipeline total now 85.
+- Applied 5 deduplication updates to records already held, rather than creating duplicates.
+- Added 4 market benchmark observations. Total now 26.
+- Added `data/market_intel.json` with 6 recorded market intelligence items.
+- Added CHANNEL ACCESS and MARKET INTELLIGENCE sections to the DASHBOARD.
+- Added cycle 1 and cycle 2 discovery counts throughout.
+- Added `scripts/cycle_02.py` to the rebuild chain.
+
+### Canon change, justified
+
+**Seereeram Bros Limited (ECO-0033) reclassified from TIER 1 to BENCHMARK.** Cycle 2 established
+that Seereeram Brothers holds a licensed quarry at Cangrejal Road, Santa Cruz. They are a producer,
+not a wholesale buyer, so the previous classification would have produced a wrong approach. Logged
+rather than changed silently.
+
+Other dedup updates: Bestcrete and Abel Building Solutions licensed quarry sites confirmed, On The
+Line General Hardware Facebook page recorded, AMCOL product range extended to crusher run, blue
+metal and ballast across three pack sizes.
+
+### Channel access established
+
+- **Metricool: CONNECTED.** Returned 4 brands, all personal or Iseldoran Sagas accounts. **No
+  EcoEnergy brand exists.** Nothing was posted to the personal accounts.
+- **Metricool is not a prospecting tool.** Scheduling, analytics and best-time-to-post for owned
+  accounts only. It cannot search any platform for third-party prospects or prices.
+- **Facebook, Instagram, TikTok, X, Threads, LinkedIn: PLATFORM NOT ACCESSIBLE.** Direct connection
+  was tested against each and refused by the network egress policy. All social findings came from
+  public search indexing, not browsing. No autonomous browser activity occurred.
+
+### Market intelligence recorded
+
+Twenty-four quarries shut in November 2025 in a licensing dispute led by the newly formed TTAPA,
+with reporting of a widening aggregate supply gap and police action against illegal quarries. Nine
+companies hold full licences and the remainder operate on hold-over permits.
+
+**Open question raised, not answered:** EcoEnergy's own licence status is not recorded anywhere and
+was not supplied. The licence-led pitch is blocked until it is confirmed. No claim of licensed
+supply has been written into any outreach material.
+
+### Integrity
+
+- No contact detail was invented. 14 of 85 prospects have a live contact route; 2 of the 26 new
+  records carry a published telephone number.
+- This agent has still sent zero messages.
+- Section 4 comment mining could not be executed. Three Trinidad buyer groups were located by search
+  and are named in the report for someone with Facebook access.
+
+---
+
 ## Edition 1 Version 2
 
 **Date:** 12 September 2026

@@ -284,5 +284,57 @@
     "source": "Prior EcoEnergy workbook (merged 2026-09-12)",
     "verified": "2026-09-12",
     "note": "Recovered from prior canon. Sits BELOW the EcoEnergy plastering sand base of TT$75.94, so quote location-specific where this source competes."
+  },
+  {
+    "seller": "Facebook Marketplace seller (T&T)",
+    "product": "Gravel",
+    "price": 500.0,
+    "unit": "TT$/yd",
+    "basis": "Retail, delivered",
+    "category": "RETAIL (DELIVERED)",
+    "delivery": "Delivery",
+    "location": "Trinidad",
+    "source": "https://www.facebook.com/marketplace/116087261735365/gravel/",
+    "verified": "2026-09-12",
+    "note": "Cycle 2 observation. Same listing also offers TT$60 per 75lb bag."
+  },
+  {
+    "seller": "Facebook Marketplace seller (T&T)",
+    "product": "Gravel - bagged 75lb",
+    "price": 60.0,
+    "unit": "TT$ per 75lb bag",
+    "basis": "Retail bagged",
+    "category": "RETAIL (BAGGED)",
+    "delivery": "Not stated",
+    "location": "Trinidad",
+    "source": "https://www.facebook.com/marketplace/116087261735365/gravel/",
+    "verified": "2026-09-12",
+    "note": "Cycle 2 observation. Bagged retail, not comparable to bulk cubic-yard pricing."
+  },
+  {
+    "seller": "AMCOL Hardware",
+    "product": "Crusher run / blue metal",
+    "price": null,
+    "unit": "8-yard load, per m3, and bagged",
+    "basis": "Price not captured",
+    "category": "RETAIL",
+    "delivery": "Not stated",
+    "location": "Penal",
+    "source": "https://www.amcolhardwarett.com/product-6222/8-yard-load-crusher-run--blue-metal.php",
+    "verified": "2026-09-12",
+    "note": "Cycle 2. Product lines confirmed across three pack sizes but no price was surfaced by search and the site cannot be fetched. Price NOT captured and NOT estimated."
+  },
+  {
+    "seller": "AMCOL Hardware",
+    "product": "Ballast (1/2 x 1/2 gravel with sharp sand)",
+    "price": null,
+    "unit": "10-yard and 11-yard loads",
+    "basis": "Price not captured",
+    "category": "RETAIL",
+    "delivery": "Not stated",
+    "location": "Penal",
+    "source": "https://www.amcolhardwarett.com/product-7960/1-load-12-x-12-gravel-w-sharp-sand-10-yards.php",
+    "verified": "2026-09-12",
+    "note": "Cycle 2. A blended product EcoEnergy could supply as components. Price NOT captured."
   }
 ]

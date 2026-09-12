@@ -9,14 +9,16 @@ Materials: pitrun, 3/8 gravel, 3/4 gravel, plastering sand, sharp sand, sandfill
 ecoenergy/
   EcoEnergy_Aggregate_Sales_Pipeline.xlsx   generated workbook, 6 worksheets
   data/                                     source of truth (JSON)
-    prospects.json          59 prospects (48 discovered, 11 from prior canon)
-    benchmarks.json         22 market price observations
+    prospects.json          85 prospects (74 discovered, 11 from prior canon)
+    benchmarks.json         26 market price observations
+    market_intel.json        6 recorded market intelligence items
     pricing.json             pricing engine output
     communications.json      2 confirmed outbound e-mails (prior canon)
   scripts/
     xlsx_writer.py           dependency-free XLSX writer
     seed_data.py             seeds the prospect database
     merge_upload.py          merges the prior EcoEnergy workbook (canon)
+    cycle_02.py              cycle 2 prospecting run
     rebuild.sh               full deterministic rebuild
     seed_pricing.py          benchmarks + pricing engine
     build_workbook.py        regenerates the workbook from data
@@ -58,3 +60,11 @@ Of the 59 prospects, 12 carry a verified contact route recovered from prior cano
 number, e-mail address or WhatsApp number could be verified, and no messaging integration is
 connected. All 48 prospects therefore sit at **PROSPECT IDENTIFIED, DIRECT OUTREACH PENDING**.
 See section 6 of the weekly sales report in `docs/`.
+
+## Channel access
+
+- **Metricool:** connected, but holds no EcoEnergy brand. It is a scheduling and analytics tool for
+  accounts you own, not a prospecting tool, and cannot search any platform for third-party prospects
+  or prices.
+- **Facebook, Instagram, TikTok, X, Threads, LinkedIn:** PLATFORM NOT ACCESSIBLE. Tested directly and
+  refused by the network egress policy. Social findings come from public search indexing only.

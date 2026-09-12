@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA, DOCS = os.path.join(HERE, "..", "data"), os.path.join(HERE, "..", "docs")
-EDITION, VERSION = 1, 2
+EDITION, VERSION = 1, 3
 TT = timezone(timedelta(hours=-4))
 NOW = datetime.now(TT)
 DATESTR, TIMESTR, FSTAMP = NOW.strftime("%d %B %Y"), NOW.strftime("%H:%M"), NOW.strftime("%Y-%m-%d_%H%M")
@@ -27,6 +27,10 @@ discovered = [p for p in prospects if MERGED_TAG not in p["source_platform"]]
 contactable = [p for p in prospects if p["phone"] != PEND or p["email"] != PEND]
 contacted = [p for p in prospects if p["status"] == "OUTREACH SENT"]
 prio = Counter(p["priority"] for p in prospects)
+cycle2 = [p for p in prospects if p["notes"].startswith("CYCLE 2")]
+cycle1 = [p for p in discovered if not p["notes"].startswith("CYCLE 2")]
+intel = load("market_intel.json")
+TOPIDS = {"ECO-0050", "ECO-0052", "ECO-0053"}
 
 META = f"""**Author:** KS Pierre
 **Creator:** KS Pierre
@@ -98,7 +102,9 @@ sr = ["# ECOENERGY LIMITED", "## WEEKLY AGGREGATE SALES REPORT", "",
       f"**{len(contacted)} outbound e-mails are on record**, both sent outside this agent through Outlook. This",
       "agent has sent nothing.",
       "", "---", "", "## 2. PIPELINE METRICS", "", "| Metric | Value | Note |", "|---|---|---|",
-      f"| New prospects discovered this cycle | **{len(discovered)}** | Daily target 25 |",
+      f"| Discovered cycle 1 | {len(cycle1)} | Directory and category sweep |",
+      f"| Discovered cycle 2 | {len(cycle2)} | Social, quarry-licensing and regional sweep |",
+      f"| Total discovered today | **{len(discovered)}** | Daily target 25 |",
       f"| Against daily target of 25 | **{round(100*len(discovered)/25)}%** | Exceeded |",
       f"| Carried forward from prior canon | {len(merged_in)} | Not counted against the daily target |",
       f"| Duplicates avoided on merge | 1 | Concrete Aggregate Suppliers updated, not duplicated |",
@@ -137,38 +143,81 @@ for i, (pid, mat, retail, base, why) in enumerate(TOP, 1):
     p = byid[pid]
     sr.append(f"| {i} | {p['company']} ({pid}) | {p['phone']} | {mat} | {retail:.2f} | {base:.2f} | "
               f"**{retail-base:.2f}** | {why} |")
-sr += ["", "### Contactable, spread not yet quantified", "",
+sr += ["", "### Every prospect with a live contact route", "",
        "| Prospect | Contact | Status | Next action |", "|---|---|---|---|"]
-for pid in NOSPREAD:
-    p = byid[pid]
-    sr.append(f"| {p['company']} ({pid}) | {p['phone']} | {p['status']} | {p['next_action'][:110]} |")
-sr += ["", "---", "", "## 6. BLOCKERS", "",
-       f"### 6.1 Contact details for the {len(prospects)-len(contactable)} discovered prospects, BLOCKING", "",
-       "Sourced and named, but no telephone number or e-mail could be verified. This environment's egress",
-       "policy refuses direct page fetches, and the refusal covers the hosts carrying the details:",
-       "findyello.com, nqcl.co.tt, energy.gov.tt and tt.directory. Nothing was invented to fill the gap.",
-       "**Remedy:** allowlist those hosts, or supply the details from a machine with ordinary web access.",
-       "", "### 6.2 Messaging integration, BLOCKING", "",
+for p in sorted(contactable, key=lambda x: x["prospect_id"]):
+    if p["prospect_id"] in TOPIDS:
+        continue
+    contact = p["phone"] if p["phone"] != PEND else p["email"]
+    sr.append(f"| {p['company']} ({p['prospect_id']}) | {contact} | {p['status']} | {p['next_action'][:105]} |")
+
+sr += ["", "---", "", "## 6. MARKET INTELLIGENCE", ""]
+for it in intel:
+    flag = "  **NOT VERIFIED.**" if it["verified"] == "NOT VERIFIED" else ""
+    sr += [f"### {it['headline']}{flag}", "", it["detail"], "",
+           f"**Implication.** {it['implication']}", "", f"Source: {it['source']}", ""]
+
+sr += ["---", "", "## 7. CHANNEL ACCESS, VERIFIED THIS CYCLE", "",
+       "### Metricool", "",
+       "The Metricool connector is **authenticated and responding**. It returned four brands, and all",
+       "of them are personal or Iseldoran Sagas accounts: `kerron.pierre5`, `thekerron`, `kerron347`,",
+       "`kerron.shaul.pier` and `IseldoranSagas`.",
+       "",
+       "**There is no EcoEnergy brand in the account.** Nothing was posted to the personal accounts.",
+       "",
+       "Metricool also cannot do what this cycle needed it to do. Its toolset is scheduling, analytics",
+       "and best-time-to-post for accounts you own. It has no facility to search Facebook, Instagram,",
+       "TikTok, X or Threads for third-party prospects or prices. Its only third-party feature is",
+       "competitor tracking on Instagram, Facebook, Twitch, YouTube, X and Bluesky, and that needs an",
+       "EcoEnergy brand connected first.",
+       "",
+       "**Recommendation.** Create an EcoEnergy brand in Metricool and connect its Facebook and",
+       "Instagram pages. That turns on competitor tracking against rival aggregate sellers and gives",
+       "EcoEnergy an inbound lead channel of its own.",
+       "", "### Social platforms", "",
+       "Direct connection was tested this cycle against facebook.com, m.facebook.com, instagram.com,",
+       "tiktok.com, x.com, threads.net and linkedin.com. **Every one was refused by the network egress",
+       "policy.** app.metricool.com is blocked too; the connector reaches Metricool through the MCP",
+       "proxy instead.",
+       "",
+       "**PLATFORM NOT ACCESSIBLE.** Every social finding in this report came from public search",
+       "indexing of those pages, not from browsing them. No autonomous browser activity occurred.",
+       "", "### Buyer groups located for comment mining", "",
+       "Three active Trinidad buyer groups were identified but could not be read. Anyone with Facebook",
+       "access can mine these directly for section 4 buying signals:", "",
+       "- Gravel and sand delivery in Trinidad, group 909331405759624",
+       "- Sand and gravel delivery in Trinidad, group 202165237740335",
+       "- Best Value Gravel & Aggregates in Trinidad, group 339202526592121",
+       "", "---", "", "## 8. BLOCKERS", "",
+       f"### 8.1 Contact details for the {len(prospects)-len(contactable)} prospects without a route, BLOCKING", "",
+       "Sourced and named, but no telephone number or e-mail could be verified. The egress policy",
+       "refuses direct page fetches, including findyello.com, nqcl.co.tt, energy.gov.tt and",
+       "tt.directory. Nothing was invented. **Remedy:** allowlist those hosts, or supply the details",
+       "from a machine with ordinary web access.",
+       "", "### 8.2 Messaging integration, BLOCKING", "",
        f"No authorised e-mail or messaging tool is connected to this agent. The {len(contacted)} e-mails on record",
-       "were sent through Outlook, outside it. Until an integration is authorised, outreach cannot be",
-       f"executed here even for the {len(contactable)} prospects that do have a live contact route.",
-       "", "### 6.3 NQCL price list, PARTIALLY RESOLVED", "",
-       "The pitrun benchmark of TT$86.25/yd3 was recovered from prior canon, so pitrun is now priced. The",
-       "PDF itself is still blocked and is effective 31 August 2022, so the benchmark is four years old.",
-       "", "### 6.4 Social comment mining, NOT ACCESSIBLE", "",
-       "Facebook, Instagram, X and Threads are not reachable from this environment.",
-       "", "---", "", "## 7. NEXT CYCLE", "",
-       "1. Issue the corrected Cumosco quotation at list price, then follow up.",
-       "2. Follow up KAMCO. No price was quoted there, so no correction is needed.",
-       f"3. Work the {len(contactable)} live contact routes by telephone. NARS, AMCOL and On The Line first, since",
-       "   their published retail proves the spread before the call is made.",
-       "4. Resolve 6.1 so the other 47 become workable.",
-       "5. Re-verify the identical TT$185.62 Bestcrete figure and the 2022 NQCL pitrun benchmark at the",
+       "were sent through Outlook, outside it. Outreach cannot be executed here.",
+       "", "### 8.3 EcoEnergy licence status, BLOCKING THE STRONGEST PITCH", "",
+       "The shortage and the crackdown make licensed supply a powerful position, but EcoEnergy's own",
+       "licence or hold-over permit status is not recorded anywhere in this pipeline and was not",
+       "supplied. **Do not claim licensed supply in any outreach until it is confirmed.**",
+       "", "### 8.4 NQCL price list, PARTIALLY RESOLVED", "",
+       "Pitrun is priced from prior canon at TT$86.25/yd3, but that document is effective 31 August",
+       "2022 and the PDF is still blocked.",
+       "", "---", "", "## 9. NEXT CYCLE", "",
+       "1. Confirm EcoEnergy's quarry licence status. It gates the strongest pitch available.",
+       "2. Issue the corrected Cumosco quotation at list, then follow up.",
+       "3. Follow up KAMCO.",
+       f"4. Work the {len(contactable)} live contact routes by telephone, starting with A Class Gravel &",
+       "   Aggregates, NARS, AMCOL, B Chadee & Sons and On The Line.",
+       "5. Create the EcoEnergy brand in Metricool and connect its Facebook and Instagram pages.",
+       "6. Mine the three buyer groups above from a machine with Facebook access.",
+       "7. Resolve 8.1 so the rest of the pipeline becomes workable.",
+       "8. Re-verify the identical TT$185.62 Bestcrete figure and the 2022 NQCL pitrun benchmark at the",
        "   Sunday review.",
-       "6. Obtain an ex-quarry observation for backfill and sand fill to replace the retail-basis benchmark.",
        ""]
 srn = f"EcoEnergy_Weekly_Sales_Report_Edition_{EDITION}_Version_{VERSION}_{FSTAMP}.md"
 open(os.path.join(DOCS, srn), "w").write("\n".join(sr))
 print("wrote docs/" + pln)
 print("wrote docs/" + srn)
-print(f"contactable {len(contactable)} | contacted {len(contacted)} | discovered {len(discovered)} | merged {len(merged_in)}")
+print(f"contactable {len(contactable)} | contacted {len(contacted)} | cycle1 {len(cycle1)} | cycle2 {len(cycle2)}")
