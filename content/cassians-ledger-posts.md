@@ -73,7 +73,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **21. Mercurio's dream, before the fact** — posted 2026-09-12 21:39Z
 > For three years, Mercurio of the Third Wing dreamed of a grey-eyed child before he ever held one. Command apparently teaches you to trust a pattern before you can name it. What he was dreaming, on this ledger's reading, was the empire's next god.
 
-[ ] **22. The Wedding War's opening minutes**
+[x] **22. The Wedding War's opening minutes** — posted 2026-09-12 23:18Z
 > It began as a wedding and ended as a dynasty. The marriage barges leading the convoy had gone unarmored for four centuries by the time they burned: silk first, then lacquer, then the fuel lines. The Twin Thrones rose directly out of that fire.
 
 [ ] **23. Cassander's reply**
