@@ -8,6 +8,72 @@
 
 ---
 
+## Edition 1 Version 2
+
+**Date:** 12 September 2026
+**Time:** 02:14 (Trinidad time, AST/UTC-4)
+
+**Status:** Prior canon recovered and merged. Version 1 was produced on the incorrect assumption
+that no pipeline existed. The owner supplied the existing EcoEnergy workbook mid-cycle.
+
+### Changes
+
+- Merged the prior EcoEnergy workbook. It is treated as canon throughout.
+- Added 11 prospects carried forward from prior canon, ECO-0049 to ECO-0059, each with verified
+  telephone numbers and, for two of them, e-mail addresses.
+- Deduplicated 1 record: Concrete Aggregate Suppliers was already held as ECO-0006 from the
+  directory sweep. The existing record was UPDATED with the telephone number 868-750-1625 and the
+  Charlieville location. No duplicate was created (section 10).
+- Pipeline total now 59: 48 discovered this cycle, 11 carried forward.
+- Imported 2 confirmed outbound e-mails into the COMMUNICATIONS LOG: Cumosco and KAMCO, both
+  2026-09-12, both sent through Outlook outside this agent.
+- Replaced the pricing schedule with prior canon, extending coverage from 4 materials to 7.
+- Added 13 market benchmark observations recovered from prior canon; total now 22.
+- Added a Last Verified column to WEEKLY PRICING and a Direction column to COMMUNICATIONS LOG.
+- Added an Origin column to WEEKLY ADDITIONS separating discovered from carried-forward records.
+- Added `scripts/rebuild.sh` for a deterministic, idempotent full rebuild.
+
+### Financial figures changed, with justification
+
+Per the canon protection rules, no figure was altered silently.
+
+1. **Pitrun, backfill and sand fill are now priced.** Version 1 carried these as MARKET
+   VERIFICATION REQUIRED because no published price could be located. Prior canon supplied
+   benchmarks of TT$86.25, TT$140.625 and TT$126.563 per yd3. Bases are TT$77.63, TT$126.56 and
+   TT$113.91.
+
+2. **Rounding method corrected.** Python's built-in rounding is banker's rounding and turned the
+   canon pitrun base of 77.625 into 77.62. Commercial half-up rounding is now used, giving 77.63.
+   All other bases are unaffected. The exact unrounded base and floor are recorded in the note
+   column of every pricing row.
+
+3. **Prior canon float noise resolved to 2dp for publication.** 167.05800000000002 is published as
+   167.06, 75.941999999999993 as 75.94, and so on. The underlying benchmarks are unchanged.
+
+### Owner decisions recorded
+
+- **The price list is canon.** The Cumosco quotation of TT$125 / 195 / 205 per yd3 for pitrun,
+  3/8 and 3/4 sits above the list price of TT$77.63 / 167.06 / 167.06. A corrected quotation is
+  now flagged as required on the prospect record, the communications log and the dashboard.
+- **Six worksheets per section 9**, rather than the prior four-sheet layout.
+
+### Canon and data integrity
+
+- Every telephone number, e-mail address and price recovered from the prior workbook is reproduced
+  verbatim. Nothing was inferred.
+- Prospects carried forward are labelled as such and are excluded from the daily target count.
+- This agent has still sent zero messages. The two logged e-mails are attributed to Outlook.
+
+### Carried forward
+
+1. 47 of 59 prospects still have no verified contact route. The egress policy blocks the hosts.
+2. No messaging integration is connected, so outreach cannot be executed from here.
+3. The NQCL pitrun benchmark is effective 31 August 2022, so it is four years old.
+4. Backfill and sand fill are benchmarked on a retail load basis, not ex-quarry.
+5. Facebook, Instagram, X and Threads remain unreachable.
+
+---
+
 ## Edition 1 Version 1
 
 **Date:** 12 September 2026

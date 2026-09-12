@@ -9,13 +9,15 @@ Materials: pitrun, 3/8 gravel, 3/4 gravel, plastering sand, sharp sand, sandfill
 ecoenergy/
   EcoEnergy_Aggregate_Sales_Pipeline.xlsx   generated workbook, 6 worksheets
   data/                                     source of truth (JSON)
-    prospects.json          48 sourced prospects
-    benchmarks.json          9 market price observations
+    prospects.json          59 prospects (48 discovered, 11 from prior canon)
+    benchmarks.json         22 market price observations
     pricing.json             pricing engine output
-    communications.json      outreach log (empty: nothing has been sent)
+    communications.json      2 confirmed outbound e-mails (prior canon)
   scripts/
     xlsx_writer.py           dependency-free XLSX writer
     seed_data.py             seeds the prospect database
+    merge_upload.py          merges the prior EcoEnergy workbook (canon)
+    rebuild.sh               full deterministic rebuild
     seed_pricing.py          benchmarks + pricing engine
     build_workbook.py        regenerates the workbook from data
     generate_reports.py      price list + weekly sales report
@@ -26,9 +28,7 @@ ecoenergy/
 ## Running the loop
 
 ```bash
-python3 ecoenergy/scripts/seed_pricing.py     # re-derive prices from benchmarks
-python3 ecoenergy/scripts/build_workbook.py   # rebuild the workbook
-python3 ecoenergy/scripts/generate_reports.py # reissue price list + report
+./ecoenergy/scripts/rebuild.sh   # full deterministic rebuild, idempotent
 ```
 
 The JSON files are the source of truth. Edit data, never the spreadsheet by hand, then rebuild.
@@ -48,13 +48,13 @@ The JSON files are the source of truth. Edit data, never the spreadsheet by hand
 - Every prospect carries the public source URL it came from.
 - Contact fields read `PENDING VERIFICATION` where the detail could not be verified. Nothing is
   guessed or inferred.
-- `communications.json` stays empty until a sending tool confirms a send.
+- A message is logged only when a send was confirmed. Entries name where the send happened.
 - Estimated volumes are prefixed `EST` and name the basis of the inference.
 - Deduplication is asserted at seed time on company name and prospect ID.
 
 ## Current blockers
 
-Direct page fetches are refused by this environment's network egress policy, so no telephone
+Of the 59 prospects, 12 carry a verified contact route recovered from prior canon. For the other 47,
 number, e-mail address or WhatsApp number could be verified, and no messaging integration is
 connected. All 48 prospects therefore sit at **PROSPECT IDENTIFIED, DIRECT OUTREACH PENDING**.
 See section 6 of the weekly sales report in `docs/`.

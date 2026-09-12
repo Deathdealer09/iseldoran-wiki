@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "datetime": "2026-09-12",
+    "prospect_id": "ECO-0053",
+    "prospect": "Cumosco",
+    "channel": "Email",
+    "direction": "Outbound",
+    "recipient": "sales@cumosco.com",
+    "message_type": "Wholesale aggregate supply introduction",
+    "material": "Pitrun; 3/8; 3/4",
+    "volume": "",
+    "price_quoted": "TT$125 / 195 / 205 per yd3",
+    "discount": "No",
+    "response": "Pending",
+    "followup": "2026-09-15",
+    "next_action": "CORRECTED QUOTATION REQUIRED before follow-up. Quoted prices sit above the canon list price of TT$77.63 / 167.06 / 167.06 per yd3.",
+    "logged_by": "Prior canon - Outlook Sent Items"
+  },
+  {
+    "datetime": "2026-09-12",
+    "prospect_id": "ECO-0054",
+    "prospect": "KAMCO Marketing & Contracting",
+    "channel": "Email",
+    "direction": "Outbound",
+    "recipient": "kamcomarketing2014@gmail.com",
+    "message_type": "Individualised EcoEnergy supply introduction",
+    "material": "Aggregate",
+    "volume": "",
+    "price_quoted": "Market-based",
+    "discount": "No",
+    "response": "Pending",
+    "followup": "2026-09-15",
+    "next_action": "Follow up and qualify material and volume.",
+    "logged_by": "Prior canon - Outlook send action"
+  }
+]
