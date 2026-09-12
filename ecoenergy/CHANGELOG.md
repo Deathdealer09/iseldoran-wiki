@@ -8,6 +8,71 @@
 
 ---
 
+## Edition 1 Version 6
+
+**Date:** 12 September 2026
+**Time:** 05:47 (Trinidad time, AST/UTC-4)
+
+**Status:** Public-sector, utility and energy-sector sweep. 28 new prospects against a target of 25.
+
+### Access, re-tested this run
+
+facebook.com, instagram.com, tiktok.com, x.com, threads.net, trinituner.com, findyello.com and
+app.metricool.com were ALL re-tested and ALL returned blocked at the egress proxy. There is still no
+browser tool and no logged-in session. Every finding came from public search indexing.
+
+**The Metricool MCP server has disconnected from this session.** Its tools cannot be called. The
+post scheduled on 2026-09-12 for the kerron.pierre5 brand, id 374817136, was confirmed present in
+the planner when created and is still expected to publish 2026-09-14 at 11:00 Trinidad time, but
+that can no longer be verified from here. Verify on the accounts directly or reopen Metricool.
+
+### Changes
+
+- Added 28 new prospects, ECO-0113 to ECO-0140. Pipeline total now 140.
+- Applied 2 deduplication updates.
+- Added 2 market intelligence items. Total now 13.
+- Grade B leads rose from 56 to 84.
+
+### The new seam: recurring, annually funded public demand
+
+- **All 14 municipal corporations** recorded. Each holds statutory responsibility for LOCAL ROADS
+  AND BRIDGES and for DRAINAGE AND IRRIGATION, both annually funded. Couva/Tabaquite/Talparo is the
+  strongest: its procurement page names those exact categories, and Couva is the top section 18 area.
+- **MOWT PURE Unit**, the national road rehabilitation programme covering slope stabilisation, road
+  works and bridge reconstruction. The largest single aggregate programme in the country.
+- **WASA**, whose trench reinstatement and landslip restoration is a continuous national backfill
+  and granular fill requirement, matching the two lines newly priced in Version 2.
+- **Heritage Petroleum**, which publishes an open contractor and supplier PREQUALIFICATION route.
+  Onshore lease roads and well pads are pure pitrun and granular fill demand.
+- **PLIPDECO**, landlord of the 860-hectare Point Lisas estate with 103+ tenants, plus a six-berth
+  port.
+- Energy-sector civil contractors named in the Heritage supply chain: Patrick Gordon's Construction
+  (named specifically for civil infrastructure), Veratech (VECCL), Vertech General Contracting,
+  Esskay Construction Services and Inland and Offshore Contractors.
+
+### Canon update, justified
+
+**NIPDEC reclassified from TIER 2 to TIER 1.** It has been the authorised procurement agency for the
+MOWT PURE road programme since 2002, so it is the procurement gateway to national road
+rehabilitation rather than merely a property developer. Supplier registration there is now recorded
+as the single highest-leverage action available.
+
+### One record carries a warning
+
+**Uniform Building Contractors Ltd** is recorded with an explicit caution. Its WASA pipeline contract
+was terminated in 2009 and a related claim reached the Privy Council. Trading status and
+creditworthiness must be confirmed before any commercial effort or credit terms.
+
+### Integrity
+
+- No contact detail invented. 15 of 140 prospects carry a live contact route.
+- Zero messages sent by this agent.
+- **No new prices captured this run**, and that is stated rather than padded. Public bodies publish
+  tenders, not price lists. The 32 held observations are unchanged.
+- Grade A remains 0, recorded as COMMENTS NOT ACCESSIBLE rather than as absence of demand.
+
+---
+
 ## Edition 1 Version 5
 
 **Date:** 12 September 2026

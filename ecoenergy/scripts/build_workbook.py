@@ -22,7 +22,7 @@ DATA = os.path.join(HERE, "..", "data")
 OUT = os.path.join(HERE, "..", "EcoEnergy_Aggregate_Sales_Pipeline.xlsx")
 
 EDITION = 1
-VERSION = 5
+VERSION = 6
 TT = timezone(timedelta(hours=-4))          # Trinidad & Tobago, AST / UTC-4
 NOW = datetime.now(TT)
 STAMP = NOW.strftime("%d %B %Y  %H:%M") + " (Trinidad time)"
@@ -172,7 +172,8 @@ with_contact = [p for p in prospects if p["phone"] != PEND or p["email"] != PEND
 contacted = [p for p in prospects if p["status"] == "OUTREACH SENT"]
 cycle2 = [p for p in prospects if p["notes"].startswith("CYCLE 2")]
 cycle4 = [p for p in prospects if p["notes"].startswith("CYCLE 4")]
-cycle1 = [p for p in discovered if not p["notes"].startswith(("CYCLE 2", "CYCLE 4"))]
+cycle5 = [p for p in prospects if p["notes"].startswith("CYCLE 5")]
+cycle1 = [p for p in discovered if not p["notes"].startswith(("CYCLE 2", "CYCLE 4", "CYCLE 5"))]
 grades = Counter(p.get("lead_grade", "") for p in prospects)
 try:
     intel = json.load(open(os.path.join(DATA, "market_intel.json")))
@@ -208,6 +209,9 @@ row("New prospects discovered, cycle 2", len(cycle2),
     "Social, quarry-licensing and regional sweep requested with Metricool.")
 row("New prospects discovered, cycle 4", len(cycle4),
     "Social buyer-hunt. Facebook pages, groups, forum, directories and developer sweep.")
+row("New prospects discovered, cycle 5", len(cycle5),
+    "Public sector, utility and energy sweep. 14 municipal corporations, PURE, WASA, PLIPDECO, "
+    "Heritage Petroleum and their civil contractors.")
 row("Total discovered today", len(discovered), "Daily target is 25.")
 row("Daily target", 25, "Brief section 1.")
 row("Performance against daily target",
@@ -270,7 +274,12 @@ row("Pricing rule applied", "Benchmark x 0.90", "10% below verified market bench
 row("Maximum negotiated discount", "30%", "Closing tool. Never automatic, never advertised.")
 row("Next scheduled market review", pricing["meta"]["next_review"], "Brief section 6.")
 section("CHANNEL ACCESS - VERIFIED THIS CYCLE")
-row("Metricool MCP connector", "CONNECTED",
+row("Metricool MCP connector", "DISCONNECTED",
+    "The Metricool MCP server is no longer connected to this session and its tools cannot be called. "
+    "The post scheduled on 2026-09-12 (id 374817136) was confirmed in the planner when created and is "
+    "still expected to publish 2026-09-14 at 11:00 Trinidad time, but that can no longer be verified "
+    "from here. Check the accounts directly or reopen Metricool.")
+row("Metricool, when it was connected", "CONNECTED",
     "Authenticated and responding. It returned 4 brands, all personal or Iseldoran Sagas accounts: "
     "kerron.pierre5, thekerron, kerron347, kerron.shaul.pier and IseldoranSagas.")
 row("EcoEnergy brand in Metricool", "STILL NOT PRESENT",

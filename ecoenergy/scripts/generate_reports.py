@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA, DOCS = os.path.join(HERE, "..", "data"), os.path.join(HERE, "..", "docs")
-EDITION, VERSION = 1, 5
+EDITION, VERSION = 1, 6
 TT = timezone(timedelta(hours=-4))
 NOW = datetime.now(TT)
 DATESTR, TIMESTR, FSTAMP = NOW.strftime("%d %B %Y"), NOW.strftime("%H:%M"), NOW.strftime("%Y-%m-%d_%H%M")
@@ -29,13 +29,14 @@ contacted = [p for p in prospects if p["status"] == "OUTREACH SENT"]
 prio = Counter(p["priority"] for p in prospects)
 cycle2 = [p for p in prospects if p["notes"].startswith("CYCLE 2")]
 cycle4 = [p for p in prospects if p["notes"].startswith("CYCLE 4")]
-cycle1 = [p for p in discovered if not p["notes"].startswith(("CYCLE 2", "CYCLE 4"))]
+cycle5 = [p for p in prospects if p["notes"].startswith("CYCLE 5")]
+cycle1 = [p for p in discovered if not p["notes"].startswith(("CYCLE 2", "CYCLE 4", "CYCLE 5"))]
 grades = Counter(p.get("lead_grade", "") for p in prospects)
 def seg(*words):
     return [p for p in prospects if any(w in (p["customer_type"] + " " + p["products_sold"]).lower() for w in words)]
 resellers = seg("hardware", "reseller", "wholesaler", "building materials", "stockpile")
 sellers_analysed = [p for p in prospects if p.get("lead_grade") == "D - MARKET INTELLIGENCE"]
-new_prices = [b for b in benchmarks if "Cycle 4" in b.get("note", "")]
+new_prices = [b for b in benchmarks if "Cycle 5" in b.get("note", "")]
 intel = load("market_intel.json")
 TOPIDS = {"ECO-0050", "ECO-0052", "ECO-0053"}
 
@@ -110,24 +111,28 @@ sr = ["# ECOENERGY LIMITED", "## WEEKLY AGGREGATE SALES REPORT", "",
       "agent has sent nothing.",
       "", "---", "", "## 1A. DAILY REPORT (brief section 21)", "",
       "```",
-      f"NEW PROSPECTS FOUND:            {len(cycle4)}",
+      f"NEW PROSPECTS FOUND:            {len(cycle5)}",
       f"HOT BUYERS (grade A):           {grades.get('A - HOT', 0)}",
       f"STRONG COMMERCIAL (grade B):    {grades.get('B - STRONG', 0)}   (whole book)",
       f"WHOLESALERS / RESELLERS:        {len(resellers)}   (whole book)",
       f"SELLERS / COMPETITORS ANALYSED: {len(sellers_analysed)}   (whole book)",
-      f"NEW MARKET PRICES CAPTURED:     {len(new_prices)}",
+      f"NEW MARKET PRICES CAPTURED:     {len(new_prices)}   (this run; 32 held in total)",
       "OUTREACH SENT:                  0   (this agent; 2 e-mails on record are prior canon)",
       "RESPONSES:                      0",
       "QUOTE REQUESTS:                 0",
       "```",
       "",
-      f"**HOT BUYERS is zero, and that is the headline.** Grade A requires an explicit current",
+      "**HOT BUYERS is zero, and that is the headline.** Grade A requires an explicit current",
       "requirement read from a comment or post. No social platform was accessible, so no comment",
       "thread was read. See section 7.",
+      "",
+      "**No new prices this run.** This sweep targeted public-sector and energy buyers, which publish",
+      "tenders rather than price lists. The 32 observations already held are unchanged.",
       "", "---", "", "## 2. PIPELINE METRICS", "", "| Metric | Value | Note |", "|---|---|---|",
       f"| Discovered cycle 1 | {len(cycle1)} | Directory and category sweep |",
       f"| Discovered cycle 2 | {len(cycle2)} | Quarry-licensing and regional sweep |",
-      f"| Discovered cycle 4 | **{len(cycle4)}** | Social buyer-hunt, this run |",
+      f"| Discovered cycle 4 | {len(cycle4)} | Social buyer-hunt |",
+      f"| Discovered cycle 5 | **{len(cycle5)}** | Public sector, utility and energy sweep, this run |",
       f"| Total discovered to date | {len(discovered)} | Daily target 25 |",
       f"| Against daily target of 25 | **{round(100*len(discovered)/25)}%** | Exceeded |",
       f"| Carried forward from prior canon | {len(merged_in)} | Not counted against the daily target |",

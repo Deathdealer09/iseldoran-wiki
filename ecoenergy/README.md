@@ -9,9 +9,9 @@ Materials: pitrun, 3/8 gravel, 3/4 gravel, plastering sand, sharp sand, sandfill
 ecoenergy/
   EcoEnergy_Aggregate_Sales_Pipeline.xlsx   generated workbook, 6 worksheets
   data/                                     source of truth (JSON)
-    prospects.json         112 prospects (101 discovered, 11 from prior canon)
+    prospects.json         140 prospects (129 discovered, 11 from prior canon)
     benchmarks.json         32 market price observations
-    market_intel.json       11 recorded market intelligence items
+    market_intel.json       13 recorded market intelligence items
     pricing.json             pricing engine output
     communications.json      2 confirmed outbound e-mails (prior canon)
   scripts/
@@ -22,6 +22,7 @@ ecoenergy/
     cycle_03_social.py       social publication record
     cycle_04.py              cycle 4 social buyer-hunt
     cycle_05.py              cycle 4 continued
+    cycle_06.py              cycle 5 public sector and energy sweep
     rebuild.sh               full deterministic rebuild
     seed_pricing.py          benchmarks + pricing engine
     build_workbook.py        regenerates the workbook from data
@@ -66,7 +67,7 @@ See section 6 of the weekly sales report in `docs/`.
 
 ## Channel access
 
-- **Metricool:** connected, but holds no EcoEnergy brand. It is a scheduling and analytics tool for
+- **Metricool:** DISCONNECTED from the session as of 2026-09-12. While connected it held no EcoEnergy brand. It is a scheduling and analytics tool for
   accounts you own, not a prospecting tool, and cannot search any platform for third-party prospects
   or prices.
 - **Facebook, Instagram, TikTok, X, Threads, LinkedIn:** PLATFORM NOT ACCESSIBLE. Tested directly and
