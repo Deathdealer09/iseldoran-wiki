@@ -6,7 +6,7 @@
     "contact_name": "Not publicly listed",
     "customer_type": "Quarry operator - state enterprise",
     "priority": "BENCHMARK",
-    "location": "Sand & Gravel Division, Guaico, Sangre Grande",
+    "location": "Sand & Gravel Division, Guaico, Sangre Grande; Limestone Division, Verdant Vale, Blanchisseuse",
     "phone": "PENDING VERIFICATION",
     "whatsapp": "PENDING VERIFICATION",
     "email": "PENDING VERIFICATION",
@@ -29,7 +29,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Obtain the published NQCL 2025/2026 price list by a channel outside this environment; it is the single most valuable benchmark input.",
-    "notes": "PRIMARY PRICE BENCHMARK. State-owned, established 1979, supplies state enterprises and private sector. Washes pit run to remove clay, then sieves to sharp sand, silt sand, 3/8 and 3/4. Treat as competitor, not customer."
+    "notes": "PRIMARY PRICE BENCHMARK. State-owned, established 1979, supplies state enterprises and private sector. Washes pit run to remove clay, then sieves to sharp sand, silt sand, 3/8 and 3/4. Treat as competitor, not customer. | CYCLE 4 UPDATE (2026-09-12): Second division identified: Limestone Division at Verdant Vale, Blanchisseuse, alongside the Sand and Gravel Division at Guaico, Sangre Grande.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0002",
@@ -61,7 +62,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Hold as the anchor benchmark. Re-verify the four published figures at the Sunday pricing review.",
-    "notes": "ANCHOR BENCHMARK - the only source in this cycle carrying published TTD prices for all four of EcoEnergy's core comparables. Acquired its Matura sand and gravel quarry in 2018. Part of ANSA McAL group via Abel Building Solutions. | CYCLE 2 UPDATE (2026-09-12): Licensed quarry confirmed at the Melajo Forest Reserve, Matura. Named in the Ministry of Energy list of licensed quarry operations reported by Trinidad Express. Confirms licensed producer status."
+    "notes": "ANCHOR BENCHMARK - the only source in this cycle carrying published TTD prices for all four of EcoEnergy's core comparables. Acquired its Matura sand and gravel quarry in 2018. Part of ANSA McAL group via Abel Building Solutions. | CYCLE 2 UPDATE (2026-09-12): Licensed quarry confirmed at the Melajo Forest Reserve, Matura. Named in the Ministry of Energy list of licensed quarry operations reported by Trinidad Express. Confirms licensed producer status.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0003",
@@ -93,7 +95,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Monitor as competitor. Approach only for shortfall/overflow supply if their own plants run short.",
-    "notes": "Vertically integrated - own aggregate feeds own concrete. Low probability as a buyer; tracked as a competitor and as a possible overflow-supply counterparty."
+    "notes": "Vertically integrated - own aggregate feeds own concrete. Low probability as a buyer; tracked as a competitor and as a possible overflow-supply counterparty. | CYCLE 4 UPDATE (2026-09-12): Operation at Tapana, Valencia is cited by the Environmental Management Authority as a model operation. Group trading over 70 years.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0004",
@@ -125,7 +128,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Position as bulk wholesale top-up supply for road contracts.",
-    "notes": "Dual profile: both a competitor (sells aggregate) and a high-value prospect (large road/highway contractor consuming aggregate). Also listed under general civil engineering contractors, highway and road building, bridges."
+    "notes": "Dual profile: both a competitor (sells aggregate) and a high-value prospect (large road/highway contractor consuming aggregate). Also listed under general civil engineering contractors, highway and road building, bridges.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0005",
@@ -157,7 +161,8 @@
     "last_contact": "",
     "next_followup": "2026-09-22",
     "next_action": "Verify product range and published pricing; add to benchmark set if pricing is public.",
-    "notes": "Identified only by name in a secondary article; own website not confirmed. Low-confidence record - verify existence and trading status before any outreach."
+    "notes": "Identified only by name in a secondary article; own website not confirmed. Low-confidence record - verify existence and trading status before any outreach.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0006",
@@ -189,7 +194,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone 868-750-1625 and open the wholesale supply conversation. Contact route is live, so this no longer needs detail verification.",
-    "notes": "Name indicates a pure aggregate supply business, so it must buy from a quarry. High-fit wholesale prospect. Directory page blocked by egress policy - contact details not retrieved. | MERGED 2026-09-12 from the prior EcoEnergy workbook: telephone 868-750-1625 and Charlieville location supplied by prior canon. Prior record listed this as an aggregate/paving materials supplier with no published price, priority Medium. Duplicate avoided per section 10."
+    "notes": "Name indicates a pure aggregate supply business, so it must buy from a quarry. High-fit wholesale prospect. Directory page blocked by egress policy - contact details not retrieved. | MERGED 2026-09-12 from the prior EcoEnergy workbook: telephone 868-750-1625 and Charlieville location supplied by prior canon. Prior record listed this as an aggregate/paving materials supplier with no published price, priority Medium. Duplicate avoided per section 10.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0007",
@@ -221,7 +227,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Probe for site/yard fill and process sand requirements.",
-    "notes": "Clay products rather than aggregate, so not a direct competitor. Possible buyer of fill and sand for site works and blending."
+    "notes": "Clay products rather than aggregate, so not a direct competitor. Possible buyer of fill and sand for site works and blending.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0008",
@@ -253,7 +260,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Target procurement/purchasing manager. Lead with contracted weekly supply and up-to-30% negotiated volume terms.",
-    "notes": "Operating since 1959. Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment."
+    "notes": "Operating since 1959. Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0009",
@@ -285,7 +293,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Tobago operation may carry a freight premium EcoEnergy can undercut - quantify before approach.",
-    "notes": "Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment."
+    "notes": "Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0010",
@@ -294,7 +303,7 @@
     "contact_name": "Not publicly listed",
     "customer_type": "Ready-mix concrete producer",
     "priority": "TIER 1",
-    "location": "Caroni",
+    "location": "Caroni; a Scarborough, Tobago presence is also reported (unconfirmed)",
     "phone": "PENDING VERIFICATION",
     "whatsapp": "PENDING VERIFICATION",
     "email": "PENDING VERIFICATION",
@@ -317,7 +326,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment."
+    "notes": "Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment. | CYCLE 4 UPDATE (2026-09-12): A Premix Concrete Ltd presence is reported in Scarborough, Tobago in addition to the Caroni listing. Confirm whether this is one company with two plants or two separate entities before contact.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0011",
@@ -349,7 +359,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "Confirm this is a distinct entity from Readymix (W.I.) Ltd before outreach - names are close. Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment."
+    "notes": "Confirm this is a distinct entity from Readymix (W.I.) Ltd before outreach - names are close. Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0012",
@@ -381,7 +392,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment."
+    "notes": "Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0013",
@@ -413,7 +425,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Newer and scaling - more likely than incumbents to switch supplier on price.",
-    "notes": "Growth-stage subsidiary. Newly independent operations are the most winnable block-plant targets. Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment."
+    "notes": "Growth-stage subsidiary. Newly independent operations are the most winnable block-plant targets. Ready-mix and block plants are the highest-value recurring aggregate consumers in the market - continuous sharp sand and gravel draw. Priority segment.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0014",
@@ -445,7 +458,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Track as the anchor price benchmark alongside its Bestcrete quarry arm.",
-    "notes": "Same group as Bestcrete Aggregate Ltd - self-supplied, so not a buyer. Retained because it sets the published retail/bulk benchmark EcoEnergy prices against. | CYCLE 2 UPDATE (2026-09-12): Group licensed quarry confirmed at Depot Road, Longdenville (listed as ANSA McAL Limited). Named in the Ministry of Energy list of licensed quarry operations reported by Trinidad Express. Confirms licensed producer status."
+    "notes": "Same group as Bestcrete Aggregate Ltd - self-supplied, so not a buyer. Retained because it sets the published retail/bulk benchmark EcoEnergy prices against. | CYCLE 2 UPDATE (2026-09-12): Group licensed quarry confirmed at Depot Road, Longdenville (listed as ANSA McAL Limited). Named in the Ministry of Energy list of licensed quarry operations reported by Trinidad Express. Confirms licensed producer status.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0015",
@@ -477,7 +491,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify head-office procurement contact. Approach as a multi-branch supply agreement, not a single-store sale.",
-    "notes": "Highest strategic value in the hardware segment: one agreement supplies many branches. Address is from a D&B listing and must be re-confirmed before use. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "Highest strategic value in the hardware segment: one agreement supplies many branches. Address is from a D&B listing and must be re-confirmed before use. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0016",
@@ -509,7 +524,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "HOT - verify contact from the Facebook page, then approach directly on wholesale truckload supply.",
-    "notes": "STRONGEST RESELLER SIGNAL IN THIS CYCLE. The advertisement wording 'contact the supplier' indicates they broker/resell third-party material rather than produce it - exactly EcoEnergy's wholesale target. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "STRONGEST RESELLER SIGNAL IN THIS CYCLE. The advertisement wording 'contact the supplier' indicates they broker/resell third-party material rather than produce it - exactly EcoEnergy's wholesale target. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0017",
@@ -518,7 +534,7 @@
     "contact_name": "Not publicly listed",
     "customer_type": "Hardware store selling aggregate",
     "priority": "TIER 1",
-    "location": "Trinidad",
+    "location": "Lower Milford Road, Scarborough, Tobago",
     "phone": "PENDING VERIFICATION",
     "whatsapp": "PENDING VERIFICATION",
     "email": "PENDING VERIFICATION",
@@ -540,8 +556,9 @@
     "status": "DISCOVERED",
     "last_contact": "",
     "next_followup": "2026-09-15",
-    "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "next_action": "Cost the Tobago barge leg BEFORE quoting. They confirmedly sell sand, gravel and sharp sand, so the fit is good but the freight decides viability.",
+    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price. | CYCLE 4 UPDATE (2026-09-12): Location established: Lower Milford Road, Scarborough, TOBAGO. Previously held as 'Trinidad' with no location. This changes the commercial picture: any quote must carry the inter-island freight leg.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0018",
@@ -573,7 +590,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0019",
@@ -605,7 +623,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Wholesale buyer profile - qualifies for the upper discount band if volume supports it.",
-    "notes": "Aggregate not confirmed in their current range, so this is both a supply opportunity and a range-extension pitch. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "Aggregate not confirmed in their current range, so this is both a supply opportunity and a range-extension pitch. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0020",
@@ -637,7 +656,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Online catalogue makes listed aggregate pricing easy to verify - check before contact.",
-    "notes": "Online storefront means published prices are likely retrievable, which also makes this a benchmark source. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "Online storefront means published prices are likely retrievable, which also makes this a benchmark source. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0021",
@@ -669,7 +689,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "COMPETITIVE DISPLACEMENT - they currently buy Bestcrete. Verify contact and quote against the bagged-equivalent rate.",
-    "notes": "Known current supplier is Bestcrete, so the switching pitch is concrete and measurable. Also a live retail benchmark source. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "Known current supplier is Bestcrete, so the switching pitch is concrete and measurable. Also a live retail benchmark source. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0022",
@@ -701,7 +722,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0023",
@@ -733,7 +755,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0024",
@@ -765,7 +788,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Model inter-island freight to Tobago BEFORE quoting - barge cost may decide whether this is viable.",
-    "notes": "TOBAGO MARKET. Tobago buyers pay a freight premium on Trinidad material; margin depends entirely on shipping economics. Do not quote before costing the barge leg. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "TOBAGO MARKET. Tobago buyers pay a freight premium on Trinidad material; margin depends entirely on shipping economics. Do not quote before costing the barge leg. RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0025",
@@ -797,7 +821,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0026",
@@ -829,7 +854,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price."
+    "notes": "RESELLER TARGET - already sells aggregate, therefore already buys it. Pitch wholesale purchase price and reseller spread, not retail price.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0027",
@@ -861,7 +887,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Ask which projects are in construction now and what monthly tonnage they carry.",
-    "notes": "Established 1959. Sea defence and precast work implies armour stone and high-spec aggregate demand. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history."
+    "notes": "Established 1959. Sea defence and precast work implies armour stone and high-spec aggregate demand. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0028",
@@ -893,7 +920,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Lead with pitrun and road base, which is where paving contractors buy most.",
-    "notes": "Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history."
+    "notes": "Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0029",
@@ -925,7 +953,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "Revenue figure is from a third-party aggregator and is unverified. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history."
+    "notes": "Revenue figure is from a third-party aggregator and is unverified. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0030",
@@ -957,7 +986,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list.",
-    "notes": "Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history."
+    "notes": "Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0031",
@@ -989,7 +1019,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Earthworks firms are the natural home for pitrun and backfill volume - lead there.",
-    "notes": "Own transport fleet means they may collect ex-quarry, which improves EcoEnergy's margin. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history. | CYCLE 2 UPDATE (2026-09-12): MATERIAL PROFILE CHANGE. Seereeram Brothers holds a licensed quarry at Cangrejal Road, Santa Cruz. They are a PRODUCER, not just a consumer, so the wholesale pitch is wrong for them. Reclassified from TIER 1 to BENCHMARK. Approach only for overflow or swap supply. Named in the Ministry of Energy list of licensed quarry operations reported by Trinidad Express. Confirms licensed producer status."
+    "notes": "Own transport fleet means they may collect ex-quarry, which improves EcoEnergy's margin. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history. | CYCLE 2 UPDATE (2026-09-12): MATERIAL PROFILE CHANGE. Seereeram Brothers holds a licensed quarry at Cangrejal Road, Santa Cruz. They are a PRODUCER, not just a consumer, so the wholesale pitch is wrong for them. Reclassified from TIER 1 to BENCHMARK. Approach only for overflow or swap supply. Named in the Ministry of Energy list of licensed quarry operations reported by Trinidad Express. Confirms licensed producer status.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0032",
@@ -1021,7 +1052,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Emerging firms are price-sensitive and switch readily - good discount-led target.",
-    "notes": "Address from directory listing, to be re-confirmed. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history."
+    "notes": "Address from directory listing, to be re-confirmed. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0033",
@@ -1053,7 +1085,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Drainage works consume graded gravel steadily - lead with 3/4.",
-    "notes": "Established 2017 - younger firm, likely still forming supplier relationships. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history."
+    "notes": "Established 2017 - younger firm, likely still forming supplier relationships. Contractor profile - aggregate is a project input. Volume is lumpy and project-driven, so qualify on current project pipeline, not on history.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0034",
@@ -1085,7 +1118,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Locate HDC supplier/vendor registration and procurement notices; register EcoEnergy as an approved aggregate supplier.",
-    "notes": "The Infill Lots component explicitly uses SMALL CONTRACTORS - those contractors buy their own materials and are individually winnable without a state tender. Mine that contractor list. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume."
+    "notes": "The Infill Lots component explicitly uses SMALL CONTRACTORS - those contractors buy their own materials and are individually winnable without a state tender. Mine that contractor list. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0035",
@@ -1117,7 +1151,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Identify the procurement route; CCL manages contractor procurement, so approval here reaches many downstream contractors.",
-    "notes": "Controls contractor procurement for HDC residential work - high leverage. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume."
+    "notes": "Controls contractor procurement for HDC residential work - high leverage. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0036",
@@ -1149,7 +1184,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Track published tender notices. Reclamation and sea defence work is the single largest fill opportunity available.",
-    "notes": "Reclamation projects consume enormous volumes of fill and rock. Highest theoretical volume in the pipeline. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume."
+    "notes": "Reclamation projects consume enormous volumes of fill and rock. Highest theoretical volume in the pipeline. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0037",
@@ -1181,7 +1217,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Monitor tender notices; register as a supplier where a standing vendor list exists.",
-    "notes": "STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume."
+    "notes": "STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0038",
@@ -1213,7 +1250,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Identify procurement portal and vendor registration requirements.",
-    "notes": "Revenue figure is third-party and unverified. NIPDEC also acts as a procurement agent for other state bodies, which multiplies reach. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume."
+    "notes": "Revenue figure is third-party and unverified. NIPDEC also acts as a procurement agent for other state bodies, which multiplies reach. STATE ENTITY - purchasing runs through formal tender and vendor registration. The action is to register as an approved supplier, not to cold-sell. Long lead time, very high volume.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0039",
@@ -1245,7 +1283,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "HIGH FIT - verify contact and pitch wholesale supply behind their existing aggregate offering.",
-    "notes": "Serves both domestic and corporate clients, so they need consistent supply across order sizes. Strong reseller fit AND a potential delivery partner. Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both."
+    "notes": "Serves both domestic and corporate clients, so they need consistent supply across order sizes. Strong reseller fit AND a potential delivery partner. Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0040",
@@ -1277,7 +1316,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Dual pitch: material for their civil works, and haulage capacity for EcoEnergy's southern deliveries.",
-    "notes": "Established 1998, serves major energy-sector clients - implies reliability standards and creditworthiness. Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both."
+    "notes": "Established 1998, serves major energy-sector clients - implies reliability standards and creditworthiness. Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0041",
@@ -1309,7 +1349,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Qualify primarily as a delivery partner; secondarily as a material buyer.",
-    "notes": "Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both."
+    "notes": "Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0042",
@@ -1341,7 +1382,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Qualify as a delivery partner first.",
-    "notes": "Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both."
+    "notes": "Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0043",
@@ -1373,7 +1415,8 @@
     "last_contact": "",
     "next_followup": "2026-09-22",
     "next_action": "Low priority - qualify by telephone before any commercial effort.",
-    "notes": "Minimal public information. Confirm still trading before spending effort. Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both."
+    "notes": "Minimal public information. Confirm still trading before spending effort. Trucking profile - two ways to win: sell them material to resell on their own delivered jobs, or use their fleet to extend EcoEnergy's delivery radius. Qualify for both.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0044",
@@ -1405,7 +1448,8 @@
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Verify direct telephone/e-mail from company website, then issue wholesale introduction letter and current price list. Largest of the landscaping targets - work this one individually.",
-    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually."
+    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0045",
@@ -1437,7 +1481,8 @@
     "last_contact": "",
     "next_followup": "2026-09-22",
     "next_action": "Include in the batched landscaping campaign.",
-    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually."
+    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0046",
@@ -1469,7 +1514,8 @@
     "last_contact": "",
     "next_followup": "2026-09-22",
     "next_action": "Include in the batched landscaping campaign.",
-    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually."
+    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0047",
@@ -1501,7 +1547,8 @@
     "last_contact": "",
     "next_followup": "2026-09-22",
     "next_action": "Include in the batched landscaping campaign.",
-    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually."
+    "notes": "Landscaping profile - low individual volume but steady, and sand and decorative aggregate carry good margin. Batch these into one campaign rather than working them individually.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0048",
@@ -1512,7 +1559,7 @@
     "priority": "TIER 2",
     "location": "Trinidad (nationwide delivery advertised)",
     "phone": "PENDING VERIFICATION",
-    "whatsapp": "PENDING VERIFICATION",
+    "whatsapp": "474-4005 (from search summary - CONFIRM BEFORE USE)",
     "email": "PENDING VERIFICATION",
     "facebook": "PENDING VERIFICATION",
     "instagram": "PENDING VERIFICATION",
@@ -1529,11 +1576,12 @@
     "observed_price": "Listings on the same marketplace: 3/4 white deco stone TTD 500/yd; 2in crush stone TTD 375/yd; assorted gravel TTD 200-400/yd",
     "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
     "potential_discount": "",
-    "status": "DISCOVERED",
+    "status": "CONTACT AVAILABLE",
     "last_contact": "",
     "next_followup": "2026-09-17",
     "next_action": "Re-locate the listing and capture the advertised WhatsApp number by a channel with Facebook access, then approach on wholesale supply.",
-    "notes": "IDENTITY NOT ESTABLISHED. The listing advertises a WhatsApp number but Facebook is not reachable from this environment, so the number was NOT captured and has NOT been guessed. Record is retained because the buying signal is genuine and recoverable."
+    "notes": "IDENTITY NOT ESTABLISHED. The listing advertises a WhatsApp number but Facebook is not reachable from this environment, so the number was NOT captured and has NOT been guessed. Record is retained because the buying signal is genuine and recoverable. | CYCLE 4 UPDATE (2026-09-12): PUBLIC WHATSAPP SURFACED: 474-4005, advertised on the Marketplace listing alongside nationwide delivery. Recovered from a search-result summary, NOT read from the listing itself, so confirm the number before dialling. Recorded under section 13 as a publicly displayed commercial contact.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0049",
@@ -1565,7 +1613,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live. Load pricing is published, so the reseller spread can be quantified before the call.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Wholesale/repeat reseller supply | CYCLE 2 UPDATE (2026-09-12): Facebook business page located at facebook.com/onthelinehardware."
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Wholesale/repeat reseller supply | CYCLE 2 UPDATE (2026-09-12): Facebook business page located at facebook.com/onthelinehardware.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0050",
@@ -1574,7 +1623,7 @@
     "contact_name": "Not publicly listed",
     "customer_type": "Hardware / reseller",
     "priority": "TIER 1",
-    "location": "San Juan",
+    "location": "Eastern Main Road, San Juan / Port of Spain corridor",
     "phone": "625-7326",
     "whatsapp": "747-6941 / 332-5433",
     "email": "PENDING VERIFICATION",
@@ -1597,7 +1646,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live. Their sharp sand retails at TT$450/yd against an EcoEnergy base of TT$167.06, so lead with the spread.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Large reseller margin possible"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Large reseller margin possible | CYCLE 4 UPDATE (2026-09-12): Location refined to Eastern Main Road, in the Port of Spain / San Juan corridor.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0051",
@@ -1629,7 +1679,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live. Also qualify as an overflow supply source, not only as a buyer.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Wholesale supply / overflow source"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Wholesale supply / overflow source",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0052",
@@ -1654,14 +1705,15 @@
     "products_sold": "Aggregate; gravel/sand mixes; backfill; sandfill; crusher run / blue metal (8-yard loads, M3, bagged); ballast (1/2 x 1/2 gravel with sharp sand, 10 and 11 yard loads)",
     "est_volume": "Not stated - to establish on contact",
     "purchase_freq": "Not stated - to establish on contact",
-    "observed_price": "3/8 mix 8yd TT$2,300; 10yd aggregate mix TT$3,000; sharp sand TT$440/yd; backfill 8yd TT$1,125; sandfill 10yd TT$1,265.63",
+    "observed_price": "3/8 mix 8yd TT$2,300; 10yd aggregate mix TT$3,000; sharp sand TT$440/yd; backfill 8yd TT$1,125; sandfill 10yd TT$1,265.63; crusher run/blue metal 8yd TT$3,000 (TT$375/yd3)",
     "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
     "potential_discount": "Up to 30% subject to qualification",
     "status": "CONTACT AVAILABLE",
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live. Their published catalogue is also the benchmark source for backfill and sand fill, so keep it monitored.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Strong reseller prospect | CYCLE 2 UPDATE (2026-09-12): Online catalogue carries a wider aggregate range than first recorded: crusher run and blue metal by the 8-yard load, by cubic metre and bagged, plus ballast in 10 and 11 yard loads. Their catalogue is a standing benchmark source."
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Strong reseller prospect | CYCLE 2 UPDATE (2026-09-12): Online catalogue carries a wider aggregate range than first recorded: crusher run and blue metal by the 8-yard load, by cubic metre and bagged, plus ballast in 10 and 11 yard loads. Their catalogue is a standing benchmark source. | CYCLE 4 UPDATE (2026-09-12): PRICE CAPTURED: 8 yard load crusher run / blue metal advertised at TT$3,000, which is TT$375/yd3. This is the first hard per-yard figure captured for crusher run.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0053",
@@ -1693,7 +1745,8 @@
     "last_contact": "2026-09-12",
     "next_followup": "2026-09-15",
     "next_action": "CORRECTED QUOTATION REQUIRED. The e-mail of 2026-09-12 quoted TT$125 / 195 / 205 per yd3 for pitrun / 3/8 / 3/4. All three sit ABOVE the canon list price of TT$77.63 / 167.06 / 167.06. Issue a corrected quotation at list before any follow-up.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches. PRICING EXCEPTION - see COMMUNICATIONS LOG and the corrected-quotation action. EcoEnergy opportunity as previously assessed: Wholesale supply"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches. PRICING EXCEPTION - see COMMUNICATIONS LOG and the corrected-quotation action. EcoEnergy opportunity as previously assessed: Wholesale supply",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0054",
@@ -1725,7 +1778,8 @@
     "last_contact": "2026-09-12",
     "next_followup": "2026-09-15",
     "next_action": "Follow up on the 2026-09-12 introduction and qualify material and volume. No price was quoted, so no correction is needed.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Project/contract supply"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Project/contract supply",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0055",
@@ -1757,7 +1811,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Wholesale reseller"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Wholesale reseller",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0056",
@@ -1789,7 +1844,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live. Qualify for both material supply and haulage capacity.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Distribution / trucking / resale"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Distribution / trucking / resale",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0057",
@@ -1821,7 +1877,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Reseller supply"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Reseller supply",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0058",
@@ -1853,7 +1910,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Reseller supply"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Reseller supply",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0059",
@@ -1885,7 +1943,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live.",
-    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Reseller supply"
+    "notes": "CARRIED FORWARD FROM PRIOR CANON. Contact details below were verified in the prior workbook and are NOT the product of this cycle's searches.  EcoEnergy opportunity as previously assessed: Reseller supply",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0060",
@@ -1917,7 +1976,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone and open the wholesale supply conversation. Contact route is live. Pure aggregate business, so lead straight to wholesale pricing.",
-    "notes": "CYCLE 2 (2026-09-12). STRONGEST NEW FIT THIS CYCLE. Dedicated aggregate trader with a published telephone number. RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). STRONGEST NEW FIT THIS CYCLE. Dedicated aggregate trader with a published telephone number. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0061",
@@ -1949,7 +2009,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. They advertise three sand and gravel lines with delivery, so the range fits directly.",
-    "notes": "CYCLE 2 (2026-09-12). Established 1956 and described as a leading T&T hardware. RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). Established 1956 and described as a leading T&T hardware. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0062",
@@ -1981,7 +2042,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Stockpile operators buy in bulk and hold inventory, which is the ideal recurring wholesale profile.",
-    "notes": "CYCLE 2 (2026-09-12). Stockpile operators are named explicitly in section 2 as a Tier 1 target. They run a stockpile to segregate grades and keep steady supply, and deliver nationwide at cost. RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). Stockpile operators are named explicitly in section 2 as a Tier 1 target. They run a stockpile to segregate grades and keep steady supply, and deliver nationwide at cost. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0063",
@@ -2013,7 +2075,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
-    "notes": "CYCLE 2 (2026-09-12). Northeast location sits near the quarry belt, so haulage is short. RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). Northeast location sits near the quarry belt, so haulage is short. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0064",
@@ -2045,7 +2108,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
-    "notes": "CYCLE 2 (2026-09-12). Established 1997. RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). Established 1997. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0065",
@@ -2077,7 +2141,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
-    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0066",
@@ -2109,7 +2174,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
-    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0067",
@@ -2141,7 +2207,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Dual profile, so qualify for both resale and site consumption.",
-    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0068",
@@ -2173,7 +2240,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. A discounter lives on purchase price, which is exactly EcoEnergy's lever.",
-    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0069",
@@ -2205,7 +2273,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Confirm trading status and exact business name before any approach.",
-    "notes": "CYCLE 2 (2026-09-12). Thin record. Directory listing only, and the name may be a directory rendering rather than the registered trading name. Verify before spending effort. RESELLER TARGET - already sells aggregate, therefore already buys it."
+    "notes": "CYCLE 2 (2026-09-12). Thin record. Directory listing only, and the name may be a directory rendering rather than the registered trading name. Verify before spending effort. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0070",
@@ -2237,7 +2306,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Point Lisas sits in the heaviest industrial corridor in the country.",
-    "notes": "CYCLE 2 (2026-09-12). Not previously held. Ready-mix plants are the highest continuous aggregate draw in the market."
+    "notes": "CYCLE 2 (2026-09-12). Not previously held. Ready-mix plants are the highest continuous aggregate draw in the market.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0071",
@@ -2269,7 +2339,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
-    "notes": "CYCLE 2 (2026-09-12). Precast is a steady, quality-sensitive aggregate buyer."
+    "notes": "CYCLE 2 (2026-09-12). Precast is a steady, quality-sensitive aggregate buyer.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0072",
@@ -2301,7 +2372,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Prestressed work demands consistent high-spec aggregate, so quality is the lead, not price.",
-    "notes": "CYCLE 2 (2026-09-12). Serves the Caribbean and northeastern South America, so volumes may exceed the domestic picture."
+    "notes": "CYCLE 2 (2026-09-12). Serves the Caribbean and northeastern South America, so volumes may exceed the domestic picture.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0073",
@@ -2333,7 +2405,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. An asphalt plant buys graded aggregate by the thousand tonnes. Lead with consistent grading.",
-    "notes": "CYCLE 2 (2026-09-12). In construction since 1945 and producing asphalt since 2000. Asphalt producers are among the largest aggregate consumers in any market."
+    "notes": "CYCLE 2 (2026-09-12). In construction since 1945 and producing asphalt since 2000. Asphalt producers are among the largest aggregate consumers in any market.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0074",
@@ -2365,7 +2438,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Drainage installation consumes graded gravel and backfill steadily.",
-    "notes": "CYCLE 2 (2026-09-12). Drainage work is a strong fit for the backfill and sandfill lines now priced."
+    "notes": "CYCLE 2 (2026-09-12). Drainage work is a strong fit for the backfill and sandfill lines now priced.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0075",
@@ -2397,7 +2471,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Identify the procurement route. State entity, so expect vendor registration and tender.",
-    "notes": "CYCLE 2 (2026-09-12). State entity. Long lead time through formal procurement."
+    "notes": "CYCLE 2 (2026-09-12). State entity. Long lead time through formal procurement.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0076",
@@ -2429,7 +2504,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
-    "notes": "CYCLE 2 (2026-09-12). Paving contractors buy road base and pitrun in volume."
+    "notes": "CYCLE 2 (2026-09-12). Paving contractors buy road base and pitrun in volume.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0077",
@@ -2461,7 +2537,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
-    "notes": "CYCLE 2 (2026-09-12). Confirm this is distinct from Carib Asphalt Pavers (ECO-0030) before approach."
+    "notes": "CYCLE 2 (2026-09-12). Confirm this is distinct from Carib Asphalt Pavers (ECO-0030) before approach.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0078",
@@ -2493,7 +2570,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Low priority. Qualify material need by telephone before any commercial effort.",
-    "notes": "CYCLE 2 (2026-09-12). Mastic asphalt and waterproofing use far less bulk aggregate than roadbuilding. Weak fit."
+    "notes": "CYCLE 2 (2026-09-12). Mastic asphalt and waterproofing use far less bulk aggregate than roadbuilding. Weak fit.",
+    "lead_grade": "B - STRONG"
   },
   {
     "prospect_id": "ECO-0079",
@@ -2525,7 +2603,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Monitor pricing. Approach only for overflow or swap supply.",
-    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty."
+    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0080",
@@ -2557,7 +2636,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Monitor. State entity holding two licensed sites, so also a possible supply partner.",
-    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty. State-owned land development company, so its quarrying is secondary to its main business."
+    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty. State-owned land development company, so its quarrying is secondary to its main business.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0081",
@@ -2589,7 +2669,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Monitor pricing. Matura site, so same catchment as Bestcrete.",
-    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty."
+    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0082",
@@ -2621,7 +2702,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Qualify carefully. They produce their own aggregate, so only their construction arm could buy.",
-    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty. Dual profile, so the construction side may still buy grades they do not produce."
+    "notes": "CYCLE 2 (2026-09-12). LICENSED QUARRY OPERATOR. Competitor and benchmark, not a wholesale buyer. Track pricing and treat as a possible overflow or swap counterparty. Dual profile, so the construction side may still buy grades they do not produce.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
   },
   {
     "prospect_id": "ECO-0083",
@@ -2653,7 +2735,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Treat as a referral channel rather than a buyer. Their clients are quarry and aggregate operators.",
-    "notes": "CYCLE 2 (2026-09-12). CHANNEL PARTNER, not a prospect in the usual sense. Equipment suppliers know every operator in the sector and their introductions carry weight."
+    "notes": "CYCLE 2 (2026-09-12). CHANNEL PARTNER, not a prospect in the usual sense. Equipment suppliers know every operator in the sector and their introductions carry weight.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0084",
@@ -2685,7 +2768,8 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Telephone to establish what they actually trade before any commercial effort.",
-    "notes": "CYCLE 2 (2026-09-12). Contact route is live but the line of business is NOT established. Qualify first. Recorded because the telephone number is published and verification is cheap."
+    "notes": "CYCLE 2 (2026-09-12). Contact route is live but the line of business is NOT established. Qualify first. Recorded because the telephone number is published and verification is cheap.",
+    "lead_grade": "C - POTENTIAL"
   },
   {
     "prospect_id": "ECO-0085",
@@ -2717,6 +2801,898 @@
     "last_contact": "",
     "next_followup": "2026-09-15",
     "next_action": "Establish whether EcoEnergy is or should be a member. Membership gives licensing intelligence and direct access to every producer in the sector.",
-    "notes": "CYCLE 2 (2026-09-12). STRATEGIC CONTACT, not a buyer. TTAPA is the centre of the licensing dispute driving the current supply disruption. Whoever sits inside it sees the shortage coming first."
+    "notes": "CYCLE 2 (2026-09-12). STRATEGIC CONTACT, not a buyer. TTAPA is the centre of the licensing dispute driving the current supply disruption. Whoever sits inside it sees the shortage coming first.",
+    "lead_grade": "D - MARKET INTELLIGENCE"
+  },
+  {
+    "prospect_id": "ECO-0086",
+    "date_identified": "2026-09-12",
+    "company": "Ramcharan's Hardware & Lumber Gravel & Sand",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / lumber / aggregate reseller",
+    "priority": "TIER 1",
+    "location": "4 Fifth Street, San Juan",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Google Web Search (public index)",
+    "source_url": "https://www.bizexposed.com/Trinidad_and_Tobago/B/Ramcharans_Hardware_and_Lumber_Gravel_and_Sand-San_Juan.php",
+    "buying_signal": "Carries GRAVEL & SAND in its registered trading name, so aggregate is a core line, not a sideline.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Gravel; sand; hardware; lumber",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Aggregate is in the business name, so lead straight to wholesale supply.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. One of the strongest reseller signals available: the trade name itself declares the product. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0087",
+    "date_identified": "2026-09-12",
+    "company": "Central Concrete and Pumps Limited (CCAPL)",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Ready-mix + aggregate supplier",
+    "priority": "TIER 1",
+    "location": "Couva",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "https://www.facebook.com/ccapl/",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Facebook business page (via public search index)",
+    "source_url": "https://www.facebook.com/ccapl/",
+    "buying_signal": "Supplies ready-mixed concrete, concrete pump rentals AND aggregate materials. Advertises readymix at TT$785/m3 VAT inclusive, 21N 3000 PSI, central Trinidad.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Ready-mixed concrete; concrete pump rental; aggregate materials",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Readymix concrete TT$785/m3 VAT inclusive (21N, 3000 PSI), central Trinidad",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Dual profile: they consume aggregate for readymix AND resell it. Pitch both.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Located in Couva, the top geographic priority in section 18. Publishes its own pricing, which also makes it a standing benchmark source. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0088",
+    "date_identified": "2026-09-12",
+    "company": "Sand & Gravel Direct",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Aggregate supplier / reseller",
+    "priority": "TIER 1",
+    "location": "Trinidad",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "https://www.facebook.com/SandAndGravelDirect/",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Facebook business page (via public search index)",
+    "source_url": "https://www.facebook.com/SandAndGravelDirect/",
+    "buying_signal": "Facebook business page offering a range of sand and gravel products for projects from the smallest to larger developments.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Sand; gravel; aggregate products",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Pure aggregate trader, so wholesale supply is the whole conversation.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Page content could not be opened. PLATFORM NOT ACCESSIBLE, so the page and any comments beneath its posts remain unmined. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0089",
+    "date_identified": "2026-09-12",
+    "company": "Trinidad Sand & Gravel Ltd",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Aggregate supplier",
+    "priority": "TIER 1",
+    "location": "Trinidad",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "TNT Yellow directory (via public search index)",
+    "source_url": "https://www.tntyellow.com/company/25504/Trinidad_Sand_Gravel_Ltd",
+    "buying_signal": "Supplies construction aggregates. Registered in the T&T Yellow Pages since 29 March 2012.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Aggregates; construction materials",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Dedicated aggregate business, so it must buy from a quarry.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Directory lists a contact number and e-mail but the page could not be fetched, so neither was captured. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0090",
+    "date_identified": "2026-09-12",
+    "company": "Trinidad Blocks Company Limited",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Block manufacturer",
+    "priority": "TIER 1",
+    "location": "260-262 Mon Desir Road, South Oropouche, Siparia",
+    "phone": "(868) 677-5130",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "https://www.facebook.com/trinidadblockscompanyltd/",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "T&T Manufacturers Association directory (via public search index)",
+    "source_url": "http://ttmanufacturers.memberzone.com/list/member/trinidad-blocks-company-limited-siparia-459",
+    "buying_signal": "Manufactures concrete products for commercial, residential and industrial use. Block plants draw sand and gravel continuously.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Concrete blocks and concrete products",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "CONTACT AVAILABLE",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Telephone and open the wholesale supply conversation. Contact route is live. Block plant with a published number. Highest-value callable lead this cycle.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Part of the Clint Arjoon Group. Published telephone (868) 677-5130, fax (868) 677-4956. Block manufacturing is a continuous aggregate draw.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0091",
+    "date_identified": "2026-09-12",
+    "company": "Trincross Enterprises Ltd",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / plant sales",
+    "priority": "TIER 1",
+    "location": "Penal",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Google Web Search (public index)",
+    "source_url": "https://www.findyello.com/trinidad/HARDWARE-STORES/",
+    "buying_signal": "Described as Penal's first hardware store, family run with over 40 years in hardware and plant sales.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware; plant sales",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Penal is a section 18 priority area and they also sell plant, so they know every contractor locally.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Long-established southern hardware. Plant sales means contractor relationships worth tapping. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0092",
+    "date_identified": "2026-09-12",
+    "company": "B&A Harrinanan Hardware Ltd.",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / building materials",
+    "priority": "TIER 2",
+    "location": "Valencia old road, Valencia, Saint Andrew",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "https://www.facebook.com/p/BA-Harrinanan-Hardware-Ltd-100054348438466/",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Facebook business page (via public search index)",
+    "source_url": "https://www.facebook.com/p/BA-Harrinanan-Hardware-Ltd-100054348438466/",
+    "buying_signal": "Advertises all building materials at reasonable prices.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Building materials",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Valencia sits beside the Coosal's Tapana operation and the quarry belt, so haulage is short.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Competing on price by its own advertising, which makes purchase cost the lever. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0093",
+    "date_identified": "2026-09-12",
+    "company": "D & A Hardware and Contractors Ltd",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware + contractor",
+    "priority": "TIER 1",
+    "location": "#66 Eastern Main Road, No. 2 Guaico, Sangre Grande",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Dun & Bradstreet (via public search index)",
+    "source_url": "https://www.dnb.com/business-directory/company-profiles.d__a_hardware_and_contractors_ltd.ade933b0cb00becdbd67694293b5f1c2.html",
+    "buying_signal": "Hardware supplier that also contracts, so it both resells material and consumes it on site.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware; plumbing and heating equipment; contracting",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Dual profile. Sited at Guaico, beside the NQCL Sand and Gravel Division.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Guaico location is significant: NQCL's sand and gravel division is there, so this business is already inside a quarry catchment and will compare EcoEnergy against NQCL directly. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0094",
+    "date_identified": "2026-09-12",
+    "company": "Northeastern Hardware Ltd (Sangre Grande)",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / building supplies",
+    "priority": "TIER 2",
+    "location": "Sangre Grande Town, Saint Andrew",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "TNT Yellow directory (via public search index)",
+    "source_url": "https://www.tntyellow.com/category/Hardware_Stores/city:Sangre_Grande",
+    "buying_signal": "Hardware supplier carrying lumber, plumbing, electrical and tiles.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Lumber; plumbing; electrical; tiles; hardware",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Confirm whether this is the same entity as ECO-0063 before contact.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. POSSIBLE DUPLICATE of ECO-0063 Northeastern Hardware Ltd, recorded in cycle 2 from a Facebook page. Kept separate because the directory entry carries different detail and the match is unconfirmed. MERGE OR DELETE once verified.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0095",
+    "date_identified": "2026-09-12",
+    "company": "Doc's Hardware and More Ltd",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / aggregate reseller",
+    "priority": "TIER 1",
+    "location": "Trinidad",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "TT Directory (via public search index)",
+    "source_url": "https://tt.directory/top-hardwares-in-trinidad-and-tobago",
+    "buying_signal": "Supplies all building materials including sand and gravel. Confirmed aggregate reseller.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Sand; gravel; tiles; building materials",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Sells sand and gravel already, so the spread conversation starts immediately.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0096",
+    "date_identified": "2026-09-12",
+    "company": "Fred's Hardware and General Contractors Ltd",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware + contractor",
+    "priority": "TIER 1",
+    "location": "Trinidad",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "TT Directory (via public search index)",
+    "source_url": "https://tt.directory/top-hardwares-in-trinidad-and-tobago",
+    "buying_signal": "Supplies gravel, sand, blocks, lumber, steel, tiles and more, and also contracts.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Gravel; sand; blocks; lumber; steel; tiles; plumbing; electrical; contracting",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Broadest confirmed aggregate range among the new hardware finds.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Dual profile, resells aggregate and consumes it on contracts. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0097",
+    "date_identified": "2026-09-12",
+    "company": "PriceMaster Hardware",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / building supplies",
+    "priority": "TIER 2",
+    "location": "Tunapuna",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "https://www.facebook.com/pricemaster.hardware.tt/",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Facebook business page (via public search index)",
+    "source_url": "https://www.facebook.com/pricemaster.hardware.tt/",
+    "buying_signal": "Hardware business trading on price positioning, by its own name.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware; building supplies",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. A price-led retailer lives on purchase cost, which is EcoEnergy's lever.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0098",
+    "date_identified": "2026-09-12",
+    "company": "AM Hardware and General Building Supplies",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / building materials",
+    "priority": "TIER 2",
+    "location": "Couva-Tabaquite-Talparo (near Gasparillo)",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Mapcarta listing (via public search index)",
+    "source_url": "https://mapcarta.com/W836643834",
+    "buying_signal": "General building supplies business in the central corridor.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Building supplies",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Couva and Gasparillo are both section 18 priority areas.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. RESELLER TARGET - already sells aggregate, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0099",
+    "date_identified": "2026-09-12",
+    "company": "Chan's Hardware",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware store",
+    "priority": "TIER 3",
+    "location": "San Juan-Laventille",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Mapcarta listing (via public search index)",
+    "source_url": "https://mapcarta.com/N2139585005",
+    "buying_signal": "Hardware store in the San Juan corridor.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Thin record. Qualify aggregate range by telephone before effort.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Map listing only. Aggregate range not established.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0100",
+    "date_identified": "2026-09-12",
+    "company": "Trinidad Contractors and Hardware group buyers - trinituner 'WTK: Price of Gravel & Cement'",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Buyer discussion thread",
+    "priority": "TIER 3",
+    "location": "Trinidad (nationwide forum)",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Trinituner public forum (via public search index)",
+    "source_url": "https://trinituner.com/v4/forums/viewtopic.php?t=91219",
+    "buying_signal": "ACTIVE BUYING DISCUSSION: a long-running public thread of Trinidad buyers asking and comparing gravel and cement prices, reporting TT$1,600 to TT$2,800 per load from various suppliers.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "N/A - buyers, not sellers",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "MINE THIS THREAD. It is a public forum and, unlike Facebook, it may be readable without a login from a machine with ordinary web access. Individual posters state material, load size, price paid and sometimes location.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. LEAD SOURCE, not a single prospect. This is the closest accessible equivalent to the Facebook comment mining the brief asks for, and it carries exactly the price-intent language section 3 targets. The thread could not be opened from here.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0101",
+    "date_identified": "2026-09-12",
+    "company": "Trinidad house builders - trinituner 'Building a house in Trinidad'",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Buyer discussion thread",
+    "priority": "TIER 3",
+    "location": "Trinidad (nationwide forum)",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Trinituner public forum (via public search index)",
+    "source_url": "http://www.trinituner.com/v4/forums/viewtopic.php?start=690&t=349501",
+    "buying_signal": "ACTIVE BUILD DISCUSSION running to at least 24 pages, where members document house builds including material purchases, suppliers and prices paid.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "N/A - buyers, not sellers",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "MINE THIS THREAD for individuals currently at foundation or backfill stage. Those are grade A buying signals with a stated requirement.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. LEAD SOURCE. Long-running build diaries are the richest source of current, dated, quantified aggregate requirements available outside Facebook. Not openable from here.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0102",
+    "date_identified": "2026-09-12",
+    "company": "Home Solutions TT",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Residential developer",
+    "priority": "TIER 1",
+    "location": "Trinidad & Tobago (nationwide)",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "https://homesolutionstt.com/",
+    "source_platform": "Google Web Search (public index)",
+    "source_url": "https://homesolutionstt.com/",
+    "buying_signal": "Trinidad's largest private residential developer: 1,700 homes across 16 gated communities since 2003. Continuous foundation, fill and concrete demand.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "N/A - developer, consumes aggregate",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. HIGHEST-VALUE PRIVATE DEVELOPER FOUND. Target the procurement or projects manager and pitch a contracted supply agreement across active sites.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. A 1,700-home track record across 16 communities means sustained, plannable aggregate demand. Unlike HDC this is private, so no state tender is required and a commercial agreement can be struck directly.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0103",
+    "date_identified": "2026-09-12",
+    "company": "Caribbean Housing Limited",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Residential developer / builder",
+    "priority": "TIER 1",
+    "location": "Sir Solomon Hochoy Highway corridor, central Trinidad",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Google Web Search (public index)",
+    "source_url": "https://trinidadrealestate.co.tt/gated-communities-chaguanas-trinidad/",
+    "buying_signal": "Engineered Brentwood Court: 221 townhouses across 14 acres on the Sir Solomon Hochoy Highway, selling at TTD 2.40M to 2.90M. A development of that size consumes very large fill and concrete volumes.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "N/A - developer, consumes aggregate",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Establish which phases are still in construction and what fill and concrete volumes remain to be placed.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. 221 units on 14 acres is one of the largest identified private aggregate demands in the central corridor, which is the top section 18 priority area.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0104",
+    "date_identified": "2026-09-12",
+    "company": "Xippi Properties Ltd",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Property developer / agency",
+    "priority": "TIER 2",
+    "location": "Chaguanas",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "https://xippiproperties.com/",
+    "source_platform": "Google Web Search (public index)",
+    "source_url": "https://xippiproperties.com/property/3-bedroom-brand-new-homes-gated-community-chaguanas-1-4m/",
+    "buying_signal": "Marketing brand new stand-alone homes in a gated community on Todds Road, Chaguanas.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "N/A - developer/agency",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Establish whether they build or only sell. If they build, qualify volume.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Could be a developer or purely an agency. Qualify the role before commercial effort.",
+    "lead_grade": "B - STRONG"
+  },
+  {
+    "prospect_id": "ECO-0105",
+    "date_identified": "2026-09-12",
+    "company": "Dansteel Limited",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Building materials / hardware",
+    "priority": "TIER 1",
+    "location": "La Romaine and Marabella, San Fernando",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "https://www.facebook.com/DansteelLtd/",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "https://dansteel.com/",
+    "source_platform": "Google Web Search (public index)",
+    "source_url": "https://dansteel.com/",
+    "buying_signal": "Two-branch building materials and hardware business in the southern corridor.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Building materials; tiles; home decor; tools",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Two branches means one agreement supplies both. Marabella and La Romaine are both section 18 priority areas.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Aggregate range not confirmed, so this is both a supply pitch and a range-extension pitch. RESELLER TARGET - already sells building material, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0106",
+    "date_identified": "2026-09-12",
+    "company": "Mega Hardware TT",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / home improvement",
+    "priority": "TIER 2",
+    "location": "San Fernando",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "TNT Yellow directory (via public search index)",
+    "source_url": "https://www.tntyellow.com/category/hardware_stores/city:Marabella",
+    "buying_signal": "Serving the home improvement market for over 20 years in San Fernando.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware; home improvement",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Established southern retailer. RESELLER TARGET - already sells building material, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0107",
+    "date_identified": "2026-09-12",
+    "company": "Trepur Hardware",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware store",
+    "priority": "TIER 2",
+    "location": "Vistabella, San Fernando",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Cybo directory (via public search index)",
+    "source_url": "https://www.cybo.com/TT/vistabella/hardware-store/?p=6",
+    "buying_signal": "Hardware store in the Vistabella area of San Fernando.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Qualify aggregate range by telephone.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. RESELLER TARGET - already sells building material, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0108",
+    "date_identified": "2026-09-12",
+    "company": "Marv's Hardware Enterprise",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware store",
+    "priority": "TIER 2",
+    "location": "Vistabella, San Fernando",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Cybo directory (via public search index)",
+    "source_url": "https://www.cybo.com/TT/vistabella/hardware-store/?p=6",
+    "buying_signal": "Hardware store in the Vistabella area of San Fernando.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Qualify aggregate range by telephone.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. RESELLER TARGET - already sells building material, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0109",
+    "date_identified": "2026-09-12",
+    "company": "DNI Sales and Service Limited",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware / trade supplies",
+    "priority": "TIER 3",
+    "location": "Vistabella, San Fernando",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Cybo directory (via public search index)",
+    "source_url": "https://www.cybo.com/TT/vistabella/hardware-store/?p=6",
+    "buying_signal": "Listed among hardware businesses in Vistabella.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Not established",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Qualify the line of business by telephone before any commercial effort.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Line of business not established from the listing. Qualify first.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0110",
+    "date_identified": "2026-09-12",
+    "company": "Ali's Hardware Marabella",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware store",
+    "priority": "TIER 2",
+    "location": "Marabella",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "SearchinTT directory (via public search index)",
+    "source_url": "https://www.searchintt.com/Trinidad/alis-hardware-marabella",
+    "buying_signal": "Hardware store in Marabella, a section 18 priority area.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "Hardware",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. RESELLER TARGET - already sells building material, therefore already buys it.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0111",
+    "date_identified": "2026-09-12",
+    "company": "L's General Hardware Store",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Hardware store",
+    "priority": "TIER 3",
+    "location": "Eastern Main Road, Tunapuna-Piarco",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Mapcarta listing (via public search index)",
+    "source_url": "https://mapcarta.com/W384124327",
+    "buying_signal": "General hardware store on the Eastern Main Road corridor.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "General hardware",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "Verify direct contact from the source, then issue the wholesale introduction and price list. Thin record. Qualify aggregate range before effort.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. Map listing only.",
+    "lead_grade": "C - POTENTIAL"
+  },
+  {
+    "prospect_id": "ECO-0112",
+    "date_identified": "2026-09-12",
+    "company": "Blackridge Research T&T housing project database",
+    "contact_name": "Not publicly listed",
+    "customer_type": "Project intelligence source",
+    "priority": "TIER 3",
+    "location": "Trinidad & Tobago (nationwide)",
+    "phone": "PENDING VERIFICATION",
+    "whatsapp": "PENDING VERIFICATION",
+    "email": "PENDING VERIFICATION",
+    "facebook": "PENDING VERIFICATION",
+    "instagram": "PENDING VERIFICATION",
+    "x_twitter": "PENDING VERIFICATION",
+    "threads": "PENDING VERIFICATION",
+    "website": "PENDING VERIFICATION",
+    "source_platform": "Google Web Search (public index)",
+    "source_url": "https://www.blackridgeresearch.com/new-projects-near-me/singlefamily-housing-database/c/trinidad-and-tobago",
+    "buying_signal": "Tracks announced and upcoming single-family and semi-detached housing projects in T&T, naming developers, contractors and timelines.",
+    "products_needed": "Pitrun; 3/8 gravel; 3/4 gravel; plastering sand; sharp sand; sandfill/backfill",
+    "products_sold": "N/A - data source",
+    "est_volume": "EST - to confirm on contact",
+    "purchase_freq": "To establish on contact",
+    "observed_price": "Not published",
+    "eco_price": "Per current EcoEnergy price list (see WEEKLY PRICING)",
+    "potential_discount": "Up to 30% subject to qualification",
+    "status": "DISCOVERED",
+    "last_contact": "",
+    "next_followup": "2026-09-15",
+    "next_action": "EVALUATE AS A LEAD SOURCE. A database naming developers and contractors on upcoming projects is exactly the forward pipeline this operation lacks. Check cost and coverage before subscribing.",
+    "notes": "CYCLE 4 (2026-09-12), social buyer-hunt. LEAD SOURCE, not a prospect. Every other prospect here is found after the fact. This would identify aggregate demand BEFORE the concrete is ordered, which is where a supply agreement is actually won.",
+    "lead_grade": "B - STRONG"
   }
 ]

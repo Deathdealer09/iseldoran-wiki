@@ -336,5 +336,83 @@
     "source": "https://www.amcolhardwarett.com/product-7960/1-load-12-x-12-gravel-w-sharp-sand-10-yards.php",
     "verified": "2026-09-12",
     "note": "Cycle 2. A blended product EcoEnergy could supply as components. Price NOT captured."
+  },
+  {
+    "seller": "AMCOL Hardware",
+    "product": "Crusher run / blue metal",
+    "price": 375.0,
+    "unit": "TT$/yd3",
+    "basis": "8 yard load advertised at TT$3,000, divided by 8",
+    "category": "RETAIL",
+    "delivery": "Not stated",
+    "location": "Penal",
+    "source": "https://www.amcolhardwarett.com/product-6222/8-yard-load-crusher-run--blue-metal.php",
+    "verified": "2026-09-12",
+    "note": "Cycle 4. First hard per-yard figure for crusher run. TT$3,000 / 8 yd = TT$375/yd3."
+  },
+  {
+    "seller": "Central Concrete and Pumps Limited",
+    "product": "Ready-mixed concrete 21N 3000 PSI",
+    "price": 785.0,
+    "unit": "TT$/m3",
+    "basis": "Advertised, VAT inclusive",
+    "category": "RETAIL",
+    "delivery": "Not stated",
+    "location": "Central Trinidad",
+    "source": "https://www.facebook.com/ccapl/",
+    "verified": "2026-09-12",
+    "note": "Cycle 4. ADJACENT PRODUCT, not aggregate. Recorded because concrete pricing tracks aggregate input cost and this seller also resells aggregate."
+  },
+  {
+    "seller": "Trinidad ready-mix market",
+    "product": "Ready-mixed concrete",
+    "price": 900.0,
+    "unit": "TT$/cubic yard",
+    "basis": "Reported market level, August 2026",
+    "category": "RETAIL",
+    "delivery": "Not stated",
+    "location": "Trinidad",
+    "source": "https://wiseequities.com/home/newsarticle/488",
+    "verified": "2026-09-12",
+    "note": "Cycle 4. ADJACENT PRODUCT. Reported as a price reduction from earlier levels."
+  },
+  {
+    "seller": "Trinituner forum members (user reported)",
+    "product": "Gravel, half and half mixture",
+    "price": 275.0,
+    "unit": "TT$/yd3",
+    "basis": "8 yard load reported at TT$2,200, divided by 8",
+    "category": "UNKNOWN (user reported)",
+    "delivery": "Not stated",
+    "location": "Trinidad",
+    "source": "https://trinituner.com/v4/forums/viewtopic.php?t=91219",
+    "verified": "2026-09-12",
+    "note": "Cycle 4. USER-REPORTED, not a seller advertisement. Date of the report is not established. Treat as indicative of the delivered retail band, not as a benchmark."
+  },
+  {
+    "seller": "Trinituner forum members (user reported)",
+    "product": "Gravel, half and half mixture",
+    "price": null,
+    "unit": "TT$ per load",
+    "basis": "Historic reports: TT$1,600 per load; later TT$2,500 from a private supplier and TT$2,800 from a hardware store",
+    "category": "UNKNOWN (user reported)",
+    "delivery": "Not stated",
+    "location": "Trinidad",
+    "source": "https://trinituner.com/v4/forums/viewtopic.php?t=91219",
+    "verified": "2026-09-12",
+    "note": "Cycle 4. Load sizes NOT stated for the TT$2,500 and TT$2,800 figures, so no per-yard rate can be derived without inventing the load volume. Recorded as reported."
+  },
+  {
+    "seller": "Trinituner forum members (user reported)",
+    "product": "Red sand",
+    "price": null,
+    "unit": "TT$ per load",
+    "basis": "Historic report: TT$750 per load",
+    "category": "UNKNOWN (user reported)",
+    "delivery": "Not stated",
+    "location": "Trinidad",
+    "source": "https://trinituner.com/v4/forums/viewtopic.php?t=91219",
+    "verified": "2026-09-12",
+    "note": "Cycle 4. Load size not stated. Red sand is not currently an EcoEnergy line."
   }
 ]

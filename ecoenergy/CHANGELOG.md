@@ -8,6 +8,73 @@
 
 ---
 
+## Edition 1 Version 5
+
+**Date:** 12 September 2026
+**Time:** 04:51 (Trinidad time, AST/UTC-4)
+
+**Status:** Social buyer-hunting run. 27 new prospects against a target of 25.
+
+### Method, stated plainly
+
+The brief asked for logged-in browser sessions on Facebook, Instagram, TikTok, X and Threads.
+**No browser tool exists in this environment and no logged-in session is available.** Every host was
+re-tested on 2026-09-12 and all returned 403 at the egress proxy: facebook.com, web.facebook.com,
+mbasic.facebook.com, instagram.com, tiktok.com, x.com, twitter.com, threads.net.
+
+Every finding below came from PUBLIC SEARCH INDEXING of those pages. No page was opened, no comment
+thread was read, no autonomous browser activity occurred.
+
+### Changes
+
+- Added 27 new prospects, ECO-0086 to ECO-0112. Pipeline total now 112.
+- Applied 7 deduplication updates instead of creating duplicates.
+- Added 6 new market price observations. Benchmarks now 32.
+- Added 3 market intelligence items. Total now 11.
+- Added a **Lead Grade** column implementing the A/B/C/D scale from section 11, backfilled across
+  the whole book: 0 grade A, 56 grade B, 45 grade C, 11 grade D.
+- Added the section 21 daily report block to the weekly sales report.
+- Added section 20 status vocabulary to the DASHBOARD and the report.
+- Added `scripts/cycle_04.py` and `scripts/cycle_05.py` to the rebuild chain.
+
+### Grade A is zero, and why
+
+No prospect qualifies as grade A. Grade A needs an explicit current requirement read from a comment
+or post. Comment mining could not be performed on any platform, so no such signal was read. This is
+recorded as **COMMENTS - NOT ACCESSIBLE**, not as an absence of demand.
+
+### PRICING FINDING: the delivered market sits well above the EcoEnergy base
+
+Cycle 4 captured delivered and retail load pricing far above the current base of TT$167.06/yd3:
+
+- AMCOL crusher run, 8 yard load at TT$3,000 = **TT$375/yd3**
+- Forum-reported half-and-half gravel, 8 yard load at TT$2,200 = **TT$275/yd3**
+- NARS sharp sand **TT$450/yd**, AMCOL sharp sand **TT$440/yd**
+
+Section 10 forbids undercutting delivered retail with an ex-quarry product, and that rule protects
+EcoEnergy here. The TT$167.06 base is an EX-QUARRY COLLECTION price and is left unchanged. A
+SEPARATE DELIVERED price list should be built against the TT$275 to TT$375/yd3 band. Quoting the
+collection base to a delivered customer gives away the whole haulage margin.
+
+No price was altered in this version. The finding is logged for the Sunday review.
+
+### Dedup updates applied
+
+Rite Buy Hardware located to Scarborough, TOBAGO (changes the freight picture). Premix Concrete Ltd
+Tobago presence reported, unconfirmed. NARS Value Hardware location refined. NQCL limestone division
+at Verdant Vale identified. Coosal's Tapana, Valencia operation noted. AMCOL crusher run price
+captured. The unidentified Marketplace reseller now carries a publicly advertised WhatsApp number,
+474-4005, recovered from a search summary and flagged CONFIRM BEFORE USE.
+
+### Integrity
+
+- No contact detail invented. 15 of 112 prospects carry a live contact route.
+- This agent has still sent zero messages. The scheduled social post remains SCHEDULED, not sent.
+- Instagram and TikTok searches returned predominantly United States results, including Trinidad,
+  Colorado businesses. Recorded as a nil yield for T&T, not as an absence of accounts.
+
+---
+
 ## Edition 1 Version 4
 
 **Date:** 12 September 2026

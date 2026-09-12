@@ -54,5 +54,26 @@
     "implication": "The engagement peaks are not a guide for a Trinidad B2B audience. The post was instead scheduled at 17:00 Madrid, which is 11:00 Trinidad, the strongest hour in the data that still falls inside Trinidad business hours. Set the brand timezone to America/Port_of_Spain if EcoEnergy will keep using it.",
     "source": "Metricool MCP getBestTimeToPostByNetwork, brand 6856731",
     "verified": "2026-09-12"
+  },
+  {
+    "headline": "PRICING GAP: the delivered market may sit far above the EcoEnergy base",
+    "detail": "EcoEnergy's base is derived from the Bestcrete published figure of TT$185.62/yd3, giving TT$167.06. Cycle 4 captured delivered and retail load pricing well above that: AMCOL crusher run at TT$375/yd3, forum-reported half-and-half gravel at about TT$275/yd3, NARS sharp sand at TT$450/yd and AMCOL sharp sand at TT$440/yd.",
+    "implication": "Section 10 forbids undercutting delivered retail with an ex-quarry product, and that rule protects EcoEnergy here. The TT$167.06 base is an EX-QUARRY COLLECTION price and should stay that way. A SEPARATE DELIVERED price list should be built against the TT$275 to TT$375/yd3 delivered band. Quoting the collection base to a delivered customer gives away the entire haulage margin.",
+    "source": "https://trinituner.com/v4/forums/viewtopic.php?t=91219",
+    "verified": "2026-09-12"
+  },
+  {
+    "headline": "Buyer demand is concentrated in Facebook groups and a public forum",
+    "detail": "Four active Trinidad buyer venues were identified: Facebook groups 909331405759624, 202165237740335, 339202526592121 and 3250335484987349, plus the Trinituner forum, where threads carry explicit price questions such as 'What is the average price of ready mix concrete per meter?'.",
+    "implication": "The forum is the one venue that may be readable without a login. It is the highest-value unmined source and should be worked first by anyone with ordinary web access.",
+    "source": "https://trinituner.com/v4/forums/viewtopic.php?t=91219",
+    "verified": "2026-09-12"
+  },
+  {
+    "headline": "Instagram and TikTok returned no usable Trinidad & Tobago results",
+    "detail": "Searches on Instagram and TikTok terms returned predominantly United States results, including Trinidad, Colorado businesses and a US 'Trinidad Construction LLC'. No Trinidad & Tobago aggregate buyer or seller was identified on either platform.",
+    "implication": "Not evidence that no such accounts exist. It reflects what the public search index surfaces without platform access. Both platforms remain unmined.",
+    "source": "Search results, cycle 4",
+    "verified": "2026-09-12"
   }
 ]

@@ -22,7 +22,7 @@ DATA = os.path.join(HERE, "..", "data")
 OUT = os.path.join(HERE, "..", "EcoEnergy_Aggregate_Sales_Pipeline.xlsx")
 
 EDITION = 1
-VERSION = 4
+VERSION = 5
 TT = timezone(timedelta(hours=-4))          # Trinidad & Tobago, AST / UTC-4
 NOW = datetime.now(TT)
 STAMP = NOW.strftime("%d %B %Y  %H:%M") + " (Trinidad time)"
@@ -58,6 +58,7 @@ PIPE_COLS = [
     ("Prospect ID", "prospect_id", 12), ("Date Identified", "date_identified", 14),
     ("Company", "company", 38), ("Contact Name", "contact_name", 18),
     ("Customer Type", "customer_type", 26), ("Priority", "priority", 12),
+    ("Lead Grade", "lead_grade", 22),
     ("Location", "location", 32), ("Phone", "phone", 18), ("WhatsApp", "whatsapp", 18),
     ("Email", "email", 20), ("Facebook", "facebook", 26), ("Instagram", "instagram", 16),
     ("X / Twitter", "x_twitter", 16), ("Threads", "threads", 16),
@@ -170,7 +171,9 @@ PEND = "PENDING VERIFICATION"
 with_contact = [p for p in prospects if p["phone"] != PEND or p["email"] != PEND]
 contacted = [p for p in prospects if p["status"] == "OUTREACH SENT"]
 cycle2 = [p for p in prospects if p["notes"].startswith("CYCLE 2")]
-cycle1 = [p for p in discovered if not p["notes"].startswith("CYCLE 2")]
+cycle4 = [p for p in prospects if p["notes"].startswith("CYCLE 4")]
+cycle1 = [p for p in discovered if not p["notes"].startswith(("CYCLE 2", "CYCLE 4"))]
+grades = Counter(p.get("lead_grade", "") for p in prospects)
 try:
     intel = json.load(open(os.path.join(DATA, "market_intel.json")))
 except Exception:
@@ -203,6 +206,8 @@ section("PIPELINE VOLUME")
 row("New prospects discovered, cycle 1", len(cycle1), "Directory and category sweep.")
 row("New prospects discovered, cycle 2", len(cycle2),
     "Social, quarry-licensing and regional sweep requested with Metricool.")
+row("New prospects discovered, cycle 4", len(cycle4),
+    "Social buyer-hunt. Facebook pages, groups, forum, directories and developer sweep.")
 row("Total discovered today", len(discovered), "Daily target is 25.")
 row("Daily target", 25, "Brief section 1.")
 row("Performance against daily target",
@@ -218,6 +223,16 @@ for k in ("TIER 1", "TIER 2", "TIER 3", "BENCHMARK"):
                             "TIER 2": "Secondary commercial buyers.",
                             "TIER 3": "Low-volume but steady.",
                             "BENCHMARK": "Competitors and price references, not buyers."}[k])
+section("LEAD GRADE (brief section 11)")
+row("A - HOT", grades.get("A - HOT", 0),
+    "Explicit current buying requirement with material, quantity or location identifiable. ZERO. "
+    "Grade A requires reading comment threads, and no social platform was accessible.")
+row("B - STRONG", grades.get("B - STRONG", 0),
+    "Verifiably consumes or resells aggregate. This is the working list.")
+row("C - POTENTIAL", grades.get("C - POTENTIAL", 0),
+    "Construction-related, no current requirement verified.")
+row("D - MARKET INTELLIGENCE", grades.get("D - MARKET INTELLIGENCE", 0),
+    "Competitors, licensed quarries and price references, not buyers.")
 section("BY SEGMENT")
 row("Ready-mix and block producers", count_type("ready-mix", "block"), "Highest continuous aggregate draw.")
 row("Hardware stores and building-material resellers", count_type("hardware", "building materials", "wholesaler"),
@@ -277,9 +292,20 @@ row("Metricool as a prospecting tool", "NOT CAPABLE",
     "third-party feature is competitor tracking on Instagram, Facebook, Twitch, YouTube, X and "
     "Bluesky, and that needs an EcoEnergy brand first.")
 row("Facebook / Instagram / TikTok / X / Threads", "PLATFORM NOT ACCESSIBLE",
-    "Direct connection to facebook.com, instagram.com, tiktok.com, x.com and threads.net was tested "
-    "this cycle and every one was refused by the network egress policy. Social findings below came "
-    "from public search indexing of those pages, not from browsing them.")
+    "Re-tested 2026-09-12. facebook.com, web.facebook.com, mbasic.facebook.com, instagram.com, "
+    "tiktok.com, x.com, twitter.com and threads.net ALL returned 403 at the egress proxy. There is "
+    "also no browser tool and no logged-in session in this environment.")
+row("Facebook Marketplace", "MARKETPLACE - ACCESS UNAVAILABLE",
+    "Listing data reached this pipeline only through public search indexing.")
+row("Facebook groups", "PRIVATE / NOT ACCESSED",
+    "Four active T&T buyer groups identified by id but none could be opened: 909331405759624, "
+    "202165237740335, 339202526592121, 3250335484987349.")
+row("Comment mining (brief section 3)", "COMMENTS - NOT ACCESSIBLE",
+    "No comment or reply thread was read on any platform. Zero grade A leads follow directly from "
+    "this. The nearest accessible substitute found is the public Trinituner forum.")
+row("Instagram / TikTok search yield", "NIL FOR T&T",
+    "Searches returned predominantly United States results, including Trinidad, Colorado businesses. "
+    "Not evidence that no T&T accounts exist, only that the public index did not surface them.")
 section("MARKET INTELLIGENCE - CYCLE 2")
 for it in intel:
     row(it["headline"], it["verified"] if it["verified"] == "NOT VERIFIED" else "VERIFIED",

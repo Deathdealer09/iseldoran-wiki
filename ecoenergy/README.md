@@ -9,9 +9,9 @@ Materials: pitrun, 3/8 gravel, 3/4 gravel, plastering sand, sharp sand, sandfill
 ecoenergy/
   EcoEnergy_Aggregate_Sales_Pipeline.xlsx   generated workbook, 6 worksheets
   data/                                     source of truth (JSON)
-    prospects.json          85 prospects (74 discovered, 11 from prior canon)
-    benchmarks.json         26 market price observations
-    market_intel.json        6 recorded market intelligence items
+    prospects.json         112 prospects (101 discovered, 11 from prior canon)
+    benchmarks.json         32 market price observations
+    market_intel.json       11 recorded market intelligence items
     pricing.json             pricing engine output
     communications.json      2 confirmed outbound e-mails (prior canon)
   scripts/
@@ -19,6 +19,9 @@ ecoenergy/
     seed_data.py             seeds the prospect database
     merge_upload.py          merges the prior EcoEnergy workbook (canon)
     cycle_02.py              cycle 2 prospecting run
+    cycle_03_social.py       social publication record
+    cycle_04.py              cycle 4 social buyer-hunt
+    cycle_05.py              cycle 4 continued
     rebuild.sh               full deterministic rebuild
     seed_pricing.py          benchmarks + pricing engine
     build_workbook.py        regenerates the workbook from data
