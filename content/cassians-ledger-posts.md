@@ -70,7 +70,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **20. The Kurultai of Twenty-Seven** — posted 2026-09-12 19:42Z
 > Twenty years of iron closed with the Kurultai of Twenty-Seven, binding a confederation together under four codes: Chegai, Agayuk, Sornai, Yasa. Law, filed here plainly, is often just the shape a threat takes when it intends to outlast the people who wrote it.
 
-[ ] **21. Mercurio's dream, before the fact**
+[x] **21. Mercurio's dream, before the fact** — posted 2026-09-12 21:39Z
 > For three years, Mercurio of the Third Wing dreamed of a grey-eyed child before he ever held one. Command apparently teaches you to trust a pattern before you can name it. What he was dreaming, on this ledger's reading, was the empire's next god.
 
 [ ] **22. The Wedding War's opening minutes**
