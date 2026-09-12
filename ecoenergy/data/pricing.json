@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "run_date": "2026-09-12",
+    "effective_from": "2026-09-12",
+    "next_review": "2026-09-13 23:59 (Sunday, Trinidad time, AST/UTC-4)",
+    "margin_rule": "EcoEnergy base = verified market benchmark x 0.90 (10% below market)",
+    "discount_rule": "Negotiated volume discount up to 30% off base for qualified cash, wholesale, high-volume and contracted recurring customers. Never automatic.",
+    "currency": "TTD",
+    "cold_start": true
+  },
+  "products": [
+    {
+      "product": "3/4 gravel",
+      "benchmark": 185.62,
+      "base": 167.06,
+      "floor": 116.94,
+      "unit": "per cubic yard (VAT incl.)",
+      "confidence": "LOW",
+      "source": "https://buildwithabs.com/product/bulk-aggregate/",
+      "status": "PROVISIONAL - SINGLE SOURCE",
+      "note": "Derived from ONE verified source. The brief calls for multiple observations per material; only one credible published T&T source was reachable this cycle. Treat as provisional and re-derive once a second source is obtained."
+    },
+    {
+      "product": "3/8 gravel",
+      "benchmark": 185.62,
+      "base": 167.06,
+      "floor": 116.94,
+      "unit": "per cubic yard (VAT incl.)",
+      "confidence": "LOW",
+      "source": "https://buildwithabs.com/product/bulk-aggregate/",
+      "status": "PROVISIONAL - SINGLE SOURCE",
+      "note": "Derived from ONE verified source. The brief calls for multiple observations per material; only one credible published T&T source was reachable this cycle. Treat as provisional and re-derive once a second source is obtained."
+    },
+    {
+      "product": "Sharp sand",
+      "benchmark": 185.62,
+      "base": 167.06,
+      "floor": 116.94,
+      "unit": "per cubic yard (VAT incl.)",
+      "confidence": "LOW",
+      "source": "https://buildwithabs.com/product/bulk-aggregate/",
+      "status": "PROVISIONAL - SINGLE SOURCE",
+      "note": "Derived from ONE verified source. The brief calls for multiple observations per material; only one credible published T&T source was reachable this cycle. Treat as provisional and re-derive once a second source is obtained."
+    },
+    {
+      "product": "Plastering sand",
+      "benchmark": 84.38,
+      "base": 75.94,
+      "floor": 53.16,
+      "unit": "per cubic yard (VAT incl.)",
+      "confidence": "LOW",
+      "source": "https://buildwithabs.com/product/bulk-aggregate/",
+      "status": "PROVISIONAL - SINGLE SOURCE",
+      "note": "Derived from ONE verified source. The brief calls for multiple observations per material; only one credible published T&T source was reachable this cycle. Treat as provisional and re-derive once a second source is obtained."
+    },
+    {
+      "product": "Pitrun",
+      "benchmark": null,
+      "base": null,
+      "floor": null,
+      "unit": "per cubic yard",
+      "confidence": "NONE",
+      "source": "No verified T&T published price located this cycle",
+      "status": "MARKET VERIFICATION REQUIRED",
+      "note": "NO PRICE SET. No published T&T pitrun price was found. Per section 7 no price is invented and no stale price exists to retain. Highest-priority pricing gap - pitrun is a core EcoEnergy line."
+    },
+    {
+      "product": "Sandfill / backfill",
+      "benchmark": null,
+      "base": null,
+      "floor": null,
+      "unit": "per cubic yard",
+      "confidence": "NONE",
+      "source": "No verified T&T published price located this cycle",
+      "status": "MARKET VERIFICATION REQUIRED",
+      "note": "NO PRICE SET. No published T&T sandfill/backfill price was found. Second-highest pricing gap."
+    }
+  ]
+}
