@@ -40,5 +40,19 @@
     "implication": "BLOCKING for the licence-led pitch. Confirm EcoEnergy's status before any outreach claims licensed supply. Do not make the claim until it is confirmed.",
     "source": "Internal gap - no source",
     "verified": "NOT VERIFIED"
+  },
+  {
+    "headline": "Metricool competitor tracking returned no data",
+    "detail": "The competitors connector was queried for the kerron.pierre5 brand over 2026-08-13 to 2026-09-12 for Facebook competitor screen name, display name, followers and posts. It returned an empty result set, because no competitors are configured on the brand.",
+    "implication": "Metricool's only third-party data surface is competitor tracking, and it is empty. Adding rival aggregate sellers as competitors would turn it into a genuine monitoring channel. It still cannot search for prospects or prices.",
+    "source": "Metricool MCP getAnalyticsDataByMetrics, brand 6856731",
+    "verified": "2026-09-12"
+  },
+  {
+    "headline": "Best-time-to-post data reflects the wrong audience",
+    "detail": "Metricool returned Facebook best-time data for the kerron.pierre5 brand. The strongest hours sit around 10:00 to 12:00 Europe/Madrid, which is 04:00 to 06:00 in Trinidad. The brand's timezone is set to Europe/Madrid and its audience is the existing personal and Iseldoran Sagas following, not Trinidad construction buyers.",
+    "implication": "The engagement peaks are not a guide for a Trinidad B2B audience. The post was instead scheduled at 17:00 Madrid, which is 11:00 Trinidad, the strongest hour in the data that still falls inside Trinidad business hours. Set the brand timezone to America/Port_of_Spain if EcoEnergy will keep using it.",
+    "source": "Metricool MCP getBestTimeToPostByNetwork, brand 6856731",
+    "verified": "2026-09-12"
   }
 ]

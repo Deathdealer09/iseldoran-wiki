@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA, DOCS = os.path.join(HERE, "..", "data"), os.path.join(HERE, "..", "docs")
-EDITION, VERSION = 1, 3
+EDITION, VERSION = 1, 4
 TT = timezone(timedelta(hours=-4))
 NOW = datetime.now(TT)
 DATESTR, TIMESTR, FSTAMP = NOW.strftime("%d %B %Y"), NOW.strftime("%H:%M"), NOW.strftime("%Y-%m-%d_%H%M")

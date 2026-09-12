@@ -8,6 +8,50 @@
 
 ---
 
+## Edition 1 Version 4
+
+**Date:** 12 September 2026
+**Time:** 04:43 (Trinidad time, AST/UTC-4)
+
+**Status:** Social publication executed on owner instruction, using the Metricool kerron.pierre5 brand.
+
+### Changes
+
+- Scheduled an EcoEnergy wholesale aggregate offer through Metricool on the kerron.pierre5 brand.
+  Post id 374817136, uuid 5571315352575427490. Confirmed present in the planner.
+- Target: Facebook, LinkedIn and Threads, autoPublish on, status PENDING on all three.
+- Publication time: 2026-09-14 17:00 Europe/Madrid, which is 11:00 Trinidad time.
+- Logged in the COMMUNICATIONS LOG as SCHEDULED, NOT SENT. It will be recorded as published only
+  once delivery is confirmed.
+- Added 2 market intelligence items covering what the Metricool surfaces returned.
+- Added `scripts/cycle_03_social.py` to the rebuild chain.
+
+### Post content decisions
+
+- No price figure was published. The post states positioning only, about 10% under market, so the
+  price list is not disclosed and the 30% floor is not advertised as a standard rate.
+- The up-to-30% discount is stated as subject to quantity and terms, per section 8.
+- **No claim of licensed supply was made**, because EcoEnergy's licence status is still unconfirmed.
+
+### Networks excluded, with reasons
+
+- **Instagram, TikTok, YouTube:** each requires an image or video and none was available. Technical
+  constraint, not a choice.
+- **X:** the handle on this brand is IseldoranSagas, a separate novel brand. Excluded to avoid
+  publishing quarry sales material to it. Can be added on instruction.
+
+### Metricool surfaces, measured
+
+- **Competitor tracking: EMPTY.** Queried for Facebook competitor screen name, display name,
+  followers and posts over 2026-08-13 to 2026-09-12. Returned no rows, because no competitors are
+  configured on the brand. This is Metricool's only third-party data surface, and it has no search.
+- **Best-time-to-post data reflects the wrong audience.** Peaks fall at 10:00 to 12:00 Europe/Madrid,
+  which is 04:00 to 06:00 in Trinidad. The brand timezone is Europe/Madrid and the audience is the
+  existing personal and Iseldoran following, not Trinidad construction buyers. The post was placed at
+  the strongest hour that still lands inside Trinidad business hours.
+
+---
+
 ## Edition 1 Version 3
 
 **Date:** 12 September 2026

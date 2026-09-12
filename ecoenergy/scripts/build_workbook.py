@@ -22,7 +22,7 @@ DATA = os.path.join(HERE, "..", "data")
 OUT = os.path.join(HERE, "..", "EcoEnergy_Aggregate_Sales_Pipeline.xlsx")
 
 EDITION = 1
-VERSION = 3
+VERSION = 4
 TT = timezone(timedelta(hours=-4))          # Trinidad & Tobago, AST / UTC-4
 NOW = datetime.now(TT)
 STAMP = NOW.strftime("%d %B %Y  %H:%M") + " (Trinidad time)"
@@ -88,8 +88,9 @@ COMM_COLS = [("Date / Time", 14), ("Prospect ID", 12), ("Prospect", 30), ("Chann
              ("Follow-Up Date", 14), ("Next Action", 60), ("Logged By", 28)]
 s2 = Sheet("COMMUNICATIONS LOG", widths=[c[1] for c in COMM_COLS])
 head(s2, "COMMUNICATIONS LOG",
-     "A message is recorded here ONLY when a send was confirmed. The two entries below are prior "
-     "canon carried forward from the previous EcoEnergy workbook.")
+     "A message is recorded here ONLY when a tool confirmed the action. Two e-mail entries are prior "
+     "canon carried forward from the previous EcoEnergy workbook. The social entry is SCHEDULED and "
+     "confirmed by Metricool, not yet published.")
 hdr2 = table(s2, [c[0] for c in COMM_COLS])
 for c in comms:
     s2.add([Cell(c.get(k, ""), S_WRAP) for k in
@@ -257,9 +258,19 @@ section("CHANNEL ACCESS - VERIFIED THIS CYCLE")
 row("Metricool MCP connector", "CONNECTED",
     "Authenticated and responding. It returned 4 brands, all personal or Iseldoran Sagas accounts: "
     "kerron.pierre5, thekerron, kerron347, kerron.shaul.pier and IseldoranSagas.")
-row("EcoEnergy brand in Metricool", "NOT PRESENT",
-    "No EcoEnergy brand exists in the account, so Metricool cannot publish for EcoEnergy or report "
-    "EcoEnergy analytics. Nothing was posted to the personal accounts.")
+row("EcoEnergy brand in Metricool", "STILL NOT PRESENT",
+    "No EcoEnergy brand exists. On owner instruction the kerron.pierre5 brand was used instead to "
+    "publish the EcoEnergy offer.")
+row("Scheduled post via kerron.pierre5", "CONFIRMED",
+    "Post id 374817136 scheduled for 2026-09-14 11:00 Trinidad time (17:00 Europe/Madrid) to "
+    "Facebook, LinkedIn and Threads, autoPublish on. Tool returned status PENDING on all three. "
+    "SCHEDULED, NOT YET PUBLISHED.")
+row("Networks excluded from that post", "4",
+    "Instagram, TikTok and YouTube require an image or video and none was available. X was excluded "
+    "because that handle is IseldoranSagas, a separate novel brand.")
+row("Metricool competitor tracking", "EMPTY",
+    "Queried for the brand over the last 30 days and returned no rows, because no competitors are "
+    "configured. This is Metricool's only third-party data surface.")
 row("Metricool as a prospecting tool", "NOT CAPABLE",
     "Its toolset is scheduling, analytics and best-time-to-post for accounts you own. It cannot "
     "search Facebook, Instagram, TikTok, X or Threads for third-party prospects or prices. Its only "

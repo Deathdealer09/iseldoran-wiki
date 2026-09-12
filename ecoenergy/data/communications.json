@@ -32,5 +32,22 @@
     "followup": "2026-09-15",
     "next_action": "Follow up and qualify material and volume.",
     "logged_by": "Prior canon - Outlook send action"
+  },
+  {
+    "datetime": "2026-09-12 (scheduled for 2026-09-14 11:00 AST)",
+    "prospect_id": "BROADCAST",
+    "prospect": "Public audience, kerron.pierre5 brand (Facebook, LinkedIn, Threads)",
+    "channel": "Social, via Metricool",
+    "direction": "Outbound",
+    "recipient": "kerron.pierre5 brand followers",
+    "message_type": "Wholesale aggregate supply offer, scheduled post",
+    "material": "Pitrun; 3/8 gravel; 3/4 gravel; sharp sand; plastering sand; backfill; sandfill",
+    "volume": "",
+    "price_quoted": "No figure published. Positioning only: about 10% under market.",
+    "discount": "Yes. Up to 30%, stated as subject to quantity and terms.",
+    "response": "NOT YET PUBLISHED. Scheduled, awaiting the publication time.",
+    "followup": "2026-09-15",
+    "next_action": "After publication at 2026-09-14 11:00 AST, check delivery on all three networks and route any inbound enquiry into the pipeline as a new prospect.",
+    "logged_by": "Metricool MCP. Post id 374817136, uuid 5571315352575427490. Tool confirmed status PENDING on facebook, linkedin and threads with autoPublish true. SCHEDULED, NOT SENT."
   }
 ]
