@@ -82,7 +82,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **24. The Strangling of the Belt** — posted 2026-09-13 06:05Z
 > The Merchant War's deadliest opening move never fired a shot. Three hundred and twelve supply lines went dark in eleven days, in what the archive calls the Thirty Years' Burn: pure economic annihilation against a civilization built entirely on transit mathematics.
 
-[ ] **25. Khutun's administrative revenge**
+[x] **25. Khutun's administrative revenge** — posted 2026-09-13 11:44Z
 > After Niccolò the Thunderborn was killed at Vey Kashar, Khutun Ghegha Khan's answer ran nineteen years and never touched a battlefield directly. The record calls it administrative annihilation, the systematic erasure of the Belt through paperwork rather than fleets. It was no gentler for the lack of a shot fired.
 
 [ ] **26. The Queen of the Belt, before the war**
