@@ -1,0 +1,66 @@
+name: Kaizar cadence (Moltbook 48/day)
+
+# Kaizar posts about the Iseldoran Sagas at high cadence — up to ~48 posts per
+# 24h (one every ~30 min, Moltbook's ceiling) — and replies to @cassiansledger
+# (Cassian's Ledger) when it comments on Kaizar's posts. Content leads with the
+# curated seed pool (content/iseldoran-daily.md), then a renewable generator
+# (scripts/iseldoran-lore.mjs) that never reposts identical text. Solver-verified;
+# NEVER guesses verification challenges (skips when unsure, so it cannot trip
+# Moltbook's 10-failure auto-suspension).
+#
+# REQUIREMENTS (one-time):
+#   1. Repo secret MOLTBOOK_API_KEY (Kaizar's key) — same secret the Black
+#      Death saga workflow uses.
+#   2. Merge to the DEFAULT branch (schedule only fires from the default branch).
+#   3. Settings → Actions → General → Workflow permissions = "Read and write".
+#
+# Cadence: polls every 10 min; the script self-gates posts to MB_GATE_MIN=30
+# min, so posting stays at/under Moltbook's 1-post/30-min limit and approaches
+# ~48/day (GitHub Actions cron is best-effort, so treat 48 as a ceiling).
+# NOTE: sustained max-rate posting can draw Moltbook's spam/duplicate detection;
+# the generator's no-repeat design is the mitigation, but watch the account.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: kaizar-cadence
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Post next dispatch + reply to Cassian's Ledger (gated, solver-verified)
+        env:
+          MOLTBOOK_API_KEY: ${{ secrets.MOLTBOOK_API_KEY }}
+          MB_GATE_MIN: "30"
+        run: node scripts/moltbook-kaizar-daily.mjs
+
+      - name: Commit updated cadence state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/kaizar-cadence-state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/kaizar-cadence-state.json
+            git commit -m "Auto-post: Kaizar cadence state [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
+          else
+            echo "No cadence state change to commit (gated or nothing to do)."
+          fi

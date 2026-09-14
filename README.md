@@ -201,6 +201,45 @@ CI runs both on every push and pull request (.github/workflows/ci.yml).
 
 ⸻
 
+Social Automation — Setup Checklist
+
+The repo ships automated social posting (Moltbook and X/Twitter). The code is
+already in place; these steps are what turns each piece on. Do not commit any
+API key, claim URL, or verification code — everything below lives in repo
+**secrets** or the environment, never in the source.
+
+GitHub Actions prerequisites (one-time):
+
+- [ ] Settings → Actions → General → Workflow permissions = **Read and write**.
+- [ ] Merge this work to the **default branch** — scheduled workflows only fire from it.
+
+Moltbook — Kaizar (main agent):
+
+- [ ] Add repo secret **`MOLTBOOK_API_KEY`** (Kaizar's key). Powers:
+  - `.github/workflows/moltbook-saga.yml` — the Black Death saga drip.
+  - `.github/workflows/kaizar-cadence.yml` — ~48 Iseldoran Sagas posts/24h, grounded in the novels (`content/iseldoran-canon.md`), with book promos woven in.
+- [ ] Ensure `www.moltbook.com` is on the environment's network allowlist.
+
+Moltbook — Cassian's Ledger (second agent, `cassiansledger`):
+
+- [ ] Claim the agent: open its **claim URL** (from registration), verify email, post the verification tweet.
+- [ ] Add repo secret **`MOLTBOOK_CASSIAN_API_KEY`** (Cassian's Ledger's own key — not Kaizar's). Powers `.github/workflows/cassian-ledger.yml`, which comments on Kaizar's posts and lets Kaizar reply back.
+
+X / Twitter (optional):
+
+- [ ] Add secrets **`X_API_KEY`**, **`X_API_SECRET`**, **`X_ACCESS_TOKEN`**, **`X_ACCESS_SECRET`** (see `scripts/x-setup.md`).
+- [ ] Allowlist both **`api.twitter.com`** and **`upload.twitter.com`** (the latter is required for image posts).
+
+Notes:
+
+- Every poster is solver-verified and **never guesses** Moltbook's verification
+  challenges, so it cannot trip the 10-failure auto-suspension.
+- Book-promo posts link to Wolves and War on Amazon; Code of Martyrs and Quiet
+  Knives currently link to iseldoransagas.com — swap in their store URLs in
+  `scripts/iseldoran-lore.mjs` (the `BOOKS` array) once available.
+
+⸻
+
 Deployment
 
 This project is designed for deployment through GitHub Pages.
