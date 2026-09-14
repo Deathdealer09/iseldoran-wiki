@@ -1,0 +1,40 @@
+Table,Class,Height ft,Height m,Description,Low TT$ excl VAT,Average TT$ excl VAT,High TT$ excl VAT,Low TT$ incl VAT,Average TT$ incl VAT,High TT$ incl VAT,Verified Quotes,Basis,Date Verified,Source
+Verified FOB,V,20/26/36,6/8/11,Octagonal conical hot dip galvanized (US$28.80-88.90/pc),195.26,,602.74,219.67,,678.08,2,FOB China @ 6.78,2026-09-14,alibaba.com showroom
+Verified FOB,V,33/36/39,10/11/12,Octagonal steel light pole (US$49-69/pc),332.22,,467.82,373.75,,526.30,1,FOB China @ 6.78,2026-09-14,alibaba.com showroom
+Verified FOB,V,16/26/30,5/8/9,Q235 octagonal street light pole (US$99-995/pc),671.22,,6746.10,755.12,,7589.36,1,FOB China @ 6.78,2026-09-14,steelpowerpole.com
+Verified FOB,V,20/26/33/39,6/8/10/12,Cast aluminium solar pole (US$20.90-56.60/pc),141.70,,383.75,159.41,,431.72,1,FOB China @ 6.78,2026-09-14,alibaba.com showroom
+Verified Retail TT,V,N/A,N/A,Decorative outdoor post light - OUT OF CATEGORY,1022.22,1022.22,1022.22,1150.00,1150.00,1150.00,1,Published retail,2026-09-14,lptrinidad.com
+T&T Supplier Quotes,V,10,3,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,13,4,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,16,5,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,20,6,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,23,7,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,26,8,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,30,9,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,33,10,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+T&T Supplier Quotes,V,39,12,Lighting column - no data,,,,,,,0,No published price,2026-09-14,See Section 0
+Modelled Landed,D,10,3,Pole only - direct import landed Trinidad,700,850,1000,788,956,1125,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,13,4,Pole only - direct import landed Trinidad,750,920,1100,844,1035,1238,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,16,5,Pole only - direct import landed Trinidad,820,1000,1200,923,1125,1350,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,20,6,Pole only - direct import landed Trinidad,900,1100,1350,1013,1238,1519,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,23,7,Pole only - direct import landed Trinidad,980,1200,1500,1103,1350,1688,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,26,8,Pole only - direct import landed Trinidad,1050,1300,1650,1181,1463,1856,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,30,9,Pole only - direct import landed Trinidad,1150,1450,1850,1294,1631,2081,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,33,10,Pole only - direct import landed Trinidad,1300,1650,2100,1463,1856,2363,0,Model per Section 5,2026-09-14,Derived
+Modelled Landed,D,39,12,Pole only - direct import landed Trinidad,1600,2050,2650,1800,2306,2981,0,Model per Section 5,2026-09-14,Derived
+Package A,D,26,8,Pole only - standard street grade,1208.54,1208.54,1208.54,1359.61,1359.61,1359.61,0,Model per Section 7,2026-09-14,Derived
+Package B,D,26,8,Pole + arm + anchor bolts,1403.46,1403.46,1403.46,1578.89,1578.89,1578.89,0,Model per Section 7,2026-09-14,Derived
+Package C,D,26,8,Pole + arm + bolts + 100W LED luminaire,1871.28,1871.28,1871.28,2105.19,2105.19,2105.19,0,Model per Section 7,2026-09-14,Derived
+Package D,D,26,8,Complete installed system (allowance),4871,6371,7871,5480,7167,8855,0,Unverified installation allowance,2026-09-14,Derived
+Bulk Import,D,26,8,Package C x 10 poles,18713,18713,18713,21052,21052,21052,0,Model per Section 8,2026-09-14,Derived
+Bulk Import,D,26,8,Package C x 25 poles,46782,46782,46782,52630,52630,52630,0,Model per Section 8,2026-09-14,Derived
+Bulk Import,D,26,8,Package C x 50 poles,93564,93564,93564,105260,105260,105260,0,Model per Section 8,2026-09-14,Derived
+Bulk Import,D,26,8,Package C x 100 poles,187128,187128,187128,210519,210519,210519,0,Model per Section 8,2026-09-14,Derived
+Bulk Local,D,26,8,Package C x 10 poles via local distributor,27134,27134,27134,30525,30525,30525,0,Model per Section 8,2026-09-14,Derived
+Bulk Local,D,26,8,Package C x 25 poles via local distributor,67834,67834,67834,76313,76313,76313,0,Model per Section 8,2026-09-14,Derived
+Bulk Local,D,26,8,Package C x 50 poles via local distributor,135668,135668,135668,152627,152627,152627,0,Model per Section 8,2026-09-14,Derived
+Bulk Local,D,26,8,Package C x 100 poles via local distributor,271336,271336,271336,305253,305253,305253,0,Model per Section 8,2026-09-14,Derived
+Bulk Installed,D,26,8,Package D x 10 poles,63713,63713,63713,71677,71677,71677,0,Model per Section 8,2026-09-14,Derived
+Bulk Installed,D,26,8,Package D x 25 poles,159282,159282,159282,179192,179192,179192,0,Model per Section 8,2026-09-14,Derived
+Bulk Installed,D,26,8,Package D x 50 poles,318564,318564,318564,358385,358385,358385,0,Model per Section 8,2026-09-14,Derived
+Bulk Installed,D,26,8,Package D x 100 poles,637128,637128,637128,716769,716769,716769,0,Model per Section 8,2026-09-14,Derived
