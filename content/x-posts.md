@@ -316,11 +316,63 @@ Image: assets/bestiary/011.jpg
 
 ---
 
+## Batch 8 — Ysinde & the Twin Thrones, in depth
+
+[ ] **84. One general, two bodies**
+> They did not fight as two generals sharing a battlefield. They fought as one general inhabiting two bodies. — Lothor of Vexon, on Ysinde and Isolde, the Twin Thrones. The convoy was burning before the marriage barges ever reached port.
+
+[ ] **85. The Dawn Empress**
+> Ysinde Pierre von Care — the Dawn Empress — sat beside her sister Isolde as one of the Four Who Sat the East. The marriage barges commissioned from the Iseldoran yards eighteen months prior were burning before they finished the crossing. The Long Peace came after, not before.
+
+[ ] **86. A throne meant for another age**
+> Cassander Pierre von Care was Ysinde's son and Kaelen's grandson — heir to a throne "meant for him in another age." He took it early anyway, when the gods themselves demanded retribution for a slain brother-cousin. Blood answers Blood; Fire answers Treason.
+
+## Batch 9 — The Iberian Wars & the Va Sumir Chronicles
+
+[ ] **87. New mouths, same prayers**
+> History does not repeat itself. It merely finds new mouths to say the same prayers. — inscription on the Gate Alhambra-Station, author unknown. The opening line of the Iberian Wars, Volume III of the Va Sumir Chronicles.
+
+[ ] **88. The Hidden Prince**
+> The Iberian Wars: Book One follows the Exile arc — the Hidden Prince, Old Earth campaigns, House Jaza of Mars, the seats and soldiers of the Iberian Sector. Its sequel, the Concordat Wars, sits in the Imperial Archive only partially complete.
+
+[ ] **89. Certain things left unsaid**
+> I write it because there are certain things that certain parties would prefer remain unsaid. — Leraq of Vath, opening the shortest primary source in the archive: 5,157 words that saved eight species from cognitive silence.
+
+[ ] **90. Second sons don't inherit wars**
+> Augustus Lucius Jaza was the second son of House Jaza of Mars, Lord of a seat so minor his own family's archivists forgot to record it. Second sons didn't inherit wars — they went looking for them. He killed Talassar Vey with a personal blade for one.
+
+## Batch 10 — The First Khan Era: Mettenik I & the Kurultai
+
+[ ] **91. Clean words, true words**
+> Clean words come from courts. True words come from galley tables. — Sechen of the Rim, opening the chronicle of the Ghega-Khan'i confederation: 137,720 words of oral tradition, arranged in compositional rather than chronological order.
+
+[ ] **92. A coup on the command deck**
+> Dhaka's failed coup happened on the command deck of the Izikhali. Chayun broke the brig at Prefecture Seven to answer it. Dhaka was taken alive in the end — Law and Blood, then the Night of Esther, then Dhaka Island.
+
+[ ] **93. Restorer of the Dragon Throne**
+> Mettenik I Pierre von Care — grandson of Asha Kers I — restored the bloodline after the al-Sa'ud dynasty's ten-thousand-year tenure ended. The compact behind that succession was struck four centuries earlier by Demetrius Jaza. The line runs 500 years forward to Kaelen Rainmaker.
+
+## Batch 11 — The remaining Foundry Houses
+
+[ ] **94. House Serrakai**
+> House Serrakai builds Ixoria's hull reinforcement lattices — the layer between a warship's crew and vacuum. Nine Foundry Houses run the empire's industrial spine; this is the one that decides how much a hull can survive before it can't.
+
+[ ] **95. House Malzhur**
+> House Malzhur casts the reactor core housings for the Ixoria forge fleet. Every ship in the empire's navy carries a piece of this house inside it, whether its crew ever learns the name or not.
+
+[ ] **96. House Thessar**
+> House Thessar builds the orbital drydocks the rest of the fleet gets built and repaired in. No other Foundry House produces a ship without passing through Thessar's yards first.
+
+[ ] **97. House Korvel**
+> House Korvel manufactures munitions for the Nine Foundry Houses' military-industrial complex. Ixoria doesn't just build ships — it maintains civilization-scale military continuity, and Korvel is the house that keeps the guns fed.
+
+---
+
 ### Image attachments
 Posts can carry up to 4 images via an `Image:` line (comma-separated paths)
 directly under the `[ ]` header. Bestiary plates live in `assets/bestiary/`.
 The poster (`scripts/x-post.mjs`) uploads them before posting.
 
-*Further batches to pull: Ysinde & the Twin Thrones in depth, the Iberian
-Wars / Va Sumir Chronicles, the First Khan era (Mettenik I & the
-Kurultai of Twenty-Seven), and the remaining Foundry Houses.*
+*Further batches to pull: the Merchant War in full, the Sullied's origin and
+uprising, Olympia and the Vah'Sumir Ashari'i depths, and the al-Sa'ud
+dynasty's ten-thousand-year run in more than a single line.*
