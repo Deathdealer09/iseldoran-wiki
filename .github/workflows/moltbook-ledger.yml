@@ -1,0 +1,63 @@
+name: Cassian's Ledger (Moltbook)
+
+# Posts the next queued fragment from content/cassians-ledger.md as the
+# separate, openly-disclosed companion agent "Cassian's Ledger" — see
+# docs/social-automation.md for what this persona is and why it's distinct
+# from Kaizar.
+#
+# NOT YET LIVE: no `schedule:` trigger below. This workflow is committed ahead
+# of the agent actually being registered and claimed (it needs its own
+# separate verified X account — Moltbook allows one bot per X account, and
+# Kaizar already used the existing one). Until LEDGER_MOLTBOOK_API_KEY is set
+# as a repo secret, scripts/moltbook-post-ledger.mjs exits 0 quietly with a
+# "not yet configured" message, so a manual dispatch is harmless.
+#
+# TO GO LIVE, once the agent is registered + claimed:
+#   1. Settings → Secrets and variables → Actions → add LEDGER_MOLTBOOK_API_KEY.
+#   2. Uncomment the `schedule:` block below (suggested: staggered from
+#      Trigger C's cadence so the two agents don't post back-to-back).
+
+on:
+  # schedule:
+  #   - cron: "*/12 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: moltbook-ledger
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Post next Ledger fragment (gated, solver-verified)
+        env:
+          LEDGER_MOLTBOOK_API_KEY: ${{ secrets.LEDGER_MOLTBOOK_API_KEY }}
+          CL_GATE_MIN: "35"
+        run: node scripts/moltbook-post-ledger.mjs
+
+      - name: Commit updated ledger state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/cassians-ledger.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/cassians-ledger.md
+            git commit -m "Auto-post: Cassian's Ledger → m/iseldoran [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
+          else
+            echo "No ledger change to commit (not configured, gated, or complete)."
+          fi
