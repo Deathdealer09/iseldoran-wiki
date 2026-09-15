@@ -6,6 +6,7 @@ const {
 } = React;
 const NEWSLETTER_ACTION = "https://formsubmit.co/ajax/Kerron.pierre@live.com";
 const NEWSLETTER_EMAIL_FIELD = "email";
+const NEWSLETTER_MODE = "cors";
 function Newsletter({
   compact
 }) {
@@ -23,14 +24,22 @@ function Newsletter({
       const body = new FormData();
       body.append(NEWSLETTER_EMAIL_FIELD, email);
       body.append("_subject", "New Imperial Dispatch signup");
-      const res = await fetch(NEWSLETTER_ACTION, {
-        method: "POST",
-        body,
-        headers: {
-          Accept: "application/json"
-        }
-      });
-      if (!res.ok) throw new Error("Request failed");
+      if (NEWSLETTER_MODE === "no-cors") {
+        await fetch(NEWSLETTER_ACTION, {
+          method: "POST",
+          body,
+          mode: "no-cors"
+        });
+      } else {
+        const res = await fetch(NEWSLETTER_ACTION, {
+          method: "POST",
+          body,
+          headers: {
+            Accept: "application/json"
+          }
+        });
+        if (!res.ok) throw new Error("Request failed");
+      }
       setStatus("done");
       setEmail("");
     } catch (err) {
@@ -431,8 +440,8 @@ const BOOKS = [{
   sub: "Books I & II · The Making of Asha Kers I",
   words: "137,270",
   series: "iseldoran",
-  k: "#",
-  p: "#",
+  k: "https://www.amazon.com/dp/B0H57Y8QWZ",
+  p: "https://www.amazon.com/dp/B0H57Y8QWZ",
   desc: "Book I: The Orbital Battle of Tarrid. The Khotai Pass. Hesh-Kar — the sixth war that made a weapon. The Council of Three. The summoning of Nayra of Kithoun. The birth of Asha Kers I. The nineteen years. Saldin votes against her. The departure. Book II: First blood, the communications relays, the second belt, the Dragon Throne, the taking, the new succession. The first Ashari'i Rite. Coda: The Long Rule. 'He did not stop.' — Over New Terra. Khuvius Pierre von Care — Crown Prince of War — and the Star Wolves fight five frontier wars. The sixth war is Hesh-Kar."
 }, {
   id: 12,
@@ -1893,14 +1902,18 @@ function NovelsPage() {
   }, React.createElement("a", {
     className: "book-link kindle",
     href: b.k,
-    onClick: e => {
+    target: b.k && b.k !== "#" ? "_blank" : undefined,
+    rel: "noopener noreferrer",
+    onClick: b.k && b.k !== "#" ? undefined : e => {
       e.preventDefault();
       alert("Add your Kindle URL for: " + b.title);
     }
   }, "Kindle"), React.createElement("a", {
     className: "book-link print",
     href: b.p,
-    onClick: e => {
+    target: b.p && b.p !== "#" ? "_blank" : undefined,
+    rel: "noopener noreferrer",
+    onClick: b.p && b.p !== "#" ? undefined : e => {
       e.preventDefault();
       alert("Add your print URL for: " + b.title);
     }

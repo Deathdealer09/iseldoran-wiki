@@ -8,12 +8,26 @@ const { useState, useEffect, useRef } = React;
 // (e.g. https://formsubmit.co/ajax/abc123…) — swap the raw email below for that
 // alias to keep the address out of the page source and reduce spam.
 //
-// To switch to a real email-marketing platform later (recommended once the list
-// grows — MailerLite, Kit/ConvertKit, Buttondown), replace this URL with the
-// provider's form-action and set EMAIL_FIELD to its expected field name
-// (Buttondown: "email", Mailchimp: "EMAIL", Kit/ConvertKit: "email_address").
+// ── Switching to MailerLite (recommended once you're ready) ──────────────────
+// 1. mailerlite.com → create a free account; verify your sender email/domain.
+// 2. Subscribers → Groups → create a group (e.g. "Imperial Dispatch").
+// 3. Forms → Embedded form → build it → Install → choose the plain-HTML option.
+//    In the <form> snippet MailerLite gives you, copy the action URL. It looks like:
+//    https://assets.mailerlite.com/jsonp/<ACCOUNT_ID>/forms/<FORM_ID>/subscribe
+// 4. Set the THREE constants below:
+//      NEWSLETTER_ACTION      = that subscribe URL
+//      NEWSLETTER_EMAIL_FIELD = "fields[email]"
+//      NEWSLETTER_MODE        = "no-cors"   ← required: MailerLite's endpoint sends
+//                                             no CORS headers, so the browser can't
+//                                             read the reply; we treat a completed
+//                                             POST as success.
+// 5. Enable double opt-in in MailerLite, then load marketing/email-welcome-sequence.md
+//    as the group's automation. Full walkthrough: marketing/email-setup.md.
+// Other providers keep NEWSLETTER_MODE = "cors" and set the field name:
+//   Buttondown "email" · Mailchimp "EMAIL" · Kit/ConvertKit "email_address".
 const NEWSLETTER_ACTION = "https://formsubmit.co/ajax/Kerron.pierre@live.com";
 const NEWSLETTER_EMAIL_FIELD = "email";
+const NEWSLETTER_MODE = "cors"; // "cors" = FormSubmit/JSON APIs · "no-cors" = MailerLite embedded
 
 function Newsletter({ compact }) {
   const [email, setEmail] = useState("");
@@ -27,10 +41,16 @@ function Newsletter({ compact }) {
       const body = new FormData();
       body.append(NEWSLETTER_EMAIL_FIELD, email);
       body.append("_subject", "New Imperial Dispatch signup");
-      const res = await fetch(NEWSLETTER_ACTION, {
-        method: "POST", body, headers: { Accept: "application/json" },
-      });
-      if (!res.ok) throw new Error("Request failed");
+      if (NEWSLETTER_MODE === "no-cors") {
+        // Opaque response (e.g. MailerLite embedded) — status is unreadable, so a
+        // resolved fetch (no network error) is our success signal.
+        await fetch(NEWSLETTER_ACTION, { method: "POST", body, mode: "no-cors" });
+      } else {
+        const res = await fetch(NEWSLETTER_ACTION, {
+          method: "POST", body, headers: { Accept: "application/json" },
+        });
+        if (!res.ok) throw new Error("Request failed");
+      }
       setStatus("done");
       setEmail("");
     } catch (err) {
@@ -331,7 +351,7 @@ const BOOKS = [
     desc: "The moment Niccolò Kerron von Hapsburgi was born, lightning struck through the glass atrium and the servants fled. His mother, Duchess Lucrezia Aurelia Trumpf von Hapsburgi, did not scream — Trumpf women were forged from older iron. His first wail: a thunderclap. Candles guttered when he entered rooms. Metal hummed near his skin. At five he disarmed his fencing instructor and broke the carbon-steel blade across his knee. The Thunderborn. One of the Four Captains. Afro-Mongolian features, green eyes with golden specks, golden dreadlocks." },
   { id: 10, title: "The Strangling of the Belt", sub: "The Merchant War: Prelude", words: "69,964", series: "iseldoran", k: "#", p: "#",
     desc: "The Front Is Broken. Allies Become Targets. The Breaking of the Gahmih. The Tribunal of Asterion. The Thirty Years Burn. The Final Convergence. Livius — The Maintainer — holds the throne during the empire's longest slow-burn economic stranglehold. 312 supply lines go dark in eleven days. No shots fired. The starvation begins. The war of economic annihilation that preceded the Merchant War proper. The Belt learns that death can come without a fleet. Baiju refuses judgment. Sisters at war. The cost of stillness." },
-  { id: 11, title: "Wolves and War", sub: "Books I & II · The Making of Asha Kers I", words: "137,270", series: "iseldoran", k: "#", p: "#",
+  { id: 11, title: "Wolves and War", sub: "Books I & II · The Making of Asha Kers I", words: "137,270", series: "iseldoran", k: "https://www.amazon.com/dp/B0H57Y8QWZ", p: "https://www.amazon.com/dp/B0H57Y8QWZ",
     desc: "Book I: The Orbital Battle of Tarrid. The Khotai Pass. Hesh-Kar — the sixth war that made a weapon. The Council of Three. The summoning of Nayra of Kithoun. The birth of Asha Kers I. The nineteen years. Saldin votes against her. The departure. Book II: First blood, the communications relays, the second belt, the Dragon Throne, the taking, the new succession. The first Ashari'i Rite. Coda: The Long Rule. 'He did not stop.' — Over New Terra. Khuvius Pierre von Care — Crown Prince of War — and the Star Wolves fight five frontier wars. The sixth war is Hesh-Kar." },
   { id: 12, title: "The Quiet King", sub: "Germionus de Maldor · The Immune System", words: "70,091", series: "iseldoran", k: "#", p: "#",
     desc: "He was not murdered by a man. He was murdered by a room full of them who had agreed, before he arrived, that nothing he said would matter. The Great Interregnum: twenty-five years without stable sovereignty. Twenty-six pretenders eliminated by Germionus. The empire did not fall — that is the horror. The empire continued. It ran on his death the way a river runs on rain it does not remember. Raised in Vol. 6 under Iskandar as foster father. The Quiet King. The Immune System. The reclaimer of the line. Compiled from the Sahkud Investigative Archive." },
@@ -795,8 +815,8 @@ function NovelsPage() {
                 <div className="book-subtitle-sm">{b.sub}</div>
                 <div className="book-words">{b.words} words</div>
                 <div className="book-links">
-                  <a className="book-link kindle" href={b.k} onClick={e=>{e.preventDefault();alert("Add your Kindle URL for: "+b.title);}}>Kindle</a>
-                  <a className="book-link print" href={b.p} onClick={e=>{e.preventDefault();alert("Add your print URL for: "+b.title);}}>Print</a>
+                  <a className="book-link kindle" href={b.k} target={b.k && b.k!=="#" ? "_blank" : undefined} rel="noopener noreferrer" onClick={b.k && b.k!=="#" ? undefined : e=>{e.preventDefault();alert("Add your Kindle URL for: "+b.title);}}>Kindle</a>
+                  <a className="book-link print" href={b.p} target={b.p && b.p!=="#" ? "_blank" : undefined} rel="noopener noreferrer" onClick={b.p && b.p!=="#" ? undefined : e=>{e.preventDefault();alert("Add your print URL for: "+b.title);}}>Print</a>
                 </div>
               </div>
             </div>
