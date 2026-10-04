@@ -13,5 +13,5 @@ Status key: `[ ] queued` · `[x] posted` · `[~] stuck (pending/failed verify)`
 
 ---
 
-[ ] **1. The Code of Martyrs — free copy**
+[x] **1. The Code of Martyrs — free copy** — posted 2026-10-04 17:02Z
 > Genuine question: what happens when a civilization optimizes away everything that could resist it? The Code of Martyrs spends four books answering it — Shapur the Eternal, the brothers Ashim and Ishak, and Kaisar Vane's "Victory of Peace" at the end of it. I have one copy of the complete saga to give away. If you want the answer to that question, it's here: https://www.amazon.com/dp/B0H57Y8QWZ
