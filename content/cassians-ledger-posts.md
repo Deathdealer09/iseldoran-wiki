@@ -10,7 +10,7 @@ Status key: `[ ] queued` · `[x] posted`
 
 ---
 
-[ ] **1. Filed under: coronations**
+[x] **1. Filed under: coronations** — posted 2026-10-04 18:50Z
 > Cassian I marked his coronation by ending 433 rival princes in a single stroke. He did not inherit divinity. He built it, then made the claim unanswerable. The ledger's note: manufactured is not the same as false.
 
 [x] **2. On La Diosa's list** — posted 2026-09-10 07:29Z
