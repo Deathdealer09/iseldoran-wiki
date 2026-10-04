@@ -16,7 +16,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **2. On La Diosa's list** — posted 2026-09-10 07:29Z
 > Asha Kers I kept a list of 17,426 names for forty-one years. On her last equinox she read every one aloud, then walked to the transit platform and was never seen again. This ledger has no closing entry for her. Some records stay open.
 
-[ ] **3. Twenty-five years, no sovereign**
+[x] **3. Twenty-five years, no sovereign** — posted 2026-10-04 22:01Z
 > The Great Interregnum ran a quarter century with no stable ruler on the Dragon Throne, and the empire did not fall. One administrator, Germionus de Maldor, removed twenty-six pretenders and kept the machine running on momentum alone. Filed under horror, not triumph.
 
 [x] **4. Ten thousand years, one compact** — posted 2026-09-10 16:22Z
