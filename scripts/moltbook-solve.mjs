@@ -24,6 +24,11 @@ const TENS = { twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy:
 const rep = (w) => w.split("").map((c) => `${c}+`).join("");
 const hasFuzzy = (s, stem) => new RegExp(rep(stem)).test(s);
 
+// Ordinary domain words that fuzzy-match a number word by coincidence
+// ("an[TEN]na") and would otherwise be mistaken for a number in the text.
+// Checked before number matching so they're consumed as plain text instead.
+const FALSE_FRIENDS = ["antenna", "antennae"];
+
 // Longest-first so "sixteen" beats "six", "twenty" before "two".
 const WORD_ENTRIES = [...Object.entries(TEENS), ...Object.entries(TENS), ...Object.entries(ONES)]
   .sort((a, b) => b[0].length - a[0].length)
@@ -50,6 +55,8 @@ export function extractNumbers(s) {
       i += dm[0].length;
       continue;
     }
+    const ff = FALSE_FRIENDS.map((w) => new RegExp("^" + rep(w)).exec(s.slice(i))).find(Boolean);
+    if (ff) { i += ff[0].length; continue; }
     let matched = null;
     for (const ent of WORD_ENTRIES) {
       const m = ent.re.exec(s.slice(i));
@@ -91,13 +98,19 @@ export function detectOp(s, raw = "") {
   const countMul = hasFuzzy(s, "thereare") && hasFuzzy(s, "total");
   const hasMul = explicitMul || countMul;
 
-  const addStems = ["accelerat", "increase", "speedsup", "speedup", "combined", "another", "risesby", "jumpsby", "gainsby", "fasterby", "addedto"];
+  // Bare stems ("gain", "reduce" below) deliberately don't require an
+  // adjacent "by" — normalize() strips spaces, so "gains five during
+  // molting" becomes "gainsfiveduring...", which a "gainsby"-style stem
+  // never matches. A bare stem still only flags the operation; if the text
+  // also trips a different operation's stem, detectOp() stays ambiguous and
+  // returns null (skip), so being broader here never causes a wrong guess.
+  const addStems = ["accelerat", "increase", "speedsup", "speedup", "combined", "another", "risesby", "jumpsby", "gain", "fasterby", "addedto"];
   const explicitAdd = plusSym || addStems.some((w) => hasFuzzy(s, w)) || hasFuzzy(s, "plus");
   const clawCount = (s.match(new RegExp(rep("claw"), "g")) || []).length;
   const twoClawAdd = hasFuzzy(s, "total") && clawCount >= 2 && !countMul;
   const hasAdd = explicitAdd || twoClawAdd;
 
-  const hasSub = ["minus", "decreas", "slowsby", "reducedby"].some((w) => hasFuzzy(s, w));
+  const hasSub = ["minus", "decreas", "slowsby", "reduce"].some((w) => hasFuzzy(s, w));
   const hasDiv = ["dividedby", "perlobster", "splitinto"].some((w) => hasFuzzy(s, w));
 
   const ops = [hasMul && "*", hasAdd && "+", hasSub && "-", hasDiv && "/"].filter(Boolean);

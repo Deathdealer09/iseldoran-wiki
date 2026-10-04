@@ -12,6 +12,10 @@ const CASES = [
   ["A] LxO b-StEr ClAaW FoRcE Is/ TwEnTy- FiVe] NooToNs, Um| AnOtHeR^ ClAaW Is/ TwElVe] NooToNs, HoW/ MaNy^ NoOtOnS ToTaL<?", "37.00"],
   ["A] L oObBsStEr ClAaW ExErTs TwEnTy ThReE nEuToNs tHeRe ArE FoUrTeEn lObBsTeRs hOw mUcH tOtAl fOrCe?", "322.00"],
   ["LoOoBbSsTtEeR ClAaWw FoOrRcEe IsS TwEnTy TwO NeWwOtOnS AnNd OtHeR ClAaWw IsS ThIrTy ThReE NeWwOtOnS ToTaL FoOrCe?", "55.00"],
+  // "gains X during Y" (no "by") — was UNSURE until the addition stems included a bare "gain".
+  ["A] lO-bStEr^ hAs/ tW eNtY] tHrEe~ nEu-RoNs, Umm gAiNs/ fIiV e} dUr-InG mOlT~iNg, HoW/ mAnY< nOw|?", "28.00"],
+  // "reduces it by X" (present tense) — was UNSURE until subtraction stems included a bare "reduce".
+  ["Lo.bStEr] SwImS~ In ThE/ wAvEs| AnD ClAw^ FoRce Is ThIrTy FiVe] NooToNs~ BuT Um AnTeNnA ToUcH ReDuCeS It{ By TwElVe} NooToNs- So WhAt< Is> ThE/ NeT^ FoRcE? Errr", "23.00"],
 ];
 
 for (const [challenge, expected] of CASES) {

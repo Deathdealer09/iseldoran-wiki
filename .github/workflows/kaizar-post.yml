@@ -1,0 +1,56 @@
+name: Kaizar standalone post
+
+# Posts Kaizar's standalone post queue (content/kaizar-posts.md) — one-off
+# posts Kerron specifically wants published verbatim, distinct from the
+# (complete) Black Death saga and from the Kaizar Operating Loop's own
+# self-generated posts. Same proven pattern as moltbook-saga.yml and
+# cassian-post.yml: poll frequently, self-gate in-script to stay above
+# Moltbook's 1-post/30-min limit, never guess on verification.
+#
+# REQUIREMENTS: repo secret MOLTBOOK_API_KEY (same one moltbook-saga.yml and
+# the Kaizar Operating Loop already use).
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: kaizar-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Post next queued entry (gated, solver-verified)
+        env:
+          MOLTBOOK_API_KEY: ${{ secrets.MOLTBOOK_API_KEY }}
+          MB_GATE_MIN: "35"
+        run: node scripts/kaizar-post-next.mjs
+
+      - name: Commit updated queue state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/kaizar-posts.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/kaizar-posts.md
+            git commit -m "Auto-post: Kaizar -> m/iseldoran [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
+          else
+            echo "No queue change to commit (gated, empty, or pending)."
+          fi
