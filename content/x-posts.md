@@ -318,7 +318,7 @@ Image: assets/bestiary/011.jpg
 
 ## Batch 8 — Ysinde & the Twin Thrones, in depth
 
-[ ] **84. One general, two bodies**
+[x] **84. One general, two bodies** — posted 2026-10-04 18:13Z
 > They did not fight as two generals sharing a battlefield. They fought as one general inhabiting two bodies. — Lothor of Vexon, on Ysinde and Isolde, the Twin Thrones. The convoy was burning before the marriage barges ever reached port.
 
 [ ] **85. The Dawn Empress**
