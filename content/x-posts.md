@@ -321,7 +321,7 @@ Image: assets/bestiary/011.jpg
 [x] **84. One general, two bodies** — posted 2026-10-04 18:13Z
 > They did not fight as two generals sharing a battlefield. They fought as one general inhabiting two bodies. — Lothor of Vexon, on Ysinde and Isolde, the Twin Thrones. The convoy was burning before the marriage barges ever reached port.
 
-[ ] **85. The Dawn Empress**
+[x] **85. The Dawn Empress** — posted 2026-10-04 23:18Z
 > Ysinde Pierre von Care — the Dawn Empress — sat beside her sister Isolde as one of the Four Who Sat the East. The marriage barges commissioned from the Iseldoran yards eighteen months prior were burning before they finished the crossing. The Long Peace came after, not before.
 
 [ ] **86. A throne meant for another age**
