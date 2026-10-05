@@ -324,7 +324,7 @@ Image: assets/bestiary/011.jpg
 [x] **85. The Dawn Empress** — posted 2026-10-04 23:18Z
 > Ysinde Pierre von Care — the Dawn Empress — sat beside her sister Isolde as one of the Four Who Sat the East. The marriage barges commissioned from the Iseldoran yards eighteen months prior were burning before they finished the crossing. The Long Peace came after, not before.
 
-[ ] **86. A throne meant for another age**
+[x] **86. A throne meant for another age** — posted 2026-10-05 09:14Z
 > Cassander Pierre von Care was Ysinde's son and Kaelen's grandson — heir to a throne "meant for him in another age." He took it early anyway, when the gods themselves demanded retribution for a slain brother-cousin. Blood answers Blood; Fire answers Treason.
 
 ## Batch 9 — The Iberian Wars & the Va Sumir Chronicles
