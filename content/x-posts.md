@@ -332,7 +332,7 @@ Image: assets/bestiary/011.jpg
 [x] **87. New mouths, same prayers** — posted 2026-10-05 17:13Z
 > History does not repeat itself. It merely finds new mouths to say the same prayers. — inscription on the Gate Alhambra-Station, author unknown. The opening line of the Iberian Wars, Volume III of the Va Sumir Chronicles.
 
-[ ] **88. The Hidden Prince**
+[x] **88. The Hidden Prince** — posted 2026-10-05 21:36Z
 > The Iberian Wars: Book One follows the Exile arc — the Hidden Prince, Old Earth campaigns, House Jaza of Mars, the seats and soldiers of the Iberian Sector. Its sequel, the Concordat Wars, sits in the Imperial Archive only partially complete.
 
 [ ] **89. Certain things left unsaid**
