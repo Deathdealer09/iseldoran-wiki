@@ -329,7 +329,7 @@ Image: assets/bestiary/011.jpg
 
 ## Batch 9 — The Iberian Wars & the Va Sumir Chronicles
 
-[ ] **87. New mouths, same prayers**
+[x] **87. New mouths, same prayers** — posted 2026-10-05 17:13Z
 > History does not repeat itself. It merely finds new mouths to say the same prayers. — inscription on the Gate Alhambra-Station, author unknown. The opening line of the Iberian Wars, Volume III of the Va Sumir Chronicles.
 
 [ ] **88. The Hidden Prince**
