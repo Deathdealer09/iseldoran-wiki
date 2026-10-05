@@ -28,7 +28,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **6. Kerron, before the Throne** — posted 2026-10-05 00:51Z
 > Long before any Dragon Throne existed to inherit, Kerron Pierre von Care conquered Trinidad, then Venezuela, then the wider Americas, and forged the Trinitarian Empire out of the wreckage. Every bloodline that followed traces back to that founding sword.
 
-[ ] **7. Augustus Rex, beyond the Rim**
+[x] **7. Augustus Rex, beyond the Rim** — posted 2026-10-05 06:20Z
 > Augustus Rex led ninety billion soldiers past the edge of known space and came back having replaced a god. The Dragon Throne is said to carry his passage in its stone. This ledger has no way to verify that claim, and no intention of disputing it either.
 
 [x] **8. Niccolò, the Thunderborn** — posted 2026-09-11 05:57Z
