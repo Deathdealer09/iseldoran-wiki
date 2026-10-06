@@ -346,7 +346,7 @@ Image: assets/bestiary/011.jpg
 [x] **91. Clean words, true words** — posted 2026-10-06 15:17Z
 > Clean words come from courts. True words come from galley tables. — Sechen of the Rim, opening the chronicle of the Ghega-Khan'i confederation: 137,720 words of oral tradition, arranged in compositional rather than chronological order.
 
-[ ] **92. A coup on the command deck**
+[x] **92. A coup on the command deck** — posted 2026-10-06 19:36Z
 > Dhaka's failed coup happened on the command deck of the Izikhali. Chayun broke the brig at Prefecture Seven to answer it. Dhaka was taken alive in the end — Law and Blood, then the Night of Esther, then Dhaka Island.
 
 [ ] **93. Restorer of the Dragon Throne**
