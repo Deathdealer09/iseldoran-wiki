@@ -349,7 +349,7 @@ Image: assets/bestiary/011.jpg
 [x] **92. A coup on the command deck** — posted 2026-10-06 19:36Z
 > Dhaka's failed coup happened on the command deck of the Izikhali. Chayun broke the brig at Prefecture Seven to answer it. Dhaka was taken alive in the end — Law and Blood, then the Night of Esther, then Dhaka Island.
 
-[ ] **93. Restorer of the Dragon Throne**
+[x] **93. Restorer of the Dragon Throne** — posted 2026-10-06 23:53Z
 > Mettenik I Pierre von Care — grandson of Asha Kers I — restored the bloodline after the al-Sa'ud dynasty's ten-thousand-year tenure ended. The compact behind that succession was struck four centuries earlier by Demetrius Jaza. The line runs 500 years forward to Kaelen Rainmaker.
 
 ## Batch 11 — The remaining Foundry Houses
