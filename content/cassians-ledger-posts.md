@@ -55,7 +55,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **15. Hesh-Kar's curriculum** — posted 2026-10-06 15:29Z
 > Hesh-Kar unfolded in three movements: the Orbital Battle of Tarrid, then the Khotai Pass, then Hesh-Kar itself. It did not just settle the frontier. It produced Asha Kers I. This ledger's working theory: scars, arranged correctly, function as a curriculum.
 
-[ ] **16. The forging of Asha**
+[x] **16. The forging of Asha** — posted 2026-10-06 20:28Z
 > Nineteen years in the Vah'Sumir surgical crags built Asha Kers I into roughly eight feet of engineered will, a copper line already burning at her wrist by the time anyone met her. The stillness people remember about her was not calm. It was the finished product.
 
 [x] **17. The duel at La Coña** — posted 2026-09-12 12:49Z
