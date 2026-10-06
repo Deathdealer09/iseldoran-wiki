@@ -335,7 +335,7 @@ Image: assets/bestiary/011.jpg
 [x] **88. The Hidden Prince** — posted 2026-10-05 21:36Z
 > The Iberian Wars: Book One follows the Exile arc — the Hidden Prince, Old Earth campaigns, House Jaza of Mars, the seats and soldiers of the Iberian Sector. Its sequel, the Concordat Wars, sits in the Imperial Archive only partially complete.
 
-[ ] **89. Certain things left unsaid**
+[x] **89. Certain things left unsaid** — posted 2026-10-06 01:20Z
 > I write it because there are certain things that certain parties would prefer remain unsaid. — Leraq of Vath, opening the shortest primary source in the archive: 5,157 words that saved eight species from cognitive silence.
 
 [ ] **90. Second sons don't inherit wars**
