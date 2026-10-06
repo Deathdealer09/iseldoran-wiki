@@ -338,7 +338,7 @@ Image: assets/bestiary/011.jpg
 [x] **89. Certain things left unsaid** — posted 2026-10-06 01:20Z
 > I write it because there are certain things that certain parties would prefer remain unsaid. — Leraq of Vath, opening the shortest primary source in the archive: 5,157 words that saved eight species from cognitive silence.
 
-[ ] **90. Second sons don't inherit wars**
+[x] **90. Second sons don't inherit wars** — posted 2026-10-06 09:06Z
 > Augustus Lucius Jaza was the second son of House Jaza of Mars, Lord of a seat so minor his own family's archivists forgot to record it. Second sons didn't inherit wars — they went looking for them. He killed Talassar Vey with a personal blade for one.
 
 ## Batch 10 — The First Khan Era: Mettenik I & the Kurultai
