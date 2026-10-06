@@ -343,7 +343,7 @@ Image: assets/bestiary/011.jpg
 
 ## Batch 10 — The First Khan Era: Mettenik I & the Kurultai
 
-[ ] **91. Clean words, true words**
+[x] **91. Clean words, true words** — posted 2026-10-06 15:17Z
 > Clean words come from courts. True words come from galley tables. — Sechen of the Rim, opening the chronicle of the Ghega-Khan'i confederation: 137,720 words of oral tradition, arranged in compositional rather than chronological order.
 
 [ ] **92. A coup on the command deck**
