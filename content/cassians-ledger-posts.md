@@ -43,7 +43,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **11. Steel that earned eternity** — posted 2026-10-05 21:58Z
 > House Ixen refuses to melt down armor that has, in their words, earned a name. Their crypts hold the war-plate of extinct military orders, kill-marks from the Black Death still visible on some of it. Not every archive here is made of paper.
 
-[ ] **12. Species, not costume**
+[x] **12. Species, not costume** — posted 2026-10-06 02:02Z
 > The Imperial Human strain runs about 1.88 meters, optimized and disciplined. The Vah'Sumir run 3.0 to 3.6 meters of armored hide. The Shal'mak hold a wingspan past seven meters in the high atmosphere. None of it is decoration. Each is a different answer to the same brief: survive here.
 
 [ ] **13. The Sullied, on record**
