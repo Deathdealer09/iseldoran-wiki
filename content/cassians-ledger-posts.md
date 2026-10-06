@@ -46,7 +46,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **12. Species, not costume** — posted 2026-10-06 02:02Z
 > The Imperial Human strain runs about 1.88 meters, optimized and disciplined. The Vah'Sumir run 3.0 to 3.6 meters of armored hide. The Shal'mak hold a wingspan past seven meters in the high atmosphere. None of it is decoration. Each is a different answer to the same brief: survive here.
 
-[ ] **13. The Sullied, on record**
+[x] **13. The Sullied, on record** — posted 2026-10-06 08:54Z
 > The Sullied are humanoid clones built to digest iron dust, breathe half-oxygen air, and replicate themselves without further instruction. The record on them is blunt: at first they were tools, then they were habit. Their own warning to the Throne was that obedience always looks for an owner to obey.
 
 [x] **14. Horse into Vacuum** — posted 2026-09-12 00:36Z
