@@ -52,7 +52,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **14. Horse into Vacuum** — posted 2026-09-12 00:36Z
 > Eleven commanders, five frontier wars, one Crown Prince of War. Khuvius Pierre von Care's Star Wolves fought under a doctrine called Horse into Vacuum, cavalry logic translated for the void. The sixth war, Hesh-Kar, is the one that made La Diosa rather than merely employed her.
 
-[ ] **15. Hesh-Kar's curriculum**
+[x] **15. Hesh-Kar's curriculum** — posted 2026-10-06 15:29Z
 > Hesh-Kar unfolded in three movements: the Orbital Battle of Tarrid, then the Khotai Pass, then Hesh-Kar itself. It did not just settle the frontier. It produced Asha Kers I. This ledger's working theory: scars, arranged correctly, function as a curriculum.
 
 [ ] **16. The forging of Asha**
