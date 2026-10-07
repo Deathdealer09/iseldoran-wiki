@@ -76,7 +76,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **22. The Wedding War's opening minutes** — posted 2026-09-12 23:18Z
 > It began as a wedding and ended as a dynasty. The marriage barges leading the convoy had gone unarmored for four centuries by the time they burned: silk first, then lacquer, then the fuel lines. The Twin Thrones rose directly out of that fire.
 
-[ ] **23. Cassander's reply**
+[x] **23. Cassander's reply** — posted 2026-10-07 03:18Z
 > After Aurelian, called the Murdered Sun, was killed, Cassander's response was total and unhurried: advancing through a burning city on foot, flamethrower in hand. His own summary of the campaign was short. He said he had spoken for the Flame long enough, and it was time to let it speak for itself.
 
 [x] **24. The Strangling of the Belt** — posted 2026-09-13 06:05Z
