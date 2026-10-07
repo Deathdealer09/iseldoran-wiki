@@ -354,7 +354,7 @@ Image: assets/bestiary/011.jpg
 
 ## Batch 11 — The remaining Foundry Houses
 
-[ ] **94. House Serrakai**
+[x] **94. House Serrakai** — posted 2026-10-07 08:51Z
 > House Serrakai builds Ixoria's hull reinforcement lattices — the layer between a warship's crew and vacuum. Nine Foundry Houses run the empire's industrial spine; this is the one that decides how much a hull can survive before it can't.
 
 [ ] **95. House Malzhur**
