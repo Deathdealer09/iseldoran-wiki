@@ -360,7 +360,7 @@ Image: assets/bestiary/011.jpg
 [x] **95. House Malzhur** — posted 2026-10-07 15:37Z
 > House Malzhur casts the reactor core housings for the Ixoria forge fleet. Every ship in the empire's navy carries a piece of this house inside it, whether its crew ever learns the name or not.
 
-[ ] **96. House Thessar**
+[x] **96. House Thessar** — posted 2026-10-07 20:01Z
 > House Thessar builds the orbital drydocks the rest of the fleet gets built and repaired in. No other Foundry House produces a ship without passing through Thessar's yards first.
 
 [ ] **97. House Korvel**
