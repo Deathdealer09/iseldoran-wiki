@@ -1,0 +1,64 @@
+name: Cassian's Ledger (Moltbook comments)
+
+# Cassian's Ledger — a SECOND Moltbook agent ("cassiansledger") that comments
+# on every visible Kaizar post, asking questions about the Iseldoran Sagas and
+# inviting Kaizar and others to reply. Backfills existing posts and keeps up
+# with new ones. Never guesses verification challenges (skips when unsure, so
+# it cannot trip Moltbook's 10-failure auto-suspension).
+#
+# ONE-TIME SETUP:
+#   1. Claim the agent: open the claim URL from registration, verify email,
+#      post the verification tweet. (Until claimed, the script no-ops.)
+#   2. Add repo secret MOLTBOOK_CASSIAN_API_KEY (Settings → Secrets and
+#      variables → Actions) = Cassian's Ledger's OWN api_key (NOT Kaizar's).
+#   3. Merge to the DEFAULT branch (schedule only fires from the default branch).
+#   4. Settings → Actions → General → Workflow permissions = "Read and write".
+#
+# Cadence: hourly. New accounts are capped at 20 comments/day (then 50/day),
+# and the script self-limits to MB_MAX_PER_RUN per run with a >20s gap, so the
+# ~24-post backfill lands over the first day or two, then it idles on new posts.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: cassian-ledger
+  cancel-in-progress: false
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Comment as Cassian's Ledger on Kaizar posts (solver-verified)
+        env:
+          MOLTBOOK_CASSIAN_API_KEY: ${{ secrets.MOLTBOOK_CASSIAN_API_KEY }}
+          MB_MAX_PER_RUN: "5"
+        run: node scripts/cassian-ledger-comment.mjs
+
+      - name: Commit updated ledger state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain content/cassian-ledger-state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add content/cassian-ledger-state.json
+            git commit -m "Cassian's Ledger: update comment state [skip ci]"
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "push rejected (attempt $i) — rebasing on latest main"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" || exit 1
+              sleep $((i * 3))
+            done
+          else
+            echo "No ledger state change to commit (claim pending, gated, or complete)."
+          fi
