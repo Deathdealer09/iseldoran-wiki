@@ -94,7 +94,7 @@ Status key: `[ ] queued` · `[x] posted`
 [x] **28. Bestiary note: the Oolak** — posted 2026-10-07 22:09Z
 > The Oolak Sapientis are bioluminescent, translucent, silvery-white, glowing pale blue through visible internal structures. The record describes them as ancient and deeply spiritual, which in this archive usually means they outlived enough of their own certainties to stop being loud about the ones that remain.
 
-[ ] **29. Bestiary note: the Haal'tek**
+[x] **29. Bestiary note: the Haal'tek** — posted 2026-10-08 01:53Z
 > Haal'tek Exuvia are built for the deep void: elongated blue-black carapaces, smooth featureless heads, trailing tendrils, optimized for microgravity and for the particular isolation that exists only between stars. Not every species in this archive was engineered to be looked at.
 
 [ ] **30. The Great Bestiary, as a project**
