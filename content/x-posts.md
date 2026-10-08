@@ -363,7 +363,7 @@ Image: assets/bestiary/011.jpg
 [x] **96. House Thessar** — posted 2026-10-07 20:01Z
 > House Thessar builds the orbital drydocks the rest of the fleet gets built and repaired in. No other Foundry House produces a ship without passing through Thessar's yards first.
 
-[ ] **97. House Korvel**
+[x] **97. House Korvel** — posted 2026-10-08 00:15Z
 > House Korvel manufactures munitions for the Nine Foundry Houses' military-industrial complex. Ixoria doesn't just build ships — it maintains civilization-scale military continuity, and Korvel is the house that keeps the guns fed.
 
 ---
